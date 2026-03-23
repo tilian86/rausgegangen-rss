@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scrape rausgegangen.de/tubingen and generate an RSS feed."""
+"""Scrape rausgegangen.de/tubingen and generate an RSS feed with images."""
 
 import re
 import xml.etree.ElementTree as ET
@@ -52,6 +52,19 @@ def parse_german_date(raw):
 def scrape_events(html):
     events = []
     seen = set()
+
+    # First pass: collect image URLs per event link
+    images = {}
+    for m in re.finditer(r'class="event-tile[^"]*"[^>]*href="(/events/[^"]+)"', html):
+        link = m.group(1)
+        if link in images:
+            continue
+        ctx = html[m.start():m.start()+2000]
+        img_m = re.search(r'<img src="(https://imageflow\.rausgegangen\.de/[^"]+)"', ctx)
+        if img_m:
+            images[link] = img_m.group(1).replace("&amp;", "&")
+
+    # Second pass: extract full event data from desktop text blocks
     blocks = re.findall(
         r'href="(/events/[^"]+)".*?'
         r'<span class="text-sm">([^<]+)</span>.*?'
@@ -76,6 +89,7 @@ def scrape_events(html):
         events.append({
             "title": title, "link": full_link,
             "description": description, "date": parsed_date,
+            "image": images.get(link, ""),
         })
     return events
 
@@ -84,11 +98,12 @@ def build_rss(events):
     now = datetime.now(timezone.utc)
     rss = ET.Element("rss", version="2.0")
     rss.set("xmlns:atom", "http://www.w3.org/2005/Atom")
+    rss.set("xmlns:media", "http://search.yahoo.com/mrss/")
     channel = ET.SubElement(rss, "channel")
-    ET.SubElement(channel, "title").text = "Rausgegangen Tübingen"
+    ET.SubElement(channel, "title").text = "Rausgegangen T\u00fcbingen"
     ET.SubElement(channel, "link").text = SITE_URL
     ET.SubElement(channel, "description").text = (
-        "Veranstaltungen in Tübingen via rausgegangen.de"
+        "Veranstaltungen in T\u00fcbingen via rausgegangen.de"
     )
     ET.SubElement(channel, "language").text = "de"
     ET.SubElement(channel, "lastBuildDate").text = now.strftime(
@@ -104,6 +119,15 @@ def build_rss(events):
         ET.SubElement(item, "link").text = event["link"]
         ET.SubElement(item, "guid").text = event["link"]
         ET.SubElement(item, "description").text = event["description"]
+        if event["image"]:
+            enc = ET.SubElement(item, "enclosure")
+            enc.set("url", event["image"])
+            enc.set("type", "image/jpeg")
+            enc.set("length", "0")
+            media = ET.SubElement(item, "media:content")
+            media.set("url", event["image"])
+            media.set("medium", "image")
+            media.set("type", "image/jpeg")
         if event["date"]:
             cet = timezone(timedelta(hours=1))
             pub = event["date"].replace(tzinfo=cet)
