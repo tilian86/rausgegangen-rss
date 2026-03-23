@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head><title>Feedly Backup for Inoreader</title></head>
+<body>
+  <outline text="1 PFLICHT – Jeden Tag" title="1 PFLICHT – Jeden Tag">
+    <outline type="rss" text="01 tagesschau · National" title="01 tagesschau · National" xmlUrl="http://www.tagesschau.de/xml/rss2" htmlUrl="https://www.tagesschau.de/"/>
+    <outline type="rss" text="02 ZEIT Politik · Einordnung" title="02 ZEIT Politik · Einordnung" xmlUrl="http://newsfeed.zeit.de/politik/index" htmlUrl="https://www.zeit.de/politik/"/>
+    <outline type="rss" text="03 BBC · International" title="03 BBC · International" xmlUrl="https://feeds.bbci.co.uk/news/world/rss.xml" htmlUrl="https://www.bbc.com/news/world"/>
+    <outline type="rss" text="04 HB Finanzen · Wirtschaft" title="04 HB Finanzen · Wirtschaft" xmlUrl="https://www.handelsblatt.com/contentexport/feed/finanzen" htmlUrl="https://www.handelsblatt.com/finanzen/"/>
+    <outline type="rss" text="05 SZ Eil · Breaking" title="05 SZ Eil · Breaking" xmlUrl="https://rss.sueddeutsche.de/rss/Eilmeldungen" htmlUrl="https://www.sueddeutsche.de/"/>
+    <outline type="rss" text="06 GEA TÜ · Lokal" title="06 GEA TÜ · Lokal" xmlUrl="https://tilian86.github.io/gea-rss-feeds/tuebingen.xml" htmlUrl="https://www.gea.de/neckar-alb/kreis-tuebingen.html"/>
+    <outline type="rss" text="07 GEA RT · Lokal" title="07 GEA RT · Lokal" xmlUrl="https://tilian86.github.io/gea-rss-feeds/reutlingen.xml" htmlUrl="https://www.gea.de/reutlingen.html"/>
+    <outline type="rss" text="08 SWR BW · Regional" title="08 SWR BW · Regional" xmlUrl="https://www.swr.de/~rss/swraktuell/baden-wuerttemberg/swraktuell-bw-100.xml" htmlUrl="https://www.swr.de/swraktuell/baden-wuerttemberg/"/>
+    <outline type="rss" text="09 Tagblatt TÜ · Lokal" title="09 Tagblatt TÜ · Lokal" xmlUrl="https://www.tagblatt.de/rss/tuebingen" htmlUrl="https://www.tagblatt.de/Tuebingen"/>
+    <outline type="rss" text="10 Tagblatt RT · Lokal" title="10 Tagblatt RT · Lokal" xmlUrl="https://www.tagblatt.de/rss/reutlingen" htmlUrl="https://www.tagblatt.de/Reutlingen"/>
+    <outline type="rss" text="11 Caschy · Tech DE" title="11 Caschy · Tech DE" xmlUrl="http://stadt-bremerhaven.de/feed/" htmlUrl="https://stadt-bremerhaven.de"/>
+    <outline type="rss" text="12 Ars AI · Tech/AI" title="12 Ars AI · Tech/AI" xmlUrl="https://arstechnica.com/ai/feed/" htmlUrl="https://arstechnica.com"/>
+    <outline type="rss" text="13 MyTopDeals · Deals" title="13 MyTopDeals · Deals" xmlUrl="http://feeds.feedburner.com/mytopdealsnet" htmlUrl="http://www.mytopdeals.net"/>
+    <outline type="rss" text="14 KONTEXT · Investigativ BW" title="14 KONTEXT · Investigativ BW" xmlUrl="https://tilian86.github.io/kontext-rss/feed.xml" htmlUrl="https://www.kontextwochenzeitung.de/"/>
+    <outline type="rss" text="15 Rausgegangen · Events TÜ" title="15 Rausgegangen · Events TÜ" xmlUrl="https://tilian86.github.io/rausgegangen-rss/feed.xml" htmlUrl="https://rausgegangen.de/tubingen/"/>
+  </outline>
+  <outline text="2 KÜR – Wenn Zeit bleibt" title="2 KÜR – Wenn Zeit bleibt">
+    <outline type="rss" text="Spiegel · National" title="Spiegel · National" xmlUrl="https://www.spiegel.de/schlagzeilen/index.rss" htmlUrl="https://www.spiegel.de/"/>
+    <outline type="rss" text="SZ Top · National" title="SZ Top · National" xmlUrl="https://rss.sueddeutsche.de/rss/Topthemen" htmlUrl="https://www.sueddeutsche.de/"/>
+    <outline type="rss" text="NYT · International" title="NYT · International" xmlUrl="https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" htmlUrl="https://www.nytimes.com"/>
+    <outline type="rss" text="Guardian · International" title="Guardian · International" xmlUrl="https://www.theguardian.com/world/rss" htmlUrl="https://www.theguardian.com/world"/>
+    <outline type="rss" text="Reuters · Wire" title="Reuters · Wire" xmlUrl="https://www.reutersagency.com/feed/" htmlUrl="https://www.reuters.com"/>
+    <outline type="rss" text="n-tv · Ticker" title="n-tv · Ticker" xmlUrl="https://www.n-tv.de/rss" htmlUrl="https://www.n-tv.de/"/>
+    <outline type="rss" text="HB Schlagzeilen · Wirtschaft" title="HB Schlagzeilen · Wirtschaft" xmlUrl="https://www.handelsblatt.com/contentexport/feed/schlagzeilen" htmlUrl="https://www.handelsblatt.com/"/>
+    <outline type="rss" text="heise · Tech DE" title="heise · Tech DE" xmlUrl="https://www.heise.de/rss/heise-top-atom.xml" htmlUrl="https://www.heise.de/"/>
+    <outline type="rss" text="The Verge · Tech" title="The Verge · Tech" xmlUrl="https://www.theverge.com/rss/index.xml" htmlUrl="https://www.theverge.com"/>
+    <outline type="rss" text="Ars Technica · Tech" title="Ars Technica · Tech" xmlUrl="https://feeds.arstechnica.com/arstechnica/index" htmlUrl="https://arstechnica.com"/>
+    <outline type="rss" text="Simon Willison · AI/Dev" title="Simon Willison · AI/Dev" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net"/>
+    <outline type="rss" text="Tarnkappe · Security" title="Tarnkappe · Security" xmlUrl="https://tarnkappe.info/feed/" htmlUrl="https://tarnkappe.info"/>
+    <outline type="rss" text="swp · Regional" title="swp · Regional" xmlUrl="https://www.swp.de/rss/feeds" htmlUrl="https://www.swp.de/"/>
+    <outline type="rss" text="NYT Popular · International" title="NYT Popular · International" xmlUrl="https://rss.nytimes.com/services/xml/rss/nyt/MostViewed.xml" htmlUrl="https://www.nytimes.com"/>
+    <outline type="rss" text="n-tv Panorama · Soft" title="n-tv Panorama · Soft" xmlUrl="https://www.n-tv.de/panorama/rss" htmlUrl="https://www.n-tv.de/panorama/"/>
+    <outline type="rss" text="Polizeibericht TÜ · Blaulicht" title="Polizeibericht TÜ · Blaulicht" xmlUrl="https://www.presseportal.de/rss/dienststelle_110976.rss2" htmlUrl="https://www.presseportal.de/blaulicht/nr/110976"/>
+    <outline type="rss" text="Ars Science · Wissenschaft" title="Ars Science · Wissenschaft" xmlUrl="https://arstechnica.com/science/feed/" htmlUrl="https://arstechnica.com/science/"/>
+    <outline type="rss" text="Guardian Environment · Klima" title="Guardian Environment · Klima" xmlUrl="https://www.theguardian.com/environment/rss" htmlUrl="https://www.theguardian.com/environment"/>
+    <outline type="rss" text="Ars Security · Security" title="Ars Security · Security" xmlUrl="https://arstechnica.com/security/feed/" htmlUrl="https://arstechnica.com/security/"/>
+    <outline type="rss" text="WHLW · Wochenrückblick" title="WHLW · Wochenrückblick" xmlUrl="https://us17.campaign-archive.com/feed?u=25399ee9f3261e31cedd6125e&amp;id=199104d481" htmlUrl="https://us17.campaign-archive.com/"/>
+  </outline>
+  <outline text="3 STÖBERN – Wochenende" title="3 STÖBERN – Wochenende">
+    <outline type="rss" text="appgefahren · Apps" title="appgefahren · Apps" xmlUrl="http://feeds.feedburner.com/appgefahren" htmlUrl="https://www.appgefahren.de"/>
+    <outline type="rss" text="BILD Digital · Boulevard" title="BILD Digital · Boulevard" xmlUrl="http://www.bild.de/rss-feeds/rss-16725492,feed=digital.bild.html" htmlUrl="https://www.bild.de/"/>
+    <outline type="rss" text="BILD News · Boulevard" title="BILD News · Boulevard" xmlUrl="http://www.bild.de/rssfeeds/rss3-20745882,feed=home.bild.html" htmlUrl="https://www.bild.de/"/>
+    <outline type="rss" text="BILD Politik · Boulevard" title="BILD Politik · Boulevard" xmlUrl="https://www.bild.de/rssfeeds/vw-politik/vw-politik-16728980,dzbildplus=true,sort=1,teaserbildmobil=false,view=rss2.bild.xml" htmlUrl="https://www.bild.de/"/>
+    <outline type="rss" text="BILD Stuttgart · Regional" title="BILD Stuttgart · Regional" xmlUrl="https://www.bild.de/rssfeeds/vw-regional-stuttgart/vw-regional-stuttgart-40666498,dzbildplus=true,sort=1,teaserbildmobil=false,view=rss2.bild.xml" htmlUrl="https://www.bild.de/"/>
+    <outline type="rss" text="CHIP · Tech DE" title="CHIP · Tech DE" xmlUrl="https://www.chip.de/rss/chip-online.xml" htmlUrl="https://www.chip.de/"/>
+    <outline type="rss" text="ComputerBild · Tech DE" title="ComputerBild · Tech DE" xmlUrl="https://www.computerbild.de/rssfeed_2261.xml" htmlUrl="https://www.computerbild.de"/>
+    <outline type="rss" text="Connect · Mobilfunk" title="Connect · Mobilfunk" xmlUrl="https://www.connect.de/rss/" htmlUrl="https://www.connect.de"/>
+    <outline type="rss" text="Dr. Windows · Windows" title="Dr. Windows · Windows" xmlUrl="https://www.drwindows.de/news/feed" htmlUrl="https://www.drwindows.de"/>
+    <outline type="rss" text="GIGA · Android" title="GIGA · Android" xmlUrl="https://www.giga.de/feed/android/" htmlUrl="https://www.giga.de"/>
+    <outline type="rss" text="heise Voll · Tech DE" title="heise Voll · Tech DE" xmlUrl="https://www.heise.de/rss/heise-atom.xml" htmlUrl="https://www.heise.de/"/>
+    <outline type="rss" text="iTopnews · Apple" title="iTopnews · Apple" xmlUrl="https://www.itopnews.de/feed/" htmlUrl="https://www.itopnews.de"/>
+    <outline type="rss" text="Macwelt · Apple DE" title="Macwelt · Apple DE" xmlUrl="https://www.macwelt.de/feed/" htmlUrl="https://www.macwelt.de"/>
+    <outline type="rss" text="MobiFlip · Mobile" title="MobiFlip · Mobile" xmlUrl="https://www.mobiflip.de/feed/" htmlUrl="https://www.mobiflip.de"/>
+    <outline type="rss" text="Notebookcheck · Hardware" title="Notebookcheck · Hardware" xmlUrl="https://www.notebookcheck.com/News/RSS-Feed/" htmlUrl="https://www.notebookcheck.com"/>
+    <outline type="rss" text="SmartDroid · Android" title="SmartDroid · Android" xmlUrl="https://www.smartdroid.de/feed/" htmlUrl="https://www.smartdroid.de"/>
+    <outline type="rss" text="WinFuture · Tech DE" title="WinFuture · Tech DE" xmlUrl="https://static.winfuture.de/feeds/WinFuture-News.xml" htmlUrl="https://www.winfuture.de"/>
+    <outline type="rss" text="eMTB-News · Bike" title="eMTB-News · Bike" xmlUrl="http://www.emtb-news.de/news/feed/" htmlUrl="https://www.emtb-news.de/news/"/>
+    <outline type="rss" text="Hörbücher · Gratis Audio" title="Hörbücher · Gratis Audio" xmlUrl="http://hoerbuch.us/wp/feed/" htmlUrl="https://hoerbuch.us/wp"/>
+  </outline>
+</body>
+</opml>
