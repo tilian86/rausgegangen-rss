@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Mon, 23 Mar 2026 14:02:37 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 19:02:03 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tigers Tübingen vs. Bozic Estriche Knights Kirchheim</title>
@@ -402,6 +402,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ztE7KdQpepLzykPgN9gg_cinelatino-2026.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ztE7KdQpepLzykPgN9gg_cinelatino-2026.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Wed, 22 Apr 2026 19:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>CineSalón: Best of EICTV – Kurzfilme aus Kuba</title>
+      <link>https://rausgegangen.de/events/best-of-eictv-kurzfilme-aus-kuba-0/</link>
+      <guid>https://rausgegangen.de/events/best-of-eictv-kurzfilme-aus-kuba-0/</guid>
+      <description>Do, 23. Apr | 22:00 · Kino Atelier &amp; Café Haag</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/0KpyKBX3RZ23n7yeNHiU_kubanische-kurzfilme.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/0KpyKBX3RZ23n7yeNHiU_kubanische-kurzfilme.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 23 Apr 2026 22:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Offenes Atelier für Kinder</title>
