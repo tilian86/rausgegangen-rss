@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Wed, 25 Mar 2026 07:09:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 13:21:56 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tigers Tübingen vs. Bozic Estriche Knights Kirchheim</title>
@@ -186,6 +186,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/5cMVJe2QGC7dnaREHxpi_bildschirmfoto-2025-11-24-um-162158.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/5cMVJe2QGC7dnaREHxpi_bildschirmfoto-2025-11-24-um-162158.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 26 Jun 2026 18:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Fliegende Haie - Alle gehn dumm-Tour</title>
+      <link>https://rausgegangen.de/events/fliegende-haie-alle-gehn-dumm-tour-6/</link>
+      <guid>https://rausgegangen.de/events/fliegende-haie-alle-gehn-dumm-tour-6/</guid>
+      <description>Do, 05. Nov | 20:00 · Club Voltaire Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/VRmMyn1vSHC1dpkr5PPN_fliegende-haie-alle-gehn-dumm-foto-01quer-c-maxim-kaiser.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/VRmMyn1vSHC1dpkr5PPN_fliegende-haie-alle-gehn-dumm-foto-01quer-c-maxim-kaiser.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 05 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Tübinger Regionalmarkt</title>
