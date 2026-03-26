@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Thu, 26 Mar 2026 13:28:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 19:14:41 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tigers Tübingen vs. Bozic Estriche Knights Kirchheim</title>
@@ -339,15 +339,6 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/REswwRH4QcyIYLkPUJR5_photo-1527224857830-43a7acc85260?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/REswwRH4QcyIYLkPUJR5_photo-1527224857830-43a7acc85260?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Tue, 12 May 2026 20:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Community Dinner – wo Fremde zu Freunden werden</title>
-      <link>https://rausgegangen.de/events/community-dinner-3/</link>
-      <guid>https://rausgegangen.de/events/community-dinner-3/</guid>
-      <description>Sa, 28. Mär | 17:30 · viertel vor</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/jU0nPOthQvqSFY8jMzEK_community-dinnerthumb1920x1080.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/jU0nPOthQvqSFY8jMzEK_community-dinnerthumb1920x1080.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 28 Mar 2026 17:30:00 +0100</pubDate>
     </item>
     <item>
       <title>Offline Café 📵</title>
