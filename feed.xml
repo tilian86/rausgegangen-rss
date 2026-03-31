@@ -5,17 +5,8 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Tue, 31 Mar 2026 02:47:49 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 07:23:25 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
-      <link>https://rausgegangen.de/events/impro-slam-tubingen-powerpoint-karaoke-schabernack-das-genia-26/</link>
-      <guid>https://rausgegangen.de/events/impro-slam-tubingen-powerpoint-karaoke-schabernack-das-genia-26/</guid>
-      <description>Heute, 31. Mär | 19:30 · NECKAWA</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/2KuqOISjTm5OQ1JUgy1p_impro-slam2zu1rot.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/2KuqOISjTm5OQ1JUgy1p_impro-slam2zu1rot.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Tue, 31 Mar 2026 19:30:00 +0100</pubDate>
-    </item>
     <item>
       <title>Int. Ocean Film Tour 2026</title>
       <link>https://rausgegangen.de/events/int-ocean-film-tour-2026-88/</link>
@@ -44,6 +35,15 @@
       <pubDate>Mon, 20 Apr 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
+      <link>https://rausgegangen.de/events/impro-slam-tubingen-powerpoint-karaoke-schabernack-das-genia-31/</link>
+      <guid>https://rausgegangen.de/events/impro-slam-tubingen-powerpoint-karaoke-schabernack-das-genia-31/</guid>
+      <description>Di, 28. Apr | 19:30 · NECKAWA</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/2KuqOISjTm5OQ1JUgy1p_impro-slam2zu1rot.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/2KuqOISjTm5OQ1JUgy1p_impro-slam2zu1rot.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 28 Apr 2026 19:30:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Comedy Slam Tübingen: Comedians im Kampf um die Comedy-Krone nach dem Motto "Lachen &amp; Spaß für alle!" (Stand Up, Kabarett, Kleinkunst, Comedy)</title>
       <link>https://rausgegangen.de/events/comedy-slam-tubingen-comedians-im-kampf-um-die-comedy-krone--26/</link>
       <guid>https://rausgegangen.de/events/comedy-slam-tubingen-comedians-im-kampf-um-die-comedy-krone--26/</guid>
@@ -51,6 +51,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/DnNV9V4S5S08PRJrDDJT_comedy-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/DnNV9V4S5S08PRJrDDJT_comedy-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Tue, 12 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
+      <link>https://rausgegangen.de/events/impro-slam-tubingen-powerpoint-karaoke-schabernack-das-genia-26/</link>
+      <guid>https://rausgegangen.de/events/impro-slam-tubingen-powerpoint-karaoke-schabernack-das-genia-26/</guid>
+      <description>Heute, 31. Mär | 19:30 · NECKAWA</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/2KuqOISjTm5OQ1JUgy1p_impro-slam2zu1rot.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/2KuqOISjTm5OQ1JUgy1p_impro-slam2zu1rot.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 31 Mar 2026 19:30:00 +0100</pubDate>
     </item>
     <item>
       <title>Electronic Society</title>
