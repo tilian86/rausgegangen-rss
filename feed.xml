@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Thu, 02 Apr 2026 13:25:14 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 19:03:14 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Int. Ocean Film Tour 2026</title>
@@ -24,6 +24,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vmYSzy3uQSDqebQPdrXc_best-of-poetry-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vmYSzy3uQSDqebQPdrXc_best-of-poetry-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Tue, 14 Apr 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Tour der guten Hoffnung (Verlängerung)</title>
+      <link>https://rausgegangen.de/events/tour-der-guten-hoffnung-verlangerung-0/</link>
+      <guid>https://rausgegangen.de/events/tour-der-guten-hoffnung-verlangerung-0/</guid>
+      <description>Do, 16. Apr | 19:00 · Sudhaus Waldbühne Amphitheater</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/iQhWxRrTMaCIvvBfIUHg_1920x1005-tdgh-facebook-header.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/iQhWxRrTMaCIvvBfIUHg_1920x1005-tdgh-facebook-header.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 16 Apr 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>BRATAKUS Live</title>
@@ -125,15 +134,6 @@
       <pubDate>Wed, 15 Apr 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Tour der guten Hoffnung (Verlängerung)</title>
-      <link>https://rausgegangen.de/events/tour-der-guten-hoffnung-verlangerung-0/</link>
-      <guid>https://rausgegangen.de/events/tour-der-guten-hoffnung-verlangerung-0/</guid>
-      <description>Do, 16. Apr | 19:00 · Sudhaus Waldbühne Amphitheater</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/iQhWxRrTMaCIvvBfIUHg_1920x1005-tdgh-facebook-header.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/iQhWxRrTMaCIvvBfIUHg_1920x1005-tdgh-facebook-header.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Thu, 16 Apr 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Nils Wülker</title>
       <link>https://rausgegangen.de/events/nils-wulker-25/</link>
       <guid>https://rausgegangen.de/events/nils-wulker-25/</guid>
@@ -150,6 +150,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/Lxo181VITCKQ1fFXxZR3_3-konzert-und-festivalpartyfoto-1.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/Lxo181VITCKQ1fFXxZR3_3-konzert-und-festivalpartyfoto-1.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 24 Apr 2026 21:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>PAULEEN RENARD &amp; WÜSTE WELLE BIG BAND</title>
+      <link>https://rausgegangen.de/events/pauleen-renard-wuste-welle-big-band-0/</link>
+      <guid>https://rausgegangen.de/events/pauleen-renard-wuste-welle-big-band-0/</guid>
+      <description>So, 26. Apr | 18:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jle9ih0asovk.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jle9ih0asovk.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 26 Apr 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
       <title>JOSH. - Wer singt dann Lieder für dich - Solo Tour 2026</title>
@@ -170,6 +179,33 @@
       <pubDate>Fri, 26 Jun 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Dieter Thomas Kuhn mit der SWR Big Band</title>
+      <link>https://rausgegangen.de/events/dieter-thomas-kuhn-mit-der-swr-big-band-0/</link>
+      <guid>https://rausgegangen.de/events/dieter-thomas-kuhn-mit-der-swr-big-band-0/</guid>
+      <description>Fr, 24. Jul | 20:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mackmdrttlxy.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mackmdrttlxy.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 24 Jul 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Hank Häberle Reloaded</title>
+      <link>https://rausgegangen.de/events/hank-haberle-reloaded-1/</link>
+      <guid>https://rausgegangen.de/events/hank-haberle-reloaded-1/</guid>
+      <description>Sa, 24. Okt | 20:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5t51w9d2l67d.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5t51w9d2l67d.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 24 Oct 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Wirtschaftswunder</title>
+      <link>https://rausgegangen.de/events/wirtschaftswunder-6/</link>
+      <guid>https://rausgegangen.de/events/wirtschaftswunder-6/</guid>
+      <description>Sa, 12. Dez | 20:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/t25sljsyd5p2.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/t25sljsyd5p2.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 12 Dec 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Tübinger Regionalmarkt</title>
       <link>https://rausgegangen.de/events/tubinger-regionalmarkt-1/</link>
       <guid>https://rausgegangen.de/events/tubinger-regionalmarkt-1/</guid>
@@ -177,6 +213,60 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/d4r0QVrVQka4hDRoVFTD_15.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/d4r0QVrVQka4hDRoVFTD_15.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 25 Apr 2026 10:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>OH GOTT!</title>
+      <link>https://rausgegangen.de/events/oh-gott-0/</link>
+      <guid>https://rausgegangen.de/events/oh-gott-0/</guid>
+      <description>Morgen, 03. Apr | 20:00 · Tanne Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/cpvth367klic.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/cpvth367klic.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 03 Apr 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>GEISTERSTÜCK</title>
+      <link>https://rausgegangen.de/events/geisterstuck-0/</link>
+      <guid>https://rausgegangen.de/events/geisterstuck-0/</guid>
+      <description>Sa, 04. Apr | 20:00 · LÖWEN Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/a0tfm8gbqblp.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/a0tfm8gbqblp.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 04 Apr 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>CLAUS VON WAGNER</title>
+      <link>https://rausgegangen.de/events/claus-von-wagner-26/</link>
+      <guid>https://rausgegangen.de/events/claus-von-wagner-26/</guid>
+      <description>Fr, 25. Sep | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/l65kuf4j5lyr.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/l65kuf4j5lyr.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 25 Sep 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Katja Berlin</title>
+      <link>https://rausgegangen.de/events/katja-berlin-13/</link>
+      <guid>https://rausgegangen.de/events/katja-berlin-13/</guid>
+      <description>Mi, 04. Nov | 19:00 · Museum Kino</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/ari7m3hrr35c.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/ari7m3hrr35c.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 04 Nov 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Vince Ebert</title>
+      <link>https://rausgegangen.de/events/vince-ebert-16/</link>
+      <guid>https://rausgegangen.de/events/vince-ebert-16/</guid>
+      <description>Di, 10. Nov | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/cj8d50nfpn86.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/cj8d50nfpn86.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 10 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Andreas Rebers</title>
+      <link>https://rausgegangen.de/events/andreas-rebers-24/</link>
+      <guid>https://rausgegangen.de/events/andreas-rebers-24/</guid>
+      <description>Fr, 27. Nov | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mvvitjwzqj8z.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mvvitjwzqj8z.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 27 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Evolution - Paläontologische Sammlung</title>
