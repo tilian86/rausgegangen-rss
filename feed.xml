@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Fri, 03 Apr 2026 13:13:52 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 18:54:22 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Int. Ocean Film Tour 2026</title>
@@ -458,24 +458,6 @@
       <pubDate>Fri, 03 Apr 2026 09:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
-      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-362/</link>
-      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-362/</guid>
-      <description>Heute, 03. Apr | 11:00 · Stadtmuseum Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 03 Apr 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Room of Memories - Dauerausstellung</title>
-      <link>https://rausgegangen.de/events/room-of-memories-342/</link>
-      <guid>https://rausgegangen.de/events/room-of-memories-342/</guid>
-      <description>Heute, 03. Apr | 11:00 · Stadtmuseum Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 03 Apr 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Turm in Flammen</title>
       <link>https://rausgegangen.de/events/turm-in-flammen-165/</link>
       <guid>https://rausgegangen.de/events/turm-in-flammen-165/</guid>
@@ -483,6 +465,24 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/piVG9UIHSUKl9AiukEB9_photo-1517594422361-5eeb8ae275a9?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/piVG9UIHSUKl9AiukEB9_photo-1517594422361-5eeb8ae275a9?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 03 Apr 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
+      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-363/</link>
+      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-363/</guid>
+      <description>Morgen, 04. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 04 Apr 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Room of Memories - Dauerausstellung</title>
+      <link>https://rausgegangen.de/events/room-of-memories-343/</link>
+      <guid>https://rausgegangen.de/events/room-of-memories-343/</guid>
+      <description>Morgen, 04. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 04 Apr 2026 11:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Kunstinstallation von Julie Stephen Chheng – 80-Jähriges Jubiläum des ICFA Tübingen</title>
