@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Fri, 03 Apr 2026 02:46:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 07:16:43 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Int. Ocean Film Tour 2026</title>
@@ -134,6 +134,33 @@
       <pubDate>Wed, 15 Apr 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>JAMARAM meets JAHCOUSTIX</title>
+      <link>https://rausgegangen.de/events/jamaram-meets-jahcoustix-64/</link>
+      <guid>https://rausgegangen.de/events/jamaram-meets-jahcoustix-64/</guid>
+      <description>Mi, 15. Apr | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/9zr1ylwn3mbs.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/9zr1ylwn3mbs.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 15 Apr 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>OEHL</title>
+      <link>https://rausgegangen.de/events/oehl-18/</link>
+      <guid>https://rausgegangen.de/events/oehl-18/</guid>
+      <description>Do, 16. Apr | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/kvfkh1sbgeu8.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/kvfkh1sbgeu8.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 16 Apr 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>AUS VOLLER KEHLE...für die Seele!</title>
+      <link>https://rausgegangen.de/events/aus-voller-kehlefur-die-seele-4/</link>
+      <guid>https://rausgegangen.de/events/aus-voller-kehlefur-die-seele-4/</guid>
+      <description>Mo, 20. Apr | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/hklqz7ze767r.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/hklqz7ze767r.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Mon, 20 Apr 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Nils Wülker</title>
       <link>https://rausgegangen.de/events/nils-wulker-25/</link>
       <guid>https://rausgegangen.de/events/nils-wulker-25/</guid>
@@ -159,6 +186,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jle9ih0asovk.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jle9ih0asovk.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 26 Apr 2026 18:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>COLOUR HAZE &amp; MY SLEEPING KARMA</title>
+      <link>https://rausgegangen.de/events/colour-haze-my-sleeping-karma-1/</link>
+      <guid>https://rausgegangen.de/events/colour-haze-my-sleeping-karma-1/</guid>
+      <description>Mi, 29. Apr | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/ikrsxzzme073.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/ikrsxzzme073.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 29 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Aaron Parks Little Big</title>
@@ -195,6 +231,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5sb8upsmzxa8.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5sb8upsmzxa8.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 23 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>DOTA</title>
+      <link>https://rausgegangen.de/events/dota-65/</link>
+      <guid>https://rausgegangen.de/events/dota-65/</guid>
+      <description>Mi, 03. Jun | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/och7tc0albs3.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/och7tc0albs3.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 03 Jun 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Von Wegen Lisbeth "Strandbad Eldena - Sommertour 2026"</title>
@@ -260,6 +305,24 @@
       <pubDate>Sat, 04 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>PRIMA FACIE von Suzie Miller</title>
+      <link>https://rausgegangen.de/events/prima-facie-von-suzie-miller-4/</link>
+      <guid>https://rausgegangen.de/events/prima-facie-von-suzie-miller-4/</guid>
+      <description>Sa, 11. Apr | 20:00 · Tanne Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/1f0q99hu4ykb.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/1f0q99hu4ykb.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 11 Apr 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>DER STURM von William Shakespeare</title>
+      <link>https://rausgegangen.de/events/der-sturm-von-william-shakespeare-0/</link>
+      <guid>https://rausgegangen.de/events/der-sturm-von-william-shakespeare-0/</guid>
+      <description>Fr, 01. Mai | 20:00 · LÖWEN Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/vh6lwevkj4qd.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/vh6lwevkj4qd.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 01 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Die Räuber von Friedrich Schiller GASTSPIEL</title>
       <link>https://rausgegangen.de/events/die-rauber-von-friedrich-schiller-gastspiel-0/</link>
       <guid>https://rausgegangen.de/events/die-rauber-von-friedrich-schiller-gastspiel-0/</guid>
@@ -267,6 +330,33 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/6uj7ezyo1i3j.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/6uj7ezyo1i3j.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 31 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>"DASS EINER DEM ANDEREN SEINE EINSAMKEIT BEWACHE"</title>
+      <link>https://rausgegangen.de/events/dass-einer-dem-anderen-seine-einsamkeit-bewache-0/</link>
+      <guid>https://rausgegangen.de/events/dass-einer-dem-anderen-seine-einsamkeit-bewache-0/</guid>
+      <description>So, 05. Jul | 18:00 · Tanne Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/2jnrb7tenepz.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/2jnrb7tenepz.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 05 Jul 2026 18:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>CONNI - Das Musical!</title>
+      <link>https://rausgegangen.de/events/conni-das-musical-64/</link>
+      <guid>https://rausgegangen.de/events/conni-das-musical-64/</guid>
+      <description>Sa, 12. Dez | 11:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5ahofh00kwi6.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5ahofh00kwi6.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 12 Dec 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>AcaBellas</title>
+      <link>https://rausgegangen.de/events/acabellas-0/</link>
+      <guid>https://rausgegangen.de/events/acabellas-0/</guid>
+      <description>Sa, 09. Mai | 20:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/2wflc6u1mj9e.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/2wflc6u1mj9e.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 09 May 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>COMEDY im GARTEN</title>
@@ -555,6 +645,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/V4IQYZuoTN6V2kUdomIR_desierto-vortrag.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/V4IQYZuoTN6V2kUdomIR_desierto-vortrag.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 26 Apr 2026 16:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>LES YEUX D`LA TETE - LA VIE EST BELLE Tour 2026</title>
+      <link>https://rausgegangen.de/events/les-yeux-dla-tete-la-vie-est-belle-tour-2026-0/</link>
+      <guid>https://rausgegangen.de/events/les-yeux-dla-tete-la-vie-est-belle-tour-2026-0/</guid>
+      <description>Do, 25. Jun | 19:00 · Panzerhalle Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/8sbn9oqwnvzn.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/8sbn9oqwnvzn.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 25 Jun 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Tigers Tübingen vs. EPG Baskets Koblenz</title>
