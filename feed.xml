@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Tue, 07 Apr 2026 07:25:35 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 13:27:08 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Int. Ocean Film Tour 2026</title>
@@ -143,6 +143,15 @@
       <pubDate>Thu, 16 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>anders</title>
+      <link>https://rausgegangen.de/events/anders-456/</link>
+      <guid>https://rausgegangen.de/events/anders-456/</guid>
+      <description>So, 19. Apr | 19:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/l11ij45mi0q3.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/l11ij45mi0q3.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 19 Apr 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>AUS VOLLER KEHLE...für die Seele!</title>
       <link>https://rausgegangen.de/events/aus-voller-kehlefur-die-seele-4/</link>
       <guid>https://rausgegangen.de/events/aus-voller-kehlefur-die-seele-4/</guid>
@@ -188,6 +197,15 @@
       <pubDate>Wed, 29 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Kleine Große Musik.</title>
+      <link>https://rausgegangen.de/events/kleine-groe-musik-0/</link>
+      <guid>https://rausgegangen.de/events/kleine-groe-musik-0/</guid>
+      <description>Sa, 09. Mai | 18:30 · Tübinger Musikschule</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/b2tlev0kc2he.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/b2tlev0kc2he.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 09 May 2026 18:30:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Aaron Parks Little Big</title>
       <link>https://rausgegangen.de/events/aaron-parks-little-big-4/</link>
       <guid>https://rausgegangen.de/events/aaron-parks-little-big-4/</guid>
@@ -195,6 +213,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/np2hqazaxgog.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/np2hqazaxgog.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 09 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Bach: Osteroratorium, Himmelfahrtsoratorium</title>
+      <link>https://rausgegangen.de/events/bach-osteroratorium-himmelfahrtsoratorium-0/</link>
+      <guid>https://rausgegangen.de/events/bach-osteroratorium-himmelfahrtsoratorium-0/</guid>
+      <description>So, 10. Mai | 17:00 · Stiftskirche Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/j1sh2rwx6vkl.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/j1sh2rwx6vkl.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 10 May 2026 17:00:00 +0100</pubDate>
     </item>
     <item>
       <title>JOSH. - Wer singt dann Lieder für dich - Solo Tour 2026</title>
@@ -312,6 +339,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/vh6lwevkj4qd.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/vh6lwevkj4qd.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 01 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Remstal-Rebell! *Nachgespräch mit Boris Palmer*</title>
+      <link>https://rausgegangen.de/events/remstal-rebell-nachgesprach-mit-boris-palmer-0/</link>
+      <guid>https://rausgegangen.de/events/remstal-rebell-nachgesprach-mit-boris-palmer-0/</guid>
+      <description>Fr, 22. Mai | 20:00 · LÖWEN Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/19alj98ecxee.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/19alj98ecxee.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 22 May 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Die Räuber von Friedrich Schiller GASTSPIEL</title>
@@ -636,6 +672,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/V4IQYZuoTN6V2kUdomIR_desierto-vortrag.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/V4IQYZuoTN6V2kUdomIR_desierto-vortrag.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 26 Apr 2026 16:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>LUCKY CHOPS (Brass Band, NYC)</title>
+      <link>https://rausgegangen.de/events/lucky-chops-brass-band-nyc-0/</link>
+      <guid>https://rausgegangen.de/events/lucky-chops-brass-band-nyc-0/</guid>
+      <description>Mi, 24. Jun | 19:00 · Panzerhalle Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/tsq69sgo5lu3.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/tsq69sgo5lu3.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 24 Jun 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>LES YEUX D`LA TETE - LA VIE EST BELLE Tour 2026</title>
