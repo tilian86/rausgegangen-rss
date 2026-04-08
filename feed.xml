@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Wed, 08 Apr 2026 02:50:14 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 07:42:06 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Int. Ocean Film Tour 2026</title>
@@ -404,6 +404,15 @@
       <pubDate>Fri, 25 Sep 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>EURE MÜTTER</title>
+      <link>https://rausgegangen.de/events/eure-mutter-109/</link>
+      <guid>https://rausgegangen.de/events/eure-mutter-109/</guid>
+      <description>Sa, 03. Okt | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/u99enk1ugzig.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/u99enk1ugzig.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 03 Oct 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Katja Berlin</title>
       <link>https://rausgegangen.de/events/katja-berlin-13/</link>
       <guid>https://rausgegangen.de/events/katja-berlin-13/</guid>
@@ -708,6 +717,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ebjys3cFQYi8v8mSXJ8n_250207tigers-tuebingen-vs-eisbaeren-bremerhaven2025dennis-duddekfinal-68.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ebjys3cFQYi8v8mSXJ8n_250207tigers-tuebingen-vs-eisbaeren-bremerhaven2025dennis-duddekfinal-68.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 02 May 2026 19:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Kinotour DENN DIESES LEBEN LEBST NUR DU</title>
+      <link>https://rausgegangen.de/events/filmpremiere-denn-dieses-leben-lebst-nur-du-11/</link>
+      <guid>https://rausgegangen.de/events/filmpremiere-denn-dieses-leben-lebst-nur-du-11/</guid>
+      <description>So, 12. Apr | 17:00 · Kino Atelier &amp; Café Haag</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/MMSBxZ5yQAeDyVjdv0ce_dlstill-1gabriel-und-elisabeth-treffen-den-konservativen-ex-lokalpolitiker-eugen-ablerc-douglas-wolfsperger-filmproduktion.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/MMSBxZ5yQAeDyVjdv0ce_dlstill-1gabriel-und-elisabeth-treffen-den-konservativen-ex-lokalpolitiker-eugen-ablerc-douglas-wolfsperger-filmproduktion.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 12 Apr 2026 17:00:00 +0100</pubDate>
     </item>
     <item>
       <title>CINELATINO 2026</title>
