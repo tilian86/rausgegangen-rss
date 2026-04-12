@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Sun, 12 Apr 2026 13:11:12 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 18:57:21 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Int. Ocean Film Tour 2026</title>
@@ -449,24 +449,6 @@
       <pubDate>Fri, 27 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
-      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-369/</link>
-      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-369/</guid>
-      <description>Heute, 12. Apr | 11:00 · Stadtmuseum Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 12 Apr 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Room of Memories - Dauerausstellung</title>
-      <link>https://rausgegangen.de/events/room-of-memories-349/</link>
-      <guid>https://rausgegangen.de/events/room-of-memories-349/</guid>
-      <description>Heute, 12. Apr | 11:00 · Stadtmuseum Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 12 Apr 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Turm in Flammen</title>
       <link>https://rausgegangen.de/events/turm-in-flammen-172/</link>
       <guid>https://rausgegangen.de/events/turm-in-flammen-172/</guid>
@@ -521,6 +503,24 @@
       <pubDate>Mon, 13 Apr 2026 09:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
+      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-370/</link>
+      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-370/</guid>
+      <description>Mi, 15. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 15 Apr 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Room of Memories - Dauerausstellung</title>
+      <link>https://rausgegangen.de/events/room-of-memories-350/</link>
+      <guid>https://rausgegangen.de/events/room-of-memories-350/</guid>
+      <description>Mi, 15. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 15 Apr 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Kunstinstallation von Julie Stephen Chheng – 80-Jähriges Jubiläum des ICFA Tübingen</title>
       <link>https://rausgegangen.de/events/kunstinstallation-von-julie-stephen-chheng-80-jahriges-jubil-0/</link>
       <guid>https://rausgegangen.de/events/kunstinstallation-von-julie-stephen-chheng-80-jahriges-jubil-0/</guid>
@@ -528,15 +528,6 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/XBlgXwXvTxicrBRZ2VNM_kunst.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/XBlgXwXvTxicrBRZ2VNM_kunst.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Thu, 23 Apr 2026 16:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>interaktive Lesung: DEIN ZYKLUS DEIN WISSEN</title>
-      <link>https://rausgegangen.de/events/interaktive-lesung-dein-zyklus-dein-wissen-1/</link>
-      <guid>https://rausgegangen.de/events/interaktive-lesung-dein-zyklus-dein-wissen-1/</guid>
-      <description>Heute, 12. Apr | 14:00 · Bunter Buchladen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/1u5XQ1EXQbu6EFyxqKTC_prasentation1.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/1u5XQ1EXQbu6EFyxqKTC_prasentation1.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 12 Apr 2026 14:00:00 +0100</pubDate>
     </item>
     <item>
       <title>POETRY SLAM: TEXTE, DIE DIE WELT EROBERN</title>
@@ -611,15 +602,6 @@
       <pubDate>Sun, 12 Apr 2026 07:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Ecstatic Dance Tübingen | Ecstatic Experience – DANCE, FOOD, SOCIALIZE</title>
-      <link>https://rausgegangen.de/events/ecstatic-dance-tubingen-ecstatic-experience-dance-food-socia-3/</link>
-      <guid>https://rausgegangen.de/events/ecstatic-dance-tubingen-ecstatic-experience-dance-food-socia-3/</guid>
-      <description>Heute, 12. Apr | 10:30 · Tanzschule Salsamara Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QI0q5TwqRPGXSAI07nsm_img5047.JPG?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QI0q5TwqRPGXSAI07nsm_img5047.JPG?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 12 Apr 2026 10:30:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Krimi-Trail Tübingen: Folgenschwere Erkenntnis</title>
       <link>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-187/</link>
       <guid>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-187/</guid>
@@ -645,6 +627,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/es6kbwwaudar.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/es6kbwwaudar.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Tue, 28 Apr 2026 18:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Ecstatic Dance Tübingen | Ecstatic Experience – DANCE, FOOD, SOCIALIZE</title>
+      <link>https://rausgegangen.de/events/ecstatic-dance-tubingen-ecstatic-experience-dance-food-socia-4/</link>
+      <guid>https://rausgegangen.de/events/ecstatic-dance-tubingen-ecstatic-experience-dance-food-socia-4/</guid>
+      <description>So, 03. Mai | 10:30 · Tanzschule Salsamara Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QI0q5TwqRPGXSAI07nsm_img5047.JPG?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QI0q5TwqRPGXSAI07nsm_img5047.JPG?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 03 May 2026 10:30:00 +0100</pubDate>
     </item>
     <item>
       <title>DschungelGlas - Workshop</title>
