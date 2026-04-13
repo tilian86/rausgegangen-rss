@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Mon, 13 Apr 2026 13:50:31 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 19:19:51 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Poetry Slam Tübingen: Texte, die die Welt erobern - Dichterwettstreit deluxe mit Elias Raatz &amp; Gästen</title>
@@ -177,6 +177,24 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/ikrsxzzme073.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/ikrsxzzme073.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Wed, 29 Apr 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>LARS EIDINGER LIVE: Gedichte von Thomas Brasch</title>
+      <link>https://rausgegangen.de/events/lars-eidinger-live-gedichte-von-thomas-brasch-0/</link>
+      <guid>https://rausgegangen.de/events/lars-eidinger-live-gedichte-von-thomas-brasch-0/</guid>
+      <description>Fr, 01. Mai | 20:00 · Kino Museum</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/CVRS589ITDmXIWoVaDnE_mobiler-banner-website-4.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/CVRS589ITDmXIWoVaDnE_mobiler-banner-website-4.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 01 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Lars Eidinger: Anti-Disco</title>
+      <link>https://rausgegangen.de/events/lars-eidinger-anti-disco-1/</link>
+      <guid>https://rausgegangen.de/events/lars-eidinger-anti-disco-1/</guid>
+      <description>Fr, 01. Mai | 22:30 · Kino Museum</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/8rWYlswRnKN6jkvRCaxl_mediamedia408836dc-164e-4790-9037-097589d47bcb16x91024.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/8rWYlswRnKN6jkvRCaxl_mediamedia408836dc-164e-4790-9037-097589d47bcb16x91024.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 01 May 2026 22:30:00 +0100</pubDate>
     </item>
     <item>
       <title>Kleine Große Musik.</title>
@@ -708,6 +726,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vNUJKBGQNqZueXMsM1vz_ocean26v12mediahub1920-x-1080.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vNUJKBGQNqZueXMsM1vz_ocean26v12mediahub1920-x-1080.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 13 Apr 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Premiere mit Gast: Allegro Pastell</title>
+      <link>https://rausgegangen.de/events/premiere-mit-gast-allegro-pastell-0/</link>
+      <guid>https://rausgegangen.de/events/premiere-mit-gast-allegro-pastell-0/</guid>
+      <description>So, 19. Apr | 16:00 · Kino Museum</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/f1w0qZTIQoMwNd0a3yGw_mobiler-banner-website-6.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/f1w0qZTIQoMwNd0a3yGw_mobiler-banner-website-6.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 19 Apr 2026 16:00:00 +0100</pubDate>
     </item>
     <item>
       <title>CINELATINO 2026</title>
