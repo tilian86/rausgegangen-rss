@@ -5,17 +5,8 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Mon, 13 Apr 2026 03:25:47 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 08:11:37 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Int. Ocean Film Tour 2026</title>
-      <link>https://rausgegangen.de/events/int-ocean-film-tour-2026-88/</link>
-      <guid>https://rausgegangen.de/events/int-ocean-film-tour-2026-88/</guid>
-      <description>Heute, 13. Apr | 20:00 · Museum Kino</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vNUJKBGQNqZueXMsM1vz_ocean26v12mediahub1920-x-1080.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vNUJKBGQNqZueXMsM1vz_ocean26v12mediahub1920-x-1080.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Mon, 13 Apr 2026 20:00:00 +0100</pubDate>
-    </item>
     <item>
       <title>Poetry Slam Tübingen: Texte, die die Welt erobern - Dichterwettstreit deluxe mit Elias Raatz &amp; Gästen</title>
       <link>https://rausgegangen.de/events/poetry-slam-tubingen-texte-die-die-welt-erobern-dichterwetts-26/</link>
@@ -708,6 +699,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ebjys3cFQYi8v8mSXJ8n_250207tigers-tuebingen-vs-eisbaeren-bremerhaven2025dennis-duddekfinal-68.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ebjys3cFQYi8v8mSXJ8n_250207tigers-tuebingen-vs-eisbaeren-bremerhaven2025dennis-duddekfinal-68.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 02 May 2026 19:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Int. Ocean Film Tour 2026</title>
+      <link>https://rausgegangen.de/events/int-ocean-film-tour-2026-88/</link>
+      <guid>https://rausgegangen.de/events/int-ocean-film-tour-2026-88/</guid>
+      <description>Heute, 13. Apr | 20:00 · Museum Kino</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vNUJKBGQNqZueXMsM1vz_ocean26v12mediahub1920-x-1080.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vNUJKBGQNqZueXMsM1vz_ocean26v12mediahub1920-x-1080.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Mon, 13 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>CINELATINO 2026</title>
