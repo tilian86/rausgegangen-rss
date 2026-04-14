@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Tue, 14 Apr 2026 13:56:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 19:23:30 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tour der guten Hoffnung (Verlängerung)</title>
@@ -123,6 +123,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/kvfkh1sbgeu8.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/kvfkh1sbgeu8.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Thu, 16 Apr 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Kammerchor Vokalkunst: Himmelskörper</title>
+      <link>https://rausgegangen.de/events/kammerchor-vokalkunst-himmelskorper-0/</link>
+      <guid>https://rausgegangen.de/events/kammerchor-vokalkunst-himmelskorper-0/</guid>
+      <description>Sa, 18. Apr | 19:00 · Marc-Kemmler-Saal Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/gl1ze83MR9yFUfsMoxN9_2026-03-21tkelevatortestturmrottweilkammerchorvokalkunsttubingenv10-1.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/gl1ze83MR9yFUfsMoxN9_2026-03-21tkelevatortestturmrottweilkammerchorvokalkunsttubingenv10-1.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 18 Apr 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>anders</title>
