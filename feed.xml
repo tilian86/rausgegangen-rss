@@ -5,17 +5,8 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Tue, 14 Apr 2026 02:57:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 07:55:05 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Poetry Slam Tübingen: Texte, die die Welt erobern - Dichterwettstreit deluxe mit Elias Raatz &amp; Gästen</title>
-      <link>https://rausgegangen.de/events/poetry-slam-tubingen-texte-die-die-welt-erobern-dichterwetts-26/</link>
-      <guid>https://rausgegangen.de/events/poetry-slam-tubingen-texte-die-die-welt-erobern-dichterwetts-26/</guid>
-      <description>Heute, 14. Apr | 20:00 · Kino Museum</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vmYSzy3uQSDqebQPdrXc_best-of-poetry-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vmYSzy3uQSDqebQPdrXc_best-of-poetry-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Tue, 14 Apr 2026 20:00:00 +0100</pubDate>
-    </item>
     <item>
       <title>Tour der guten Hoffnung (Verlängerung)</title>
       <link>https://rausgegangen.de/events/tour-der-guten-hoffnung-verlangerung-0/</link>
@@ -42,6 +33,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/DnNV9V4S5S08PRJrDDJT_comedy-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/DnNV9V4S5S08PRJrDDJT_comedy-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Tue, 12 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Poetry Slam Tübingen: Texte, die die Welt erobern - Dichterwettstreit deluxe mit Elias Raatz &amp; Gästen</title>
+      <link>https://rausgegangen.de/events/poetry-slam-tubingen-texte-die-die-welt-erobern-dichterwetts-5/</link>
+      <guid>https://rausgegangen.de/events/poetry-slam-tubingen-texte-die-die-welt-erobern-dichterwetts-5/</guid>
+      <description>Di, 09. Jun | 20:00 · Kino Museum</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vmYSzy3uQSDqebQPdrXc_best-of-poetry-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vmYSzy3uQSDqebQPdrXc_best-of-poetry-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 09 Jun 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Black Sea Dahu | Everything Tour</title>
@@ -233,6 +233,15 @@
       <pubDate>Sun, 10 May 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>KING BUFFALO</title>
+      <link>https://rausgegangen.de/events/king-buffalo-4/</link>
+      <guid>https://rausgegangen.de/events/king-buffalo-4/</guid>
+      <description>Mi, 13. Mai | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/0dzmm0hc2pis.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/0dzmm0hc2pis.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 13 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>LADY R &amp; THE PAULINETTES</title>
       <link>https://rausgegangen.de/events/lady-r-the-paulinettes-1/</link>
       <guid>https://rausgegangen.de/events/lady-r-the-paulinettes-1/</guid>
@@ -341,6 +350,15 @@
       <pubDate>Fri, 22 May 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>WENN DIE MUSIK DER LIEBE NAHRUNG IST Ein poetisch-musikalischer Abend</title>
+      <link>https://rausgegangen.de/events/wenn-die-musik-der-liebe-nahrung-ist-ein-poetisch-musikalisc-0/</link>
+      <guid>https://rausgegangen.de/events/wenn-die-musik-der-liebe-nahrung-ist-ein-poetisch-musikalisc-0/</guid>
+      <description>So, 31. Mai | 18:00 · Tanne Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/50nt8epo4rzv.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/50nt8epo4rzv.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 31 May 2026 18:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Die Räuber von Friedrich Schiller GASTSPIEL</title>
       <link>https://rausgegangen.de/events/die-rauber-von-friedrich-schiller-gastspiel-0/</link>
       <guid>https://rausgegangen.de/events/die-rauber-von-friedrich-schiller-gastspiel-0/</guid>
@@ -366,6 +384,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5ahofh00kwi6.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5ahofh00kwi6.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 12 Dec 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Poetry Slam Tübingen: Texte, die die Welt erobern - Dichterwettstreit deluxe mit Elias Raatz &amp; Gästen</title>
+      <link>https://rausgegangen.de/events/poetry-slam-tubingen-texte-die-die-welt-erobern-dichterwetts-26/</link>
+      <guid>https://rausgegangen.de/events/poetry-slam-tubingen-texte-die-die-welt-erobern-dichterwetts-26/</guid>
+      <description>Heute, 14. Apr | 20:00 · Kino Museum</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vmYSzy3uQSDqebQPdrXc_best-of-poetry-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vmYSzy3uQSDqebQPdrXc_best-of-poetry-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 14 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Liedermacher FALK "Unverschämt" (Musikkabarett)</title>
@@ -413,6 +440,15 @@
       <pubDate>Sat, 03 Oct 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>FLORIAN SCHROEDER</title>
+      <link>https://rausgegangen.de/events/florian-schroeder-71/</link>
+      <guid>https://rausgegangen.de/events/florian-schroeder-71/</guid>
+      <description>So, 25. Okt | 19:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/doa5y0jf01ge.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/doa5y0jf01ge.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 25 Oct 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Katja Berlin</title>
       <link>https://rausgegangen.de/events/katja-berlin-13/</link>
       <guid>https://rausgegangen.de/events/katja-berlin-13/</guid>
@@ -456,6 +492,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mvvitjwzqj8z.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mvvitjwzqj8z.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 27 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Die neue Schwoba Komede</title>
+      <link>https://rausgegangen.de/events/die-neue-schwoba-komede-1/</link>
+      <guid>https://rausgegangen.de/events/die-neue-schwoba-komede-1/</guid>
+      <description>Fr, 12. Feb | 19:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/qfdd7ufqzt96.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/qfdd7ufqzt96.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 12 Feb 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Evolution - Paläontologische Sammlung</title>
