@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Tue, 14 Apr 2026 07:55:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 13:56:43 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tour der guten Hoffnung (Verlängerung)</title>
@@ -636,6 +636,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/VoLAeNOORHKv5ne3lk65_tdf5rausgegangen2745x420.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/VoLAeNOORHKv5ne3lk65_tdf5rausgegangen2745x420.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 15 May 2026 13:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Stefan Verra | Konfliktlöser Körpersprache</title>
+      <link>https://rausgegangen.de/events/stefan-verra-konfliktloser-korpersprache-0/</link>
+      <guid>https://rausgegangen.de/events/stefan-verra-konfliktloser-korpersprache-0/</guid>
+      <description>Sa, 23. Jan | 20:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/sbm6mct5habf.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/sbm6mct5habf.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 23 Jan 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Offline Café 📵</title>
