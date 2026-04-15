@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Wed, 15 Apr 2026 02:55:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 07:55:41 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tour der guten Hoffnung (Verlängerung)</title>
@@ -350,6 +350,15 @@
       <pubDate>Fri, 01 May 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>WENN DIE MUSIK DER LIEBE NAHRUNG IST Ein poetisch-musikalischer Abend</title>
+      <link>https://rausgegangen.de/events/wenn-die-musik-der-liebe-nahrung-ist-ein-poetisch-musikalisc-3/</link>
+      <guid>https://rausgegangen.de/events/wenn-die-musik-der-liebe-nahrung-ist-ein-poetisch-musikalisc-3/</guid>
+      <description>So, 17. Mai | 18:00 · Tanne Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/50nt8epo4rzv.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/50nt8epo4rzv.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 17 May 2026 18:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Remstal-Rebell! *Nachgespräch mit Boris Palmer*</title>
       <link>https://rausgegangen.de/events/remstal-rebell-nachgesprach-mit-boris-palmer-0/</link>
       <guid>https://rausgegangen.de/events/remstal-rebell-nachgesprach-mit-boris-palmer-0/</guid>
@@ -357,15 +366,6 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/19alj98ecxee.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/19alj98ecxee.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 22 May 2026 20:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>WENN DIE MUSIK DER LIEBE NAHRUNG IST Ein poetisch-musikalischer Abend</title>
-      <link>https://rausgegangen.de/events/wenn-die-musik-der-liebe-nahrung-ist-ein-poetisch-musikalisc-0/</link>
-      <guid>https://rausgegangen.de/events/wenn-die-musik-der-liebe-nahrung-ist-ein-poetisch-musikalisc-0/</guid>
-      <description>So, 31. Mai | 18:00 · Tanne Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/50nt8epo4rzv.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/50nt8epo4rzv.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 31 May 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Die Räuber von Friedrich Schiller GASTSPIEL</title>
@@ -402,6 +402,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ybV42GGWTmQRlmyTy1ww_falk-pressefoto-querformat-unverschamt-fotograf-marvin-ruppert.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ybV42GGWTmQRlmyTy1ww_falk-pressefoto-querformat-unverschamt-fotograf-marvin-ruppert.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 18 Apr 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>FASHION &amp; ART NIGHT Kunsthalle Tübingen</title>
+      <link>https://rausgegangen.de/events/fashion-art-night-kunsthalle-tubingen-0/</link>
+      <guid>https://rausgegangen.de/events/fashion-art-night-kunsthalle-tubingen-0/</guid>
+      <description>Do, 23. Apr | 19:00 · Kunsthalle Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/IXkJSDT86Wz6v8YVjABm_fashion-art-night-tubingen-flyer-front.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/IXkJSDT86Wz6v8YVjABm_fashion-art-night-tubingen-flyer-front.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 23 Apr 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>AcaBellas</title>
@@ -467,6 +476,15 @@
       <pubDate>Tue, 10 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>ESCAPE ROOMS - Alles im grünen Bereich</title>
+      <link>https://rausgegangen.de/events/escape-rooms-alles-im-grunen-bereich-0/</link>
+      <guid>https://rausgegangen.de/events/escape-rooms-alles-im-grunen-bereich-0/</guid>
+      <description>Do, 12. Nov | 20:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/z9rer6enic29.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/z9rer6enic29.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 12 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Ledig 3.0</title>
       <link>https://rausgegangen.de/events/ledig-30-0/</link>
       <guid>https://rausgegangen.de/events/ledig-30-0/</guid>
@@ -492,6 +510,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mvvitjwzqj8z.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mvvitjwzqj8z.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 27 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Der Tod | Tödliche Weihnacht</title>
+      <link>https://rausgegangen.de/events/der-tod-todliche-weihnacht-1/</link>
+      <guid>https://rausgegangen.de/events/der-tod-todliche-weihnacht-1/</guid>
+      <description>Sa, 19. Dez | 20:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jv2ykcpcv48e.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jv2ykcpcv48e.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 19 Dec 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Die neue Schwoba Komede</title>
