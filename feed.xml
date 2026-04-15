@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Wed, 15 Apr 2026 13:49:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 19:24:37 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tour der guten Hoffnung (Verlängerung)</title>
@@ -576,21 +576,21 @@
     </item>
     <item>
       <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
-      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-370/</link>
-      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-370/</guid>
-      <description>Heute, 15. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-371/</link>
+      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-371/</guid>
+      <description>Morgen, 16. Apr | 11:00 · Stadtmuseum Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 15 Apr 2026 11:00:00 +0100</pubDate>
+      <pubDate>Thu, 16 Apr 2026 11:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Room of Memories - Dauerausstellung</title>
-      <link>https://rausgegangen.de/events/room-of-memories-350/</link>
-      <guid>https://rausgegangen.de/events/room-of-memories-350/</guid>
-      <description>Heute, 15. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <link>https://rausgegangen.de/events/room-of-memories-351/</link>
+      <guid>https://rausgegangen.de/events/room-of-memories-351/</guid>
+      <description>Morgen, 16. Apr | 11:00 · Stadtmuseum Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 15 Apr 2026 11:00:00 +0100</pubDate>
+      <pubDate>Thu, 16 Apr 2026 11:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Turm in Flammen</title>
@@ -762,6 +762,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/V4IQYZuoTN6V2kUdomIR_desierto-vortrag.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/V4IQYZuoTN6V2kUdomIR_desierto-vortrag.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 26 Apr 2026 16:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Kulturnacht Tübingen 2026</title>
+      <link>https://rausgegangen.de/events/kulturnacht-tubingen-2026-0/</link>
+      <guid>https://rausgegangen.de/events/kulturnacht-tubingen-2026-0/</guid>
+      <description>Sa, 09. Mai | 18:00 · Altstadt Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/GAR3M0JlQJaHGZvVcwdH_10-kulturnacht-002.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/GAR3M0JlQJaHGZvVcwdH_10-kulturnacht-002.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 09 May 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
       <title>LUCKY CHOPS (Brass Band, NYC)</title>
