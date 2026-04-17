@@ -5,17 +5,8 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Fri, 17 Apr 2026 02:57:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 07:56:38 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tigers Tübingen vs. EPG Baskets Koblenz</title>
-      <link>https://rausgegangen.de/events/tigers-tubingen-vs-epg-baskets-koblenz-0/</link>
-      <guid>https://rausgegangen.de/events/tigers-tubingen-vs-epg-baskets-koblenz-0/</guid>
-      <description>Morgen, 18. Apr | 19:30 · Paul Horn-Arena</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/6fxIonwTLmLTGPSBKzyC_250209tigers-tuebingen-vs-epg-guardians-koblenz2025dennis-duddekfinal-127.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/6fxIonwTLmLTGPSBKzyC_250209tigers-tuebingen-vs-epg-guardians-koblenz2025dennis-duddekfinal-127.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 18 Apr 2026 19:30:00 +0100</pubDate>
-    </item>
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
       <link>https://rausgegangen.de/events/impro-slam-tubingen-powerpoint-karaoke-schabernack-das-genia-31/</link>
@@ -368,6 +359,15 @@
       <pubDate>Sun, 31 May 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>TEMPTATION [Eine Platonov Collage]</title>
+      <link>https://rausgegangen.de/events/temptation-eine-platonov-collage-0/</link>
+      <guid>https://rausgegangen.de/events/temptation-eine-platonov-collage-0/</guid>
+      <description>Sa, 20. Jun | 20:00 · Tanne Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/ujb0wejvo6y9.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/ujb0wejvo6y9.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 20 Jun 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>"DASS EINER DEM ANDEREN SEINE EINSAMKEIT BEWACHE"</title>
       <link>https://rausgegangen.de/events/dass-einer-dem-anderen-seine-einsamkeit-bewache-0/</link>
       <guid>https://rausgegangen.de/events/dass-einer-dem-anderen-seine-einsamkeit-bewache-0/</guid>
@@ -519,6 +519,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jv2ykcpcv48e.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jv2ykcpcv48e.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 19 Dec 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>ERWIN PELZIG</title>
+      <link>https://rausgegangen.de/events/erwin-pelzig-5/</link>
+      <guid>https://rausgegangen.de/events/erwin-pelzig-5/</guid>
+      <description>Do, 28. Jan | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/2ixyhagtjj9z.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/2ixyhagtjj9z.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 28 Jan 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Die neue Schwoba Komede</title>
@@ -737,6 +746,15 @@
       <pubDate>Fri, 08 May 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Workshop &amp; Brunch | "Bloom with us" - Muttertagsspecial</title>
+      <link>https://rausgegangen.de/events/bloom-with-us-workshop-brunch-muttertagsspecial-0/</link>
+      <guid>https://rausgegangen.de/events/bloom-with-us-workshop-brunch-muttertagsspecial-0/</guid>
+      <description>So, 10. Mai | 10:00 · Altes Waschhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//static.rausgegangen.de/static/rausgegangen/images/rausgegangen_default.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//static.rausgegangen.de/static/rausgegangen/images/rausgegangen_default.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 10 May 2026 10:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>DschungelGlas - Workshop</title>
       <link>https://rausgegangen.de/events/dschungelglas-workshop-4/</link>
       <guid>https://rausgegangen.de/events/dschungelglas-workshop-4/</guid>
@@ -798,6 +816,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/09ya8atnelk0.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/09ya8atnelk0.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 26 Jun 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Tigers Tübingen vs. EPG Baskets Koblenz</title>
+      <link>https://rausgegangen.de/events/tigers-tubingen-vs-epg-baskets-koblenz-0/</link>
+      <guid>https://rausgegangen.de/events/tigers-tubingen-vs-epg-baskets-koblenz-0/</guid>
+      <description>Morgen, 18. Apr | 19:30 · Paul Horn-Arena</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/6fxIonwTLmLTGPSBKzyC_250209tigers-tuebingen-vs-epg-guardians-koblenz2025dennis-duddekfinal-127.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/6fxIonwTLmLTGPSBKzyC_250209tigers-tuebingen-vs-epg-guardians-koblenz2025dennis-duddekfinal-127.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 18 Apr 2026 19:30:00 +0100</pubDate>
     </item>
     <item>
       <title>Tigers Tübingen vs. Eisbären Bremerhaven</title>
