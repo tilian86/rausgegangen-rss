@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Sat, 18 Apr 2026 18:58:44 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2026 03:23:45 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
@@ -89,19 +89,10 @@
       <pubDate>Fri, 08 May 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Kammerchor Vokalkunst: Himmelskörper</title>
-      <link>https://rausgegangen.de/events/kammerchor-vokalkunst-himmelskorper-0/</link>
-      <guid>https://rausgegangen.de/events/kammerchor-vokalkunst-himmelskorper-0/</guid>
-      <description>Heute, 18. Apr | 19:00 · Marc-Kemmler-Saal Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/gl1ze83MR9yFUfsMoxN9_2026-03-21tkelevatortestturmrottweilkammerchorvokalkunsttubingenv10-1.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/gl1ze83MR9yFUfsMoxN9_2026-03-21tkelevatortestturmrottweilkammerchorvokalkunsttubingenv10-1.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 18 Apr 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>anders</title>
       <link>https://rausgegangen.de/events/anders-456/</link>
       <guid>https://rausgegangen.de/events/anders-456/</guid>
-      <description>Morgen, 19. Apr | 19:00 · Sudhaus</description>
+      <description>Heute, 19. Apr | 19:00 · Sudhaus</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/l11ij45mi0q3.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/l11ij45mi0q3.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 19 Apr 2026 19:00:00 +0100</pubDate>
@@ -110,7 +101,7 @@
       <title>AUS VOLLER KEHLE...für die Seele!</title>
       <link>https://rausgegangen.de/events/aus-voller-kehlefur-die-seele-4/</link>
       <guid>https://rausgegangen.de/events/aus-voller-kehlefur-die-seele-4/</guid>
-      <description>Mo, 20. Apr | 20:00 · Sudhaus</description>
+      <description>Morgen, 20. Apr | 20:00 · Sudhaus</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/hklqz7ze767r.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/hklqz7ze767r.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 20 Apr 2026 20:00:00 +0100</pubDate>
@@ -315,12 +306,12 @@
     </item>
     <item>
       <title>OH GOTT!</title>
-      <link>https://rausgegangen.de/events/oh-gott-2/</link>
-      <guid>https://rausgegangen.de/events/oh-gott-2/</guid>
-      <description>Heute, 18. Apr | 20:00 · Tanne Tübingen</description>
+      <link>https://rausgegangen.de/events/oh-gott-3/</link>
+      <guid>https://rausgegangen.de/events/oh-gott-3/</guid>
+      <description>Do, 23. Apr | 20:00 · Tanne Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/cpvth367klic.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/cpvth367klic.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 18 Apr 2026 20:00:00 +0100</pubDate>
+      <pubDate>Thu, 23 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>DER STURM von William Shakespeare</title>
@@ -393,15 +384,6 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5ahofh00kwi6.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5ahofh00kwi6.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 12 Dec 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Liedermacher FALK "Unverschämt" (Musikkabarett)</title>
-      <link>https://rausgegangen.de/events/liedermacher-falk-unverschamt-musikkabarett-7/</link>
-      <guid>https://rausgegangen.de/events/liedermacher-falk-unverschamt-musikkabarett-7/</guid>
-      <description>Heute, 18. Apr | 20:00 · Sudhaus</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ybV42GGWTmQRlmyTy1ww_falk-pressefoto-querformat-unverschamt-fotograf-marvin-ruppert.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ybV42GGWTmQRlmyTy1ww_falk-pressefoto-querformat-unverschamt-fotograf-marvin-ruppert.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 18 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>FASHION &amp; ART NIGHT Kunsthalle Tübingen</title>
@@ -566,19 +548,10 @@
       <pubDate>Fri, 17 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Turm in Flammen</title>
-      <link>https://rausgegangen.de/events/turm-in-flammen-176/</link>
-      <guid>https://rausgegangen.de/events/turm-in-flammen-176/</guid>
-      <description>Heute, 18. Apr | 11:00 · Hölderlinturm</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/piVG9UIHSUKl9AiukEB9_photo-1517594422361-5eeb8ae275a9?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/piVG9UIHSUKl9AiukEB9_photo-1517594422361-5eeb8ae275a9?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 18 Apr 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
       <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-374/</link>
       <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-374/</guid>
-      <description>Morgen, 19. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <description>Heute, 19. Apr | 11:00 · Stadtmuseum Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 19 Apr 2026 11:00:00 +0100</pubDate>
@@ -587,16 +560,25 @@
       <title>Room of Memories - Dauerausstellung</title>
       <link>https://rausgegangen.de/events/room-of-memories-354/</link>
       <guid>https://rausgegangen.de/events/room-of-memories-354/</guid>
-      <description>Morgen, 19. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <description>Heute, 19. Apr | 11:00 · Stadtmuseum Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 19 Apr 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Turm in Flammen</title>
+      <link>https://rausgegangen.de/events/turm-in-flammen-177/</link>
+      <guid>https://rausgegangen.de/events/turm-in-flammen-177/</guid>
+      <description>Heute, 19. Apr | 11:00 · Hölderlinturm</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/piVG9UIHSUKl9AiukEB9_photo-1517594422361-5eeb8ae275a9?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/piVG9UIHSUKl9AiukEB9_photo-1517594422361-5eeb8ae275a9?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 19 Apr 2026 11:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Evolution - Paläontologische Sammlung</title>
       <link>https://rausgegangen.de/events/evolution-palaontologische-sammlung-373/</link>
       <guid>https://rausgegangen.de/events/evolution-palaontologische-sammlung-373/</guid>
-      <description>Mo, 20. Apr | 09:00 · Museum der Universität Tübingen (MUT)</description>
+      <description>Morgen, 20. Apr | 09:00 · Museum der Universität Tübingen (MUT)</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/UxjJ81jxSFSjOOQN224w_photo-1711075741270-b71059da26c5?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/UxjJ81jxSFSjOOQN224w_photo-1711075741270-b71059da26c5?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 20 Apr 2026 09:00:00 +0100</pubDate>
@@ -605,7 +587,7 @@
       <title>Götter und Gräber - Ägyptische Sammlung</title>
       <link>https://rausgegangen.de/events/gotter-und-graber-agyptische-sammlung-373/</link>
       <guid>https://rausgegangen.de/events/gotter-und-graber-agyptische-sammlung-373/</guid>
-      <description>Mo, 20. Apr | 09:00 · Museum der Universität Tübingen (MUT)</description>
+      <description>Morgen, 20. Apr | 09:00 · Museum der Universität Tübingen (MUT)</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/NEEzmTFT6aJ7JrCGUPea_photo-1654612514062-7cc235e7b68c?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/NEEzmTFT6aJ7JrCGUPea_photo-1654612514062-7cc235e7b68c?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 20 Apr 2026 09:00:00 +0100</pubDate>
@@ -614,7 +596,7 @@
       <title>Kopfsache - Psychologische Sammlung</title>
       <link>https://rausgegangen.de/events/kopfsache-psychologische-sammlung-373/</link>
       <guid>https://rausgegangen.de/events/kopfsache-psychologische-sammlung-373/</guid>
-      <description>Mo, 20. Apr | 09:00 · Museum der Universität Tübingen (MUT)</description>
+      <description>Morgen, 20. Apr | 09:00 · Museum der Universität Tübingen (MUT)</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/XqUBbR7FSZiKqQo6eidk_photo-1573511860302-28c524319d2a?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/XqUBbR7FSZiKqQo6eidk_photo-1573511860302-28c524319d2a?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 20 Apr 2026 09:00:00 +0100</pubDate>
@@ -623,7 +605,7 @@
       <title>Pflanzenvielfalt - Botanischer Garten mit Sammlungen</title>
       <link>https://rausgegangen.de/events/pflanzenvielfalt-botanischer-garten-mit-sammlungen-373/</link>
       <guid>https://rausgegangen.de/events/pflanzenvielfalt-botanischer-garten-mit-sammlungen-373/</guid>
-      <description>Mo, 20. Apr | 09:00 · Museum der Universität Tübingen (MUT)</description>
+      <description>Morgen, 20. Apr | 09:00 · Museum der Universität Tübingen (MUT)</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/AdPK4w1YRqKRdEmnvhpM_photo-1558889485-5930e200a2a1?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/AdPK4w1YRqKRdEmnvhpM_photo-1558889485-5930e200a2a1?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 20 Apr 2026 09:00:00 +0100</pubDate>
@@ -632,7 +614,7 @@
       <title>Weltkulturen - Ethnologische Sammlung</title>
       <link>https://rausgegangen.de/events/weltkulturen-ethnologische-sammlung-355/</link>
       <guid>https://rausgegangen.de/events/weltkulturen-ethnologische-sammlung-355/</guid>
-      <description>Mo, 20. Apr | 09:00 · Museum der Universität Tübingen (MUT)</description>
+      <description>Morgen, 20. Apr | 09:00 · Museum der Universität Tübingen (MUT)</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QbhZoYfhQnG7DVr3XJ3H_photo-1479142506502-19b3a3b7ff33?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QbhZoYfhQnG7DVr3XJ3H_photo-1479142506502-19b3a3b7ff33?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 20 Apr 2026 09:00:00 +0100</pubDate>
@@ -720,27 +702,27 @@
     </item>
     <item>
       <title>Stadtrallye Tübingen | Die Verleger Erpressung | Tübingens Abenteuertour</title>
-      <link>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-439/</link>
-      <guid>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-439/</guid>
-      <description>Heute, 18. Apr | 07:00 · Eberhardsbrücke</description>
+      <link>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-440/</link>
+      <guid>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-440/</guid>
+      <description>Heute, 19. Apr | 07:00 · Eberhardsbrücke</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 18 Apr 2026 07:00:00 +0100</pubDate>
+      <pubDate>Sun, 19 Apr 2026 07:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Krimi-Trail Tübingen: Folgenschwere Erkenntnis</title>
-      <link>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-193/</link>
-      <guid>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-193/</guid>
-      <description>Heute, 18. Apr | 12:00 · Krimi-Trail Tübingen</description>
+      <link>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-194/</link>
+      <guid>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-194/</guid>
+      <description>Heute, 19. Apr | 12:00 · Krimi-Trail Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/IfU8y1AuRXitWG5aOyou_tubingen-trail.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/IfU8y1AuRXitWG5aOyou_tubingen-trail.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 18 Apr 2026 12:00:00 +0100</pubDate>
+      <pubDate>Sun, 19 Apr 2026 12:00:00 +0100</pubDate>
     </item>
     <item>
       <title>PubQuizz</title>
       <link>https://rausgegangen.de/events/pubquizz-76/</link>
       <guid>https://rausgegangen.de/events/pubquizz-76/</guid>
-      <description>Mo, 20. Apr | 19:00 · Kuckuck e.V.</description>
+      <description>Morgen, 20. Apr | 19:00 · Kuckuck e.V.</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/RHPiMs4QL6cV8fd8r3Zw_photo-1528100315649-ebfe49f792a6?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/RHPiMs4QL6cV8fd8r3Zw_photo-1528100315649-ebfe49f792a6?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 20 Apr 2026 19:00:00 +0100</pubDate>
@@ -845,15 +827,6 @@
       <pubDate>Fri, 26 Jun 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Tigers Tübingen vs. EPG Baskets Koblenz</title>
-      <link>https://rausgegangen.de/events/tigers-tubingen-vs-epg-baskets-koblenz-0/</link>
-      <guid>https://rausgegangen.de/events/tigers-tubingen-vs-epg-baskets-koblenz-0/</guid>
-      <description>Heute, 18. Apr | 19:30 · Paul Horn-Arena</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/6fxIonwTLmLTGPSBKzyC_250209tigers-tuebingen-vs-epg-guardians-koblenz2025dennis-duddekfinal-127.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/6fxIonwTLmLTGPSBKzyC_250209tigers-tuebingen-vs-epg-guardians-koblenz2025dennis-duddekfinal-127.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 18 Apr 2026 19:30:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Tigers Tübingen vs. Eisbären Bremerhaven</title>
       <link>https://rausgegangen.de/events/tigers-tubingen-vs-eisbaren-bremerhaven-0/</link>
       <guid>https://rausgegangen.de/events/tigers-tubingen-vs-eisbaren-bremerhaven-0/</guid>
@@ -866,7 +839,7 @@
       <title>Premiere mit Gast: Allegro Pastell</title>
       <link>https://rausgegangen.de/events/premiere-mit-gast-allegro-pastell-0/</link>
       <guid>https://rausgegangen.de/events/premiere-mit-gast-allegro-pastell-0/</guid>
-      <description>Morgen, 19. Apr | 16:00 · Kino Museum</description>
+      <description>Heute, 19. Apr | 16:00 · Kino Museum</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/f1w0qZTIQoMwNd0a3yGw_mobiler-banner-website-6.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/f1w0qZTIQoMwNd0a3yGw_mobiler-banner-website-6.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 19 Apr 2026 16:00:00 +0100</pubDate>
@@ -911,7 +884,7 @@
       <title>Offenes Atelier für Kinder</title>
       <link>https://rausgegangen.de/events/offenes-atelier-fur-kinder-81/</link>
       <guid>https://rausgegangen.de/events/offenes-atelier-fur-kinder-81/</guid>
-      <description>Morgen, 19. Apr | 14:00 · Kunsthalle Tübingen</description>
+      <description>Heute, 19. Apr | 14:00 · Kunsthalle Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/R4MokdnqTc2oI7YSRt3x_photo-1605627079912-97c3810a11a4?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/R4MokdnqTc2oI7YSRt3x_photo-1605627079912-97c3810a11a4?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 19 Apr 2026 14:00:00 +0100</pubDate>
