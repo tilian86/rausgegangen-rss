@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Sun, 19 Apr 2026 13:11:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2026 18:58:27 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
@@ -87,15 +87,6 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/T0wy0jzgR9iZE7JcQOYS_titelbild-eventbrite-neu.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/T0wy0jzgR9iZE7JcQOYS_titelbild-eventbrite-neu.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 08 May 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>anders</title>
-      <link>https://rausgegangen.de/events/anders-456/</link>
-      <guid>https://rausgegangen.de/events/anders-456/</guid>
-      <description>Heute, 19. Apr | 19:00 · Sudhaus</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/l11ij45mi0q3.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/l11ij45mi0q3.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 19 Apr 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>AUS VOLLER KEHLE...für die Seele!</title>
@@ -557,24 +548,6 @@
       <pubDate>Fri, 17 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
-      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-374/</link>
-      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-374/</guid>
-      <description>Heute, 19. Apr | 11:00 · Stadtmuseum Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 19 Apr 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Room of Memories - Dauerausstellung</title>
-      <link>https://rausgegangen.de/events/room-of-memories-354/</link>
-      <guid>https://rausgegangen.de/events/room-of-memories-354/</guid>
-      <description>Heute, 19. Apr | 11:00 · Stadtmuseum Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 19 Apr 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Turm in Flammen</title>
       <link>https://rausgegangen.de/events/turm-in-flammen-177/</link>
       <guid>https://rausgegangen.de/events/turm-in-flammen-177/</guid>
@@ -627,6 +600,24 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QbhZoYfhQnG7DVr3XJ3H_photo-1479142506502-19b3a3b7ff33?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QbhZoYfhQnG7DVr3XJ3H_photo-1479142506502-19b3a3b7ff33?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 20 Apr 2026 09:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
+      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-375/</link>
+      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-375/</guid>
+      <description>Mi, 22. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 22 Apr 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Room of Memories - Dauerausstellung</title>
+      <link>https://rausgegangen.de/events/room-of-memories-355/</link>
+      <guid>https://rausgegangen.de/events/room-of-memories-355/</guid>
+      <description>Mi, 22. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 22 Apr 2026 11:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Kunstinstallation von Julie Stephen Chheng – 80-Jähriges Jubiläum des ICFA Tübingen</title>
@@ -843,15 +834,6 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ebjys3cFQYi8v8mSXJ8n_250207tigers-tuebingen-vs-eisbaeren-bremerhaven2025dennis-duddekfinal-68.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ebjys3cFQYi8v8mSXJ8n_250207tigers-tuebingen-vs-eisbaeren-bremerhaven2025dennis-duddekfinal-68.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 02 May 2026 19:30:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Premiere mit Gast: Allegro Pastell</title>
-      <link>https://rausgegangen.de/events/premiere-mit-gast-allegro-pastell-0/</link>
-      <guid>https://rausgegangen.de/events/premiere-mit-gast-allegro-pastell-0/</guid>
-      <description>Heute, 19. Apr | 16:00 · Kino Museum</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/f1w0qZTIQoMwNd0a3yGw_mobiler-banner-website-6.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/f1w0qZTIQoMwNd0a3yGw_mobiler-banner-website-6.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 19 Apr 2026 16:00:00 +0100</pubDate>
     </item>
     <item>
       <title>CINELATINO 2026</title>
