@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Sun, 19 Apr 2026 03:23:45 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2026 07:26:06 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
@@ -276,6 +276,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5t51w9d2l67d.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5t51w9d2l67d.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 24 Oct 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>TINGVALL TRIO</title>
+      <link>https://rausgegangen.de/events/tingvall-trio-20/</link>
+      <guid>https://rausgegangen.de/events/tingvall-trio-20/</guid>
+      <description>Sa, 14. Nov | 20:30 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/bjn9bdlv46zf.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/bjn9bdlv46zf.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 14 Nov 2026 20:30:00 +0100</pubDate>
     </item>
     <item>
       <title>Wirtschaftswunder</title>
