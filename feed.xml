@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Thu, 23 Apr 2026 03:19:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 08:03:04 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
@@ -122,6 +122,15 @@
       <description>So, 26. Apr | 18:00 · Sudhaus</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jle9ih0asovk.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jle9ih0asovk.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 26 Apr 2026 18:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Pauleen Renard &amp; Wüste Welle BIG BAND</title>
+      <link>https://rausgegangen.de/events/pauleen-renard-wuste-welle-big-band-1/</link>
+      <guid>https://rausgegangen.de/events/pauleen-renard-wuste-welle-big-band-1/</guid>
+      <description>So, 26. Apr | 18:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/JDwWSOOwR2a3DXsCXZ0M_22e-fw-et-75-ans-36.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/JDwWSOOwR2a3DXsCXZ0M_22e-fw-et-75-ans-36.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 26 Apr 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
@@ -519,6 +528,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/065f99rmo0fx.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/065f99rmo0fx.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 21 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>KAY RAY</title>
+      <link>https://rausgegangen.de/events/kay-ray-37/</link>
+      <guid>https://rausgegangen.de/events/kay-ray-37/</guid>
+      <description>So, 22. Nov | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/7jj4g1wuhs5w.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/7jj4g1wuhs5w.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 22 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Andreas Rebers</title>
