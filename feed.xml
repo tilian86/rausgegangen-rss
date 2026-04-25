@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Sat, 25 Apr 2026 02:51:07 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2026 07:25:02 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
@@ -438,6 +438,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/od9cm89vs9r9.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/od9cm89vs9r9.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 15 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Guido Cantz</title>
+      <link>https://rausgegangen.de/events/guido-cantz-21/</link>
+      <guid>https://rausgegangen.de/events/guido-cantz-21/</guid>
+      <description>Sa, 13. Jun | 20:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/h4s7yp6hnas2.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/h4s7yp6hnas2.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 13 Jun 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>COMEDY im GARTEN</title>
