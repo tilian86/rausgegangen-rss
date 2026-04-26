@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Sun, 26 Apr 2026 13:16:17 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2026 19:02:17 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
@@ -611,24 +611,6 @@
       <pubDate>Fri, 17 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
-      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-379/</link>
-      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-379/</guid>
-      <description>Heute, 26. Apr | 11:00 · Stadtmuseum Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 26 Apr 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Room of Memories - Dauerausstellung</title>
-      <link>https://rausgegangen.de/events/room-of-memories-359/</link>
-      <guid>https://rausgegangen.de/events/room-of-memories-359/</guid>
-      <description>Heute, 26. Apr | 11:00 · Stadtmuseum Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 26 Apr 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Turm in Flammen</title>
       <link>https://rausgegangen.de/events/turm-in-flammen-182/</link>
       <guid>https://rausgegangen.de/events/turm-in-flammen-182/</guid>
@@ -681,6 +663,24 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QbhZoYfhQnG7DVr3XJ3H_photo-1479142506502-19b3a3b7ff33?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QbhZoYfhQnG7DVr3XJ3H_photo-1479142506502-19b3a3b7ff33?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 27 Apr 2026 09:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
+      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-380/</link>
+      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-380/</guid>
+      <description>Mi, 29. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 29 Apr 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Room of Memories - Dauerausstellung</title>
+      <link>https://rausgegangen.de/events/room-of-memories-360/</link>
+      <guid>https://rausgegangen.de/events/room-of-memories-360/</guid>
+      <description>Mi, 29. Apr | 11:00 · Stadtmuseum Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 29 Apr 2026 11:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Impro Slam: PowerPoint-Karaoke</title>
@@ -881,24 +881,6 @@
       <pubDate>Sat, 27 Jun 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>CineSalón: Matinée</title>
-      <link>https://rausgegangen.de/events/cinesalon-matinee-0/</link>
-      <guid>https://rausgegangen.de/events/cinesalon-matinee-0/</guid>
-      <description>Heute, 26. Apr | 11:30 · Kino Atelier &amp; Café Haag</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/3tqJDnmCSLiBSjeWlu8A_matinee.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/3tqJDnmCSLiBSjeWlu8A_matinee.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 26 Apr 2026 11:30:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>COTTON QUEEN in Tübingen</title>
-      <link>https://rausgegangen.de/events/cotton-queen-in-tubingen-2/</link>
-      <guid>https://rausgegangen.de/events/cotton-queen-in-tubingen-2/</guid>
-      <description>Heute, 26. Apr | 12:00 · Kino Atelier &amp; Café Haag</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/6lZCYjweSDysyY9lfQRj_cotton-queen-facebook-banner.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/6lZCYjweSDysyY9lfQRj_cotton-queen-facebook-banner.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 26 Apr 2026 12:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>CINELATINO 2026</title>
       <link>https://rausgegangen.de/events/cinelatino-2026-4/</link>
       <guid>https://rausgegangen.de/events/cinelatino-2026-4/</guid>
@@ -906,6 +888,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ztE7KdQpepLzykPgN9gg_cinelatino-2026.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ztE7KdQpepLzykPgN9gg_cinelatino-2026.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 26 Apr 2026 15:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>COTTON QUEEN in Tübingen</title>
+      <link>https://rausgegangen.de/events/cotton-queen-in-tubingen-3/</link>
+      <guid>https://rausgegangen.de/events/cotton-queen-in-tubingen-3/</guid>
+      <description>Di, 28. Apr | 18:00 · Kino Atelier &amp; Café Haag</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/6lZCYjweSDysyY9lfQRj_cotton-queen-facebook-banner.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/6lZCYjweSDysyY9lfQRj_cotton-queen-facebook-banner.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 28 Apr 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Offenes Atelier für Kinder</title>
