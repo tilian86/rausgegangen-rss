@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Wed, 29 Apr 2026 08:25:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 14:09:41 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tigers Tübingen vs. Eisbären Bremerhaven</title>
@@ -719,15 +719,6 @@
       <pubDate>Tue, 12 May 2026 17:30:00 +0100</pubDate>
     </item>
     <item>
-      <title>Stadtrallye Tübingen | Die Verleger Erpressung | Tübingens Abenteuertour</title>
-      <link>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-450/</link>
-      <guid>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-450/</guid>
-      <description>Heute, 29. Apr | 07:00 · Eberhardsbrücke</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 29 Apr 2026 07:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Krimi-Trail Tübingen: Folgenschwere Erkenntnis</title>
       <link>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-204/</link>
       <guid>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-204/</guid>
@@ -861,6 +852,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/6psmd8suddhx.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/6psmd8suddhx.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 14 Jun 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Stadtrallye Tübingen | Die Verleger Erpressung | Tübingens Abenteuertour</title>
+      <link>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-450/</link>
+      <guid>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-450/</guid>
+      <description>Heute, 29. Apr | 07:00 · Eberhardsbrücke</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 29 Apr 2026 07:00:00 +0100</pubDate>
     </item>
   </channel>
 </rss>
