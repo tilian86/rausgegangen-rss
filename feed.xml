@@ -5,17 +5,8 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Thu, 30 Apr 2026 14:07:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 19:40:02 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tigers Tübingen vs. Eisbären Bremerhaven</title>
-      <link>https://rausgegangen.de/events/tigers-tubingen-vs-eisbaren-bremerhaven-0/</link>
-      <guid>https://rausgegangen.de/events/tigers-tubingen-vs-eisbaren-bremerhaven-0/</guid>
-      <description>Sa, 02. Mai | 19:30 · Paul Horn-Arena</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ebjys3cFQYi8v8mSXJ8n_250207tigers-tuebingen-vs-eisbaeren-bremerhaven2025dennis-duddekfinal-68.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ebjys3cFQYi8v8mSXJ8n_250207tigers-tuebingen-vs-eisbaeren-bremerhaven2025dennis-duddekfinal-68.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 02 May 2026 19:30:00 +0100</pubDate>
-    </item>
     <item>
       <title>Comedy Slam Tübingen: Comedians im Kampf um die Comedy-Krone nach dem Motto "Lachen &amp; Spaß für alle!" (Stand Up, Kabarett, Kleinkunst, Comedy)</title>
       <link>https://rausgegangen.de/events/comedy-slam-tubingen-comedians-im-kampf-um-die-comedy-krone--26/</link>
@@ -789,6 +780,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/cc0jjkuyijfi.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/cc0jjkuyijfi.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 27 Jun 2026 18:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Tigers Tübingen vs. Eisbären Bremerhaven</title>
+      <link>https://rausgegangen.de/events/tigers-tubingen-vs-eisbaren-bremerhaven-0/</link>
+      <guid>https://rausgegangen.de/events/tigers-tubingen-vs-eisbaren-bremerhaven-0/</guid>
+      <description>Sa, 02. Mai | 19:30 · Paul Horn-Arena</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ebjys3cFQYi8v8mSXJ8n_250207tigers-tuebingen-vs-eisbaeren-bremerhaven2025dennis-duddekfinal-68.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ebjys3cFQYi8v8mSXJ8n_250207tigers-tuebingen-vs-eisbaeren-bremerhaven2025dennis-duddekfinal-68.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 02 May 2026 19:30:00 +0100</pubDate>
     </item>
     <item>
       <title>Offenes Atelier für Kinder</title>
