@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Thu, 30 Apr 2026 03:37:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 08:27:54 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tigers Tübingen vs. Eisbären Bremerhaven</title>
@@ -701,15 +701,6 @@
       <pubDate>Tue, 12 May 2026 17:30:00 +0100</pubDate>
     </item>
     <item>
-      <title>Krimi-Trail Tübingen: Folgenschwere Erkenntnis</title>
-      <link>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-205/</link>
-      <guid>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-205/</guid>
-      <description>Heute, 30. Apr | 12:00 · Krimi-Trail Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/IfU8y1AuRXitWG5aOyou_tubingen-trail.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/IfU8y1AuRXitWG5aOyou_tubingen-trail.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Thu, 30 Apr 2026 12:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Ecstatic Dance Tübingen | Ecstatic Experience – DANCE, FOOD, SOCIALIZE</title>
       <link>https://rausgegangen.de/events/ecstatic-dance-tubingen-ecstatic-experience-dance-food-socia-4/</link>
       <guid>https://rausgegangen.de/events/ecstatic-dance-tubingen-ecstatic-experience-dance-food-socia-4/</guid>
@@ -825,6 +816,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Thu, 30 Apr 2026 07:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Krimi-Trail Tübingen: Folgenschwere Erkenntnis</title>
+      <link>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-205/</link>
+      <guid>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-205/</guid>
+      <description>Heute, 30. Apr | 12:00 · Krimi-Trail Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/IfU8y1AuRXitWG5aOyou_tubingen-trail.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/IfU8y1AuRXitWG5aOyou_tubingen-trail.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 30 Apr 2026 12:00:00 +0100</pubDate>
     </item>
   </channel>
 </rss>
