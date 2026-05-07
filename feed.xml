@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Thu, 07 May 2026 08:40:23 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 14:25:39 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comedy Slam Tübingen: Comedians im Kampf um die Comedy-Krone nach dem Motto "Lachen &amp; Spaß für alle!" (Stand Up, Kabarett, Kleinkunst, Comedy)</title>
@@ -312,6 +312,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/vh6lwevkj4qd.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/vh6lwevkj4qd.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 09 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Der Bär auf dem Försterball</title>
+      <link>https://rausgegangen.de/events/der-bar-auf-dem-forsterball-6/</link>
+      <guid>https://rausgegangen.de/events/der-bar-auf-dem-forsterball-6/</guid>
+      <description>Sa, 16. Mai | 16:00 · Theater DERenDINGEn</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ji5ZNgBkRHq0zQeuu3QW_1932.jpeg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ji5ZNgBkRHq0zQeuu3QW_1932.jpeg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 16 May 2026 16:00:00 +0100</pubDate>
     </item>
     <item>
       <title>WENN DIE MUSIK DER LIEBE NAHRUNG IST Ein poetisch-musikalischer Abend</title>
@@ -771,6 +780,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/R4MokdnqTc2oI7YSRt3x_photo-1605627079912-97c3810a11a4?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/R4MokdnqTc2oI7YSRt3x_photo-1605627079912-97c3810a11a4?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 10 May 2026 14:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Dornröschen</title>
+      <link>https://rausgegangen.de/events/dornroschen-157/</link>
+      <guid>https://rausgegangen.de/events/dornroschen-157/</guid>
+      <description>So, 10. Mai | 15:00 · Theater DERenDINGEn</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/kxLA6tifSai3aVmlosKX_dornroschen.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/kxLA6tifSai3aVmlosKX_dornroschen.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 10 May 2026 15:00:00 +0100</pubDate>
     </item>
     <item>
       <title>BAMBAM-BAND</title>
