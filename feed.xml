@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Fri, 08 May 2026 07:47:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 14:00:41 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comedy Slam Tübingen: Comedians im Kampf um die Comedy-Krone nach dem Motto "Lachen &amp; Spaß für alle!" (Stand Up, Kabarett, Kleinkunst, Comedy)</title>
@@ -771,6 +771,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/cc0jjkuyijfi.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/cc0jjkuyijfi.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 27 Jun 2026 18:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>European Outdoor Film Tour 2026 - EOFT</title>
+      <link>https://rausgegangen.de/events/european-outdoor-film-tour-2026-eoft-17/</link>
+      <guid>https://rausgegangen.de/events/european-outdoor-film-tour-2026-eoft-17/</guid>
+      <description>Mo, 26. Okt | 20:00 · Museum Kino</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/5f8xFU7SR8SPSnC1OYxy_eoft26mediahubveranstaltungskalender1920x1080.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/5f8xFU7SR8SPSnC1OYxy_eoft26mediahubveranstaltungskalender1920x1080.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Mon, 26 Oct 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Offenes Atelier für Kinder</title>
