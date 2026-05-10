@@ -5,17 +5,8 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Sun, 10 May 2026 13:38:47 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 19:11:37 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Comedy Slam Tübingen: Comedians im Kampf um die Comedy-Krone nach dem Motto "Lachen &amp; Spaß für alle!" (Stand Up, Kabarett, Kleinkunst, Comedy)</title>
-      <link>https://rausgegangen.de/events/comedy-slam-tubingen-comedians-im-kampf-um-die-comedy-krone--26/</link>
-      <guid>https://rausgegangen.de/events/comedy-slam-tubingen-comedians-im-kampf-um-die-comedy-krone--26/</guid>
-      <description>Di, 12. Mai | 20:00 · Kino Museum</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/DnNV9V4S5S08PRJrDDJT_comedy-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/DnNV9V4S5S08PRJrDDJT_comedy-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Tue, 12 May 2026 20:00:00 +0100</pubDate>
-    </item>
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
       <link>https://rausgegangen.de/events/impro-slam-tubingen-powerpoint-karaoke-schabernack-das-genia-35/</link>
@@ -78,15 +69,6 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/T0wy0jzgR9iZE7JcQOYS_titelbild-eventbrite-neu.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/T0wy0jzgR9iZE7JcQOYS_titelbild-eventbrite-neu.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 21 Aug 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Bach: Osteroratorium, Himmelfahrtsoratorium</title>
-      <link>https://rausgegangen.de/events/bach-osteroratorium-himmelfahrtsoratorium-0/</link>
-      <guid>https://rausgegangen.de/events/bach-osteroratorium-himmelfahrtsoratorium-0/</guid>
-      <description>Heute, 10. Mai | 17:00 · Stiftskirche Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/j1sh2rwx6vkl.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/j1sh2rwx6vkl.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 10 May 2026 17:00:00 +0100</pubDate>
     </item>
     <item>
       <title>JOSH. - Wer singt dann Lieder für dich - Solo Tour 2026</title>
@@ -341,6 +323,15 @@
       <pubDate>Sat, 12 Dec 2026 11:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Comedy Slam Tübingen: Comedians im Kampf um die Comedy-Krone nach dem Motto "Lachen &amp; Spaß für alle!" (Stand Up, Kabarett, Kleinkunst, Comedy)</title>
+      <link>https://rausgegangen.de/events/comedy-slam-tubingen-comedians-im-kampf-um-die-comedy-krone--26/</link>
+      <guid>https://rausgegangen.de/events/comedy-slam-tubingen-comedians-im-kampf-um-die-comedy-krone--26/</guid>
+      <description>Di, 12. Mai | 20:00 · Kino Museum</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/DnNV9V4S5S08PRJrDDJT_comedy-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/DnNV9V4S5S08PRJrDDJT_comedy-slam2zu1.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 12 May 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>JAKOB NACKEN &amp; DIE TOYBOYS</title>
       <link>https://rausgegangen.de/events/jakob-nacken-die-toyboys-4/</link>
       <guid>https://rausgegangen.de/events/jakob-nacken-die-toyboys-4/</guid>
@@ -521,24 +512,6 @@
       <pubDate>Fri, 17 Apr 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
-      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-389/</link>
-      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-389/</guid>
-      <description>Heute, 10. Mai | 11:00 · Stadtmuseum Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 10 May 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Room of Memories - Dauerausstellung</title>
-      <link>https://rausgegangen.de/events/room-of-memories-369/</link>
-      <guid>https://rausgegangen.de/events/room-of-memories-369/</guid>
-      <description>Heute, 10. Mai | 11:00 · Stadtmuseum Tübingen</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 10 May 2026 11:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Evolution - Paläontologische Sammlung</title>
       <link>https://rausgegangen.de/events/evolution-palaontologische-sammlung-388/</link>
       <guid>https://rausgegangen.de/events/evolution-palaontologische-sammlung-388/</guid>
@@ -582,6 +555,24 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QbhZoYfhQnG7DVr3XJ3H_photo-1479142506502-19b3a3b7ff33?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QbhZoYfhQnG7DVr3XJ3H_photo-1479142506502-19b3a3b7ff33?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 11 May 2026 09:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
+      <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-390/</link>
+      <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-390/</guid>
+      <description>Mi, 13. Mai | 11:00 · Stadtmuseum Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 13 May 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Room of Memories - Dauerausstellung</title>
+      <link>https://rausgegangen.de/events/room-of-memories-370/</link>
+      <guid>https://rausgegangen.de/events/room-of-memories-370/</guid>
+      <description>Mi, 13. Mai | 11:00 · Stadtmuseum Tübingen</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 13 May 2026 11:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Comedy Slam</title>
@@ -636,15 +627,6 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/RHSG37jGQXKvFTyZaw3a_thumboffline-cafemit-logo.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/RHSG37jGQXKvFTyZaw3a_thumboffline-cafemit-logo.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Tue, 12 May 2026 17:30:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Workshop &amp; Brunch | "Bloom with us" - Muttertagsspecial</title>
-      <link>https://rausgegangen.de/events/bloom-with-us-workshop-brunch-muttertagsspecial-0/</link>
-      <guid>https://rausgegangen.de/events/bloom-with-us-workshop-brunch-muttertagsspecial-0/</guid>
-      <description>Heute, 10. Mai | 10:00 · Altes Waschhaus</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//static.rausgegangen.de/static/rausgegangen/images/rausgegangen_default.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//static.rausgegangen.de/static/rausgegangen/images/rausgegangen_default.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 10 May 2026 10:00:00 +0100</pubDate>
     </item>
     <item>
       <title>PubQuizz</title>
@@ -726,15 +708,6 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/R4MokdnqTc2oI7YSRt3x_photo-1605627079912-97c3810a11a4?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/R4MokdnqTc2oI7YSRt3x_photo-1605627079912-97c3810a11a4?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 10 May 2026 14:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Dornröschen</title>
-      <link>https://rausgegangen.de/events/dornroschen-157/</link>
-      <guid>https://rausgegangen.de/events/dornroschen-157/</guid>
-      <description>Heute, 10. Mai | 15:00 · Theater DERenDINGEn</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/kxLA6tifSai3aVmlosKX_dornroschen.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/kxLA6tifSai3aVmlosKX_dornroschen.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 10 May 2026 15:00:00 +0100</pubDate>
     </item>
     <item>
       <title>BAMBAM-BAND</title>
