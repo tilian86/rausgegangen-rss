@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Wed, 13 May 2026 20:01:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 03:49:26 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
@@ -44,15 +44,6 @@
       <pubDate>Thu, 05 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Beer Pong Uni Cup</title>
-      <link>https://rausgegangen.de/events/beer-pong-uni-cup-79/</link>
-      <guid>https://rausgegangen.de/events/beer-pong-uni-cup-79/</guid>
-      <description>Heute, 13. Mai | 19:00 · Kuckuck e.V.</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/uC5rvmPERv6shlVHtZfv_photo-1578976014665-66120ffbb89d?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/uC5rvmPERv6shlVHtZfv_photo-1578976014665-66120ffbb89d?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 13 May 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Karaoke Sing-Along-Party</title>
       <link>https://rausgegangen.de/events/karaoke-sing-along-party-80/</link>
       <guid>https://rausgegangen.de/events/karaoke-sing-along-party-80/</guid>
@@ -62,6 +53,15 @@
       <pubDate>Tue, 19 May 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Beer Pong Uni Cup</title>
+      <link>https://rausgegangen.de/events/beer-pong-uni-cup-80/</link>
+      <guid>https://rausgegangen.de/events/beer-pong-uni-cup-80/</guid>
+      <description>Mi, 20. Mai | 19:00 · Kuckuck e.V.</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/uC5rvmPERv6shlVHtZfv_photo-1578976014665-66120ffbb89d?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/uC5rvmPERv6shlVHtZfv_photo-1578976014665-66120ffbb89d?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 20 May 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Barhopping für Singles – Die Speeddating Alternative</title>
       <link>https://rausgegangen.de/events/barhopping-fur-singles-die-speeddating-alternative-593/</link>
       <guid>https://rausgegangen.de/events/barhopping-fur-singles-die-speeddating-alternative-593/</guid>
@@ -69,24 +69,6 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/T0wy0jzgR9iZE7JcQOYS_titelbild-eventbrite-neu.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/T0wy0jzgR9iZE7JcQOYS_titelbild-eventbrite-neu.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 21 Aug 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>KING BUFFALO</title>
-      <link>https://rausgegangen.de/events/king-buffalo-4/</link>
-      <guid>https://rausgegangen.de/events/king-buffalo-4/</guid>
-      <description>Heute, 13. Mai | 20:00 · Sudhaus</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/0dzmm0hc2pis.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/0dzmm0hc2pis.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 13 May 2026 20:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>LADY R &amp; THE PAULINETTES</title>
-      <link>https://rausgegangen.de/events/lady-r-the-paulinettes-1/</link>
-      <guid>https://rausgegangen.de/events/lady-r-the-paulinettes-1/</guid>
-      <description>Heute, 13. Mai | 20:00 · Sudhaus</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/qvistgi6f862.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/qvistgi6f862.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 13 May 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Hazmat Modine</title>
@@ -227,7 +209,7 @@
       <title>PRIMA FACIE von Suzie Miller</title>
       <link>https://rausgegangen.de/events/prima-facie-von-suzie-miller-7/</link>
       <guid>https://rausgegangen.de/events/prima-facie-von-suzie-miller-7/</guid>
-      <description>Fr, 15. Mai | 20:00 · Tanne Tübingen</description>
+      <description>Morgen, 15. Mai | 20:00 · Tanne Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/1f0q99hu4ykb.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/1f0q99hu4ykb.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 15 May 2026 20:00:00 +0100</pubDate>
@@ -317,7 +299,7 @@
       <title>JAKOB NACKEN &amp; DIE TOYBOYS</title>
       <link>https://rausgegangen.de/events/jakob-nacken-die-toyboys-4/</link>
       <guid>https://rausgegangen.de/events/jakob-nacken-die-toyboys-4/</guid>
-      <description>Fr, 15. Mai | 20:00 · Sudhaus</description>
+      <description>Morgen, 15. Mai | 20:00 · Sudhaus</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/od9cm89vs9r9.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/od9cm89vs9r9.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 15 May 2026 20:00:00 +0100</pubDate>
@@ -495,54 +477,54 @@
     </item>
     <item>
       <title>Evolution - Paläontologische Sammlung</title>
-      <link>https://rausgegangen.de/events/evolution-palaontologische-sammlung-390/</link>
-      <guid>https://rausgegangen.de/events/evolution-palaontologische-sammlung-390/</guid>
-      <description>Heute, 13. Mai | 09:00 · Museum der Universität Tübingen (MUT)</description>
+      <link>https://rausgegangen.de/events/evolution-palaontologische-sammlung-391/</link>
+      <guid>https://rausgegangen.de/events/evolution-palaontologische-sammlung-391/</guid>
+      <description>Heute, 14. Mai | 09:00 · Museum der Universität Tübingen (MUT)</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/UxjJ81jxSFSjOOQN224w_photo-1711075741270-b71059da26c5?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/UxjJ81jxSFSjOOQN224w_photo-1711075741270-b71059da26c5?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 13 May 2026 09:00:00 +0100</pubDate>
+      <pubDate>Thu, 14 May 2026 09:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Götter und Gräber - Ägyptische Sammlung</title>
-      <link>https://rausgegangen.de/events/gotter-und-graber-agyptische-sammlung-390/</link>
-      <guid>https://rausgegangen.de/events/gotter-und-graber-agyptische-sammlung-390/</guid>
-      <description>Heute, 13. Mai | 09:00 · Museum der Universität Tübingen (MUT)</description>
+      <link>https://rausgegangen.de/events/gotter-und-graber-agyptische-sammlung-391/</link>
+      <guid>https://rausgegangen.de/events/gotter-und-graber-agyptische-sammlung-391/</guid>
+      <description>Heute, 14. Mai | 09:00 · Museum der Universität Tübingen (MUT)</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/NEEzmTFT6aJ7JrCGUPea_photo-1654612514062-7cc235e7b68c?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/NEEzmTFT6aJ7JrCGUPea_photo-1654612514062-7cc235e7b68c?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 13 May 2026 09:00:00 +0100</pubDate>
+      <pubDate>Thu, 14 May 2026 09:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Kopfsache - Psychologische Sammlung</title>
-      <link>https://rausgegangen.de/events/kopfsache-psychologische-sammlung-390/</link>
-      <guid>https://rausgegangen.de/events/kopfsache-psychologische-sammlung-390/</guid>
-      <description>Heute, 13. Mai | 09:00 · Museum der Universität Tübingen (MUT)</description>
+      <link>https://rausgegangen.de/events/kopfsache-psychologische-sammlung-391/</link>
+      <guid>https://rausgegangen.de/events/kopfsache-psychologische-sammlung-391/</guid>
+      <description>Heute, 14. Mai | 09:00 · Museum der Universität Tübingen (MUT)</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/XqUBbR7FSZiKqQo6eidk_photo-1573511860302-28c524319d2a?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/XqUBbR7FSZiKqQo6eidk_photo-1573511860302-28c524319d2a?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 13 May 2026 09:00:00 +0100</pubDate>
+      <pubDate>Thu, 14 May 2026 09:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Pflanzenvielfalt - Botanischer Garten mit Sammlungen</title>
-      <link>https://rausgegangen.de/events/pflanzenvielfalt-botanischer-garten-mit-sammlungen-390/</link>
-      <guid>https://rausgegangen.de/events/pflanzenvielfalt-botanischer-garten-mit-sammlungen-390/</guid>
-      <description>Heute, 13. Mai | 09:00 · Museum der Universität Tübingen (MUT)</description>
+      <link>https://rausgegangen.de/events/pflanzenvielfalt-botanischer-garten-mit-sammlungen-391/</link>
+      <guid>https://rausgegangen.de/events/pflanzenvielfalt-botanischer-garten-mit-sammlungen-391/</guid>
+      <description>Heute, 14. Mai | 09:00 · Museum der Universität Tübingen (MUT)</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/AdPK4w1YRqKRdEmnvhpM_photo-1558889485-5930e200a2a1?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/AdPK4w1YRqKRdEmnvhpM_photo-1558889485-5930e200a2a1?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 13 May 2026 09:00:00 +0100</pubDate>
+      <pubDate>Thu, 14 May 2026 09:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Weltkulturen - Ethnologische Sammlung</title>
-      <link>https://rausgegangen.de/events/weltkulturen-ethnologische-sammlung-372/</link>
-      <guid>https://rausgegangen.de/events/weltkulturen-ethnologische-sammlung-372/</guid>
-      <description>Heute, 13. Mai | 09:00 · Museum der Universität Tübingen (MUT)</description>
+      <link>https://rausgegangen.de/events/weltkulturen-ethnologische-sammlung-373/</link>
+      <guid>https://rausgegangen.de/events/weltkulturen-ethnologische-sammlung-373/</guid>
+      <description>Heute, 14. Mai | 09:00 · Museum der Universität Tübingen (MUT)</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QbhZoYfhQnG7DVr3XJ3H_photo-1479142506502-19b3a3b7ff33?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/QbhZoYfhQnG7DVr3XJ3H_photo-1479142506502-19b3a3b7ff33?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 13 May 2026 09:00:00 +0100</pubDate>
+      <pubDate>Thu, 14 May 2026 09:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Lotte Reiniger - Die Welt in Licht und Schatten</title>
       <link>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-391/</link>
       <guid>https://rausgegangen.de/events/lotte-reiniger-die-welt-in-licht-und-schatten-391/</guid>
-      <description>Morgen, 14. Mai | 11:00 · Stadtmuseum Tübingen</description>
+      <description>Heute, 14. Mai | 11:00 · Stadtmuseum Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/sGybSPXfSuOcER6fxk2t_photo-1507643179773-3e975d7ac515?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Thu, 14 May 2026 11:00:00 +0100</pubDate>
@@ -551,7 +533,7 @@
       <title>Room of Memories - Dauerausstellung</title>
       <link>https://rausgegangen.de/events/room-of-memories-371/</link>
       <guid>https://rausgegangen.de/events/room-of-memories-371/</guid>
-      <description>Morgen, 14. Mai | 11:00 · Stadtmuseum Tübingen</description>
+      <description>Heute, 14. Mai | 11:00 · Stadtmuseum Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/65Wo2c3QKOAqoFz7RRNw_photo-1571415060716-baff5f717c37?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Thu, 14 May 2026 11:00:00 +0100</pubDate>
@@ -560,7 +542,7 @@
       <title>Tage der digitalen Freiheit</title>
       <link>https://rausgegangen.de/events/tage-der-digitalen-freiheit-0/</link>
       <guid>https://rausgegangen.de/events/tage-der-digitalen-freiheit-0/</guid>
-      <description>Fr, 15. Mai | 13:30 · Westspitze Tübingen</description>
+      <description>Morgen, 15. Mai | 13:30 · Westspitze Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/VoLAeNOORHKv5ne3lk65_tdf5rausgegangen2745x420.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/VoLAeNOORHKv5ne3lk65_tdf5rausgegangen2745x420.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 15 May 2026 13:30:00 +0100</pubDate>
@@ -711,21 +693,21 @@
     </item>
     <item>
       <title>Stadtrallye Tübingen | Die Verleger Erpressung | Tübingens Abenteuertour</title>
-      <link>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-464/</link>
-      <guid>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-464/</guid>
-      <description>Heute, 13. Mai | 07:00 · Eberhardsbrücke</description>
+      <link>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-465/</link>
+      <guid>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-465/</guid>
+      <description>Heute, 14. Mai | 07:00 · Eberhardsbrücke</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 13 May 2026 07:00:00 +0100</pubDate>
+      <pubDate>Thu, 14 May 2026 07:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Krimi-Trail Tübingen: Folgenschwere Erkenntnis</title>
-      <link>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-218/</link>
-      <guid>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-218/</guid>
-      <description>Heute, 13. Mai | 12:00 · Krimi-Trail Tübingen</description>
+      <link>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-219/</link>
+      <guid>https://rausgegangen.de/events/krimi-trail-tubingen-folgenschwere-erkenntnis-219/</guid>
+      <description>Heute, 14. Mai | 12:00 · Krimi-Trail Tübingen</description>
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/IfU8y1AuRXitWG5aOyou_tubingen-trail.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/IfU8y1AuRXitWG5aOyou_tubingen-trail.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 13 May 2026 12:00:00 +0100</pubDate>
+      <pubDate>Thu, 14 May 2026 12:00:00 +0100</pubDate>
     </item>
   </channel>
 </rss>
