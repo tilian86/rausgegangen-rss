@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Fri, 15 May 2026 08:54:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 14:18:58 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
@@ -60,6 +60,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/uC5rvmPERv6shlVHtZfv_photo-1578976014665-66120ffbb89d?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/uC5rvmPERv6shlVHtZfv_photo-1578976014665-66120ffbb89d?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Wed, 20 May 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>HOUSE of 1821 FESTIVAL - After Stocherkahnrennen</title>
+      <link>https://rausgegangen.de/events/house-of-1821-festival-after-stocherkahnrennen-0/</link>
+      <guid>https://rausgegangen.de/events/house-of-1821-festival-after-stocherkahnrennen-0/</guid>
+      <description>Do, 04. Jun | 15:00 · 1821 Museumsgarten</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/1nugyxuQTUKegldn88Ng_img6200.jpeg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/1nugyxuQTUKegldn88Ng_img6200.jpeg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 04 Jun 2026 15:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Barhopping für Singles – Die Speeddating Alternative</title>
