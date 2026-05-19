@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Tue, 19 May 2026 03:59:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 09:54:35 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
@@ -107,12 +107,21 @@
       <pubDate>Fri, 26 Jun 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>100 Jahre Manos Hadjidakis</title>
+      <link>https://rausgegangen.de/events/100-jahre-manos-hadjidakis-0/</link>
+      <guid>https://rausgegangen.de/events/100-jahre-manos-hadjidakis-0/</guid>
+      <description>Sa, 27. Jun | 20:30 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/99qbqijuvozg.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/99qbqijuvozg.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 27 Jun 2026 20:30:00 +0100</pubDate>
+    </item>
+    <item>
       <title>AUS VOLLER KEHLE...für die Seele!</title>
       <link>https://rausgegangen.de/events/aus-voller-kehlefur-die-seele-6/</link>
       <guid>https://rausgegangen.de/events/aus-voller-kehlefur-die-seele-6/</guid>
       <description>Di, 30. Jun | 20:00 · Sudhaus</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/lcphfexzrcsu.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/lcphfexzrcsu.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/3j1y29idd3xt.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/3j1y29idd3xt.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Tue, 30 Jun 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
@@ -123,6 +132,24 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mackmdrttlxy.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mackmdrttlxy.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 24 Jul 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>CANTO GENERAL</title>
+      <link>https://rausgegangen.de/events/canto-general-0/</link>
+      <guid>https://rausgegangen.de/events/canto-general-0/</guid>
+      <description>Fr, 24. Jul | 20:30 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/ubtzkmesdd6d.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/ubtzkmesdd6d.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 24 Jul 2026 20:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>JOEY CALDERAZZO Trio | OPEN AIR</title>
+      <link>https://rausgegangen.de/events/joey-calderazzo-trio-open-air-0/</link>
+      <guid>https://rausgegangen.de/events/joey-calderazzo-trio-open-air-0/</guid>
+      <description>So, 26. Jul | 20:30 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/dzlv7z0nh6n6.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/dzlv7z0nh6n6.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 26 Jul 2026 20:30:00 +0100</pubDate>
     </item>
     <item>
       <title>BANNED FROM UTOPIA (USA)</title>
@@ -195,6 +222,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5n6fa8smepii.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/5n6fa8smepii.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sat, 19 Dec 2026 20:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>FRANZ MAYER EXPERIENCE</title>
+      <link>https://rausgegangen.de/events/franz-mayer-experience-3/</link>
+      <guid>https://rausgegangen.de/events/franz-mayer-experience-3/</guid>
+      <description>So, 27. Dez | 20:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/66hrsf99ped5.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/66hrsf99ped5.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 27 Dec 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>DJANGO 3000</title>
@@ -429,6 +465,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mvvitjwzqj8z.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/mvvitjwzqj8z.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 27 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Die Late Night Show mit Nebi Tuncer</title>
+      <link>https://rausgegangen.de/events/die-late-night-show-mit-nebi-tuncer-2/</link>
+      <guid>https://rausgegangen.de/events/die-late-night-show-mit-nebi-tuncer-2/</guid>
+      <description>Sa, 05. Dez | 20:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/4svjezgk90dk.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/4svjezgk90dk.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 05 Dec 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Der Tod | Tödliche Weihnacht</title>
