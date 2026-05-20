@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Wed, 20 May 2026 03:59:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 09:41:49 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
@@ -627,6 +627,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/RHPiMs4QL6cV8fd8r3Zw_photo-1528100315649-ebfe49f792a6?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/RHPiMs4QL6cV8fd8r3Zw_photo-1528100315649-ebfe49f792a6?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Mon, 25 May 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Waldspaziergang "Nadelbäume im Frühling"</title>
+      <link>https://rausgegangen.de/events/waldspaziergang-nadelbaume-im-fruhling-0/</link>
+      <guid>https://rausgegangen.de/events/waldspaziergang-nadelbaume-im-fruhling-0/</guid>
+      <description>So, 31. Mai | 16:00 · Startpunkt Waldspaziergang</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vT5aMRu7QdG6ftneDKmo_20250612205100000ios.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/vT5aMRu7QdG6ftneDKmo_20250612205100000ios.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 31 May 2026 16:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Ecstatic Dance Tübingen | Ecstatic Experience – DANCE, FOOD, SOCIALIZE</title>
