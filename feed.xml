@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Fri, 22 May 2026 09:36:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 14:47:44 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impro Slam Tübingen: PowerPoint Karaoke &amp; Schabernack - das genial-peinlich-lustige Improvisationsformat mit Elias Raatz &amp; Gästen</title>
@@ -105,6 +105,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/5cMVJe2QGC7dnaREHxpi_bildschirmfoto-2025-11-24-um-162158.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/5cMVJe2QGC7dnaREHxpi_bildschirmfoto-2025-11-24-um-162158.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 26 Jun 2026 18:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Kammerchor Vokalkunst – (Un)Holde</title>
+      <link>https://rausgegangen.de/events/kammerchor-vokalkunst-unholde-1/</link>
+      <guid>https://rausgegangen.de/events/kammerchor-vokalkunst-unholde-1/</guid>
+      <description>Sa, 27. Jun | 19:00 · Ammerhofkapelle</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/RJr7wTVRQWKNiFhszx9M_2026-05-18pressebildkammerchorvokalkunsttubingen.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/RJr7wTVRQWKNiFhszx9M_2026-05-18pressebildkammerchorvokalkunsttubingen.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 27 Jun 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>100 Jahre Manos Hadjidakis</title>
@@ -654,6 +663,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ZICD5n16TZeaYl39GHyL_img20240923090027.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/ZICD5n16TZeaYl39GHyL_img20240923090027.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Fri, 19 Jun 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>DschungelGlas - Workshop</title>
+      <link>https://rausgegangen.de/events/dschungelglas-workshop-6/</link>
+      <guid>https://rausgegangen.de/events/dschungelglas-workshop-6/</guid>
+      <description>Fr, 24. Jul | 19:00 · HelloTogether</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/X0Fo5qRT1KDJgoWdmUzg_1743577033839.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/X0Fo5qRT1KDJgoWdmUzg_1743577033839.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 24 Jul 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>LUCKY CHOPS (Brass Band, NYC)</title>
