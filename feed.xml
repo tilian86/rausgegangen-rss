@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Mon, 25 May 2026 04:14:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 10:18:10 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Poetry Slam Tübingen: Texte, die die Welt erobern - Dichterwettstreit deluxe mit Elias Raatz &amp; Gästen</title>
@@ -510,6 +510,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/qfdd7ufqzt96.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/qfdd7ufqzt96.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Thu, 12 Feb 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Ingo Appelt</title>
+      <link>https://rausgegangen.de/events/ingo-appelt-77/</link>
+      <guid>https://rausgegangen.de/events/ingo-appelt-77/</guid>
+      <description>Sa, 20. Feb | 20:00 · Sparkassen Carré</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jicdklycsbcp.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/jicdklycsbcp.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 20 Feb 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Hagen Rether</title>
