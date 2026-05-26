@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Tue, 26 May 2026 10:03:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 15:50:18 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Poetry Slam Tübingen: Texte, die die Welt erobern - Dichterwettstreit deluxe mit Elias Raatz &amp; Gästen</title>
@@ -647,15 +647,6 @@
       <pubDate>Tue, 09 Jun 2026 17:30:00 +0100</pubDate>
     </item>
     <item>
-      <title>Stadtrallye Tübingen | Die Verleger Erpressung | Tübingens Abenteuertour</title>
-      <link>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-477/</link>
-      <guid>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-477/</guid>
-      <description>Heute, 26. Mai | 07:00 · Eberhardsbrücke</description>
-      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
-      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
-      <pubDate>Tue, 26 May 2026 07:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Waldspaziergang "Nadelbäume im Frühling"</title>
       <link>https://rausgegangen.de/events/waldspaziergang-nadelbaume-im-fruhling-0/</link>
       <guid>https://rausgegangen.de/events/waldspaziergang-nadelbaume-im-fruhling-0/</guid>
@@ -762,6 +753,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/6psmd8suddhx.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/6psmd8suddhx.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Sun, 14 Jun 2026 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Stadtrallye Tübingen | Die Verleger Erpressung | Tübingens Abenteuertour</title>
+      <link>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-477/</link>
+      <guid>https://rausgegangen.de/events/stadtrallye-tubingen-die-verleger-erpressung-tubingens-abent-477/</guid>
+      <description>Heute, 26. Mai | 07:00 · Eberhardsbrücke</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/lWrdCNfIR42p7yeQbXub_image.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 26 May 2026 07:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Krimi-Trail Tübingen: Folgenschwere Erkenntnis</title>
