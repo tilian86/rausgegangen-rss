@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Fri, 29 May 2026 04:04:01 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 10:01:19 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Poetry Slam Tübingen: Texte, die die Welt erobern - Dichterwettstreit deluxe mit Elias Raatz &amp; Gästen</title>
@@ -132,6 +132,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/3j1y29idd3xt.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/3j1y29idd3xt.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Tue, 30 Jun 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>TüFolk Festival</title>
+      <link>https://rausgegangen.de/events/tufolk-festival-0/</link>
+      <guid>https://rausgegangen.de/events/tufolk-festival-0/</guid>
+      <description>So, 05. Jul | 19:00 · Sudhaus</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/oq5c74gihear.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//rausgegangen.s3.amazonaws.com/oq5c74gihear.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 05 Jul 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Dieter Thomas Kuhn mit der SWR Big Band</title>
