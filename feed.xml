@@ -5,7 +5,7 @@
     <link>https://rausgegangen.de/tubingen/</link>
     <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
     <language>de</language>
-    <lastBuildDate>Mon, 01 Jun 2026 04:43:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 11:44:11 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Poetry Slam Tübingen: Texte, die die Welt erobern - Dichterwettstreit deluxe mit Elias Raatz &amp; Gästen</title>
@@ -618,6 +618,15 @@
       <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/RHSG37jGQXKvFTyZaw3a_thumboffline-cafemit-logo.png?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
       <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/RHSG37jGQXKvFTyZaw3a_thumboffline-cafemit-logo.png?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
       <pubDate>Tue, 09 Jun 2026 17:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Gin Tastin g mit Stocherkahn Fahrt in Tübingen</title>
+      <link>https://rausgegangen.de/events/gin-tastin-g-mit-stocherkahn-fahrt-in-tubingen-0/</link>
+      <guid>https://rausgegangen.de/events/gin-tastin-g-mit-stocherkahn-fahrt-in-tubingen-0/</guid>
+      <description>Fr, 12. Jun | 19:00 · Gartenterrasse Hotel Domizil</description>
+      <enclosure url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/2AHMIEdwTLkbSpZAPHuw_dsc2700.jpg?width=300&amp;height=225&amp;mode=crop" type="image/jpeg" length="0" />
+      <media:content url="https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/2AHMIEdwTLkbSpZAPHuw_dsc2700.jpg?width=300&amp;height=225&amp;mode=crop" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 12 Jun 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>PubQuizz</title>
