@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Thu, 03 Sep 2026 08:32:24 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 19:05:23 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Epplekneipe</title>
@@ -151,6 +151,14 @@ Musikalisches Improvisieren Eine Bluegrass Jam Session ist weit mehr als das blo
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/7.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/7.jpg" medium="image" type="image/jpeg" />
       <pubDate>Mon, 05 Oct 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Buchvorstellung „Starke Kommunen“</title>
+      <link>https://www.epplehaus.de/event/buchvorstellung-starke-kommunen/</link>
+      <guid>https://www.epplehaus.de/event/buchvorstellung-starke-kommunen/</guid>
+      <description>Tue, 06.10.2026 | 19:00 · Epplehaus
+Buchvorstellung mit Karl-Martin Hentschel zu seinem neuen Buch „Starke Kommunen – Das Herz der Demokratie schlägt vor Ort“ Karl-Martin Hentschel ist seit vielen Jahren in der Steuer-, Finanz- und Demokratiepolitik aktiv und engagiert sich unter anderem bei Attac. In seinem Buch zeigt er auf, warum …</description>
+      <pubDate>Tue, 06 Oct 2026 19:00:00 +0200</pubDate>
     </item>
     <item>
       <title>Mythos 1776: Traum und Erwachen der amerikanischen Nation</title>
