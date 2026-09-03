@@ -143,6 +143,12 @@ def build_rss(events):
 def main():
     html = fetch_html()
     events = scrape_events(html)
+    if not events:
+        raise SystemExit(
+            "ABBRUCH: 0 Events gefunden. Der bestehende feed.xml bleibt "
+            "unveraendert. Wahrscheinlich hat rausgegangen.de sein HTML "
+            "geaendert und die Muster in scrape_events() passen nicht mehr."
+        )
     rss_xml = build_rss(events)
     with open("feed.xml", "w", encoding="utf-8") as f:
         f.write(rss_xml)
