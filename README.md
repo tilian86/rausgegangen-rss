@@ -1,30 +1,43 @@
-# rausgegangen-rss
+# Veranstaltungen Tübingen (RSS)
 
-RSS-Feed für Tübinger Veranstaltungen von rausgegangen.de
+RSS-Feed mit Tübinger Veranstaltungen.
 
 Feed-URL: `https://tilian86.github.io/rausgegangen-rss/feed.xml`
 
-## Status: pausiert (Stand 03.09.2026)
+## Quellen
 
-Der automatische Lauf ist **abgeschaltet**. Zwei Dinge sind passiert:
+Der Feed wird aus den **offiziellen Schnittstellen** der Veranstalter gebaut
+(WordPress-Plugin „The Events Calendar", Endpunkt `/wp-json/tribe/events/v1`):
 
-1. **Seit 01.06.2026 leer:** rausgegangen.de hat sein HTML geändert. Der
-   Scraper lief zwar grün durch, fand aber 0 Veranstaltungen und schrieb
-   einen leeren Feed. Das ist niemandem aufgefallen, weil kein Fehler kam.
-2. **Seit 02.09.2026 gesperrt:** Die Seite steht hinter Bunny Shield
-   (Botschutz mit JavaScript-Rätsel) und antwortet auf einfache Abrufe nur
-   noch mit `HTTP 403`. Auch ein normaler Browser-User-Agent kommt nicht
-   mehr durch.
+| Quelle | Was |
+| --- | --- |
+| [Tübinger Kalender / Kulturnetz Tübingen](https://www.tuebinger-kalender.de) | Kultur, Vorträge, Kurse – der Kalender, auf den die Stadt Tübingen selbst verlinkt |
+| [Epplehaus](https://www.epplehaus.de) | Konzerte, Workshops, Kneipe |
 
-Punkt 2 lässt sich nicht sauber umgehen — der Schutz ist bewusst gesetzt.
-Wieder einschalten lohnt sich erst, wenn es eine offizielle Quelle gibt
-(Feed, API oder Partner-Zugang von rausgegangen.de).
+Weitere Quellen lassen sich in `scraper.py` unter `SOURCES` eintragen –
+alles, was die gleiche Schnittstelle anbietet, läuft ohne weitere Anpassung
+mit.
 
-Geprüft und **nicht** vorhanden: `tuebingen.de` bietet nur Presse-, News- und
-Bekanntmachungs-Feeds, keinen Veranstaltungsfeed; `tuebingen-info.de` und
-`kreis-tuebingen.de` bieten gar keinen.
+## Warum nicht mehr rausgegangen.de?
 
-Der Scraper bricht jetzt mit Fehler ab, wenn er 0 Veranstaltungen findet,
-statt stillschweigend einen leeren Feed zu schreiben.
+Bis Juni 2026 wurde `rausgegangen.de/tubingen` abgegriffen. Das ging schief:
 
-Manuell starten: Actions → „Scrape Rausgegangen Tübingen" → Run workflow.
+1. **Ab 01.06.2026** hatte die Seite ihr HTML geändert. Der Scraper lief grün
+   durch, fand aber 0 Veranstaltungen und schrieb einen leeren Feed – drei
+   Monate lang, ohne Warnung.
+2. **Ab 02.09.2026** steht die Seite hinter Botschutz (Bunny Shield mit
+   JavaScript-Rätsel) und antwortet auf Abrufe mit `HTTP 403`.
+
+Punkt 2 ist bewusst gesetzt und wird nicht umgangen. Stattdessen liefern
+jetzt Quellen die Daten, die sie ausdrücklich zum Abruf anbieten.
+
+## Absicherung
+
+- Findet der Lauf **0 Veranstaltungen**, bricht er ab und lässt `feed.xml`
+  unangetastet. Ein leerer Feed kann nicht mehr unbemerkt entstehen.
+- Fällt **eine** Quelle aus, wird der Feed trotzdem gebaut; der Ausfall
+  erscheint als Warnung im Lauf, ohne Fehlermail.
+- Fallen **alle** Quellen aus, schlägt der Lauf fehl.
+
+Läuft täglich um 6 und 18 Uhr. Manuell: Actions → „Veranstaltungen Tübingen"
+→ Run workflow.

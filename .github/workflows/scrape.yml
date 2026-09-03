@@ -1,13 +1,8 @@
-name: Scrape Rausgegangen Tübingen
+name: Veranstaltungen Tübingen
 
 on:
-  # Zeitplan pausiert am 03.09.2026: rausgegangen.de liefert seit dem
-  # 02.09.2026 nur noch 403 (Bunny-Shield-Botschutz mit JS-Challenge).
-  # Vorher lieferte der Scraper seit 01.06.2026 stumm 0 Events, weil sich
-  # das HTML der Seite geaendert hatte. Erst wieder einschalten, wenn es
-  # eine offizielle Quelle (Feed/API) gibt.
-  # schedule:
-  #   - cron: '0 */6 * * *'
+  schedule:
+    - cron: '0 4,16 * * *'
   workflow_dispatch:
 
 permissions:
@@ -23,7 +18,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Run scraper
+      - name: Feed bauen
         run: python scraper.py
 
       - name: Commit and push
@@ -31,5 +26,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add feed.xml
-          git diff --cached --quiet || git commit -m "Update feed $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git diff --cached --quiet || git commit -m "Feed aktualisiert $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push

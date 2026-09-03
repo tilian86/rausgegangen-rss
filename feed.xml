@@ -1,11 +1,286 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Rausgegangen Tübingen</title>
-    <link>https://rausgegangen.de/tubingen/</link>
-    <description>Veranstaltungen in Tübingen via rausgegangen.de</description>
+    <title>Veranstaltungen Tübingen</title>
+    <link>https://www.tuebinger-kalender.de/</link>
+    <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Wed, 02 Sep 2026 03:45:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 02:10:35 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Epplekneipe</title>
+      <link>https://www.epplehaus.de/event/epplekneipe/</link>
+      <guid>https://www.epplehaus.de/event/epplekneipe/</guid>
+      <description>Thu, 03.09.2026 | 19:00 · Epplehaus</description>
+      <pubDate>Thu, 03 Sep 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Mit Jugendguides zu NS-Spuren auf dem Stadtfriedhof</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/mit-jugendguides-zu-ns-spuren-auf-dem-stadtfriedhof-2/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/mit-jugendguides-zu-ns-spuren-auf-dem-stadtfriedhof-2/</guid>
+      <description>Sun, 06.09.2026 | 16:30 · Kulturnetz Tübingen
+Stadtgang am Sonntag, 6. September 2026 Jugendguides erkunden am Sonntag, 6. September 2026, ab 16:30 Uhr Spuren zur NS-Vergangenheit auf dem Tübinger Stadtfriedhof. Sie zeigen unter anderem das Grab von Lilli Zapf, der wichtigsten Forscherin zu Menschen jüdischer Herkunft in Tübingen. Vor dem Grab …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/04/Stadtfriedhof-Ausstellung_web.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/04/Stadtfriedhof-Ausstellung_web.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 06 Sep 2026 16:30:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Epplehaus-Kneipe</title>
+      <link>https://www.epplehaus.de/event/epplehaus-kneipe-2/</link>
+      <guid>https://www.epplehaus.de/event/epplehaus-kneipe-2/</guid>
+      <description>Thu, 10.09.2026 | 19:00 · Epplehaus
+Jeden Donnerstag ab 19:00 Uhr öffnet das Epplehaus seine Türen um zum gemeinsamen, offenen Kneipenbetrieb einzuladen. Zwischen aufgeladenen Tischkicker Runden, dem ein oder anderen Kaltgetränk und gesseliger Atmosphäre laden wir dazu ein mit uns den sonst so stressigen Alltag beiseite zu legen und …</description>
+      <pubDate>Thu, 10 Sep 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Beatmaking Workshop</title>
+      <link>https://www.epplehaus.de/event/beatmaking-workshop/</link>
+      <guid>https://www.epplehaus.de/event/beatmaking-workshop/</guid>
+      <description>Sat, 12.09.2026 | 14:00 · Epplehaus
+A DAY FOR THE KNOWLEDGE OF HIP HOP PRODUCING – DJ – WORKSHOP findet im Epplehaus statt! Mit Jules (T4SA) und Run iniQ (NYADS) @iniqism Mindestalter: 14 Jahre Teilnahmegebühr: 10€ Anmeldung: Mail an eveninginthespiritofhiphop@gmail.com Taucht ein in die verschiedenen Wege, Hip Hop Musik zu kreieren, …</description>
+      <pubDate>Sat, 12 Sep 2026 14:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Epplehaus-Kneipe</title>
+      <link>https://www.epplehaus.de/event/epplehaus-kneipe-3/</link>
+      <guid>https://www.epplehaus.de/event/epplehaus-kneipe-3/</guid>
+      <description>Thu, 17.09.2026 | 19:00 · Epplehaus
+Jeden Donnerstag ab 19:00 Uhr öffnet das Epplehaus seine Türen um zum gemeinsamen, offenen Kneipenbetrieb einzuladen. Zwischen aufgeladenen Tischkicker Runden, dem ein oder anderen Kaltgetränk und gesseliger Atmosphäre laden wir dazu ein mit uns den sonst so stressigen Alltag beiseite zu legen und …</description>
+      <pubDate>Thu, 17 Sep 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Lokalpolitik Goes USA: Zwischen Rathaus, Landtag und Kapitol</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/lokalpolitik-goes-usa-zwischen-rathaus-landtag-und-kapitol/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/lokalpolitik-goes-usa-zwischen-rathaus-landtag-und-kapitol/</guid>
+      <description>Fri, 18.09.2026 | 19:15 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+© Leonie Kerll / Gudrun de Maddalena Im Rahmen der d.a.i.-Reihe „What Unites U.S.?“ Paneldiskussion mit Julia Mayer, Daniel Lede Abal und Boris Palmer. Diese drei lokal verwurzelten Politiker*innen haben eine Gemeinsamkeit: Alle drei waren mit dem renommierten „International Visitor Leadership …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 18 Sep 2026 19:15:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Nekrodeus * Falscher Hund * Snakepiss</title>
+      <link>https://www.epplehaus.de/event/nekrodeus-falscher-hund-snakepiss/</link>
+      <guid>https://www.epplehaus.de/event/nekrodeus-falscher-hund-snakepiss/</guid>
+      <description>Fri, 18.09.2026 | 19:30 · Epplehaus
+Set the stage on fire with -FALSCHER HUND / Powerviolence from Saarbrücken -SNAKEPISS / Hardcore from Stuttgart @nekrodeusofficial @whats.wrongdog @snakepiss.hc</description>
+      <pubDate>Fri, 18 Sep 2026 19:30:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Epplehaus-Kneipe</title>
+      <link>https://www.epplehaus.de/event/epplehaus-kneipe-5/</link>
+      <guid>https://www.epplehaus.de/event/epplehaus-kneipe-5/</guid>
+      <description>Thu, 24.09.2026 | 19:00 · Epplehaus
+Jeden Donnerstag ab 19:00 Uhr öffnet das Epplehaus seine Türen um zum gemeinsamen, offenen Kneipenbetrieb einzuladen. Zwischen aufgeladenen Tischkicker Runden, dem ein oder anderen Kaltgetränk und gesseliger Atmosphäre laden wir dazu ein mit uns den sonst so stressigen Alltag beiseite zu legen und …</description>
+      <pubDate>Thu, 24 Sep 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Die Empörungsfalle</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/die-empoerungsfalle/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/die-empoerungsfalle/</guid>
+      <description>Fri, 25.09.2026 | 18:00 · Westspitze · Kulturnetz Tübingen
+© Marian Lenhard Lesung &amp; Gespräch mit Saba-Nur Cheema und Meron Mendel In einer Zeit, in der Debatten zunehmend von Lautstärke statt von Tiefgang geprägt sind und Gräben tiefer scheinen als je zuvor, blickt eine besondere Veranstaltung hinter die Kulissen unserer Streitkultur. Mit ihrem neuen Buch …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/2.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/2.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 25 Sep 2026 18:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Modern American Square Dance</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/modern-american-square-dance/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/modern-american-square-dance/</guid>
+      <description>Fri, 25.09.2026 | 19:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Schnuppertanzabend mit den Stoke-Boat-Promenaders. Square Dance ist ein traditioneller amerikanischer Volkstanz. Der Gruppentanz bringt Bewegungsfreude in Gemeinschaft und fordert und fördert gleichzeitig Koordinationsfähigkeit und Konzentration. Die Choreografie wird ständig spontan durch den …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/3.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/3.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 25 Sep 2026 19:30:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Glaube, Macht und Zukunft – Theologische Motive bei Tech-Gigant Peter Thiel</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/glaube-macht-und-zukunft-theologische-motive-bei-tech-gigant-peter-thiel/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/glaube-macht-und-zukunft-theologische-motive-bei-tech-gigant-peter-thiel/</guid>
+      <description>Mon, 28.09.2026 | 18:30 · Bildungswerk Kreis Reutlingen e.V. · Kulturnetz Tübingen
+Vortrag &amp; Gespräch mit Prof. Dr. Thomas Fliethmann Peter Thiel? Erst nach und nach ist der Name dieses Milliardärs und Tech-Investors aus dem Silicon-Valley auch in Deutschland bekannt geworden. Technologische Utopien sowie Macht und Erfolg der Reichen sind die wichtigsten Bausteine seiner …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/4.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/4.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Mon, 28 Sep 2026 18:30:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Zukunft der Demokratie aus amerikanisch-französisch-deutscher Perspektive</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/zukunft-der-demokratie-aus-amerikanisch-franzoesisch-deutscher-perspektive/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/zukunft-der-demokratie-aus-amerikanisch-franzoesisch-deutscher-perspektive/</guid>
+      <description>Fri, 02.10.2026 | 20:00 · Musikschule Tübingen · Kulturnetz Tübingen
+© KI generiert Im Rahmen der Langen Nacht der Demokratie in Tübingen Podiumsdiskussion mit u.a. Journalist Klaus Brinkbäumer im Rahmen der Langen Nacht der Demokratie in Tübingen Demokratien stehen weltweit unter Druck. In den USA, in Frankreich und in Deutschland zeigen sich unterschiedliche, aber …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/5.png" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/5.png" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 02 Oct 2026 20:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Lindy Hop</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/lindy-hop-6/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/lindy-hop-6/</guid>
+      <description>Sat, 03.10.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Tanzabend mit Crashkurs Get ready to swing your Tanzbein! Der Lindy Hop, auch als „Jitterbug“ bekannt, ist ein lebhafter und freudiger Paartanz, der in den 1920er Jahren in Harlem, New York, in der afroamerikanischen Community seinen Ursprung fand. Dieser Tanzstil verkörpert die Energie und das …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/6.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/6.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 03 Oct 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Louder Heart’s Night</title>
+      <link>https://www.epplehaus.de/event/louder-hearts-night/</link>
+      <guid>https://www.epplehaus.de/event/louder-hearts-night/</guid>
+      <description>Sat, 03.10.2026 | 19:00 · Epplehaus
+Am 03.10. bringen wir die „Louder Hearts Night“ zusammen mit @davecollide @_stikkie_ und @bittersheets ins @epplehaus 🪄 Was wir bieten? – einen sicheren Ort zum Live Musik hören 🎶 – eine wertschätzende Community 🫂 – viel Liebe 🩷 – Eintritt auf Spendenbasis 🤙🏼 Doors: 19 Uhr Beginn: 20 Uhr Kommt …</description>
+      <pubDate>Sat, 03 Oct 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Der kleine Hase Moritz</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/der-kleine-hase-moritz/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/der-kleine-hase-moritz/</guid>
+      <description>Sun, 04.10.2026 | 15:00 · Theater DERenDINGEn · Kulturnetz Tübingen
+Der kleine Hase Moritz (Für Kinder ab 5 Jahren) Es war einmal ein kleiner Hase, der hieß Moritz und der hörte immer: Pass auf, es könnte Dir etwas zustoßen! Hunde können beißen. Es gibt Räuber und Gespenster. Im Wasser kann man ertrinken. Die Großen werden Dir weh tun! Also spielte er lieber mit …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/07/dka-plakat-klein.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/07/dka-plakat-klein.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 04 Oct 2026 15:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Let’s Play! Die Bluegrass- und Oldtime Jam</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/lets-play-die-bluegrass-und-oldtime-jam/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/lets-play-die-bluegrass-und-oldtime-jam/</guid>
+      <description>Mon, 05.10.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Musikalisches Improvisieren Eine Bluegrass Jam Session ist weit mehr als das bloße Spielen von Liedern – es ist das Zusammenkommen von Musiker*innen mit Banjo, Mandoline, Geige, Gitarre, Resonator-Gitarre und Kontrabass. Spontan erschaffen die Musiker*innen durch Erfahrung, Zuhören und die …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/7.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/7.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Mon, 05 Oct 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Mythos 1776: Traum und Erwachen der amerikanischen Nation</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/mythos-1776-traum-und-erwachen-der-amerikanischen-nation/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/mythos-1776-traum-und-erwachen-der-amerikanischen-nation/</guid>
+      <description>Fri, 09.10.2026 | 19:15 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Buchvorstellung &amp; Gespräch mit Hiram Kümper Noch heute spielt für das innen- und außenpolitische Handeln der USA die Rückbesinnung auf die Unabhängigkeitserklärung von 1776 und der Mythos vom amerikanischen „Freiheitsstreben“ eine zentrale Rolle. Doch welche Folgen zeitigt dieser Mythos in einer …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/8.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/8.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 09 Oct 2026 19:15:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Metalnight</title>
+      <link>https://www.epplehaus.de/event/metalnight-21/</link>
+      <guid>https://www.epplehaus.de/event/metalnight-21/</guid>
+      <description>Sat, 10.10.2026 | 20:30 · Epplehaus
+Hier trifft melancholische Dystopie auf pure Brutalität. 🖤 Convictive aus Duisburg schlagen bei uns auf und bringen melodischen Black Metal vom feinsten mit: Epische Riffs, rastlose Blastbeats und am Mikrofon eine kleine, blonde Naturgewalt umhüllen alles in Dunkelheit. Brutale Blastbeats, …</description>
+      <pubDate>Sat, 10 Oct 2026 20:30:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Heimat to Hell</title>
+      <link>https://www.epplehaus.de/event/heimat-to-hell-2/</link>
+      <guid>https://www.epplehaus.de/event/heimat-to-hell-2/</guid>
+      <description>Sat, 17.10.2026 | 20:00 · Epplehaus
+DoomedDarkRock, Ulm × Oct. 17th #HeimatToHell Festival @epplehaus Tübingen s/w Ger × Antinational Doom/Hardcore/Dark/Metalpunk feast! Three people in overalls and one in armour are making slow music. A soundscape whose walls do not actually move, yet seem to be drawing ever closer. Claustrophobia, …</description>
+      <pubDate>Sat, 17 Oct 2026 20:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Tito &amp; Tarantula (US): Best of Tour 2026</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/tito-tarantula-us-best-of-tour-2026/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/tito-tarantula-us-best-of-tour-2026/</guid>
+      <description>Tue, 20.10.2026 | 20:00 · franz.K Reutlingen · Kulturnetz Tübingen
+Konzert Tito is back! Die Americana- und Desert Rock Legende geht dieses Jahr auf eine mit Spannung erwartete Best-of Europatournee mit den Klassiker-Tarantula-Songs, den legendären Filmsongs und einigen musikalischen Überraschungen. Passend dazu veröffentliche die Band mit „Best of the Unheard“ …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/10.jpeg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/10.jpeg" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 20 Oct 2026 20:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Get Off Your Seat, Let’s Meet and Greet!</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/get-off-your-seat-lets-meet-and-greet-2/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/get-off-your-seat-lets-meet-and-greet-2/</guid>
+      <description>Wed, 21.10.2026 | 18:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+German Students Welcome American Students. Are you new in Tübingen? Do you plan to study in the U.S.? How about an easy way to break the ice and chat with both Germans and Americans? Come together in a relaxed atmosphere, meet new friends who share your interests, and simply have a good time …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/meetgreet-1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/meetgreet-1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 21 Oct 2026 18:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Silent Reading Party</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/silent-reading-party-4/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/silent-reading-party-4/</guid>
+      <description>Thu, 22.10.2026 | 19:00 · Landestheater Tübingen (LTT) · Kulturnetz Tübingen
+Silent Reading Party – Bühne frei; Welt aus und Kopfkino an! Lesegenuss für Jugendliche und junge Erwachsene Lesen – gemeinsam, aber jede*r für sich: Im Foyer des LTT wird die Stille zum Erlebnis. Bringt euer Lieblingsbuch mit oder leiht Euch vor Ort in der Buchausstellung eines aus (in deutscher, …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/11.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/11.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 22 Oct 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Stummfilmnachmittag: Mickey Mouse &amp; Friends</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/stummfilmnachmittag-mickey-mouse-friends/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/stummfilmnachmittag-mickey-mouse-friends/</guid>
+      <description>Sat, 24.10.2026 | 16:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+© The Walt Disney Company Stummfilmepisoden mit Live-Klavierbegleitung von Hans-Jörg Lund. Die Erfolgsgeschichte von Mickey Mouse ist einzigartig und nahezu jedes Kind kennt die kleine Maus mit der roten Hose. Vor fast einhundert Jahren veröffentlichte der Zeichner Walt Disney den Kurzfilm …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/x.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/x.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 24 Oct 2026 16:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>BamBam-Band &amp; Halloween Fair for Kids</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/bambam-band-halloween-fair-for-kids/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/bambam-band-halloween-fair-for-kids/</guid>
+      <description>Sat, 31.10.2026 | 15:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Trick or Treat mit Live-Musik Trick or Treat mit Live-Musik &amp; Spuk für große und kleine Kinder. Der Oktober bringt Grusel, Kostüme und jede Menge Spaß – und dieses Jahr startet das Deutsch-Amerikanische Institut (d.a.i.) mit Live-Musik in den gruseligsten Nachmittag des Jahres! Ab 15:00 Uhr …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/r.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/r.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 31 Oct 2026 15:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Midterm Elections @ d.a.i. Tübingen</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/midterm-elections-d-a-i-tuebingen/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/midterm-elections-d-a-i-tuebingen/</guid>
+      <description>Tue, 03.11.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Podiumsdiskussionen &amp; Live-Streams in die USA, Musik, und vieles mehr! Es ist so weit: Nach einem Jahr der Fragen, Debatten und Analysen kommt die Stunde der Wahrheit: Am 3. November 2026 – dem Abend der US-Midterm Elections – lädt das Deutsch-Amerikanische Institut (d.a.i.) zum großen Finale der …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/m.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/m.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 03 Nov 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Gaming Night [18+]</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/gaming-night-18/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/gaming-night-18/</guid>
+      <description>Fri, 06.11.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Games, Snacks &amp; Conversations! The d.a.i. Gaming Club “Leveling Up at the Library” goes adults-only – age 18 and older. Looking for a fun and relaxed way to kick off your weekend? Join us for an easygoing evening filled with digital (PS5, Nintendo Switch) and analog games (board and card games), …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/g.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/g.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 06 Nov 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Dance of the Bats</title>
+      <link>https://www.epplehaus.de/event/dance-of-the-bats-8/</link>
+      <guid>https://www.epplehaus.de/event/dance-of-the-bats-8/</guid>
+      <description>Sat, 07.11.2026 | 22:00 · Epplehaus</description>
+      <pubDate>Sat, 07 Nov 2026 22:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Tortoise (US)</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/tortoise-us/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/tortoise-us/</guid>
+      <description>Mon, 09.11.2026 | 20:00 · franz.K Reutlingen · Kulturnetz Tübingen
+© Heather Cantrell Konzert Tortoise gilt als eine der weltweit einflussreichsten Musikgruppen der letzten 40 Jahre mit weitreichendem Einfluss auf die zeitgenössische Musikszene. Tortoise ist eine Instrumentalband aus Chicago, die Mitte der 1990er Jahre den Begriff Postrock mitprägte. Tortoise war …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/t.jpeg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/t.jpeg" medium="image" type="image/jpeg" />
+      <pubDate>Mon, 09 Nov 2026 20:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Ferryman Festival</title>
+      <link>https://www.epplehaus.de/event/ferryman-festival-2/</link>
+      <guid>https://www.epplehaus.de/event/ferryman-festival-2/</guid>
+      <description>Fri, 13.11.2026 | 20:30 · Epplehaus</description>
+      <pubDate>Fri, 13 Nov 2026 20:30:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Next to Normal – Das Musical</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/next-to-normal-das-musical/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/next-to-normal-das-musical/</guid>
+      <description>Wed, 18.11.2026 | 00:00 · Kulturnetz Tübingen
+Familie Goodman ist eine ganz normale Familie – oder zumindest wirkt sie so. Doch hinter der Fassade kämpfen alle Familienmitglieder mit ihren eigenen Ängsten, Sehnsüchten und Verletzungen. Diana, die Mutter der Familie, lebt mit einer bipolaren Störung und versucht, ihr Leben und ihre Familie …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/08/Banner-n2n.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/08/Banner-n2n.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0200</pubDate>
+    </item>
   </channel>
 </rss>
