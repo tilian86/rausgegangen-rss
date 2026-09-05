@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Sat, 05 Sep 2026 08:02:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 17:54:16 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mit Jugendguides zu NS-Spuren auf dem Stadtfriedhof</title>
@@ -58,6 +58,16 @@ Jeden Donnerstag ab 19:00 Uhr öffnet das Epplehaus seine Türen um zum gemeinsa
       <description>Fri, 18.09.2026 | 19:30 · Epplehaus
 Set the stage on fire with -FALSCHER HUND / Powerviolence from Saarbrücken -SNAKEPISS / Hardcore from Stuttgart @nekrodeusofficial @whats.wrongdog @snakepiss.hc</description>
       <pubDate>Fri, 18 Sep 2026 19:30:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Finissage Otmar Alt</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/finissage-otmar-alt/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/finissage-otmar-alt/</guid>
+      <description>Sat, 19.09.2026 | 10:00 · Art 28 Galerie · Kulturnetz Tübingen
+Am 19.09 ist der letzte Tag der Otmar Alt Ausstellung „Ein Buntes Leben“, genießen Sie diesen Abend mit uns bei einem Glas Sekt und Live Musik! Otmar Alt zählt seit den 1970er Jahren zu den bedeutendsten Künstlern Deutschlands. Die zwei Werkgruppen „Der Versuch Leben“ und „Die 20iger“ eröffnen …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/OA_A4_Finissage.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/OA_A4_Finissage.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 19 Sep 2026 10:00:00 +0200</pubDate>
     </item>
     <item>
       <title>Epplehaus-Kneipe</title>
