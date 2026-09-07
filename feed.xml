@@ -5,18 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Sun, 06 Sep 2026 18:00:14 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 08:54:45 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Mit Jugendguides zu NS-Spuren auf dem Stadtfriedhof</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/mit-jugendguides-zu-ns-spuren-auf-dem-stadtfriedhof-2/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/mit-jugendguides-zu-ns-spuren-auf-dem-stadtfriedhof-2/</guid>
-      <description>Sun, 06.09.2026 | 16:30 · Kulturnetz Tübingen
-Stadtgang am Sonntag, 6. September 2026 Jugendguides erkunden am Sonntag, 6. September 2026, ab 16:30 Uhr Spuren zur NS-Vergangenheit auf dem Tübinger Stadtfriedhof. Sie zeigen unter anderem das Grab von Lilli Zapf, der wichtigsten Forscherin zu Menschen jüdischer Herkunft in Tübingen. Vor dem Grab …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/04/Stadtfriedhof-Ausstellung_web.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/04/Stadtfriedhof-Ausstellung_web.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 06 Sep 2026 16:30:00 +0200</pubDate>
-    </item>
     <item>
       <title>Epplehaus-Kneipe</title>
       <link>https://www.epplehaus.de/event/epplehaus-kneipe-2/</link>
@@ -292,6 +282,13 @@ Familie Goodman ist eine ganz normale Familie – oder zumindest wirkt sie so. D
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/08/Banner-n2n.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/08/Banner-n2n.jpg" medium="image" type="image/jpeg" />
       <pubDate>Wed, 18 Nov 2026 00:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Hardcore Winterfest</title>
+      <link>https://www.epplehaus.de/event/hardcore-winterfest/</link>
+      <guid>https://www.epplehaus.de/event/hardcore-winterfest/</guid>
+      <description>Sat, 05.12.2026 | 20:00 · Epplehaus</description>
+      <pubDate>Sat, 05 Dec 2026 20:00:00 +0200</pubDate>
     </item>
   </channel>
 </rss>
