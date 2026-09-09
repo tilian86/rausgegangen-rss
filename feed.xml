@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Tue, 08 Sep 2026 19:15:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 08:36:58 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fantasy Adventure: D&amp;D Roleplay Nights</title>
@@ -108,6 +108,16 @@ Conversation group with d.a.i. teacher Scott Stelle Every fourth Friday of the m
       <pubDate>Fri, 25 Sep 2026 19:30:00 +0200</pubDate>
     </item>
     <item>
+      <title>Half an Hour with… Dr. Christoph Schemionek</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/half-an-hour-with-dr-christoph-schemionek/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/half-an-hour-with-dr-christoph-schemionek/</guid>
+      <description>Mon, 28.09.2026 | 16:30 · Online · Kulturnetz Tübingen
+Online Talk as Part of the VDAZ-Series „Half and Hour with…“ Die Midterm Wahlen als Gradmesser für den künftigen handelspolitischen Kurs der USA. Was steht für die deutsche Wirtschaft auf dem Spiel? Die USA sind gleichzeitig Absatzmarkt, Investitionsstandort und Knotenpunkt globaler Lieferketten. …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Schemionek_Christoph-scaled-e1788880556586-978x1024-1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Schemionek_Christoph-scaled-e1788880556586-978x1024-1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Mon, 28 Sep 2026 16:30:00 +0200</pubDate>
+    </item>
+    <item>
       <title>Glaube, Macht und Zukunft – Theologische Motive bei Tech-Gigant Peter Thiel</title>
       <link>https://www.kulturnetz-tuebingen.de/event/glaube-macht-und-zukunft-theologische-motive-bei-tech-gigant-peter-thiel/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/glaube-macht-und-zukunft-theologische-motive-bei-tech-gigant-peter-thiel/</guid>
@@ -136,6 +146,16 @@ Mit seinem Vortrag Malen mit Maschinen – Von der Computerkunst zur KI-Kunst gi
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/05/areas-from-lines.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/05/areas-from-lines.jpg" medium="image" type="image/jpeg" />
       <pubDate>Wed, 30 Sep 2026 17:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Latino Stammtisch</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-15/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-15/</guid>
+      <description>Wed, 30.09.2026 | 20:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
+Monatlicher Stammtisch um d.a.i.-Spanischlehrerin Mariana Marturet Every last Wednesday of the month ¿Hablas español? Dann besuche gerne unseren monatlichen Latino Stammtisch im HAUPTbahnhof! In gemütlicher Runde haben die Teilnehmenden die Möglichkeit, in entspannter Atmosphäre das eigene Spanisch …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 30 Sep 2026 20:00:00 +0200</pubDate>
     </item>
     <item>
       <title>Fantasy Adventure: D&amp;D Roleplay Nights</title>
@@ -280,6 +300,16 @@ Monthly hybrid book discussion with Jessica Strain Calling all book lovers! You 
       <pubDate>Tue, 27 Oct 2026 18:15:00 +0200</pubDate>
     </item>
     <item>
+      <title>Latino Stammtisch</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-16/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-16/</guid>
+      <description>Wed, 28.10.2026 | 20:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
+Monatlicher Stammtisch um d.a.i.-Spanischlehrerin Mariana Marturet Every last Wednesday of the month ¿Hablas español? Dann besuche gerne unseren monatlichen Latino Stammtisch im HAUPTbahnhof! In gemütlicher Runde haben die Teilnehmenden die Möglichkeit, in entspannter Atmosphäre das eigene Spanisch …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 28 Oct 2026 20:00:00 +0200</pubDate>
+    </item>
+    <item>
       <title>Study Group: The Making of a Quagmire</title>
       <link>https://www.kulturnetz-tuebingen.de/event/study-group-the-making-of-a-quagmire-2/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/study-group-the-making-of-a-quagmire-2/</guid>
@@ -355,6 +385,16 @@ Vortrag von Andreas Zumach Die USA haben gewählt – und die Welt schaut genau 
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/zumach-768x512-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/zumach-768x512-1.jpg" medium="image" type="image/jpeg" />
       <pubDate>Wed, 11 Nov 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Latino Stammtisch</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-17/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-17/</guid>
+      <description>Wed, 11.11.2026 | 20:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
+Monatlicher Stammtisch um d.a.i.-Spanischlehrerin Mariana Marturet Every last Wednesday of the month ¿Hablas español? Dann besuche gerne unseren monatlichen Latino Stammtisch im HAUPTbahnhof! In gemütlicher Runde haben die Teilnehmenden die Möglichkeit, in entspannter Atmosphäre das eigene Spanisch …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 11 Nov 2026 20:00:00 +0200</pubDate>
     </item>
     <item>
       <title>This Is America – Is This America? Mythen, Konflikte und das amerikanische Versprechen</title>
