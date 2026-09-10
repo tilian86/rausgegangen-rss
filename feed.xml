@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Thu, 10 Sep 2026 08:38:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 18:56:15 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fantasy Adventure: D&amp;D Roleplay Nights</title>
@@ -52,7 +52,7 @@ Jeden Donnerstag ab 19:00 Uhr öffnet das Epplehaus seine Türen um zum gemeinsa
       <pubDate>Fri, 18 Sep 2026 19:15:00 +0200</pubDate>
     </item>
     <item>
-      <title>Nekrodeus * Falscher Hund * Snakepiss</title>
+      <title>Konzert: Nekrodeus * Falscher Hund * Snakepiss</title>
       <link>https://www.epplehaus.de/event/nekrodeus-falscher-hund-snakepiss/</link>
       <guid>https://www.epplehaus.de/event/nekrodeus-falscher-hund-snakepiss/</guid>
       <description>Fri, 18.09.2026 | 19:30 · Epplehaus
@@ -185,6 +185,14 @@ Gaming in English and Tabletop Every first Thursday of the month Join us for a r
       <pubDate>Fri, 02 Oct 2026 20:00:00 +0200</pubDate>
     </item>
     <item>
+      <title>Konzert: Astral Kompakt + Tiefenrausch</title>
+      <link>https://www.epplehaus.de/event/konzert-astral-compact-tiefenrausch/</link>
+      <guid>https://www.epplehaus.de/event/konzert-astral-compact-tiefenrausch/</guid>
+      <description>Fri, 02.10.2026 | 20:00 · Epplehaus
+@astralkompakt</description>
+      <pubDate>Fri, 02 Oct 2026 20:00:00 +0200</pubDate>
+    </item>
+    <item>
       <title>Lindy Hop</title>
       <link>https://www.kulturnetz-tuebingen.de/event/lindy-hop-6/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/lindy-hop-6/</guid>
@@ -195,7 +203,7 @@ Tanzabend mit Crashkurs Get ready to swing your Tanzbein! Der Lindy Hop, auch al
       <pubDate>Sat, 03 Oct 2026 19:00:00 +0200</pubDate>
     </item>
     <item>
-      <title>Louder Heart’s Night</title>
+      <title>Konzert: Louder Heart’s Night</title>
       <link>https://www.epplehaus.de/event/louder-hearts-night/</link>
       <guid>https://www.epplehaus.de/event/louder-hearts-night/</guid>
       <description>Sat, 03.10.2026 | 19:00 · Epplehaus
