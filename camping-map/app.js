@@ -5,7 +5,16 @@
    Alles lokal: kein Server, keine Konten, kein Tracking.
    ============================================================ */
 
-const APP_VERSION = '1.1.0';
+const APP_VERSION = '1.2.0';
+
+/* Ein Standortwert gilt nur kurz als aktuell: iOS lässt watchPosition
+   einschlafen, sobald das Display aus ist. Wer dann am anderen Ende des
+   Platzes kalibriert, bekämt sonst die alte Position untergeschoben. */
+const FIX_MAX_AGE_MS = 8000;
+/* Zwei Kalibrierpunkte, die GPS-seitig praktisch aufeinanderliegen,
+   ergeben keine brauchbare Abbildung. */
+const MIN_SPREAD_M = 10;
+const MIN_BASELINE_M = 20;
 const LS_KEY = 'campmap.state.v1';
 const IDB_NAME = 'campmap';
 const IDB_STORE = 'blobs';
@@ -143,6 +152,18 @@ function solve3(M, r) {
   return [A[0][3] / A[0][0], A[1][3] / A[1][1], A[2][3] / A[2][2]];
 }
 
+/* Größter Abstand zwischen zwei Kalibrierpunkten, in Metern. */
+function calibSpread(points) {
+  let max = 0;
+  for (let i = 0; i < points.length; i++) {
+    for (let j = i + 1; j < points.length; j++) {
+      const d = geoDistance(points[i].lat, points[i].lon, points[j].lat, points[j].lon);
+      if (d > max) max = d;
+    }
+  }
+  return max;
+}
+
 /* points: [{px, py, lat, lon}] -> Transform inkl. Gütemaßen.
    Wichtig: Bei genau 3 Punkten geht die affine Lösung exakt durch alle
    Punkte, der Restfehler ist dann immer 0 und sagt nichts über die
@@ -151,6 +172,9 @@ function solve3(M, r) {
    Vorhersage danebenliegt. */
 function solveTransform(points, withCheck = true) {
   if (!points || points.length < 2) return null;
+  // Liegen alle Punkte auf demselben Fleck, kommt nur Unsinn heraus –
+  // lieber gar keine Karte als eine, die zehn Kilometer danebenliegt.
+  if (calibSpread(points) < MIN_SPREAD_M) return null;
   const ref = { lat: points[0].lat, lon: points[0].lon };
   const pts = points.map(p => {
     const m = project(p.lat, p.lon, ref);
@@ -284,7 +308,7 @@ function compassName(deg) {
 
 window.CampMath = {
   project, unproject, applyTransform, invertTransform,
-  solveTransform, solveAffine, solveSimilarity,
+  solveTransform, solveAffine, solveSimilarity, calibSpread,
   latLonToPlan, planToLatLon, geoDistance, bearingDeg, parseCoords, compassName
 };
 
@@ -806,11 +830,34 @@ function insidePlan(px, py) {
 /* ---------- Kalibrierung ------------------------------------- */
 
 function recompute() {
+  state.calibIssue = null;
   if (!state.plan || state.calib.length < 2) { state.T = null; return; }
   const pts = state.calib.map(c => ({
     px: c.u * state.plan.w, py: c.v * state.plan.h, lat: c.lat, lon: c.lon
   }));
   state.T = solveTransform(pts);
+  if (!state.T) {
+    const spread = calibSpread(pts);
+    state.calibIssue = spread < MIN_SPREAD_M
+      ? `Die Kalibrierpunkte liegen laut GPS nur ${spread.toFixed(0)} m auseinander, obwohl sie auf dem Plan weit entfernt sind. Da wurde eine veraltete Position gespeichert – Punkte löschen und neu setzen.`
+      : 'Die Kalibrierpunkte passen nicht zusammen – bitte prüfen.';
+  }
+}
+
+/* Fängt den häufigsten Fehler ab: Handy hält noch die alte Position,
+   während man längst woanders steht. */
+function calibConflict(px, py, lat, lon) {
+  if (!state.plan) return null;
+  const diag = Math.hypot(state.plan.w, state.plan.h);
+  for (let i = 0; i < state.calib.length; i++) {
+    const c = state.calib[i];
+    const dGps = geoDistance(c.lat, c.lon, lat, lon);
+    const dPx = Math.hypot(c.u * state.plan.w - px, c.v * state.plan.h - py);
+    if (dGps < MIN_BASELINE_M && dPx > diag * 0.02) {
+      return { index: i + 1, dGps };
+    }
+  }
+  return null;
 }
 
 function addCalibPoint(px, py, lat, lon, acc) {
@@ -833,18 +880,39 @@ function addCalibPoint(px, py, lat, lon, acc) {
 
 function startCalibGps() {
   if (!state.plan) { openPlanPicker(); return; }
-  if (!state.pos) {
-    showBanner('Noch kein GPS-Fix. Kurz ins Freie gehen und warten, bis oben eine Genauigkeit steht.', 'bad');
-    return;
-  }
   setMode({ type: 'calib' });
+  getFreshFix().then(() => renderMode());   // im Hintergrund schon anfordern
 }
 
-function finishCalibGps(px, py) {
-  if (!state.pos) { flashMode('GPS-Signal verloren.'); return; }
-  const { lat, lon, acc } = state.pos;
+async function finishCalibGps(px, py) {
   setMode(null);
-  addCalibPoint(px, py, lat, lon, acc);
+  if (posAge() > FIX_MAX_AGE_MS) {
+    showBanner('Warte auf eine frische GPS-Position – bleib bitte kurz stehen …', null, 25000);
+  }
+  const fix = await getFreshFix();
+  el.banner.hidden = true;
+  if (!fix) {
+    showBanner('Keine aktuelle Position bekommen. Unter freiem Himmel warten, bis oben eine Genauigkeit steht, dann nochmal.', 'bad', 10000);
+    return;
+  }
+
+  const clash = calibConflict(px, py, fix.lat, fix.lon);
+  if (clash) {
+    openActions('Position sieht veraltet aus', [
+      {
+        label: 'Verstanden, nochmal versuchen',
+        run: () => showBanner(
+          `Dein Handy meldet fast dieselbe Stelle wie bei Punkt ${clash.index} (${Math.round(clash.dGps)} m), obwohl du weit davon entfernt getippt hast. Warte, bis sich die Genauigkeit oben aktualisiert, und setze den Punkt dann neu.`,
+          null, 12000)
+      },
+      {
+        label: 'Punkt trotzdem speichern', danger: true,
+        run: () => addCalibPoint(px, py, fix.lat, fix.lon, fix.acc)
+      }
+    ]);
+    return;
+  }
+  addCalibPoint(px, py, fix.lat, fix.lon, fix.acc);
 }
 
 function startCalibManual() {
@@ -986,7 +1054,8 @@ function onPos(p) {
   state.pos = {
     lat: p.coords.latitude, lon: p.coords.longitude,
     acc: p.coords.accuracy, heading: p.coords.heading,
-    speed: p.coords.speed, ts: p.timestamp
+    speed: p.coords.speed, ts: p.timestamp,
+    rx: Date.now()   // eigene Empfangszeit: unabhängig von der Geräteuhr
   };
   if (!state.opts.compass && typeof p.coords.heading === 'number' && !isNaN(p.coords.heading)
       && p.coords.speed > 0.7) {
@@ -1000,7 +1069,43 @@ function onPos(p) {
   if (state.mode && state.mode.type === 'calib') renderMode();
 }
 
+function posAge() {
+  return state.pos ? Date.now() - state.pos.rx : Infinity;
+}
+
+/* Liefert eine Position, die wirklich von jetzt ist – oder null.
+   Stößt dabei den Watch neu an, weil er nach dem Hintergrund oft steht. */
+function getFreshFix(maxAge = FIX_MAX_AGE_MS, timeoutMs = 20000) {
+  if (posAge() <= maxAge) return Promise.resolve(state.pos);
+  if (!('geolocation' in navigator)) return Promise.resolve(null);
+  startWatch();
+  return new Promise(resolve => {
+    let done = false;
+    const finish = value => { if (!done) { done = true; resolve(value); } };
+    navigator.geolocation.getCurrentPosition(
+      p => { onPos(p); finish(state.pos); },
+      () => finish(posAge() <= maxAge ? state.pos : null),
+      { enableHighAccuracy: true, maximumAge: 0, timeout: timeoutMs }
+    );
+    setTimeout(() => finish(posAge() <= maxAge ? state.pos : null), timeoutMs + 500);
+  });
+}
+
+/* Nach Displaysperre oder App-Wechsel liefert der alte Watch auf iOS
+   häufig nichts mehr. Also: neu aufsetzen, sobald die Seite zurückkommt. */
+function onVisible() {
+  if (document.visibilityState !== 'visible') return;
+  // Läuft der Watch und ist frisch, nicht unnötig abreißen.
+  if (watchId == null || posAge() > 10000) startWatch();
+  renderStatus();
+}
+document.addEventListener('visibilitychange', onVisible);
+window.addEventListener('pageshow', onVisible);
+window.addEventListener('focus', onVisible);
+setInterval(() => { if (!document.hidden) renderStatus(); }, 5000);
+
 function onPosError(err) {
+  state.geoErrorCode = err.code;
   if (err.code === 1) state.geoError = 'Standortfreigabe verweigert. In den Browser-/Seiteneinstellungen erlauben.';
   else if (err.code === 2) state.geoError = 'Kein Standort verfügbar (kein Satellitenempfang?).';
   else state.geoError = 'Standortabfrage dauert zu lange.';
@@ -1139,18 +1244,27 @@ function renderCalibPoints() {
 
 function renderStatus() {
   let level = 'bad', txt;
+  // Ein vorübergehender Fehler darf eine vorhandene Position nicht verdecken –
+  // das Alter sagt dann mehr aus als "kein Empfang".
+  const blockingError = state.geoError && (!state.pos || state.geoErrorCode === 1);
   if (!state.plan) {
     txt = 'Kein Lageplan geladen';
-  } else if (state.geoError) {
+  } else if (blockingError) {
     txt = state.geoError;
   } else if (!state.pos) {
     txt = 'Suche GPS …';
     level = 'warn';
   } else {
     const acc = Math.round(state.pos.acc || 0);
+    const age = posAge();
     level = acc <= 15 ? 'good' : acc <= 40 ? 'warn' : 'bad';
     txt = `GPS ±${acc} m`;
-    if (!state.T) { txt += ' · nicht kalibriert'; level = 'warn'; }
+    if (age > 20000) {
+      txt += ` · ${fmtAge(age)} alt`;
+      level = age > 120000 ? 'bad' : 'warn';
+    }
+    if (state.calibIssue) { txt += ' · Kalibrierung ungültig'; level = 'bad'; }
+    else if (!state.T) { txt += ' · nicht kalibriert'; level = 'warn'; }
     else {
       const p = latLonToPlan(state.T, state.pos.lat, state.pos.lon);
       if (!insidePlan(p.px, p.py)) txt += ' · außerhalb des Plans';
@@ -1212,6 +1326,13 @@ function renderTarget() {
   el.scalebar.classList.add('shifted');
 }
 
+function fmtAge(ms) {
+  const s = Math.round(ms / 1000);
+  if (s < 90) return `${s} s`;
+  const min = Math.round(s / 60);
+  return min < 90 ? `${min} min` : `${Math.round(min / 60)} h`;
+}
+
 function fmtDist(m) {
   if (m == null) return '–';
   if (m < 20) return Math.round(m) + ' m';
@@ -1240,8 +1361,11 @@ function renderMode() {
   if (!state.mode) { el.modebar.hidden = true; return; }
   el.modebar.hidden = false;
   if (state.mode.type === 'calib') {
-    const acc = state.pos ? `GPS ±${Math.round(state.pos.acc)} m` : 'kein GPS';
-    el.modetext.textContent = `Tippe genau die Stelle auf dem Plan an, an der du jetzt stehst (${acc}).`;
+    let info;
+    if (!state.pos) info = 'noch kein GPS';
+    else if (posAge() > FIX_MAX_AGE_MS) info = `GPS ±${Math.round(state.pos.acc)} m, ${fmtAge(posAge())} alt – wird aufgefrischt`;
+    else info = `GPS ±${Math.round(state.pos.acc)} m`;
+    el.modetext.textContent = `Tippe genau die Stelle auf dem Plan an, an der du jetzt stehst (${info}).`;
   } else if (state.mode.type === 'calib-manual') {
     el.modetext.textContent = 'Tippe die Stelle an, deren Koordinaten du kennst.';
   } else if (state.mode.type === 'marker') {
@@ -1271,6 +1395,12 @@ function renderSheet() {
   const q = calibQuality();
   const st = $('#calib-status');
   st.innerHTML = '';
+  if (state.calibIssue) {
+    const warn = document.createElement('div');
+    warn.className = 'issue';
+    warn.textContent = state.calibIssue;
+    st.appendChild(warn);
+  }
   const tag = document.createElement('span');
   tag.className = 'tag ' + q.level;
   tag.textContent = state.T ? (state.T.n >= 3 && !state.T.fellBack ? 'affin' : 'Drehung + Maßstab') : 'offen';
@@ -1586,6 +1716,15 @@ async function boot() {
   }
 
   if ('serviceWorker' in navigator && window.isSecureContext) {
+    // Übernimmt eine neue Fassung die Kontrolle, einmal neu laden – sonst
+    // läuft nach einem Update noch die alte Version aus dem Cache weiter.
+    const hadController = !!navigator.serviceWorker.controller;
+    let reloading = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!hadController || reloading) return;
+      reloading = true;
+      location.reload();
+    });
     navigator.serviceWorker.register('sw.js').catch(err => console.warn('Service Worker aus', err));
   }
 }

@@ -1,7 +1,13 @@
 /* Service Worker: macht die Karte offline nutzbar.
-   Eigene Dateien werden gecacht, GPS funktioniert ohne Netz sowieso. */
+   Eigene Dateien werden gecacht, GPS funktioniert ohne Netz sowieso.
 
-const CACHE = 'campmap-v2';
+   Programmdateien holt er zuerst aus dem Netz (mit kurzem Zeitlimit), damit
+   Korrekturen sofort ankommen statt erst beim übernächsten Start. Alles
+   Schwere und Unveränderliche – Lageplan, Symbole, pdf.js – kommt zuerst aus
+   dem Cache. */
+
+const CACHE = 'campmap-v3';
+const NET_TIMEOUT_MS = 3500;
 const ASSETS = [
   './',
   'index.html',
@@ -29,32 +35,45 @@ self.addEventListener('activate', ev => {
   );
 });
 
+function isProgramFile(url) {
+  return /(^|\/)(index\.html|app\.js|app\.css|manifest\.webmanifest)$/.test(url.pathname)
+      || url.pathname.endsWith('/');
+}
+
+async function put(req, res) {
+  if (res && res.ok) (await caches.open(CACHE)).put(req, res.clone());
+  return res;
+}
+
+async function networkFirst(req) {
+  try {
+    const res = await Promise.race([
+      fetch(req),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('langsam')), NET_TIMEOUT_MS))
+    ]);
+    return await put(req, res);
+  } catch (err) {
+    const cached = await caches.match(req, { ignoreSearch: true });
+    if (cached) return cached;
+    if (req.mode === 'navigate') {
+      const fallback = await caches.match('index.html');
+      if (fallback) return fallback;
+    }
+    throw err;
+  }
+}
+
+async function cacheFirst(req) {
+  const cached = await caches.match(req, { ignoreSearch: true });
+  if (cached) return cached;
+  return put(req, await fetch(req));
+}
+
 self.addEventListener('fetch', ev => {
   const req = ev.request;
-  if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
-
-  ev.respondWith((async () => {
-    const cached = await caches.match(req, { ignoreSearch: true });
-    if (cached) {
-      // Im Hintergrund auffrischen, damit Updates ankommen.
-      ev.waitUntil((async () => {
-        try {
-          const fresh = await fetch(req);
-          if (fresh && fresh.ok) (await caches.open(CACHE)).put(req, fresh.clone());
-        } catch (err) { /* offline: Cache bleibt */ }
-      })());
-      return cached;
-    }
-    try {
-      const res = await fetch(req);
-      if (res && res.ok) (await caches.open(CACHE)).put(req, res.clone());
-      return res;
-    } catch (err) {
-      if (req.mode === 'navigate') {
-        const fallback = await caches.match('index.html');
-        if (fallback) return fallback;
-      }
-      throw err;
-    }
-  })());
+  const url = new URL(req.url);
+  if (req.method !== 'GET' || url.origin !== self.location.origin) return;
+  ev.respondWith(
+    (req.mode === 'navigate' || isProgramFile(url)) ? networkFirst(req) : cacheFirst(req)
+  );
 });

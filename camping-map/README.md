@@ -54,6 +54,22 @@ Weitere Kalibrierpunkte machen es genauer: Ab dem dritten Punkt wird auch eine
 Verzerrung des Plans ausgeglichen (unterschiedliche Maßstäbe, leichte Scherung),
 wie sie gezeichnete Pläne fast immer haben.
 
+**Warum das Alter des Standorts zählt:** iOS lässt `watchPosition` einschlafen,
+sobald das Display aus ist oder die App im Hintergrund war. Wer dann am anderen
+Ende des Platzes kalibriert, würde die alte Position gespeichert bekommen –
+alle Punkte lägen auf demselben Fleck und die Karte wäre komplett verschoben.
+Deshalb:
+
+- Beim Kalibrieren holt die App immer einen frischen Fix (höchstens 8 s alt)
+  und startet den Standort-Watch neu, wenn die Seite zurückkommt.
+- Die Statuszeile zeigt das Alter, sobald ein Fix älter als 20 s ist.
+- Liegt ein neuer Punkt laut GPS weniger als 20 m vom vorherigen entfernt,
+  obwohl er auf dem Plan weit weg getippt wurde, fragt die App nach statt es
+  stillschweigend zu übernehmen.
+- Punkte, die GPS-seitig weniger als 10 m auseinanderliegen, ergeben gar keine
+  Kalibrierung mehr – lieber „nicht kalibriert“ als eine Karte, die den
+  Standort quer über den Platz wirft.
+
 ## Wie genau ist das?
 
 Die Kalibrierung ist eine affine Abbildung zwischen GPS und Planbild:

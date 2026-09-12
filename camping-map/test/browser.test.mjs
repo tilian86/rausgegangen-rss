@@ -271,6 +271,71 @@ try {
   }
 }
 
+/* 13) Der Fall aus der Praxis: iOS lässt watchPosition nach dem Sperren des
+   Displays einschlafen. Wer dann am anderen Ende des Platzes kalibriert,
+   darf NICHT die alte Position gespeichert bekommen. */
+const stale = await ctx.newPage();
+await stale.addInitScript(() => {
+  // Watch liefert genau einen Fix und schweigt danach – wie auf dem iPhone
+  const realWatch = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let delivered = 0;
+  navigator.geolocation.watchPosition = (ok, err, opts) =>
+    realWatch(p => { if (delivered++ === 0) ok(p); }, err, opts);
+});
+const staleErrors = [];
+stale.on('pageerror', e => staleErrors.push('pageerror: ' + e.message));
+
+const POS_A = toLatLon(200, 200);     // erster Standort
+const POS_B = toLatLon(1000, 700);    // anderes Ende des Platzes
+await ctx.setGeolocation({ latitude: POS_A.lat, longitude: POS_A.lon, accuracy: 6 });
+await stale.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+await stale.evaluate(() => { indexedDB.deleteDatabase('campmap'); localStorage.clear(); });
+await stale.reload({ waitUntil: 'networkidle' });
+await stale.locator('#file-plan').setInputFiles(path.join(here, 'demo-plan.png'));
+await stale.waitForFunction(
+  () => window.__app.state.plan && window.__app.state.plan.w === 1200, null, { timeout: 15000 });
+await stale.waitForFunction(() => window.__app.state.pos !== null, null, { timeout: 15000 });
+
+// Nutzer läuft ans andere Ende; der eingeschlafene Watch merkt davon nichts
+await ctx.setGeolocation({ latitude: POS_B.lat, longitude: POS_B.lon, accuracy: 6 });
+await stale.evaluate(() => { window.__app.state.pos.rx -= 300000; });   // Fix ist 5 min alt
+// Die Statuszeile frischt sich selbst auf und muss das Alter melden
+await stale.waitForFunction(
+  () => /alt/.test(document.querySelector('#status .txt').textContent),
+  null, { timeout: 12000 }
+);
+
+await stale.locator('#btn-calib').click();
+await stale.waitForTimeout(200);
+const box2 = await stale.locator('#stage').boundingBox();
+await stale.mouse.click(box2.x + box2.width / 2, box2.y + box2.height / 2);
+await stale.waitForFunction(() => window.__app.state.calib.length === 1, null, { timeout: 25000 });
+const saved = await stale.evaluate(() => window.__app.state.calib[0]);
+const dToB = Math.hypot(saved.lat - POS_B.lat, saved.lon - POS_B.lon);
+const dToA = Math.hypot(saved.lat - POS_A.lat, saved.lon - POS_A.lon);
+assert.ok(dToB < dToA, 'gespeichert wird der frische Standort, nicht der eingefrorene');
+assert.ok(Math.abs(saved.lat - POS_B.lat) < 1e-5, `Breite ${saved.lat} statt ${POS_B.lat}`);
+
+// 14) Zweiter Punkt mit unveränderter Position, aber weit weg getippt -> Nachfrage
+await stale.locator('#btn-calib').click();
+await stale.waitForTimeout(200);
+// Weit entfernte Stelle *auf dem Plan* treffen, nicht daneben
+const farPoint = await stale.evaluate(() => {
+  const v = window.__app.view;
+  const r = document.querySelector('#stage').getBoundingClientRect();
+  return { x: r.left + v.x + 1050 * v.z, y: r.top + v.y + 700 * v.z };
+});
+await stale.mouse.click(farPoint.x, farPoint.y);
+await stale.waitForSelector('#actions:not([hidden])', { timeout: 25000 });
+assert.match(await stale.locator('#actions-title').textContent(), /veraltet/,
+  'App warnt statt den unbrauchbaren Punkt zu schlucken');
+assert.equal(await stale.evaluate(() => window.__app.state.calib.length), 1,
+  'Punkt wurde nicht gespeichert');
+await stale.locator('#actions-close').click();
+await stale.screenshot({ path: `${OUT}/10-stale-warning.png` });
+assert.deepEqual(staleErrors, [], 'keine Fehler im Veraltet-Fall:\n' + staleErrors.join('\n'));
+await stale.close();
+
 assert.deepEqual(errors, [], 'keine Konsolenfehler:\n' + errors.join('\n'));
 
 await browser.close();
