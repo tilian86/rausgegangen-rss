@@ -41,3 +41,9 @@ jetzt Quellen die Daten, die sie ausdrücklich zum Abruf anbieten.
 
 Läuft täglich um 6 und 18 Uhr. Manuell: Actions → „Veranstaltungen Tübingen"
 → Run workflow.
+
+## Nebenbei im Repo
+
+`camping-map/` – eigenständige Web-App: offizieller Campingplatz-Lageplan mit
+live GPS-Position darauf, offline nutzbar. Siehe
+[camping-map/README.md](camping-map/README.md).

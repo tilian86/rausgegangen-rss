@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Platzkarte – Lageplan mit GPS</title>
+<meta name="description" content="Offline-Karte fürs Handy: offizieller Campingplatz-Lageplan mit live GPS-Position.">
+<meta name="theme-color" content="#0e1116">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Platzkarte">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div id="stage" aria-label="Lageplan">
+  <div id="world">
+    <img id="plan" alt="Lageplan des Campingplatzes" draggable="false" hidden>
+    <div id="accuracy" hidden></div>
+    <div id="me" hidden>
+      <div class="me-arrow" hidden></div>
+      <div class="me-dot"></div>
+    </div>
+    <div id="markers"></div>
+    <div id="calibpts"></div>
+  </div>
+</div>
+
+<div id="topbar">
+  <button id="btn-menu" class="chip icon" aria-label="Menü öffnen">☰</button>
+  <div id="status" class="chip status" role="status">Starte …</div>
+  <div id="compass" class="chip compass" hidden aria-label="Nordrichtung">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l3.2 10.5L12 11.6 8.8 13.5z"/><path class="s" d="M12 20.5l-3.2-7L12 15.4l3.2-1.9z"/></svg>
+    <span>N</span>
+  </div>
+</div>
+
+<div id="scalebar" hidden><div class="bar"></div><span id="scaletext"></span></div>
+
+<div id="targetbar" hidden>
+  <div class="t-arrow" id="target-arrow">↑</div>
+  <div class="t-text">
+    <strong id="target-name"></strong>
+    <span id="target-dist"></span>
+  </div>
+  <button id="target-clear" class="icon" aria-label="Ziel aufheben">✕</button>
+</div>
+
+<div id="banner" hidden></div>
+
+<div id="toolbar">
+  <button id="btn-follow" class="tool">
+    <span class="ico">◎</span><span class="lbl">Folgen</span>
+  </button>
+  <button id="btn-marker" class="tool">
+    <span class="ico">＋</span><span class="lbl">Marker</span>
+  </button>
+  <button id="btn-calib" class="tool">
+    <span class="ico">⊕</span><span class="lbl">Kalibrieren</span>
+  </button>
+</div>
+
+<!-- Modus-Leiste (Kalibrieren / Marker setzen) -->
+<div id="modebar" hidden>
+  <span id="modetext"></span>
+  <button id="mode-cancel" class="btn ghost small">Abbrechen</button>
+</div>
+
+<!-- Willkommen / Onboarding -->
+<div id="welcome" class="overlay" hidden>
+  <div class="panel">
+    <h1>Platzkarte</h1>
+    <p class="lead">Offizieller Lageplan deines Campingplatzes – mit deiner GPS-Position live darauf. Funktioniert offline, alles bleibt auf dem Gerät.</p>
+    <ol class="steps">
+      <li><strong>Plan laden</strong> – PDF, Foto oder Screenshot des offiziellen Übersichtsplans.</li>
+      <li><strong>Zwei Punkte kalibrieren</strong> – an zwei möglichst weit entfernten, wiedererkennbaren Stellen: Position antippen, fertig.</li>
+      <li><strong>Loslaufen</strong> – der blaue Punkt zeigt, wo du bist.</li>
+    </ol>
+    <button id="welcome-load" class="btn primary block">Lageplan auswählen (PDF oder Bild)</button>
+    <button id="welcome-url" class="btn ghost block">Von einer Adresse laden</button>
+    <button id="welcome-import" class="btn ghost block">Gesicherte Karte importieren</button>
+  </div>
+</div>
+
+<!-- Menü-Sheet -->
+<div id="sheet" class="overlay" hidden>
+  <div class="panel sheet">
+    <div class="sheet-head">
+      <h2>Karte &amp; Einstellungen</h2>
+      <button id="sheet-close" class="icon" aria-label="Schließen">✕</button>
+    </div>
+
+    <section>
+      <h3>Lageplan</h3>
+      <p id="plan-info" class="muted small"></p>
+      <div class="row">
+        <button id="plan-replace" class="btn">Plan ersetzen</button>
+        <button id="plan-fit" class="btn ghost">Ganz anzeigen</button>
+      </div>
+      <button id="plan-url" class="btn ghost small">Plan von einer Adresse laden</button>
+    </section>
+
+    <section>
+      <h3>Kalibrierung</h3>
+      <p id="calib-status" class="muted small"></p>
+      <ul id="calib-list" class="list"></ul>
+      <div class="row">
+        <button id="calib-gps" class="btn">Punkt: ich stehe hier</button>
+        <button id="calib-manual" class="btn ghost">Punkt: Koordinaten</button>
+      </div>
+      <p class="muted small">Tipp: Punkte weit auseinander wählen (Einfahrt ↔ Strand). Je größer der Abstand, desto genauer. Ab 3 Punkten wird auch eine Verzerrung des Plans ausgeglichen.</p>
+      <button id="calib-clear" class="btn ghost small">Kalibrierung löschen</button>
+    </section>
+
+    <section>
+      <h3>Marker</h3>
+      <ul id="marker-list" class="list"></ul>
+      <p id="marker-empty" class="muted small">Noch keine Marker. Setze Stellplatz, Auto oder Strandbar über „＋ Marker“.</p>
+    </section>
+
+    <section>
+      <h3>Richtung &amp; Anzeige</h3>
+      <label class="switch"><input type="checkbox" id="opt-compass"><span>Kompass nutzen (Pfeil zeigt deine Blickrichtung)</span></label>
+      <label class="switch"><input type="checkbox" id="opt-keepawake"><span>Display anlassen, solange die Karte offen ist</span></label>
+    </section>
+
+    <section>
+      <h3>Daten</h3>
+      <div class="row">
+        <button id="data-export" class="btn">Karte exportieren</button>
+        <button id="data-import" class="btn ghost">Karte importieren</button>
+      </div>
+      <p class="muted small">Export enthält Plan, Kalibrierung und Marker als eine Datei – praktisch als Backup oder für Mitreisende.</p>
+      <p class="muted small">Nichts verlässt dein Gerät: keine Server, keine Konten, kein Tracking. GPS wird nur im Browser ausgelesen.</p>
+      <p class="muted small" id="version"></p>
+    </section>
+  </div>
+</div>
+
+<!-- Generischer Dialog -->
+<div id="dialog" class="overlay" hidden>
+  <div class="panel dlg">
+    <h2 id="dlg-title"></h2>
+    <p id="dlg-text" class="muted small"></p>
+    <div id="dlg-body"></div>
+    <div class="row end">
+      <button id="dlg-cancel" class="btn ghost">Abbrechen</button>
+      <button id="dlg-ok" class="btn primary">OK</button>
+    </div>
+  </div>
+</div>
+
+<!-- Aktionsmenü (Marker / POI) -->
+<div id="actions" class="overlay" hidden>
+  <div class="panel actions">
+    <h2 id="actions-title"></h2>
+    <div id="actions-body" class="col"></div>
+    <button id="actions-close" class="btn ghost block">Schließen</button>
+  </div>
+</div>
+
+<input type="file" id="file-plan" accept="image/*,application/pdf,.pdf" hidden>
+<input type="file" id="file-import" accept="application/json,.json,.campmap" hidden>
+
+<script src="app.js"></script>
+</body>
+</html>
