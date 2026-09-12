@@ -5,7 +5,7 @@
    Alles lokal: kein Server, keine Konten, kein Tracking.
    ============================================================ */
 
-const APP_VERSION = '1.3.1';
+const APP_VERSION = '1.4.0';
 
 /* Ein Standortwert gilt nur kurz als aktuell: iOS lässt watchPosition
    einschlafen, sobald das Display aus ist. Wer dann am anderen Ende des
@@ -357,8 +357,10 @@ const state = {
   plan: null,            // {name, w, h}
   calib: [],             // [{id, u, v, lat, lon, acc, ts}]
   markers: [],           // [{id, u, v, name, icon}]
-  targetId: null,
-  opts: { compass: false, keepAwake: false },
+  targetId: null,        // gesetzter Marker
+  targetPoiId: null,     // oder ein Ort aus dem Plan
+  pois: null,            // Inhalte aus plan/poi.json
+  opts: { compass: false, keepAwake: false, poiOff: [] },
   // flüchtig:
   T: null,
   pos: null,             // {lat, lon, acc, ts, rx}
@@ -378,7 +380,8 @@ const $ = sel => document.querySelector(sel);
 const el = {
   stage: $('#stage'), world: $('#world'), plan: $('#plan'),
   me: $('#me'), meArrow: $('#me .me-arrow'), acc: $('#accuracy'),
-  markers: $('#markers'), calibpts: $('#calibpts'),
+  markers: $('#markers'), calibpts: $('#calibpts'), pois: $('#pois'),
+  poi: $('#poi'), places: $('#places'),
   status: $('#status'), compass: $('#compass'), banner: $('#banner'),
   scalebar: $('#scalebar'), scaletext: $('#scaletext'),
   targetbar: $('#targetbar'), targetName: $('#target-name'),
@@ -467,7 +470,8 @@ function saveState() {
   try {
     localStorage.setItem(LS_KEY, JSON.stringify({
       v: 1, plan: state.plan, calib: state.calib,
-      markers: state.markers, targetId: state.targetId, opts: state.opts
+      markers: state.markers, targetId: state.targetId,
+      targetPoiId: state.targetPoiId, opts: state.opts
     }));
   } catch (err) { console.warn('Speichern fehlgeschlagen', err); }
 }
@@ -481,7 +485,9 @@ function loadState() {
     state.calib = Array.isArray(s.calib) ? s.calib : [];
     state.markers = Array.isArray(s.markers) ? s.markers : [];
     state.targetId = s.targetId || null;
+    state.targetPoiId = s.targetPoiId || null;
     state.opts = Object.assign(state.opts, s.opts || {});
+    if (!Array.isArray(state.opts.poiOff)) state.opts.poiOff = [];
   } catch (err) { console.warn('Laden fehlgeschlagen', err); }
 }
 
@@ -550,7 +556,7 @@ function loadImage(src) {
   });
 }
 
-async function setPlanFromBlob(blob, name) {
+async function setPlanFromBlob(blob, name, opts = {}) {
   const url = URL.createObjectURL(blob);
   let img;
   try {
@@ -562,7 +568,12 @@ async function setPlanFromBlob(blob, name) {
   }
   if (state.planUrl) URL.revokeObjectURL(state.planUrl);
   state.planUrl = url;
-  state.plan = { name: name || 'Lageplan', w: img.naturalWidth, h: img.naturalHeight };
+  state.plan = {
+    name: name || 'Lageplan', w: img.naturalWidth, h: img.naturalHeight,
+    // Nur zum mitgelieferten Plan passen die hinterlegten Orte
+    isDefault: opts.isDefault !== undefined ? !!opts.isDefault
+      : (state.plan ? !!state.plan.isDefault : false)
+  };
   el.plan.src = url;
   el.plan.width = img.naturalWidth;
   el.plan.height = img.naturalHeight;
@@ -644,12 +655,12 @@ async function askPdfPage(pages) {
 
 /* Nimmt Bild oder PDF entgegen und macht daraus den Plan. */
 async function usePlanBlob(blob, name, opts = {}) {
-  if (!isPdf(blob, name)) return setPlanFromBlob(blob, name);
+  if (!isPdf(blob, name)) return setPlanFromBlob(blob, name, opts);
   showBanner('PDF wird umgewandelt …', null, 30000);
   try {
     const r = await pdfToImage(blob, opts.silent ? null : askPdfPage);
     if (!r) { el.banner.hidden = true; return false; }
-    const ok = await setPlanFromBlob(r.blob, (name || 'Lageplan').replace(/\.pdf$/i, ''));
+    const ok = await setPlanFromBlob(r.blob, (name || 'Lageplan').replace(/\.pdf$/i, ''), opts);
     el.banner.hidden = true;
     if (ok && r.pages > 1) {
       showBanner(`Seite ${r.pageNo} von ${r.pages} geladen. Andere Seite: Menü → Plan ersetzen.`, null, 8000);
@@ -674,7 +685,7 @@ async function tryDefaultPlan() {
   showBanner('Lageplan wird geladen …', null, 40000);
   for (const src of DEFAULT_PLAN.sources) {
     try {
-      if (await loadPlanFromUrl(src, DEFAULT_PLAN.name, { silent: true })) {
+      if (await loadPlanFromUrl(src, DEFAULT_PLAN.name, { silent: true, isDefault: true })) {
         el.banner.hidden = true;
         return true;
       }
@@ -686,6 +697,7 @@ async function tryDefaultPlan() {
   return false;
 }
 
+/* Eigene Pläne bringen keine Ortsdaten mit. */
 async function promptPlanUrl() {
   const res = await openDialog({
     title: 'Plan von einer Adresse laden',
@@ -933,8 +945,11 @@ function handleTap(sx, sy) {
   }
   // Pointer Capture macht ev.target unbrauchbar – am Bildschirmpunkt nachsehen.
   const hit = document.elementFromPoint(sx, sy);
-  const mk = hit && hit.closest ? hit.closest('.mk') : null;
-  if (mk) openMarkerActions(mk.dataset.id);
+  if (!hit || !hit.closest) return;
+  const mk = hit.closest('.mk');
+  if (mk) { openMarkerActions(mk.dataset.id); return; }
+  const poi = hit.closest('.poi');
+  if (poi) openPoi(poi.dataset.id);
 }
 
 function insidePlan(px, py) {
@@ -1119,6 +1134,197 @@ function calibQuality() {
   return { level: 'bad', text: `Kontrollfehler Ø ${c.mean.toFixed(0)} m – Punkte prüfen` };
 }
 
+/* ---------- Orte aus dem offiziellen Plan --------------------- */
+
+async function loadPois() {
+  state.pois = null;
+  if (!state.plan || !state.plan.isDefault) return;
+  try {
+    const res = await fetch('plan/poi.json', { cache: 'no-cache' });
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && Array.isArray(data.items)) state.pois = data;
+  } catch (err) {
+    console.warn('Ortsdaten nicht geladen', err);
+  }
+}
+
+function poiPlanPos(it) {
+  const [pw, ph] = state.pois.planSize;
+  return { px: it.x / pw * state.plan.w, py: it.y / ph * state.plan.h };
+}
+
+function poiCat(it) {
+  return (state.pois.categories && state.pois.categories[it.cat]) || { label: it.cat, icon: '📍', color: '#4da3ff' };
+}
+
+function poiDistance(it) {
+  if (!state.T || !state.pos) return null;
+  const p = poiPlanPos(it);
+  const c = planToLatLon(state.T, p.px, p.py);
+  return geoDistance(state.pos.lat, state.pos.lon, c.lat, c.lon);
+}
+
+function renderPois() {
+  if (!el.pois) return;
+  el.pois.innerHTML = '';
+  el.pois.style.pointerEvents = state.mode ? 'none' : 'auto';
+  if (!state.pois || !state.plan) return;
+  const off = state.opts.poiOff || [];
+  for (const it of state.pois.items) {
+    if (off.includes(it.cat)) continue;
+    const cat = poiCat(it);
+    const p = poiPlanPos(it);
+    const d = document.createElement('div');
+    d.className = 'poi' + (state.targetPoiId === it.id ? ' is-target' : '');
+    d.dataset.id = it.id;
+    d.style.left = p.px + 'px';
+    d.style.top = p.py + 'px';
+    const dot = document.createElement('div');
+    dot.className = 'poi-dot';
+    dot.style.setProperty('--c', cat.color);
+    dot.textContent = cat.icon;
+    d.appendChild(dot);
+    el.pois.appendChild(d);
+  }
+}
+
+function openPoi(id) {
+  if (!state.pois) return;
+  const it = state.pois.items.find(p => p.id === id);
+  if (!it) return;
+  const cat = poiCat(it);
+  $('#poi-icon').textContent = cat.icon;
+  $('#poi-name').textContent = it.name;
+  $('#poi-sub').textContent = [cat.label, it.sub].filter(Boolean).join(' · ');
+
+  const dist = poiDistance(it);
+  const dEl = $('#poi-dist');
+  if (dist != null) {
+    const p = poiPlanPos(it);
+    const c = planToLatLon(state.T, p.px, p.py);
+    const brg = bearingDeg(state.pos.lat, state.pos.lon, c.lat, c.lon);
+    dEl.textContent = `${fmtDist(dist)} entfernt · Richtung ${compassName(brg)}`;
+    dEl.hidden = false;
+  } else {
+    dEl.textContent = state.T ? 'Warte auf GPS …' : 'Entfernung erst nach dem Kalibrieren';
+    dEl.hidden = false;
+  }
+
+  const facts = $('#poi-facts');
+  facts.innerHTML = '';
+  (it.facts || []).forEach(f => {
+    const li = document.createElement('li');
+    li.textContent = f;
+    facts.appendChild(li);
+  });
+  facts.hidden = !(it.facts || []).length;
+
+  $('#poi-text').textContent = it.text || '';
+  $('#poi-text').hidden = !it.text;
+
+  renderTips($('#poi-tips'), it.tips);
+
+  const btnTarget = $('#poi-target');
+  btnTarget.textContent = state.targetPoiId === it.id ? 'Ziel aufheben' : 'Als Ziel setzen';
+  btnTarget.onclick = () => {
+    if (state.targetPoiId === it.id) {
+      state.targetPoiId = null;
+    } else {
+      state.targetPoiId = it.id;
+      state.targetId = null;
+    }
+    saveState();
+    closeOverlay(el.poi);
+    renderAll();
+  };
+  $('#poi-show').onclick = () => {
+    const p = poiPlanPos(it);
+    closeOverlay(el.poi);
+    setFollow(false);
+    centerOnPlan(p.px, p.py, true);
+  };
+  openOverlay(el.poi);
+}
+
+function renderTips(node, tips) {
+  node.innerHTML = '';
+  (tips || []).forEach(t => {
+    const row = document.createElement('div');
+    row.className = 'tip';
+    const kind = document.createElement('span');
+    kind.className = 'kind kind-' + t.kind;
+    kind.textContent = t.kind;
+    const txt = document.createElement('span');
+    txt.textContent = t.text;
+    row.append(kind, txt);
+    node.appendChild(row);
+  });
+}
+
+function renderPlaces() {
+  if (el.places.hidden) return;
+  const filter = $('#places-filter');
+  filter.innerHTML = '';
+  const gen = $('#places-general');
+  if (state.pois && state.pois.general && state.pois.general.length) {
+    gen.hidden = false;
+    renderTips($('#general-body'), state.pois.general);
+  } else {
+    gen.hidden = true;
+  }
+  if (!state.pois) {
+    $('#places-hint').textContent = 'Für diesen Plan gibt es keine hinterlegten Orte.';
+    $('#places-list').innerHTML = '';
+    return;
+  }
+  const off = state.opts.poiOff || [];
+  Object.entries(state.pois.categories).forEach(([key, cat]) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = off.includes(key) ? '' : 'on';
+    b.textContent = `${cat.icon} ${cat.label}`;
+    b.onclick = () => {
+      const list = state.opts.poiOff || [];
+      state.opts.poiOff = list.includes(key) ? list.filter(k => k !== key) : list.concat(key);
+      saveState();
+      renderPois();
+      renderPlaces();
+    };
+    filter.appendChild(b);
+  });
+
+  const items = state.pois.items
+    .filter(it => !off.includes(it.cat))
+    .map(it => ({ it, d: poiDistance(it) }));
+  const located = items.some(e => e.d != null);
+  items.sort((a, b) => (a.d == null || b.d == null)
+    ? a.it.name.localeCompare(b.it.name, 'de')
+    : a.d - b.d);
+
+  $('#places-hint').textContent = located
+    ? 'Nach Entfernung sortiert – der nächste zuerst.'
+    : 'Ohne Kalibrierung alphabetisch. Nach dem Kalibrieren steht hier, was am nächsten ist.';
+
+  const list = $('#places-list');
+  list.innerHTML = '';
+  for (const { it, d } of items) {
+    const cat = poiCat(it);
+    const li = document.createElement('li');
+    li.innerHTML = '<span class="ic"></span><div class="txt"><b></b><span></span></div>';
+    li.querySelector('.ic').textContent = cat.icon;
+    li.querySelector('b').textContent = it.name;
+    li.querySelector('.txt span').textContent =
+      [d != null ? fmtDist(d) : null, it.sub].filter(Boolean).join(' · ');
+    const go = document.createElement('button');
+    go.className = 'btn ghost small';
+    go.textContent = 'Details';
+    go.onclick = () => { closeOverlay(el.places); openPoi(it.id); };
+    li.appendChild(go);
+    list.appendChild(li);
+  }
+}
+
 /* ---------- Marker ------------------------------------------- */
 
 const ICONS = ['🏕️', '🚐', '🚗', '⛺', '🚻', '🚿', '🏖️', '🏊', '🍕', '🛒', '🅿️', '🧺', '⭐', '📍'];
@@ -1170,7 +1376,11 @@ function openMarkerActions(id) {
   openActions(`${m.icon} ${m.name}`, [
     {
       label: state.targetId === id ? 'Ziel aufheben' : 'Als Ziel setzen' + (dist != null ? ` (${fmtDist(dist)})` : ''),
-      run: () => { state.targetId = state.targetId === id ? null : id; saveState(); renderAll(); }
+      run: () => {
+        state.targetId = state.targetId === id ? null : id;
+        state.targetPoiId = null;
+        saveState(); renderAll();
+      }
     },
     {
       label: 'Umbenennen',
@@ -1410,8 +1620,10 @@ document.addEventListener('visibilitychange', () => {
 
 function renderAll() {
   renderMe();
+  renderPois();
   renderMarkers();
   renderCalibPoints();
+  renderPlaces();
   renderStatus();
   renderTarget();
   renderScale();
@@ -1532,17 +1744,32 @@ function renderScale() {
   el.scaletext.textContent = pick >= 1000 ? (pick / 1000) + ' km' : pick + ' m';
 }
 
-function renderTarget() {
+/* Ziel kann ein eigener Marker oder ein Ort aus dem Plan sein. */
+function currentTarget() {
+  if (!state.plan) return null;
+  if (state.targetPoiId && state.pois) {
+    const it = state.pois.items.find(p => p.id === state.targetPoiId);
+    if (it) {
+      const p = poiPlanPos(it);
+      return { name: it.name, icon: poiCat(it).icon, px: p.px, py: p.py };
+    }
+  }
   const m = state.markers.find(x => x.id === state.targetId);
-  if (!m || !state.T) {
+  if (m) return { name: m.name, icon: m.icon, px: m.u * state.plan.w, py: m.v * state.plan.h };
+  return null;
+}
+
+function renderTarget() {
+  const t = currentTarget();
+  if (!t || !state.T) {
     el.targetbar.hidden = true;
     el.scalebar.classList.remove('shifted');
     return;
   }
-  const c = markerLatLon(m);
+  const c = planToLatLon(state.T, t.px, t.py);
   el.targetbar.hidden = false;
   el.scalebar.classList.add('shifted');
-  el.targetName.textContent = `${m.icon} ${m.name}`;
+  el.targetName.textContent = `${t.icon} ${t.name}`;
   if (!state.pos) {
     el.targetDist.textContent = 'Warte auf GPS …';
     el.targetArrow.style.setProperty('--rot', '0deg');
@@ -1888,8 +2115,10 @@ el.filePlan.addEventListener('change', async ev => {
   el.filePlan.value = '';
   if (!f) return;
   const replacing = !!state.plan;
-  const ok = await usePlanBlob(f, f.name);
+  const ok = await usePlanBlob(f, f.name, { isDefault: false });
   if (!ok) return;
+  await loadPois();
+  renderAll();
   closeOverlay(el.welcome);
   closeOverlay(el.sheet);
   if (replacing && state.calib.length) {
@@ -1930,7 +2159,21 @@ $('#opt-compass').onchange = ev => {
   else { state.opts.compass = false; state.heading = null; saveState(); renderMe(); renderTarget(); }
 };
 $('#opt-keepawake').onchange = ev => setKeepAwake(ev.target.checked);
-$('#target-clear').onclick = () => { state.targetId = null; saveState(); renderAll(); };
+$('#target-clear').onclick = () => {
+  state.targetId = null; state.targetPoiId = null; saveState(); renderAll();
+};
+$('#poi-close').onclick = () => closeOverlay(el.poi);
+$('#poi').addEventListener('click', ev => { if (ev.target === el.poi) closeOverlay(el.poi); });
+$('#places-close').onclick = () => closeOverlay(el.places);
+$('#places').addEventListener('click', ev => { if (ev.target === el.places) closeOverlay(el.places); });
+$('#btn-places').onclick = () => {
+  if (!state.pois) {
+    showBanner('Für diesen Plan sind keine Orte hinterlegt. Die Ortsdatenbank gilt für den Solaris-Plan.', 'bad', 7000);
+    return;
+  }
+  openOverlay(el.places);
+  renderPlaces();
+};
 $('#mode-cancel').onclick = () => setMode(null);
 $('#dialog').addEventListener('click', ev => { if (ev.target === el.dialog) $('#dlg-cancel').click(); });
 $('#actions-close').onclick = () => closeOverlay(el.actions);
@@ -1984,6 +2227,7 @@ async function boot() {
     state.plan = null;
     if (!await tryDefaultPlan()) openOverlay(el.welcome);
   }
+  await loadPois();
   recompute();
   renderAll();
   if (state.opts.compass) enableCompass();
@@ -2011,6 +2255,9 @@ async function boot() {
   }
 }
 
-window.__app = { state, view, recompute, renderAll, setPlanFromBlob, addCalibPoint, fitView, latLonToPlan };
+window.__app = {
+  state, view, recompute, renderAll, setPlanFromBlob, addCalibPoint,
+  fitView, latLonToPlan, openPoi, loadPois
+};
 
 boot();

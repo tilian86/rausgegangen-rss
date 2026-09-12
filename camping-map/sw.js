@@ -6,7 +6,7 @@
    Schwere und Unveränderliche – Lageplan, Symbole, pdf.js – kommt zuerst aus
    dem Cache. */
 
-const CACHE = 'campmap-v3';
+const CACHE = 'campmap-v4';
 const NET_TIMEOUT_MS = 3500;
 const ASSETS = [
   './',

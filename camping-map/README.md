@@ -39,6 +39,35 @@ Anderer Platz oder neuere Fassung? Datei in [`plan/`](plan/) austauschen
 - **Von einer Adresse laden** – direkter Link auf PDF oder Bild. Klappt nur,
   wenn der fremde Server CORS erlaubt; sonst Datei herunterladen und auswählen.
 
+## Orte auf dem Platz
+
+Über dem Plan liegt eine Ebene mit 40 Orten – Sanitärgebäude, Gastronomie,
+Strände, Sport, Hundeplätze, Service. Antippen öffnet eine Karte mit
+Ausstattung, Beschreibung, Entfernung und Richtung; „Orte“ in der Leiste
+listet alles nach Entfernung sortiert, mit Filter je Kategorie.
+
+Herkunft ist bei jeder Aussage angeschrieben, weil sie unterschiedlich
+belastbar ist:
+
+| Kennzeichnung | Bedeutung |
+| --- | --- |
+| **Plan** | Direkt aus dem offiziellen Lageplan ausgelesen, z. B. die Ausstattung je Sanitärgebäude aus der Legende |
+| **Gäste** | Wiederkehrende Aussagen aus öffentlichen Bewertungen (camping.info, Tripadvisor, HolidayCheck) |
+| **Hinweis** | Eigene Einordnung aus der Geometrie des Plans, etwa „am weitesten von der Rezeption entfernt“ |
+
+Die elf Sanitärgebäude sind unterschiedlich ausgestattet – das steht in der
+Plan-Legende und ist damit hart belegt: Kinderbad in 2, 3, 4, 6, 7, 8, 9, 10;
+Hundedusche in 3, 4, 5, 9, 11; barrierefreie Dusche in 1, 2, 7, 9, 10.
+Nummer 9 ist als einziges mit allen dreien ausgestattet. Was **nicht**
+belegbar war: welches Gebäude das neueste oder schönste ist. Der Betreiber
+nennt sechs renovierte Sanitäranlagen, ohne zu sagen welche; Bewertungen
+widersprechen sich. Diese Lücke steht so auch in der App.
+
+Inhalte pflegen: [`plan/poi.json`](plan/) – `items` mit Pixelkoordinaten des
+Plans (`x`, `y` bezogen auf `planSize`), `facts`, `text` und `tips`.
+Die Ebene erscheint nur beim mitgelieferten Solaris-Plan; wer einen eigenen
+Plan lädt, sieht sie nicht.
+
 ## Benutzen
 
 1. **Plan laden** – PDF, Foto oder Screenshot des Übersichtsplans (siehe oben).

@@ -151,6 +151,28 @@ html, body {
   text-overflow: ellipsis;
 }
 
+/* Orte (POIs) aus dem offiziellen Plan */
+.poi {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.poi-dot {
+  width: 30px; height: 30px;
+  margin: -15px 0 0 -15px;
+  position: absolute;
+  transform: scale(var(--iz));
+  transform-origin: center;
+  border-radius: 50%;
+  background: rgba(14,17,22,.86);
+  border: 2px solid var(--c, #4da3ff);
+  box-shadow: 0 2px 8px rgba(0,0,0,.5);
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+}
+.poi.is-target .poi-dot { background: #11385e; border-width: 3px; }
+
 /* Kalibrierpunkte */
 .cp {
   position: absolute;
@@ -453,6 +475,76 @@ button.chip { cursor: pointer; }
 .list .txt { flex: 1; min-width: 0; }
 .list .txt b { display: block; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .list .txt span { font-size: 12px; color: var(--muted); }
+
+/* Ort-Detailkarte */
+.poi-title { display: flex; gap: 12px; align-items: center; min-width: 0; }
+.poi-icon {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  display: grid; place-items: center;
+  font-size: 21px;
+  flex: none;
+}
+.poi-panel h2 { margin: 0; }
+.poi-dist {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 12px;
+}
+.chips { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; padding: 0; }
+.chips li, .chips button {
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-size: 12.5px;
+  font: inherit;
+  font-size: 12.5px;
+}
+.chips.filter button { cursor: pointer; opacity: .45; }
+.chips.filter button.on { opacity: 1; border-color: var(--accent); background: #11385e; }
+
+.general {
+  margin-bottom: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #0f131a;
+}
+.general > summary {
+  padding: 12px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  list-style: none;
+}
+.general > summary::after { content: ' ▾'; color: var(--muted); }
+.general[open] > summary::after { content: ' ▴'; }
+.general > div { padding: 0 14px 6px; }
+
+.tip {
+  display: flex;
+  gap: 9px;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+  font-size: 13.5px;
+  color: #c6d0dc;
+}
+.tip .kind {
+  flex: none;
+  align-self: flex-start;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .03em;
+}
+.kind-Plan { background: rgba(71,194,123,.16); color: #8fe0b0; }
+.kind-Gäste { background: rgba(242,177,60,.16); color: #f6d79b; }
+.kind-Hinweis { background: rgba(77,163,255,.16); color: #bcdcff; }
 
 .switch { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; font-size: 14px; }
 .switch input { width: 22px; height: 22px; margin: 0; accent-color: var(--accent); flex: none; }
