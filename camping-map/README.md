@@ -24,14 +24,15 @@ Lokal ausprobieren (GPS braucht HTTPS oder localhost):
     python3 -m http.server 8765 --directory camping-map
     # http://localhost:8765
 
-## Plan hinterlegen
+## Plan
 
-Liegt in [`plan/`](plan/) eine Datei namens `camping-solaris-map.webp` oder
-`camping-solaris-map.pdf`, lädt die App sie **beim ersten Start automatisch** –
-niemand muss etwas auswählen. Hochladen geht direkt über GitHub im Browser,
-Details in [`plan/README.md`](plan/README.md).
+Hinterlegt ist der offizielle Übersichtsplan von **Camping Solaris** (Lanterna,
+Tar-Vabriga, managed by Valamar): `plan/camping-solaris-map.webp`, 3200 × 2231 px,
+aus dem PDF des Platzes gerendert. Die App lädt ihn beim ersten Start
+automatisch, danach liegt er im Offline-Cache.
 
-Ohne hinterlegte Datei fragt die App beim ersten Start nach dem Plan:
+Anderer Platz oder neuere Fassung? Datei in [`plan/`](plan/) austauschen
+(Details dort) – oder in der App selbst einen Plan laden:
 
 - **Lageplan auswählen** – PDF oder Bild vom Gerät. PDFs werden im Browser
   gerendert (pdf.js liegt unter `vendor/`, kein CDN, kein Upload).

@@ -73,13 +73,27 @@ page.on('pageerror', e => errors.push('pageerror: ' + e.message));
 
 await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
 
-// 1) Onboarding sichtbar
-assert.equal(await page.locator('#welcome').isVisible(), true, 'Willkommen zeigt sich ohne Plan');
-await page.screenshot({ path: `${OUT}/01-welcome.png` });
+// 1) Startbereit: entweder Onboarding (kein Standardplan hinterlegt) oder
+//    der Standardplan aus plan/ ist schon geladen.
+await page.waitForFunction(
+  () => window.__app && (window.__app.state.plan !== null ||
+        !document.querySelector('#welcome').hidden),
+  null, { timeout: 20000 }
+);
+const started = await page.evaluate(() => ({
+  plan: window.__app.state.plan,
+  welcome: !document.querySelector('#welcome').hidden
+}));
+assert.ok(started.plan || started.welcome, 'App ist startbereit');
+await page.screenshot({ path: `${OUT}/01-start.png` });
 
 // 2) Plan laden (wie über den Dateidialog, nur ohne Dateidialog)
 await page.locator('#file-plan').setInputFiles(path.join(here, 'demo-plan.png'));
-await page.waitForFunction(() => !document.querySelector('#plan').hidden);
+// Auf genau diesen Plan warten – ein hinterlegter Standardplan wäre sonst schneller
+await page.waitForFunction(
+  () => window.__app.state.plan && window.__app.state.plan.w === 1200,
+  null, { timeout: 15000 }
+);
 await page.waitForTimeout(400);
 assert.equal(await page.locator('#welcome').isVisible(), false, 'Onboarding schließt sich');
 const planSize = await page.evaluate(() => window.__app.state.plan);
@@ -220,7 +234,8 @@ await pdfPage.evaluate(() => indexedDB.deleteDatabase('campmap') && localStorage
 await pdfPage.reload({ waitUntil: 'networkidle' });
 await pdfPage.locator('#file-plan').setInputFiles(path.join(here, 'demo-plan.pdf'));
 await pdfPage.waitForFunction(
-  () => window.__app && window.__app.state.plan && window.__app.state.plan.w > 1500,
+  () => window.__app && window.__app.state.plan &&
+        /^demo-plan/.test(window.__app.state.plan.name),
   null, { timeout: 40000 }
 );
 const pdfPlan = await pdfPage.evaluate(() => window.__app.state.plan);
