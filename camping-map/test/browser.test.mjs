@@ -156,7 +156,7 @@ assert.match(await page.locator('.mk .cap').textContent(), /Stellplatz 214/);
 
 // 6) Zweiten Marker per Plan-Tap setzen und als Ziel wählen
 await page.locator('#btn-marker').click();
-await page.getByText('Stelle auf dem Plan antippen').click();
+await page.getByRole('button', { name: /Stelle auf dem Plan antippen/ }).click();
 assert.equal(await page.locator('#modebar').isVisible(), true, 'Modusleiste erklärt den nächsten Schritt');
 // Bildschirmpunkt nahe der Mitte wählen und prüfen, dass er auf dem Plan liegt
 const stageBox = await page.locator('#stage').boundingBox();
@@ -327,8 +327,12 @@ const farPoint = await stale.evaluate(() => {
 });
 await stale.mouse.click(farPoint.x, farPoint.y);
 await stale.waitForSelector('#actions:not([hidden])', { timeout: 25000 });
-assert.match(await stale.locator('#actions-title').textContent(), /bewegt sich nicht/,
+assert.match(await stale.locator('#actions-title').textContent(), /noch bei Punkt 1/,
   'App warnt statt den unbrauchbaren Punkt zu schlucken');
+assert.match(await stale.locator('#actions-body').textContent(), /wirklich dort stehen/,
+  'Dialog erklärt, dass man hingehen muss');
+assert.equal(await stale.locator('#actions-body button', { hasText: 'Trotzdem' }).count(), 0,
+  'bei 0 m gibt es kein "trotzdem speichern" – das kann nie richtig sein');
 assert.equal(await stale.evaluate(() => window.__app.state.calib.length), 1,
   'Punkt wurde nicht gespeichert');
 await stale.locator('#actions-close').click();

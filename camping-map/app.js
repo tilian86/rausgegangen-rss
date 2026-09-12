@@ -5,7 +5,7 @@
    Alles lokal: kein Server, keine Konten, kein Tracking.
    ============================================================ */
 
-const APP_VERSION = '1.3.0';
+const APP_VERSION = '1.3.1';
 
 /* Ein Standortwert gilt nur kurz als aktuell: iOS lässt watchPosition
    einschlafen, sobald das Display aus ist. Wer dann am anderen Ende des
@@ -985,7 +985,7 @@ function addCalibPoint(px, py, lat, lon, acc) {
   renderAll();
   focusOnMe();
   if (state.calib.length === 1) {
-    showBanner('Punkt 1 gespeichert. Jetzt einen zweiten Punkt möglichst weit entfernt setzen – dann ist die Karte scharfgestellt.');
+    showBanner('Punkt 1 gespeichert. Jetzt zu einer zweiten, möglichst weit entfernten Stelle GEHEN (Rezeption, Strand …) und dort Punkt 2 setzen – die App muss dich an beiden Orten messen.', null, 12000);
   } else {
     const q = calibQuality();
     showBanner(`Kalibriert mit ${state.calib.length} Punkten – ${q.text}.`, q.level === 'bad' ? 'bad' : null, 6000);
@@ -1013,29 +1013,39 @@ async function finishCalibGps(px, py) {
   const clash = calibConflict(px, py, fix.lat, fix.lon);
   if (clash) {
     const env = state.env || detectEnv();
-    const why = env.inAppWebView
-      ? 'Diese Seite läuft im Browser einer anderen App – der reicht auf dem iPhone oft nur einen einzigen Standort durch. In Safari öffnen (Teilen-Symbol → „In Safari öffnen“), dann klappt es.'
-      : state.frozen
-        ? `Dein Handy meldet seit ${fmtAge(state.frozen.ageMs)} exakt denselben Wert – der Standortdienst hängt. Karte schließen, kurz Flugmodus an und aus, Karte neu öffnen.`
-        : `Dein Handy meldet ${Math.round(clash.dGps)} m Abstand zu Punkt ${clash.index}, obwohl du weit entfernt getippt hast. Karte offen lassen, 10–20 Sekunden warten, bis sich die Koordinate im Menü ändert, dann nochmal.`;
-    openActions(`Standort bewegt sich nicht (${Math.round(clash.dGps)} m zu Punkt ${clash.index})`, [
+    const d = Math.round(clash.dGps);
+    // Der mit Abstand häufigste Grund: Man steht noch am alten Ort und tippt
+    // einfach eine andere Stelle an. Die App kennt deren Koordinaten aber
+    // nicht – sie soll sie ja erst lernen.
+    const items = [
       {
-        label: '⌨︎ Koordinaten aus Google Maps eingeben',
+        label: `🚶 Ich gehe jetzt zu der Stelle`,
+        run: () => showBanner(`Gut. Dort angekommen: „Kalibrieren“ antippen und die Stelle auf dem Plan antippen, an der du dann stehst.`, null, 12000)
+      },
+      {
+        label: '⌨︎ Ohne Hinlaufen: Koordinaten der Stelle eingeben',
         run: () => finishCalibManual(px, py)
-      },
-      {
-        label: '⟳ 15 Sekunden neu messen',
-        run: () => remeasureCalib(px, py)
-      },
-      {
-        label: 'Warum passiert das?',
-        run: () => showBanner(why, null, 16000)
-      },
-      {
-        label: 'Trotzdem speichern (Karte wird dann falsch)', danger: true,
-        run: () => addCalibPoint(px, py, fix.lat, fix.lon, fix.acc)
       }
-    ]);
+    ];
+    if (d >= 5) {
+      items.push({
+        label: '⟳ Ich stehe wirklich woanders – neu messen',
+        run: () => remeasureCalib(px, py)
+      });
+    }
+    if (env.inAppWebView || state.frozen) {
+      items.push({
+        label: 'Standort reagiert nicht – was tun?',
+        run: () => showBanner(env.inAppWebView
+          ? 'Diese Seite läuft im Browser einer anderen App – der reicht auf dem iPhone oft nur einen einzigen Standort durch. In Safari öffnen (Teilen-Symbol → „In Safari öffnen“).'
+          : `Dein Handy meldet seit ${fmtAge(state.frozen.ageMs)} exakt denselben Wert. Karte schließen, kurz Flugmodus an und aus, Karte neu öffnen.`, null, 16000)
+      });
+    }
+    openActions(
+      `Du stehst noch bei Punkt ${clash.index} (${d} m entfernt)`,
+      items,
+      `Jeder Kalibrierpunkt verbindet deinen echten Standort mit der Stelle auf dem Plan. Dafür musst du wirklich dort stehen, wo du tippst – die App weiß nicht, wo die Rezeption liegt, das lernt sie erst von dir. Also: hingehen, dann dort antippen. Oder die Koordinaten der Stelle aus Google Maps eintragen.`
+    );
     return;
   }
   addCalibPoint(px, py, fix.lat, fix.lon, fix.acc);
@@ -1592,7 +1602,18 @@ function renderMode() {
     if (!state.pos) info = 'noch kein GPS';
     else if (posAge() > FIX_MAX_AGE_MS) info = `GPS ±${Math.round(state.pos.acc)} m, ${fmtAge(posAge())} alt – wird aufgefrischt`;
     else info = `GPS ±${Math.round(state.pos.acc)} m`;
-    el.modetext.textContent = `Tippe genau die Stelle auf dem Plan an, an der du jetzt stehst (${info}).`;
+    // Steht man noch bei einem vorhandenen Punkt, gleich sagen – bevor
+    // jemand vergeblich die Rezeption antippt.
+    const near = state.pos ? state.calib.findIndex(c =>
+      geoDistance(c.lat, c.lon, state.pos.lat, state.pos.lon) < MIN_BASELINE_M) : -1;
+    const n = state.calib.length + 1;
+    if (near >= 0) {
+      el.modetext.textContent = `Punkt ${n}: Du stehst noch bei Punkt ${near + 1}. Geh erst an eine andere Stelle (z. B. Rezeption oder Strand, je weiter desto besser) und tippe dann dort an, wo du stehst.`;
+    } else if (n === 1) {
+      el.modetext.textContent = `Punkt 1: Tippe genau die Stelle auf dem Plan an, an der du jetzt stehst (${info}).`;
+    } else {
+      el.modetext.textContent = `Punkt ${n}: Tippe die Stelle an, an der du jetzt stehst – nicht die, wo du hinwillst (${info}).`;
+    }
   } else if (state.mode.type === 'calib-manual') {
     el.modetext.textContent = 'Tippe die Stelle an, deren Koordinaten du kennst.';
   } else if (state.mode.type === 'marker') {
@@ -1774,10 +1795,16 @@ function openDialog({ title, text, fields = [], icons = false, icon = '📍', ok
   });
 }
 
-function openActions(title, items) {
+function openActions(title, items, text) {
   $('#actions-title').textContent = title;
   const body = $('#actions-body');
   body.innerHTML = '';
+  if (text) {
+    const p = document.createElement('p');
+    p.className = 'muted small';
+    p.textContent = text;
+    body.appendChild(p);
+  }
   for (const it of items) {
     const b = document.createElement('button');
     b.className = 'btn block' + (it.danger ? ' danger' : '');
