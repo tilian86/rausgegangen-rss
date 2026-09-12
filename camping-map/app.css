@@ -480,6 +480,16 @@ input[type="text"]:focus { outline: 2px solid var(--accent); outline-offset: 1px
 }
 .emoji-grid button.sel { border-color: var(--accent); background: #11385e; }
 
+.issue {
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: rgba(242,104,92,.14);
+  border: 1px solid rgba(242,104,92,.5);
+  color: #f9c0ba;
+  font-size: 13px;
+}
+
 .quality { display: flex; gap: 6px; align-items: center; font-weight: 600; }
 .quality .tag { padding: 2px 8px; border-radius: 999px; font-size: 11px; }
 .tag.good { background: rgba(71,194,123,.16); color: #8fe0b0; }

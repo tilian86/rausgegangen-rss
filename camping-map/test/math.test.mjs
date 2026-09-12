@@ -14,7 +14,8 @@ const src = fs.readFileSync(path.join(here, '..', 'app.js'), 'utf8');
 const mathSrc = src.slice(0, src.indexOf('window.CampMath'));
 const M = new Function(mathSrc + `
   return { project, unproject, solveTransform, applyTransform, invertTransform,
-           latLonToPlan, planToLatLon, geoDistance, bearingDeg, parseCoords, compassName };
+           latLonToPlan, planToLatLon, geoDistance, bearingDeg, parseCoords,
+           compassName, calibSpread };
 `)();
 
 /* Ein künstlicher, exakt bekannter Plan: Maßstab und Nordrichtung vorgegeben. */
@@ -161,6 +162,35 @@ test('Ein einzelner Punkt genügt nicht', () => {
 test('Zwei identische Punkte ergeben keine Transformation', () => {
   const p = { px: 10, py: 20, lat: 45.1, lon: 13.1 };
   assert.equal(M.solveTransform([p, { ...p }]), null);
+});
+
+/* Der Fall aus der Praxis: Das Handy hält eine eingefrorene Position fest,
+   während man über den Platz läuft. Alle Punkte bekommen dieselbe Koordinate,
+   und eine Ähnlichkeitstransformation daraus hätte einen absurden Maßstab –
+   die Position landete dann irgendwo weit weg. Lieber keine Karte. */
+test('GPS-seitig zusammenliegende Punkte ergeben keine Transformation', () => {
+  const truth = truthMaker();
+  const base = P(45.2938, 13.5897, truth);
+  const nearby = P(45.29381, 13.58971, truth);     // gut 1 m entfernt
+  assert.ok(M.calibSpread([base, nearby]) < 3, 'Testpunkte liegen dicht beieinander');
+
+  // Planpixel weit auseinander, Koordinaten praktisch gleich
+  const bogus = [{ ...base }, { ...nearby, px: base.px + 1800, py: base.py + 900 }];
+  assert.equal(M.solveTransform(bogus), null, 'unbrauchbare Kalibrierung wird verworfen');
+
+  // Gleiche Punkte mit echtem Abstand funktionieren weiterhin
+  const good = [base, P(45.2985, 13.5951, truth)];
+  assert.ok(M.calibSpread(good) > 50);
+  assert.ok(M.solveTransform(good), 'brauchbare Kalibrierung bleibt erhalten');
+});
+
+test('Spreizung misst den größten Abstand im Punktesatz', () => {
+  const pts = [
+    { lat: 45.2938, lon: 13.5897 }, { lat: 45.2940, lon: 13.5899 }, { lat: 45.3000, lon: 13.5960 }
+  ];
+  const spread = M.calibSpread(pts);
+  const direct = M.geoDistance(45.2938, 13.5897, 45.3000, 13.5960);
+  assert.ok(Math.abs(spread - direct) < 0.5, `${spread} vs ${direct}`);
 });
 
 test('Koordinaten-Parser', () => {
