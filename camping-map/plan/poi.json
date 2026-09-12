@@ -1,0 +1,882 @@
+{
+  "version": 1,
+  "plan": "camping-solaris-map.webp",
+  "planSize": [
+    3200,
+    2231
+  ],
+  "updated": "2026-09-12",
+  "about": {
+    "name": "Camping Solaris (Valamar), Lanterna",
+    "text": "FKK-Campingplatz auf der Halbinsel Lanterna bei Tar-Vabriga, zwischen Poreč und Novigrad. Rund 49 Hektar, 2,5 km eigene Küste mit Blauer Flagge, Zonen A bis N.",
+    "sources": [
+      "valamar.com",
+      "adriacamps.com",
+      "camping.info"
+    ]
+  },
+  "legend": {
+    "sanitary": "Die Nummern 1–11 stehen für die Sanitärgebäude. Ihre Ausstattung steht in der Legende des offiziellen Plans – hier je Gebäude ausgelesen.",
+    "trust": "„Plan“ = direkt aus dem offiziellen Lageplan. „Gäste“ = wiederkehrende Aussagen aus öffentlichen Bewertungen (camping.info, Tripadvisor, HolidayCheck). „Hinweis“ = eigene Einordnung.",
+    "best_sanitary": "Am umfangreichsten ausgestattet: Nr. 9."
+  },
+  "categories": {
+    "sanitary": {
+      "label": "Sanitär",
+      "icon": "🚿",
+      "color": "#4da3ff"
+    },
+    "food": {
+      "label": "Essen & Trinken",
+      "icon": "🍽️",
+      "color": "#f2905c"
+    },
+    "shop": {
+      "label": "Einkauf & Service",
+      "icon": "🛒",
+      "color": "#c98cf0"
+    },
+    "beach": {
+      "label": "Strand",
+      "icon": "🏖️",
+      "color": "#3fd0c9"
+    },
+    "sport": {
+      "label": "Sport & Spiel",
+      "icon": "🏓",
+      "color": "#47c27b"
+    },
+    "dog": {
+      "label": "Hunde",
+      "icon": "🐕",
+      "color": "#f2b13c"
+    },
+    "info": {
+      "label": "Orientierung",
+      "icon": "ℹ️",
+      "color": "#94a0b0"
+    }
+  },
+  "items": [
+    {
+      "id": "san1",
+      "cat": "sanitary",
+      "x": 2171,
+      "y": 910,
+      "name": "Sanitär 1",
+      "sub": "bei Zone A, Ostteil",
+      "facts": [
+        "WC",
+        "Waschbecken mit Warmwasser",
+        "Wäsche waschen",
+        "Geschirrspülen",
+        "Ausguss Chemie-WC",
+        "Barrierefreie Dusche"
+      ],
+      "text": "Sanitärgebäude 1 von 11. Ausstattung laut Legende des offiziellen Lageplans: WC, Waschbecken mit Warmwasser, Wäsche waschen, Geschirrspülen, Ausguss Chemie-WC, Barrierefreie Dusche.",
+      "tips": [
+        {
+          "kind": "Hinweis",
+          "text": "Grillplatz in Zone A gleich daneben."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Der Betreiber gibt sechs renovierte Sanitärgebäude an, ohne zu sagen welche. In Bewertungen stehen frisch renovierte Häuser neben deutlich älteren – Ausstattung laut Plan ist verlässlich, der Zustand nicht."
+        },
+        {
+          "kind": "Plan",
+          "text": "Ohne Kinderbad."
+        }
+      ]
+    },
+    {
+      "id": "san2",
+      "cat": "sanitary",
+      "x": 1833,
+      "y": 860,
+      "name": "Sanitär 2",
+      "sub": "bei Zone B",
+      "facts": [
+        "WC",
+        "Waschbecken mit Warmwasser",
+        "Wäsche waschen",
+        "Geschirrspülen",
+        "Ausguss Chemie-WC",
+        "Kinderbad",
+        "Barrierefreie Dusche"
+      ],
+      "text": "Sanitärgebäude 2 von 11. Ausstattung laut Legende des offiziellen Lageplans: WC, Waschbecken mit Warmwasser, Wäsche waschen, Geschirrspülen, Ausguss Chemie-WC, Kinderbad, Barrierefreie Dusche.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Mit Kinderbad – für Familien der kürzere Weg als zu einem Gebäude ohne."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Der Betreiber gibt sechs renovierte Sanitärgebäude an, ohne zu sagen welche. In Bewertungen stehen frisch renovierte Häuser neben deutlich älteren – Ausstattung laut Plan ist verlässlich, der Zustand nicht."
+        }
+      ]
+    },
+    {
+      "id": "san3",
+      "cat": "sanitary",
+      "x": 1347,
+      "y": 756,
+      "name": "Sanitär 3",
+      "sub": "bei Zone C, Nordküste",
+      "facts": [
+        "WC",
+        "Waschbecken mit Warmwasser",
+        "Wäsche waschen",
+        "Geschirrspülen",
+        "Ausguss Chemie-WC",
+        "Kinderbad",
+        "Hundedusche"
+      ],
+      "text": "Sanitärgebäude 3 von 11. Ausstattung laut Legende des offiziellen Lageplans: WC, Waschbecken mit Warmwasser, Wäsche waschen, Geschirrspülen, Ausguss Chemie-WC, Kinderbad, Hundedusche.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Mit Kinderbad – für Familien der kürzere Weg als zu einem Gebäude ohne."
+        },
+        {
+          "kind": "Plan",
+          "text": "Mit Hundedusche."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Der Betreiber gibt sechs renovierte Sanitärgebäude an, ohne zu sagen welche. In Bewertungen stehen frisch renovierte Häuser neben deutlich älteren – Ausstattung laut Plan ist verlässlich, der Zustand nicht."
+        }
+      ]
+    },
+    {
+      "id": "san4",
+      "cat": "sanitary",
+      "x": 1059,
+      "y": 794,
+      "name": "Sanitär 4",
+      "sub": "bei Zone D/I, Nordwesten",
+      "facts": [
+        "WC",
+        "Waschbecken mit Warmwasser",
+        "Wäsche waschen",
+        "Geschirrspülen",
+        "Ausguss Chemie-WC",
+        "Kinderbad",
+        "Hundedusche"
+      ],
+      "text": "Sanitärgebäude 4 von 11. Ausstattung laut Legende des offiziellen Lageplans: WC, Waschbecken mit Warmwasser, Wäsche waschen, Geschirrspülen, Ausguss Chemie-WC, Kinderbad, Hundedusche.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Mit Kinderbad – für Familien der kürzere Weg als zu einem Gebäude ohne."
+        },
+        {
+          "kind": "Plan",
+          "text": "Mit Hundedusche."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Der Betreiber gibt sechs renovierte Sanitärgebäude an, ohne zu sagen welche. In Bewertungen stehen frisch renovierte Häuser neben deutlich älteren – Ausstattung laut Plan ist verlässlich, der Zustand nicht."
+        }
+      ]
+    },
+    {
+      "id": "san5",
+      "cat": "sanitary",
+      "x": 228,
+      "y": 1023,
+      "name": "Sanitär 5",
+      "sub": "bei Zone N, Westende",
+      "facts": [
+        "WC",
+        "Waschbecken mit Warmwasser",
+        "Wäsche waschen",
+        "Geschirrspülen",
+        "Ausguss Chemie-WC",
+        "Hundedusche"
+      ],
+      "text": "Sanitärgebäude 5 von 11. Ausstattung laut Legende des offiziellen Lageplans: WC, Waschbecken mit Warmwasser, Wäsche waschen, Geschirrspülen, Ausguss Chemie-WC, Hundedusche.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Mit Hundedusche."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Der Betreiber gibt sechs renovierte Sanitärgebäude an, ohne zu sagen welche. In Bewertungen stehen frisch renovierte Häuser neben deutlich älteren – Ausstattung laut Plan ist verlässlich, der Zustand nicht."
+        },
+        {
+          "kind": "Plan",
+          "text": "Ohne Kinderbad."
+        }
+      ]
+    },
+    {
+      "id": "san6",
+      "cat": "sanitary",
+      "x": 2100,
+      "y": 1146,
+      "name": "Sanitär 6",
+      "sub": "bei Zone F",
+      "facts": [
+        "WC",
+        "Waschbecken mit Warmwasser",
+        "Wäsche waschen",
+        "Geschirrspülen",
+        "Ausguss Chemie-WC",
+        "Kinderbad"
+      ],
+      "text": "Sanitärgebäude 6 von 11. Ausstattung laut Legende des offiziellen Lageplans: WC, Waschbecken mit Warmwasser, Wäsche waschen, Geschirrspülen, Ausguss Chemie-WC, Kinderbad.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Mit Kinderbad – für Familien der kürzere Weg als zu einem Gebäude ohne."
+        },
+        {
+          "kind": "Hinweis",
+          "text": "Grillplatz direkt nebenan."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Der Betreiber gibt sechs renovierte Sanitärgebäude an, ohne zu sagen welche. In Bewertungen stehen frisch renovierte Häuser neben deutlich älteren – Ausstattung laut Plan ist verlässlich, der Zustand nicht."
+        }
+      ]
+    },
+    {
+      "id": "san7",
+      "cat": "sanitary",
+      "x": 1821,
+      "y": 1042,
+      "name": "Sanitär 7",
+      "sub": "bei Zone G",
+      "facts": [
+        "WC",
+        "Waschbecken mit Warmwasser",
+        "Wäsche waschen",
+        "Geschirrspülen",
+        "Ausguss Chemie-WC",
+        "Kinderbad",
+        "Barrierefreie Dusche"
+      ],
+      "text": "Sanitärgebäude 7 von 11. Ausstattung laut Legende des offiziellen Lageplans: WC, Waschbecken mit Warmwasser, Wäsche waschen, Geschirrspülen, Ausguss Chemie-WC, Kinderbad, Barrierefreie Dusche.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Mit Kinderbad – für Familien der kürzere Weg als zu einem Gebäude ohne."
+        },
+        {
+          "kind": "Hinweis",
+          "text": "Grillplatz direkt nebenan."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Der Betreiber gibt sechs renovierte Sanitärgebäude an, ohne zu sagen welche. In Bewertungen stehen frisch renovierte Häuser neben deutlich älteren – Ausstattung laut Plan ist verlässlich, der Zustand nicht."
+        }
+      ]
+    },
+    {
+      "id": "san8",
+      "cat": "sanitary",
+      "x": 1440,
+      "y": 966,
+      "name": "Sanitär 8",
+      "sub": "bei Zone H, neben dem Supermarkt",
+      "facts": [
+        "WC",
+        "Waschbecken mit Warmwasser",
+        "Wäsche waschen",
+        "Geschirrspülen",
+        "Ausguss Chemie-WC",
+        "Kinderbad"
+      ],
+      "text": "Sanitärgebäude 8 von 11. Ausstattung laut Legende des offiziellen Lageplans: WC, Waschbecken mit Warmwasser, Wäsche waschen, Geschirrspülen, Ausguss Chemie-WC, Kinderbad.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Mit Kinderbad – für Familien der kürzere Weg als zu einem Gebäude ohne."
+        },
+        {
+          "kind": "Hinweis",
+          "text": "Supermarkt direkt nebenan."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Der Betreiber gibt sechs renovierte Sanitärgebäude an, ohne zu sagen welche. In Bewertungen stehen frisch renovierte Häuser neben deutlich älteren – Ausstattung laut Plan ist verlässlich, der Zustand nicht."
+        }
+      ]
+    },
+    {
+      "id": "san9",
+      "cat": "sanitary",
+      "x": 1885,
+      "y": 1362,
+      "name": "Sanitär 9",
+      "sub": "zwischen Zone K und J, Südseite",
+      "facts": [
+        "WC",
+        "Waschbecken mit Warmwasser",
+        "Wäsche waschen",
+        "Geschirrspülen",
+        "Ausguss Chemie-WC",
+        "Kinderbad",
+        "Barrierefreie Dusche",
+        "Hundedusche"
+      ],
+      "text": "Sanitärgebäude 9 von 11. Ausstattung laut Legende des offiziellen Lageplans: WC, Waschbecken mit Warmwasser, Wäsche waschen, Geschirrspülen, Ausguss Chemie-WC, Kinderbad, Barrierefreie Dusche, Hundedusche.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Das am besten ausgestattete Sanitärgebäude auf dem Platz: als einziges mit Kinderbad, barrierefreier Dusche und Hundedusche zugleich."
+        },
+        {
+          "kind": "Plan",
+          "text": "Mit Kinderbad – für Familien der kürzere Weg als zu einem Gebäude ohne."
+        },
+        {
+          "kind": "Plan",
+          "text": "Mit Hundedusche."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Der Betreiber gibt sechs renovierte Sanitärgebäude an, ohne zu sagen welche. In Bewertungen stehen frisch renovierte Häuser neben deutlich älteren – Ausstattung laut Plan ist verlässlich, der Zustand nicht."
+        }
+      ]
+    },
+    {
+      "id": "san10",
+      "cat": "sanitary",
+      "x": 1508,
+      "y": 1297,
+      "name": "Sanitär 10",
+      "sub": "bei Zone M, nahe Tennisplätze",
+      "facts": [
+        "WC",
+        "Waschbecken mit Warmwasser",
+        "Wäsche waschen",
+        "Geschirrspülen",
+        "Ausguss Chemie-WC",
+        "Kinderbad",
+        "Barrierefreie Dusche"
+      ],
+      "text": "Sanitärgebäude 10 von 11. Ausstattung laut Legende des offiziellen Lageplans: WC, Waschbecken mit Warmwasser, Wäsche waschen, Geschirrspülen, Ausguss Chemie-WC, Kinderbad, Barrierefreie Dusche.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Mit Kinderbad – für Familien der kürzere Weg als zu einem Gebäude ohne."
+        },
+        {
+          "kind": "Hinweis",
+          "text": "Tennis, Tischtennis und Spielplatz gleich daneben."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Der Betreiber gibt sechs renovierte Sanitärgebäude an, ohne zu sagen welche. In Bewertungen stehen frisch renovierte Häuser neben deutlich älteren – Ausstattung laut Plan ist verlässlich, der Zustand nicht."
+        }
+      ]
+    },
+    {
+      "id": "san11",
+      "cat": "sanitary",
+      "x": 1145,
+      "y": 1029,
+      "name": "Sanitär 11",
+      "sub": "bei Zone I, Nordwesten",
+      "facts": [
+        "WC",
+        "Waschbecken mit Warmwasser",
+        "Wäsche waschen",
+        "Geschirrspülen",
+        "Ausguss Chemie-WC",
+        "Hundedusche"
+      ],
+      "text": "Sanitärgebäude 11 von 11. Ausstattung laut Legende des offiziellen Lageplans: WC, Waschbecken mit Warmwasser, Wäsche waschen, Geschirrspülen, Ausguss Chemie-WC, Hundedusche.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Mit Hundedusche."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Der Betreiber gibt sechs renovierte Sanitärgebäude an, ohne zu sagen welche. In Bewertungen stehen frisch renovierte Häuser neben deutlich älteren – Ausstattung laut Plan ist verlässlich, der Zustand nicht."
+        },
+        {
+          "kind": "Plan",
+          "text": "Ohne Kinderbad."
+        }
+      ]
+    },
+    {
+      "id": "reception",
+      "cat": "info",
+      "x": 2368,
+      "y": 1515,
+      "name": "Rezeption",
+      "sub": "Haupteingang, Zone J/L",
+      "facts": [
+        "Check-in / Check-out",
+        "Info-Punkt",
+        "Zeitungen",
+        "Geldautomat laut Plan-Legende (Gruppe 1)"
+      ],
+      "text": "Der einzige reguläre Ein- und Ausgang des Platzes, ganz im Osten. Von hier führt die Hauptachse nach Westen bis Zone N – zu Fuß gute 20 Minuten bis ans andere Ende.",
+      "tips": [
+        {
+          "kind": "Hinweis",
+          "text": "Weiteste Ecke des Platzes von der Rezeption aus ist Zone N im Westen. Wer schlecht zu Fuß ist, sollte das bei der Platzwahl bedenken."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Personal wird in Bewertungen regelmäßig als freundlich und hilfsbereit beschrieben."
+        }
+      ]
+    },
+    {
+      "id": "parking",
+      "cat": "info",
+      "x": 2695,
+      "y": 1560,
+      "name": "Parkplatz",
+      "sub": "bei der Rezeption",
+      "facts": [
+        "Großer Stellplatz vor der Schranke"
+      ],
+      "text": "Parkfläche östlich der Rezeption, außerhalb der Camping-Zonen. Teile des Platzes sind als „Car free Zone“ ausgewiesen – rund um die Apartments gilt Fahrverbot."
+    },
+    {
+      "id": "restaurant",
+      "cat": "food",
+      "x": 2420,
+      "y": 1105,
+      "name": "Restaurant",
+      "sub": "Zone E/A, Ostteil",
+      "facts": [
+        "À la carte",
+        "Terrasse"
+      ],
+      "text": "Das zentrale Restaurant des Platzes, oberhalb der Bucht zwischen Zone A und E.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Auf dem Lageplan die Gruppe „2“: Restaurant, Spielplatz und Ballsport liegen hier beieinander."
+        },
+        {
+          "kind": "Gäste",
+          "text": "Zur Gastronomie auf dem Platz gibt es gemischte Rückmeldungen – mehrere Bewertungen nennen die Preise hoch für das Gebotene."
+        }
+      ]
+    },
+    {
+      "id": "buffet-d",
+      "cat": "food",
+      "x": 925,
+      "y": 665,
+      "name": "Buffet Nordküste",
+      "sub": "Zone D, direkt am Wasser",
+      "facts": [
+        "Buffet / Snacks",
+        "Lage direkt an der Küste"
+      ],
+      "text": "Buffet-Station im Norden, unmittelbar an der Küstenpromenade der Zone D.",
+      "tips": [
+        {
+          "kind": "Hinweis",
+          "text": "Die Nordseite bekommt nachmittags und abends die Sonne von vorn – schöner Platz für den Sonnenuntergang mit Blick übers Wasser."
+        }
+      ]
+    },
+    {
+      "id": "buffet-e",
+      "cat": "food",
+      "x": 3120,
+      "y": 1120,
+      "name": "Buffet Ost",
+      "sub": "bei den Apartments",
+      "facts": [
+        "Buffet / Snacks"
+      ],
+      "text": "Kleinere Verpflegungsstation im Osten bei den Apartmenthäusern, nahe Crnika Beach."
+    },
+    {
+      "id": "market-h",
+      "cat": "shop",
+      "x": 1442,
+      "y": 1016,
+      "name": "Supermarkt",
+      "sub": "Platzmitte, bei Zone H",
+      "facts": [
+        "Lebensmittel",
+        "zentral gelegen"
+      ],
+      "text": "Der Laden in der Platzmitte – für die westlichen Zonen der kürzeste Weg zum Einkauf.",
+      "tips": [
+        {
+          "kind": "Hinweis",
+          "text": "Direkt daneben liegt Sanitärgebäude 8. Einkauf und Duschgang lassen sich gut verbinden."
+        }
+      ]
+    },
+    {
+      "id": "market-r",
+      "cat": "shop",
+      "x": 2242,
+      "y": 1426,
+      "name": "Markt / Shop Rezeption",
+      "sub": "beim Eingang",
+      "facts": [
+        "Lebensmittel",
+        "nahe Rezeption"
+      ],
+      "text": "Verkaufsstelle im Eingangsbereich, praktisch bei An- und Abreise."
+    },
+    {
+      "id": "laundry",
+      "cat": "shop",
+      "x": 1868,
+      "y": 1012,
+      "name": "Waschsalon",
+      "sub": "Zone G",
+      "facts": [
+        "Waschmaschinen / Wäscherei"
+      ],
+      "text": "Eigene Wäscherei mit Waschmaschinen, zusätzlich zu den Waschbecken in den Sanitärgebäuden."
+    },
+    {
+      "id": "chemwc",
+      "cat": "shop",
+      "x": 2296,
+      "y": 1442,
+      "name": "Entsorgung Chemie-WC",
+      "sub": "nahe Rezeption",
+      "facts": [
+        "Ausguss für Chemietoiletten"
+      ],
+      "text": "Ausguss-Station beim Eingang. Weitere Ausgüsse gibt es laut Plan an jedem der elf Sanitärgebäude."
+    },
+    {
+      "id": "sport",
+      "cat": "sport",
+      "x": 1680,
+      "y": 780,
+      "name": "Sport Center & Pool",
+      "sub": "Platzmitte, Nordseite",
+      "facts": [
+        "Süßwasser-Pool",
+        "Beachbar am Pool",
+        "Bocce",
+        "Ballsport"
+      ],
+      "text": "Sportzentrum mit Pool auf der Nordseite der Platzmitte. Auf dem Plan die Gruppe „3“: Sport Center, Bocce und weitere Anlagen liegen hier zusammen.",
+      "tips": [
+        {
+          "kind": "Gäste",
+          "text": "Pool und die Strandabschnitte davor werden in der Hochsaison als sehr voll beschrieben. Wer Ruhe will, geht früh oder weicht auf die Küste im Westen aus."
+        },
+        {
+          "kind": "Plan",
+          "text": "Liegen lassen sich laut Betreiberangaben an Pool und Strand mieten."
+        }
+      ]
+    },
+    {
+      "id": "tennis",
+      "cat": "sport",
+      "x": 1420,
+      "y": 1250,
+      "name": "Tennis Center",
+      "sub": "Südseite, bei Zone M",
+      "facts": [
+        "Tennisplätze",
+        "Tischtennis",
+        "Spielplatz nebenan"
+      ],
+      "text": "Tennisanlage mit Sandplätzen im Süden der Platzmitte, direkt daneben Tischtennis und ein Kinderspielplatz."
+    },
+    {
+      "id": "play-sport",
+      "cat": "sport",
+      "x": 1672,
+      "y": 852,
+      "name": "Spielplatz Sport Center",
+      "sub": "Platzmitte",
+      "facts": [
+        "Kinderspielplatz"
+      ],
+      "text": "Spielplatz direkt beim Sportzentrum und Pool."
+    },
+    {
+      "id": "play-east",
+      "cat": "sport",
+      "x": 2612,
+      "y": 1116,
+      "name": "Spielplatz Ost",
+      "sub": "bei Restaurant und Apartments",
+      "facts": [
+        "Kinderspielplatz"
+      ],
+      "text": "Spielplatz im Ostteil, zwischen Restaurant und den Apartmenthäusern."
+    },
+    {
+      "id": "play-dino",
+      "cat": "sport",
+      "x": 740,
+      "y": 906,
+      "name": "Dino-Spielplatz",
+      "sub": "Westteil, Zone N",
+      "facts": [
+        "Themen-Spielplatz"
+      ],
+      "text": "Spielplatz im Westteil des Platzes, auf dem Plan als „DINO“ markiert.",
+      "tips": [
+        {
+          "kind": "Hinweis",
+          "text": "Der einzige größere Spielplatz im Westen – für Familien in Zone N deutlich näher als die Anlagen in der Platzmitte."
+        }
+      ]
+    },
+    {
+      "id": "massage",
+      "cat": "shop",
+      "x": 2760,
+      "y": 1098,
+      "name": "Massage-Zone",
+      "sub": "bei den Apartments",
+      "facts": [
+        "Massage"
+      ],
+      "text": "Massageangebot im Osten des Platzes, ausgewiesen als eigene Zone."
+    },
+    {
+      "id": "boatramp",
+      "cat": "info",
+      "x": 1742,
+      "y": 700,
+      "name": "Bootsrampe",
+      "sub": "Nordküste",
+      "facts": [
+        "Slipanlage für Boote"
+      ],
+      "text": "Bootsslip an der Nordküste. In der Bucht davor ist laut Plan das Ankern erlaubt.",
+      "tips": [
+        {
+          "kind": "Plan",
+          "text": "Vor den Badebereichen gilt eine 200-Meter-Zone für Boote – die Bojenketten auf dem Plan markieren sie."
+        }
+      ]
+    },
+    {
+      "id": "anchor",
+      "cat": "info",
+      "x": 1712,
+      "y": 614,
+      "name": "Ankerplatz",
+      "sub": "Bucht Nordküste",
+      "facts": [
+        "Ankern erlaubt"
+      ],
+      "text": "Ausgewiesener Ankerbereich vor der Nordküste."
+    },
+    {
+      "id": "beach-kopalo",
+      "cat": "beach",
+      "x": 520,
+      "y": 690,
+      "name": "Kopalo Beach",
+      "sub": "Westspitze",
+      "facts": [
+        "FKK",
+        "Blaue Flagge",
+        "Kies und Felsen"
+      ],
+      "text": "Der Strand an der Westspitze der Halbinsel, am weitesten von der Rezeption entfernt.",
+      "tips": [
+        {
+          "kind": "Hinweis",
+          "text": "Weil er am weitesten weg liegt, ist es hier erfahrungsgemäß ruhiger als an den Abschnitten bei Pool und Rezeption. Wer Betrieb meiden will, fängt hier an."
+        },
+        {
+          "kind": "Plan",
+          "text": "Abschnitte für Hunde sind auf dem Plan eigens markiert – hier im Westen gibt es mehrere."
+        }
+      ]
+    },
+    {
+      "id": "beach-sidro",
+      "cat": "beach",
+      "x": 1584,
+      "y": 480,
+      "name": "Sidro Beach",
+      "sub": "Nordküste, Platzmitte",
+      "facts": [
+        "FKK",
+        "Blaue Flagge",
+        "nahe Sport Center"
+      ],
+      "text": "Strandabschnitt an der Nordspitze, gegenüber dem Sportzentrum.",
+      "tips": [
+        {
+          "kind": "Gäste",
+          "text": "Die zentralen Abschnitte füllen sich in der Hochsaison am schnellsten."
+        }
+      ]
+    },
+    {
+      "id": "beach-galeb",
+      "cat": "beach",
+      "x": 2500,
+      "y": 830,
+      "name": "Galeb Beach",
+      "sub": "Ostküste",
+      "facts": [
+        "FKK",
+        "Blaue Flagge"
+      ],
+      "text": "Strandabschnitt im Osten, unterhalb von Restaurant und Zone A/E."
+    },
+    {
+      "id": "beach-crnika",
+      "cat": "beach",
+      "x": 3020,
+      "y": 840,
+      "name": "Crnika Beach",
+      "sub": "Nordostzipfel",
+      "facts": [
+        "FKK",
+        "Blaue Flagge"
+      ],
+      "text": "Der östlichste Abschnitt, an der Grenze zum Nachbarresort Lanterna.",
+      "tips": [
+        {
+          "kind": "Gäste",
+          "text": "Auf den östlichen Abschnitten begegnen einem am ehesten Tagesgäste aus dem benachbarten Lanterna-Resort. Mehrere Bewertungen erwähnen Radfahrer und Textilgäste, die hier durchfahren."
+        }
+      ]
+    },
+    {
+      "id": "doggarden",
+      "cat": "dog",
+      "x": 798,
+      "y": 1234,
+      "name": "Hundegarten",
+      "sub": "Westteil",
+      "facts": [
+        "eingezäunte Fläche für Hunde"
+      ],
+      "text": "Auslauffläche für Hunde im Westteil des Platzes."
+    },
+    {
+      "id": "dogshower-1",
+      "cat": "dog",
+      "x": 1486,
+      "y": 1090,
+      "name": "Hundedusche Platzmitte",
+      "sub": "bei Zone M",
+      "facts": [
+        "Dusche für Hunde"
+      ],
+      "text": "Waschgelegenheit für Hunde in der Platzmitte."
+    },
+    {
+      "id": "dogshower-2",
+      "cat": "dog",
+      "x": 1762,
+      "y": 1184,
+      "name": "Hundedusche Zone K",
+      "sub": "Zone K",
+      "facts": [
+        "Dusche für Hunde"
+      ],
+      "text": "Waschgelegenheit für Hunde bei Zone K."
+    },
+    {
+      "id": "dogshower-3",
+      "cat": "dog",
+      "x": 1622,
+      "y": 1544,
+      "name": "Hundedusche Süd",
+      "sub": "Südrand",
+      "facts": [
+        "Dusche für Hunde"
+      ],
+      "text": "Waschgelegenheit für Hunde am Südrand des Platzes."
+    },
+    {
+      "id": "grill-1",
+      "cat": "food",
+      "x": 2052,
+      "y": 892,
+      "name": "Grillplatz Zone B",
+      "sub": "Zone B",
+      "facts": [
+        "Gemeinschaftsgrill"
+      ],
+      "text": "Auf dem Platz gibt es mehrere ausgewiesene Grillstellen – offenes Feuer ist sonst verboten."
+    },
+    {
+      "id": "grill-2",
+      "cat": "food",
+      "x": 2236,
+      "y": 930,
+      "name": "Grillplatz Zone A",
+      "sub": "Zone A",
+      "facts": [
+        "Gemeinschaftsgrill"
+      ],
+      "text": "Grillstelle bei Zone A, nahe Sanitärgebäude 1."
+    },
+    {
+      "id": "grill-3",
+      "cat": "food",
+      "x": 1812,
+      "y": 1086,
+      "name": "Grillplatz Zone G",
+      "sub": "Zone G",
+      "facts": [
+        "Gemeinschaftsgrill"
+      ],
+      "text": "Grillstelle bei Zone G, direkt neben Sanitärgebäude 7."
+    },
+    {
+      "id": "grill-4",
+      "cat": "food",
+      "x": 2122,
+      "y": 1154,
+      "name": "Grillplatz Zone F",
+      "sub": "Zone F",
+      "facts": [
+        "Gemeinschaftsgrill"
+      ],
+      "text": "Grillstelle bei Zone F, neben Sanitärgebäude 6."
+    }
+  ],
+  "general": [
+    {
+      "kind": "Gäste",
+      "text": "Xjam-Festival: Ende Juni läuft im benachbarten Lanterna-Resort sechs Tage lang ein Musikfestival. Gäste berichten von deutlich hörbarer Musik bis in die Nacht. Wer Ruhe sucht, prüft die Termine vor der Buchung."
+    },
+    {
+      "kind": "Gäste",
+      "text": "FKK in der Praxis: Der Platz ist offiziell Naturisten-Camping, in Bewertungen wird er aber wiederholt als „textilfrei optional“ beschrieben. Am Ostende (Crnika/Galeb) kommen Tagesgäste aus dem Lanterna-Resort vorbei."
+    },
+    {
+      "kind": "Gäste",
+      "text": "Sanitär ist das häufigste Streitthema: Zahl der Gebäude für die Platzgröße wird oft als knapp beschrieben, mit Warteschlangen ab dem frühen Abend. Früh oder spät duschen spart Wartezeit."
+    },
+    {
+      "kind": "Plan",
+      "text": "Der Platz zieht sich über rund 2,5 km Küste und ist hügelig. Von der Rezeption ganz im Osten bis Zone N im Westen läuft man gute 20 Minuten – ein Rad hilft."
+    },
+    {
+      "kind": "Plan",
+      "text": "Elf Sanitärgebäude, aber unterschiedlich ausgestattet: Kinderbad gibt es in 2, 3, 4, 6, 7, 8, 9, 10 – nicht in 1, 5 und 11. Hundedusche in 3, 4, 5, 9 und 11. Barrierefreie Dusche in 1, 2, 7, 9 und 10."
+    },
+    {
+      "kind": "Hinweis",
+      "text": "Ruhiger baden: Die westlichen Abschnitte Richtung Kopalo Beach sind am weitesten von Pool und Rezeption entfernt und entsprechend weniger frequentiert."
+    },
+    {
+      "kind": "Plan",
+      "text": "Offenes Feuer ist verboten, Grillen nur an den vier ausgewiesenen Grillplätzen (Zonen A, B, F, G)."
+    }
+  ]
+}

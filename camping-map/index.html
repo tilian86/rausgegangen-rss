@@ -25,6 +25,7 @@
       <div class="me-arrow" hidden></div>
       <div class="me-dot"></div>
     </div>
+    <div id="pois"></div>
     <div id="markers"></div>
     <div id="calibpts"></div>
   </div>
@@ -55,6 +56,9 @@
 <div id="toolbar">
   <button id="btn-follow" class="tool">
     <span class="ico">◎</span><span class="lbl">Folgen</span>
+  </button>
+  <button id="btn-places" class="tool">
+    <span class="ico">🔎</span><span class="lbl">Orte</span>
   </button>
   <button id="btn-marker" class="tool">
     <span class="ico">＋</span><span class="lbl">Marker</span>
@@ -159,6 +163,47 @@
       <button id="dlg-cancel" class="btn ghost">Abbrechen</button>
       <button id="dlg-ok" class="btn primary">OK</button>
     </div>
+  </div>
+</div>
+
+<!-- Ort: Detailkarte -->
+<div id="poi" class="overlay" hidden>
+  <div class="panel poi-panel">
+    <div class="sheet-head">
+      <div class="poi-title">
+        <span id="poi-icon" class="poi-icon"></span>
+        <div>
+          <h2 id="poi-name"></h2>
+          <p id="poi-sub" class="muted small"></p>
+        </div>
+      </div>
+      <button id="poi-close" class="icon" aria-label="Schließen">✕</button>
+    </div>
+    <p id="poi-dist" class="poi-dist"></p>
+    <ul id="poi-facts" class="chips"></ul>
+    <p id="poi-text"></p>
+    <div id="poi-tips"></div>
+    <div class="row">
+      <button id="poi-target" class="btn primary">Als Ziel setzen</button>
+      <button id="poi-show" class="btn ghost">Auf der Karte zeigen</button>
+    </div>
+  </div>
+</div>
+
+<!-- Orte: Liste mit Filter -->
+<div id="places" class="overlay" hidden>
+  <div class="panel">
+    <div class="sheet-head">
+      <h2>Orte auf dem Platz</h2>
+      <button id="places-close" class="icon" aria-label="Schließen">✕</button>
+    </div>
+    <details id="places-general" class="general">
+      <summary>Gut zu wissen</summary>
+      <div id="general-body"></div>
+    </details>
+    <div id="places-filter" class="chips filter"></div>
+    <p id="places-hint" class="muted small"></p>
+    <ul id="places-list" class="list"></ul>
   </div>
 </div>
 

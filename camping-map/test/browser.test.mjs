@@ -176,7 +176,7 @@ await page.waitForTimeout(200);
 assert.equal(await page.locator('.mk').count(), 2);
 
 await page.locator('.mk', { hasText: 'Strandbar' }).click();
-await page.getByText('Als Ziel setzen').click();
+await page.locator('#actions-body button', { hasText: 'Als Ziel setzen' }).click();
 await page.waitForTimeout(200);
 assert.equal(await page.locator('#targetbar').isVisible(), true, 'Zielleiste sichtbar');
 const dist = await page.locator('#target-dist').textContent();
@@ -392,6 +392,59 @@ assert.ok(Date.now() - tapAt > 3000, 'App hat auf die frische Messung gewartet')
 const freshAge = await buffered.evaluate(() => Date.now() - window.__app.state.pos.ts);
 assert.ok(freshAge < 20000, `gespeichert wurde ein junger Fix (${Math.round(freshAge / 1000)} s)`);
 await buffered.close();
+
+/* 15b) Orte aus dem Plan: Symbole antippbar, Details, Liste nach Entfernung.
+   Nur beim mitgelieferten Solaris-Plan – eigene Pläne haben keine Ortsdaten. */
+if (planExisted) {
+  const poiPage = await ctx.newPage();
+  const poiErrors = [];
+  poiPage.on('pageerror', e => poiErrors.push('pageerror: ' + e.message));
+  await poiPage.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+  await poiPage.evaluate(() => { indexedDB.deleteDatabase('campmap'); localStorage.clear(); });
+  await poiPage.reload({ waitUntil: 'networkidle' });
+  await poiPage.waitForFunction(() => window.__app && window.__app.state.pois !== null, null, { timeout: 20000 });
+
+  const poiInfo = await poiPage.evaluate(() => ({
+    count: window.__app.state.pois.items.length,
+    sanitary: window.__app.state.pois.items.filter(i => i.cat === 'sanitary').length,
+    rendered: document.querySelectorAll('.poi').length
+  }));
+  assert.ok(poiInfo.count >= 30, `Ortsdaten geladen: ${poiInfo.count}`);
+  assert.equal(poiInfo.sanitary, 11, 'elf Sanitärgebäude');
+  assert.equal(poiInfo.rendered, poiInfo.count, 'alle Orte gezeichnet');
+
+  // Detailkarte eines Sanitärgebäudes
+  await poiPage.evaluate(() => window.__app.openPoi('san9'));
+  await poiPage.waitForSelector('#poi:not([hidden])', { timeout: 5000 });
+  assert.match(await poiPage.locator('#poi-name').textContent(), /Sanitär 9/);
+  const factsText = await poiPage.locator('#poi-facts').textContent();
+  for (const f of ['Kinderbad', 'Barrierefreie Dusche', 'Hundedusche']) {
+    assert.ok(factsText.includes(f), `Ausstattung nennt ${f}`);
+  }
+  assert.match(await poiPage.locator('#poi-tips').textContent(), /am besten ausgestattete/,
+    'Einordnung wird gezeigt');
+  assert.match(await poiPage.locator('#poi-tips').textContent(), /Plan|Gäste|Hinweis/,
+    'Herkunft der Aussagen ist gekennzeichnet');
+
+  // Als Ziel setzen -> Zielleiste erscheint (Karte ist hier nicht kalibriert,
+  // also nur Zustand prüfen)
+  await poiPage.locator('#poi-target').click();
+  await poiPage.waitForTimeout(200);
+  assert.equal(await poiPage.evaluate(() => window.__app.state.targetPoiId), 'san9');
+
+  // Ortsliste mit Kategoriefilter
+  await poiPage.locator('#btn-places').click();
+  await poiPage.waitForSelector('#places:not([hidden])', { timeout: 5000 });
+  const before = await poiPage.locator('#places-list li').count();
+  await poiPage.locator('#places-filter button', { hasText: 'Sanitär' }).click();
+  await poiPage.waitForTimeout(200);
+  const after = await poiPage.locator('#places-list li').count();
+  assert.equal(after, before - 11, 'Filter blendet die Sanitärgebäude aus');
+  assert.equal(await poiPage.locator('.poi').count(), poiInfo.count - 11, 'auch auf der Karte');
+  await poiPage.screenshot({ path: `${OUT}/12-places.png` });
+  assert.deepEqual(poiErrors, [], 'keine Fehler bei den Orten:\n' + poiErrors.join('\n'));
+  await poiPage.close();
+}
 
 /* 16) In-App-Browser erkennen: WKWebView einer fremden App (kein "Safari/"
    im User-Agent) bekommt den Hinweis, echtes Safari und die Home-Bildschirm-
