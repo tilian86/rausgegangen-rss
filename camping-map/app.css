@@ -480,6 +480,15 @@ input[type="text"]:focus { outline: 2px solid var(--accent); outline-offset: 1px
 }
 .emoji-grid button.sel { border-color: var(--accent); background: #11385e; }
 
+.mono {
+  font-variant-numeric: tabular-nums;
+  padding: 8px 10px;
+  border-radius: 9px;
+  background: #0f131a;
+  border: 1px solid var(--line);
+}
+.mono.stale { border-color: rgba(242,177,60,.5); color: #f6d79b; }
+
 .issue {
   padding: 10px 12px;
   margin-bottom: 10px;

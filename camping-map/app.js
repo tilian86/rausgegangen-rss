@@ -5,7 +5,7 @@
    Alles lokal: kein Server, keine Konten, kein Tracking.
    ============================================================ */
 
-const APP_VERSION = '1.2.0';
+const APP_VERSION = '1.2.1';
 
 /* Ein Standortwert gilt nur kurz als aktuell: iOS lässt watchPosition
    einschlafen, sobald das Display aus ist. Wer dann am anderen Ende des
@@ -898,21 +898,60 @@ async function finishCalibGps(px, py) {
 
   const clash = calibConflict(px, py, fix.lat, fix.lon);
   if (clash) {
-    openActions('Position sieht veraltet aus', [
+    openActions(`Standort bewegt sich nicht (${Math.round(clash.dGps)} m zu Punkt ${clash.index})`, [
       {
-        label: 'Verstanden, nochmal versuchen',
-        run: () => showBanner(
-          `Dein Handy meldet fast dieselbe Stelle wie bei Punkt ${clash.index} (${Math.round(clash.dGps)} m), obwohl du weit davon entfernt getippt hast. Warte, bis sich die Genauigkeit oben aktualisiert, und setze den Punkt dann neu.`,
-          null, 12000)
+        label: '⟳ 15 Sekunden neu messen',
+        run: () => remeasureCalib(px, py)
       },
       {
-        label: 'Punkt trotzdem speichern', danger: true,
+        label: 'Was heißt das?',
+        run: () => showBanner(
+          `Dein Handy meldet ${Math.round(clash.dGps)} m Abstand zu Punkt ${clash.index}, obwohl du weit entfernt getippt hast – es liefert also noch den alten Standort. Meist hilft: Karte offen lassen, 10–20 Sekunden warten, bis die Koordinate im Menü sich ändert. Hartnäckig? In den iPhone-Einstellungen unter Safari/Ortungsdienste „Genauer Standort“ prüfen.`,
+          null, 15000)
+      },
+      {
+        label: 'Trotzdem speichern (Karte wird dann falsch)', danger: true,
         run: () => addCalibPoint(px, py, fix.lat, fix.lon, fix.acc)
       }
     ]);
     return;
   }
   addCalibPoint(px, py, fix.lat, fix.lon, fix.acc);
+}
+
+/* Zweiter Anlauf: eine Weile aktiv messen und den Punkt nehmen, sobald sich
+   der Standort wirklich von den bisherigen Punkten unterscheidet. */
+async function remeasureCalib(px, py) {
+  showBanner('Messe neu – bitte stehen bleiben …', null, 20000);
+  const until = Date.now() + 15000;
+  let last = null;
+  while (Date.now() < until) {
+    const fix = await getFreshFix(2500, 6000);
+    if (fix) {
+      last = fix;
+      if (!calibConflict(px, py, fix.lat, fix.lon)) {
+        el.banner.hidden = true;
+        addCalibPoint(px, py, fix.lat, fix.lon, fix.acc);
+        return;
+      }
+    }
+    await new Promise(r => setTimeout(r, 1500));
+  }
+  el.banner.hidden = true;
+  if (!last) {
+    showBanner('Keine Position bekommen. Unter freiem Himmel erneut versuchen.', 'bad', 10000);
+    return;
+  }
+  openActions('Standort bleibt gleich', [
+    {
+      label: 'Punkt jetzt trotzdem speichern', danger: true,
+      run: () => addCalibPoint(px, py, last.lat, last.lon, last.acc)
+    },
+    {
+      label: 'Abbrechen und später nochmal',
+      run: () => showBanner('Nichts gespeichert. Tipp: Kalibrierpunkte lassen sich auch über Koordinaten aus Google Maps setzen (Menü → Kalibrierung → Punkt: Koordinaten).', null, 14000)
+    }
+  ]);
 }
 
 function startCalibManual() {
@@ -1049,12 +1088,17 @@ function startWatch() {
 }
 
 function onPos(p) {
+  const ts = typeof p.timestamp === 'number' ? p.timestamp : Date.now();
+  // Nachgereichte ältere Messungen (iOS-Puffer) dürfen einen frischeren
+  // Standort nicht wieder verdrängen.
+  if (state.pos && typeof state.pos.ts === 'number' && ts < state.pos.ts - 1000) return;
+
   const first = !state.pos;
   state.geoError = null;
   state.pos = {
     lat: p.coords.latitude, lon: p.coords.longitude,
     acc: p.coords.accuracy, heading: p.coords.heading,
-    speed: p.coords.speed, ts: p.timestamp,
+    speed: p.coords.speed, ts,
     rx: Date.now()   // eigene Empfangszeit: unabhängig von der Geräteuhr
   };
   if (!state.opts.compass && typeof p.coords.heading === 'number' && !isNaN(p.coords.heading)
@@ -1069,26 +1113,69 @@ function onPos(p) {
   if (state.mode && state.mode.type === 'calib') renderMode();
 }
 
+/* Alter der Position. Entscheidend ist nicht nur, wann der Wert bei uns
+   ankam (rx), sondern wann er gemessen wurde (ts): iOS stellt nach dem
+   Aufwachen gerne einen gepufferten Fix zu – frisch zugestellt, inhaltlich
+   minutenalt. Es zählt der schlechtere der beiden Werte. */
 function posAge() {
-  return state.pos ? Date.now() - state.pos.rx : Infinity;
+  if (!state.pos) return Infinity;
+  const byRx = Date.now() - state.pos.rx;
+  const byTs = typeof state.pos.ts === 'number' ? Date.now() - state.pos.ts : 0;
+  // Eine verstellte Geräteuhr darf nicht alles blockieren
+  const tsUsable = byTs > -60000 && byTs < 86400000;
+  return Math.max(byRx, tsUsable ? byTs : 0);
 }
 
-/* Liefert eine Position, die wirklich von jetzt ist – oder null.
-   Stößt dabei den Watch neu an, weil er nach dem Hintergrund oft steht. */
-function getFreshFix(maxAge = FIX_MAX_AGE_MS, timeoutMs = 20000) {
+/* Liefert eine Position, die wirklich von jetzt ist – oder null. Fragt so
+   lange nach, bis ein junger Fix da ist, und stößt den Watch neu an, weil
+   er nach dem Hintergrund oft steht. */
+let freshFixPending = null;
+
+function getFreshFix(maxAge = FIX_MAX_AGE_MS, timeoutMs = 25000) {
   if (posAge() <= maxAge) return Promise.resolve(state.pos);
   if (!('geolocation' in navigator)) return Promise.resolve(null);
+  // Mehrere Anfragen (Modusstart und Antippen) teilen sich eine Messung
+  if (freshFixPending) return freshFixPending;
   startWatch();
-  return new Promise(resolve => {
+  const deadline = Date.now() + timeoutMs;
+
+  const pending = new Promise(resolve => {
     let done = false;
-    const finish = value => { if (!done) { done = true; resolve(value); } };
-    navigator.geolocation.getCurrentPosition(
-      p => { onPos(p); finish(state.pos); },
-      () => finish(posAge() <= maxAge ? state.pos : null),
-      { enableHighAccuracy: true, maximumAge: 0, timeout: timeoutMs }
-    );
-    setTimeout(() => finish(posAge() <= maxAge ? state.pos : null), timeoutMs + 500);
+    const finish = value => {
+      if (done) return;
+      done = true;
+      clearInterval(poll);
+      resolve(value);
+    };
+
+    // Der neu gestartete Watch kann uns zuvorkommen
+    const poll = setInterval(() => {
+      if (posAge() <= maxAge) finish(state.pos);
+      else if (Date.now() >= deadline) finish(null);
+    }, 400);
+
+    const attempt = () => {
+      if (done) return;
+      if (posAge() <= maxAge) return finish(state.pos);
+      if (Date.now() >= deadline) return finish(null);
+      navigator.geolocation.getCurrentPosition(
+        p => {
+          onPos(p);
+          if (posAge() <= maxAge) finish(state.pos);
+          else setTimeout(attempt, 1200);   // war wieder ein gepufferter Wert
+        },
+        () => setTimeout(attempt, 1500),
+        // Kurzes Zeitlimit: hängt die Abfrage, fragen wir lieber neu –
+        // und der laufende Watch kann derweil sowieso zuvorkommen.
+        { enableHighAccuracy: true, maximumAge: 0, timeout: Math.min(6000, Math.max(3000, deadline - Date.now())) }
+      );
+    };
+    attempt();
   });
+
+  freshFixPending = pending;
+  pending.then(() => { if (freshFixPending === pending) freshFixPending = null; });
+  return pending;
 }
 
 /* Nach Displaysperre oder App-Wechsel liefert der alte Watch auf iOS
@@ -1102,7 +1189,11 @@ function onVisible() {
 document.addEventListener('visibilitychange', onVisible);
 window.addEventListener('pageshow', onVisible);
 window.addEventListener('focus', onVisible);
-setInterval(() => { if (!document.hidden) renderStatus(); }, 5000);
+setInterval(() => {
+  if (document.hidden) return;
+  renderStatus();
+  renderLivePos();
+}, 5000);
 
 function onPosError(err) {
   state.geoErrorCode = err.code;
@@ -1386,8 +1477,24 @@ function setFollow(on) {
 function openOverlay(node) { node.hidden = false; }
 function closeOverlay(node) { node.hidden = true; }
 
+/* Zeigt, was das Gerät gerade liefert – daran sieht man sofort, ob sich der
+   Standort beim Laufen überhaupt ändert. */
+function renderLivePos() {
+  const node = $('#live-pos');
+  if (!node || el.sheet.hidden) return;
+  if (!state.pos) {
+    node.textContent = state.geoError || 'Noch keine Position.';
+    return;
+  }
+  const age = posAge();
+  node.textContent = `Jetzt: ${state.pos.lat.toFixed(5)}, ${state.pos.lon.toFixed(5)}`
+    + ` · ±${Math.round(state.pos.acc)} m · ${age < 3000 ? 'gerade eben' : 'vor ' + fmtAge(age)}`;
+  node.classList.toggle('stale', age > 20000);
+}
+
 function renderSheet() {
   if (el.sheet.hidden) return;
+  renderLivePos();
   $('#plan-info').textContent = state.plan
     ? `${state.plan.name} · ${state.plan.w} × ${state.plan.h} px`
     : 'Kein Plan geladen.';
@@ -1423,8 +1530,12 @@ function renderSheet() {
     const chk = state.T && state.T.checkErrors ? state.T.checkErrors[i] : null;
     li.innerHTML = `<span class="ic">${i + 1}</span><div class="txt"><b></b><span></span></div>`;
     li.querySelector('b').textContent = `${c.lat.toFixed(5)}, ${c.lon.toFixed(5)}`;
+    const toFirst = i > 0
+      ? geoDistance(state.calib[0].lat, state.calib[0].lon, c.lat, c.lon)
+      : null;
     li.querySelector('.txt span').textContent =
       (c.acc != null ? `GPS ±${c.acc} m` : 'manuell eingegeben')
+      + (toFirst != null ? ` · ${fmtDist(toFirst)} von Punkt 1` : '')
       + (chk != null ? ` · Kontrolle ${chk.toFixed(1)} m` : '');
     const del = document.createElement('button');
     del.className = 'btn ghost small danger';

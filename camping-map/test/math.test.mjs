@@ -184,6 +184,22 @@ test('GPS-seitig zusammenliegende Punkte ergeben keine Transformation', () => {
   assert.ok(M.solveTransform(good), 'brauchbare Kalibrierung bleibt erhalten');
 });
 
+test('Alter zählt die Messzeit, nicht nur die Zustellung', () => {
+  // posAge lebt außerhalb des Mathe-Teils; die Regel wird hier als Rechnung
+  // festgehalten, der Ablauf steckt im Browser-Test.
+  const now = 1_000_000_000_000;
+  const age = (rx, ts) => {
+    const byRx = now - rx;
+    const byTs = typeof ts === 'number' ? now - ts : 0;
+    const tsUsable = byTs > -60000 && byTs < 86400000;
+    return Math.max(byRx, tsUsable ? byTs : 0);
+  };
+  assert.equal(age(now - 1000, now - 1000), 1000, 'frisch gemessen, frisch zugestellt');
+  assert.equal(age(now, now - 300000), 300000, 'alt gemessen, gerade zugestellt -> alt');
+  assert.equal(age(now - 5000, now), 5000, 'Zustellung zählt auch');
+  assert.equal(age(now, now - 90000000), 0, 'kaputte Geräteuhr blockiert nicht');
+});
+
 test('Spreizung misst den größten Abstand im Punktesatz', () => {
   const pts = [
     { lat: 45.2938, lon: 13.5897 }, { lat: 45.2940, lon: 13.5899 }, { lat: 45.3000, lon: 13.5960 }

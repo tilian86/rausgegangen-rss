@@ -327,7 +327,7 @@ const farPoint = await stale.evaluate(() => {
 });
 await stale.mouse.click(farPoint.x, farPoint.y);
 await stale.waitForSelector('#actions:not([hidden])', { timeout: 25000 });
-assert.match(await stale.locator('#actions-title').textContent(), /veraltet/,
+assert.match(await stale.locator('#actions-title').textContent(), /bewegt sich nicht/,
   'App warnt statt den unbrauchbaren Punkt zu schlucken');
 assert.equal(await stale.evaluate(() => window.__app.state.calib.length), 1,
   'Punkt wurde nicht gespeichert');
@@ -335,6 +335,59 @@ await stale.locator('#actions-close').click();
 await stale.screenshot({ path: `${OUT}/10-stale-warning.png` });
 assert.deepEqual(staleErrors, [], 'keine Fehler im Veraltet-Fall:\n' + staleErrors.join('\n'));
 await stale.close();
+
+/* 15) Der hartnäckigere Fall: Das Gerät stellt einen Wert zwar gerade eben
+   zu, gemessen wurde er aber vor Minuten (iOS-Puffer nach dem Aufwachen).
+   Die App muss weiterfragen, bis ein wirklich junger Fix kommt. */
+const buffered = await ctx.newPage();
+await buffered.addInitScript(() => {
+  const geo = navigator.geolocation;
+  const realGet = geo.getCurrentPosition.bind(geo);
+  const realWatch = geo.watchPosition.bind(geo);
+  const stamp = (p, ts) => ({ coords: p.coords, timestamp: ts });
+  // Das Gerät liefert Werte, die vor 5 Minuten gemessen wurden – so wie ein
+  // iPhone direkt nach dem Aufwachen. Erst ab `freshFrom` misst es wirklich neu.
+  window.__freshFrom = Infinity;
+  const maybeStale = p => Date.now() >= window.__freshFrom ? p : stamp(p, Date.now() - 300000);
+  geo.getCurrentPosition = (ok, err, opts) => realGet(p => ok(maybeStale(p)), err, opts);
+  geo.watchPosition = (ok, err, opts) => realWatch(p => ok(maybeStale(p)), err, opts);
+});
+await ctx.setGeolocation({ latitude: POS_A.lat, longitude: POS_A.lon, accuracy: 5 });
+await buffered.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+await buffered.evaluate(() => { indexedDB.deleteDatabase('campmap'); localStorage.clear(); });
+await buffered.reload({ waitUntil: 'networkidle' });
+await buffered.locator('#file-plan').setInputFiles(path.join(here, 'demo-plan.png'));
+await buffered.waitForFunction(
+  () => window.__app.state.plan && window.__app.state.plan.w === 1200, null, { timeout: 15000 });
+await buffered.waitForFunction(() => window.__app.state.pos !== null, null, { timeout: 15000 });
+
+// Trotz eben eingetroffener Werte muss die App das als "alt" erkennen
+const agedOut = await buffered.evaluate(() => window.__app.state.pos.ts < Date.now() - 200000);
+assert.ok(agedOut, 'Testaufbau liefert alt gemessene Werte');
+await buffered.waitForFunction(
+  () => /alt/.test(document.querySelector('#status .txt').textContent), null, { timeout: 12000 });
+
+await buffered.locator('#btn-calib').click();
+await buffered.waitForTimeout(200);
+const b3 = await buffered.locator('#stage').boundingBox();
+const tapAt = Date.now();
+await buffered.mouse.click(b3.x + b3.width / 2, b3.y + b3.height / 2);
+
+// Solange nur gepufferte Werte kommen, darf nichts gespeichert werden
+await buffered.waitForTimeout(3000);
+assert.equal(await buffered.evaluate(() => window.__app.state.calib.length), 0,
+  'gepufferter Wert wird nicht als Kalibrierpunkt genommen');
+
+// Jetzt misst das Gerät wirklich neu – die App muss den Punkt übernehmen.
+// Der Mock liefert nur bei geänderter Position neue Callbacks, deshalb ein
+// kleiner Versatz (in echt bewegt man sich ja auch).
+await buffered.evaluate(() => { window.__freshFrom = Date.now(); });
+await ctx.setGeolocation({ latitude: POS_A.lat + 0.00003, longitude: POS_A.lon + 0.00003, accuracy: 5 });
+await buffered.waitForFunction(() => window.__app.state.calib.length === 1, null, { timeout: 30000 });
+assert.ok(Date.now() - tapAt > 3000, 'App hat auf die frische Messung gewartet');
+const freshAge = await buffered.evaluate(() => Date.now() - window.__app.state.pos.ts);
+assert.ok(freshAge < 20000, `gespeichert wurde ein junger Fix (${Math.round(freshAge / 1000)} s)`);
+await buffered.close();
 
 assert.deepEqual(errors, [], 'keine Konsolenfehler:\n' + errors.join('\n'));
 
