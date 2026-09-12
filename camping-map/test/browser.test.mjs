@@ -389,6 +389,36 @@ const freshAge = await buffered.evaluate(() => Date.now() - window.__app.state.p
 assert.ok(freshAge < 20000, `gespeichert wurde ein junger Fix (${Math.round(freshAge / 1000)} s)`);
 await buffered.close();
 
+/* 16) In-App-Browser erkennen: WKWebView einer fremden App (kein "Safari/"
+   im User-Agent) bekommt den Hinweis, echtes Safari und die Home-Bildschirm-
+   App nicht. */
+const UA_WEBVIEW = 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148';
+const UA_SAFARI = 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1';
+for (const [ua, expectHint] of [[UA_WEBVIEW, true], [UA_SAFARI, false]]) {
+  const c2 = await browser.newContext({
+    userAgent: ua, viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true,
+    permissions: ['geolocation'], geolocation: { latitude: POS_A.lat, longitude: POS_A.lon, accuracy: 6 }
+  });
+  const p2 = await c2.newPage();
+  await p2.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+  await p2.waitForFunction(() => window.__app && window.__app.state.env !== null, null, { timeout: 15000 });
+  const env = await p2.evaluate(() => window.__app.state.env);
+  assert.equal(env.ios, true, 'iPhone erkannt');
+  assert.equal(env.inAppWebView, expectHint, `In-App-Browser=${expectHint} für ${ua.slice(-40)}`);
+  const bannerText = await p2.locator('#banner').textContent();
+  assert.equal(/In Safari öffnen/.test(bannerText) && !(await p2.locator('#banner').isHidden()), expectHint,
+    'Hinweis nur im In-App-Browser');
+  if (expectHint) {
+    await p2.locator('#btn-menu').click();
+    await p2.waitForTimeout(300);
+    const diag = await p2.locator('#diag-log').textContent();
+    assert.match(diag, /In-App-Browser: true/, 'Diagnose nennt die Umgebung');
+    assert.match(diag, /Letzte Meldungen/, 'Diagnose listet Standortmeldungen');
+    await p2.screenshot({ path: `${OUT}/11-diagnose.png` });
+  }
+  await c2.close();
+}
+
 assert.deepEqual(errors, [], 'keine Konsolenfehler:\n' + errors.join('\n'));
 
 await browser.close();

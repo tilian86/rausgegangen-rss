@@ -5,7 +5,7 @@
    Alles lokal: kein Server, keine Konten, kein Tracking.
    ============================================================ */
 
-const APP_VERSION = '1.2.1';
+const APP_VERSION = '1.3.0';
 
 /* Ein Standortwert gilt nur kurz als aktuell: iOS lässt watchPosition
    einschlafen, sobald das Display aus ist. Wer dann am anderen Ende des
@@ -152,6 +152,26 @@ function solve3(M, r) {
   return [A[0][3] / A[0][0], A[1][3] / A[1][1], A[2][3] / A[2][2]];
 }
 
+/* Eingefrorener Standort: echtes GPS rauscht immer um ein paar Dezimeter.
+   Kommen über längere Zeit mehrere Meldungen mit praktisch identischer
+   Koordinate, liefert der Browser nur noch einen zwischengespeicherten Wert
+   (typisch für In-App-Browser oder nach dem Standby).
+   log: [{t, lat, lon}] chronologisch. */
+function assessFrozen(log, now, { minCount = 4, minSpanMs = 40000, maxDriftM = 0.3 } = {}) {
+  if (!log || log.length < minCount) return null;
+  const last = log[log.length - 1];
+  let start = log.length - 1;
+  while (start > 0 && geoDistance(log[start - 1].lat, log[start - 1].lon, last.lat, last.lon) <= maxDriftM) {
+    start--;
+  }
+  const run = log.slice(start);
+  const spanMs = last.t - run[0].t;
+  if (run.length >= minCount && spanMs >= minSpanMs) {
+    return { since: run[0].t, count: run.length, spanMs, ageMs: now - run[0].t };
+  }
+  return null;
+}
+
 /* Größter Abstand zwischen zwei Kalibrierpunkten, in Metern. */
 function calibSpread(points) {
   let max = 0;
@@ -259,6 +279,25 @@ function parseCoords(input) {
   if (!input) return null;
   const s = String(input).trim().replace(/\s+/g, ' ');
 
+  // Ein geteilter Kartenlink: Google Maps (@lat,lon / ?q= / !3d!4d) oder
+  // Apple Karten (?ll=). Kurzlinks tragen keine Koordinaten.
+  if (/https?:\/\/|maps\./i.test(s)) {
+    const patterns = [
+      /@(-?\d{1,3}\.\d+),(-?\d{1,3}\.\d+)/,
+      /[?&](?:q|ll|query|center|destination|daddr|saddr|sll)=(-?\d{1,3}\.\d+)(?:,|%2C)(-?\d{1,3}\.\d+)/i,
+      /!3d(-?\d{1,3}\.\d+)!4d(-?\d{1,3}\.\d+)/,
+      /(-?\d{1,3}\.\d{4,}),\s*(-?\d{1,3}\.\d{4,})/
+    ];
+    for (const re of patterns) {
+      const m = s.match(re);
+      if (m) {
+        const c = validCoords(parseFloat(m[1]), parseFloat(m[2]));
+        if (c) return c;
+      }
+    }
+    return null;
+  }
+
   // Rein dezimal: nacheinander plausible Trennzeichen probieren.
   if (!/[a-zA-Z°'"′″]/.test(s)) {
     const splits = [/,\s+|;\s*/, /\s+/, /,/];
@@ -308,7 +347,7 @@ function compassName(deg) {
 
 window.CampMath = {
   project, unproject, applyTransform, invertTransform,
-  solveTransform, solveAffine, solveSimilarity, calibSpread,
+  solveTransform, solveAffine, solveSimilarity, calibSpread, assessFrozen,
   latLonToPlan, planToLatLon, geoDistance, bearingDeg, parseCoords, compassName
 };
 
@@ -322,7 +361,10 @@ const state = {
   opts: { compass: false, keepAwake: false },
   // flüchtig:
   T: null,
-  pos: null,             // {lat, lon, acc, ts}
+  pos: null,             // {lat, lon, acc, ts, rx}
+  fixLog: [],            // letzte Standortmeldungen, für Diagnose
+  frozen: null,          // Ergebnis von assessFrozen
+  env: null,             // Browser-Umgebung (In-App-Browser?)
   heading: null,
   follow: true,
   mode: null,            // null | {type:'calib'|'calib-manual'|'marker'}
@@ -346,6 +388,78 @@ const el = {
   welcome: $('#welcome'), sheet: $('#sheet'), dialog: $('#dialog'), actions: $('#actions'),
   filePlan: $('#file-plan'), fileImport: $('#file-import')
 };
+
+/* ---------- Diagnose ----------------------------------------- */
+
+const FIX_LOG_MAX = 40;
+
+function logFix(entry) {
+  state.fixLog.push(entry);
+  if (state.fixLog.length > FIX_LOG_MAX) state.fixLog.splice(0, state.fixLog.length - FIX_LOG_MAX);
+}
+
+/* In welchem Browser laufen wir? Der eingebettete Browser einer anderen App
+   (Mail, Messenger, Chat-App) bekommt auf iOS oft nur einen einzigen echten
+   Standort und reicht danach denselben Wert immer wieder durch. */
+function detectEnv() {
+  const ua = navigator.userAgent || '';
+  const ios = /iPhone|iPad|iPod/.test(ua)
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const standalone = navigator.standalone === true
+    || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
+  const otherBrowser = /CriOS|FxiOS|EdgiOS|OPiOS|DuckDuckGo/.test(ua);
+  const safariUA = /Safari\//.test(ua) && /Version\//.test(ua);
+  const inAppWebView = ios && !standalone && !safariUA && !otherBrowser;
+  return { ua, ios, standalone, inAppWebView };
+}
+
+function fmtClock(t) {
+  const d = new Date(t);
+  return [d.getHours(), d.getMinutes(), d.getSeconds()].map(n => String(n).padStart(2, '0')).join(':');
+}
+
+function diagnosticsText() {
+  const lines = [];
+  const env = state.env || detectEnv();
+  lines.push(`Platzkarte ${APP_VERSION} · ${new Date().toISOString()}`);
+  lines.push(`Browser: ${env.ua}`);
+  lines.push(`iOS: ${env.ios} · Home-Bildschirm: ${env.standalone} · In-App-Browser: ${env.inAppWebView}`);
+  lines.push(`Plan: ${state.plan ? `${state.plan.name} ${state.plan.w}x${state.plan.h}` : 'keiner'}`);
+  lines.push(`Kalibrierung: ${state.calib.length} Punkte`
+    + (state.T ? ` · ${(1 / state.T.pxPerMeter).toFixed(3)} m/px · Nord ${state.T.northDeg.toFixed(1)}°` : '')
+    + (state.calibIssue ? ` · UNGÜLTIG: ${state.calibIssue}` : ''));
+  state.calib.forEach((c, i) => {
+    const d0 = i > 0 ? ` · ${geoDistance(state.calib[0].lat, state.calib[0].lon, c.lat, c.lon).toFixed(1)} m zu P1` : '';
+    lines.push(`  P${i + 1}: ${c.lat.toFixed(6)}, ${c.lon.toFixed(6)} ±${c.acc ?? '?'} m · Plan ${(c.u * 100).toFixed(1)}%/${(c.v * 100).toFixed(1)}%${d0}`);
+  });
+  lines.push(`Standort: ${state.pos ? `${state.pos.lat.toFixed(6)}, ${state.pos.lon.toFixed(6)} ±${Math.round(state.pos.acc)} m · Alter ${fmtAge(posAge())}` : 'keiner'}`
+    + (state.geoError ? ` · Fehler: ${state.geoError}` : '')
+    + (state.frozen ? ` · EINGEFROREN seit ${fmtAge(state.frozen.ageMs)} (${state.frozen.count} gleiche Meldungen)` : ''));
+  lines.push('Letzte Meldungen (neueste zuerst): Zeit Quelle Koordinate ±m Messalter Δ');
+  const log = state.fixLog.slice(-20).reverse();
+  log.forEach((f, i) => {
+    const prev = log[i + 1];
+    const delta = prev ? geoDistance(prev.lat, prev.lon, f.lat, f.lon).toFixed(1) + ' m' : '–';
+    lines.push(`  ${fmtClock(f.t)} ${f.src.padEnd(5)} ${f.lat.toFixed(6)},${f.lon.toFixed(6)} ±${Math.round(f.acc)} ${fmtAge(f.tsAge)} ${delta}${f.dropped ? ' (verworfen)' : ''}`);
+  });
+  return lines.join('\n');
+}
+
+async function shareDiagnostics() {
+  const text = diagnosticsText();
+  try {
+    if (navigator.share) {
+      await navigator.share({ title: 'Platzkarte – Diagnose', text });
+      return;
+    }
+  } catch (err) { /* abgebrochen oder nicht möglich – Zwischenablage probieren */ }
+  try {
+    await navigator.clipboard.writeText(text);
+    showBanner('Diagnose in die Zwischenablage kopiert.', null, 4000);
+  } catch (err) {
+    showBanner('Kopieren nicht möglich – Screenshot vom Menü hilft auch.', 'bad', 6000);
+  }
+}
 
 /* ---------- Speicher ----------------------------------------- */
 
@@ -898,16 +1012,24 @@ async function finishCalibGps(px, py) {
 
   const clash = calibConflict(px, py, fix.lat, fix.lon);
   if (clash) {
+    const env = state.env || detectEnv();
+    const why = env.inAppWebView
+      ? 'Diese Seite läuft im Browser einer anderen App – der reicht auf dem iPhone oft nur einen einzigen Standort durch. In Safari öffnen (Teilen-Symbol → „In Safari öffnen“), dann klappt es.'
+      : state.frozen
+        ? `Dein Handy meldet seit ${fmtAge(state.frozen.ageMs)} exakt denselben Wert – der Standortdienst hängt. Karte schließen, kurz Flugmodus an und aus, Karte neu öffnen.`
+        : `Dein Handy meldet ${Math.round(clash.dGps)} m Abstand zu Punkt ${clash.index}, obwohl du weit entfernt getippt hast. Karte offen lassen, 10–20 Sekunden warten, bis sich die Koordinate im Menü ändert, dann nochmal.`;
     openActions(`Standort bewegt sich nicht (${Math.round(clash.dGps)} m zu Punkt ${clash.index})`, [
+      {
+        label: '⌨︎ Koordinaten aus Google Maps eingeben',
+        run: () => finishCalibManual(px, py)
+      },
       {
         label: '⟳ 15 Sekunden neu messen',
         run: () => remeasureCalib(px, py)
       },
       {
-        label: 'Was heißt das?',
-        run: () => showBanner(
-          `Dein Handy meldet ${Math.round(clash.dGps)} m Abstand zu Punkt ${clash.index}, obwohl du weit entfernt getippt hast – es liefert also noch den alten Standort. Meist hilft: Karte offen lassen, 10–20 Sekunden warten, bis die Koordinate im Menü sich ändert. Hartnäckig? In den iPhone-Einstellungen unter Safari/Ortungsdienste „Genauer Standort“ prüfen.`,
-          null, 15000)
+        label: 'Warum passiert das?',
+        run: () => showBanner(why, null, 16000)
       },
       {
         label: 'Trotzdem speichern (Karte wird dann falsch)', danger: true,
@@ -1087,11 +1209,23 @@ function startWatch() {
   });
 }
 
-function onPos(p) {
-  const ts = typeof p.timestamp === 'number' ? p.timestamp : Date.now();
+function plausibleTs(ts) {
+  return typeof ts === 'number' && Math.abs(Date.now() - ts) < 86400000;
+}
+
+function onPos(p, source = 'watch') {
+  const now = Date.now();
+  const ts = plausibleTs(p.timestamp) ? p.timestamp : now;
   // Nachgereichte ältere Messungen (iOS-Puffer) dürfen einen frischeren
-  // Standort nicht wieder verdrängen.
-  if (state.pos && typeof state.pos.ts === 'number' && ts < state.pos.ts - 1000) return;
+  // Standort nicht verdrängen – aber nur, wenn beide Zeitstempel vertrauens-
+  // würdig sind. Sonst würde ein einziger krummer Stempel alles blockieren.
+  const dropped = !!(state.pos && plausibleTs(state.pos.ts) && plausibleTs(p.timestamp)
+                     && ts < state.pos.ts - 1000);
+  logFix({
+    t: now, src: source, lat: p.coords.latitude, lon: p.coords.longitude,
+    acc: p.coords.accuracy, tsAge: now - ts, dropped
+  });
+  if (dropped) return;
 
   const first = !state.pos;
   state.geoError = null;
@@ -1099,8 +1233,9 @@ function onPos(p) {
     lat: p.coords.latitude, lon: p.coords.longitude,
     acc: p.coords.accuracy, heading: p.coords.heading,
     speed: p.coords.speed, ts,
-    rx: Date.now()   // eigene Empfangszeit: unabhängig von der Geräteuhr
+    rx: now   // eigene Empfangszeit: unabhängig von der Geräteuhr
   };
+  state.frozen = assessFrozen(state.fixLog.filter(f => !f.dropped), now);
   if (!state.opts.compass && typeof p.coords.heading === 'number' && !isNaN(p.coords.heading)
       && p.coords.speed > 0.7) {
     state.heading = p.coords.heading;
@@ -1160,7 +1295,7 @@ function getFreshFix(maxAge = FIX_MAX_AGE_MS, timeoutMs = 25000) {
       if (Date.now() >= deadline) return finish(null);
       navigator.geolocation.getCurrentPosition(
         p => {
-          onPos(p);
+          onPos(p, 'get');
           if (posAge() <= maxAge) finish(state.pos);
           else setTimeout(attempt, 1200);   // war wieder ein gepufferter Wert
         },
@@ -1354,6 +1489,7 @@ function renderStatus() {
       txt += ` · ${fmtAge(age)} alt`;
       level = age > 120000 ? 'bad' : 'warn';
     }
+    if (state.frozen) { txt += ' · GPS eingefroren?'; level = 'bad'; }
     if (state.calibIssue) { txt += ' · Kalibrierung ungültig'; level = 'bad'; }
     else if (!state.T) { txt += ' · nicht kalibriert'; level = 'warn'; }
     else {
@@ -1488,8 +1624,11 @@ function renderLivePos() {
   }
   const age = posAge();
   node.textContent = `Jetzt: ${state.pos.lat.toFixed(5)}, ${state.pos.lon.toFixed(5)}`
-    + ` · ±${Math.round(state.pos.acc)} m · ${age < 3000 ? 'gerade eben' : 'vor ' + fmtAge(age)}`;
-  node.classList.toggle('stale', age > 20000);
+    + ` · ±${Math.round(state.pos.acc)} m · ${age < 3000 ? 'gerade eben' : 'vor ' + fmtAge(age)}`
+    + (state.frozen ? ` · seit ${fmtAge(state.frozen.ageMs)} exakt gleich – eingefroren?` : '');
+  node.classList.toggle('stale', age > 20000 || !!state.frozen);
+  const diag = $('#diag-log');
+  if (diag) diag.textContent = diagnosticsText();
 }
 
 function renderSheet() {
@@ -1756,6 +1895,7 @@ $('#calib-clear').onclick = () => {
     run: () => { state.calib = []; saveState(); recompute(); renderAll(); }
   }]);
 };
+$('#diag-share').onclick = shareDiagnostics;
 $('#data-export').onclick = exportData;
 $('#data-import').onclick = () => el.fileImport.click();
 $('#opt-compass').onchange = ev => {
@@ -1824,6 +1964,10 @@ async function boot() {
   startWatch();
   if (state.plan && state.calib.length < 2) {
     showBanner('Noch nicht kalibriert: „Kalibrieren“ antippen, wenn du an einer auf dem Plan erkennbaren Stelle stehst.', null, 12000);
+  }
+  state.env = detectEnv();
+  if (state.env.inAppWebView) {
+    showBanner('Diese Seite läuft im Browser einer anderen App. Dort liefert iOS oft nur einen einzigen Standort – bitte über das Teilen-Symbol „In Safari öffnen“ und dort zum Home-Bildschirm hinzufügen.', 'bad', 40000);
   }
 
   if ('serviceWorker' in navigator && window.isSecureContext) {
