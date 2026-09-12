@@ -1,5 +1,9 @@
 # Standardplan
 
+Aktuell liegt hier `camping-solaris-map.webp`: der offizielle Übersichtsplan
+von Camping Solaris (Lanterna / Tar-Vabriga, managed by Valamar), aus dem PDF
+des Platzes mit 3200 px Breite gerendert, 1,4 MB.
+
 Was hier liegt, lädt die App beim ersten Start automatisch – ohne dass jemand
 etwas auswählen muss. Sie sucht in dieser Reihenfolge:
 
