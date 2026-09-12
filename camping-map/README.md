@@ -61,7 +61,13 @@ alle Punkte lägen auf demselben Fleck und die Karte wäre komplett verschoben.
 Deshalb:
 
 - Beim Kalibrieren holt die App immer einen frischen Fix (höchstens 8 s alt)
-  und startet den Standort-Watch neu, wenn die Seite zurückkommt.
+  und startet den Standort-Watch neu, wenn die Seite zurückkommt. „Frisch“
+  heißt dabei: **gemessen** vor höchstens 8 Sekunden, nicht bloß gerade
+  zugestellt – iOS reicht nach dem Aufwachen gern minutenalte Messungen nach.
+  Solche Nachzügler überschreiben eine jüngere Position auch nicht mehr.
+- Menü → Kalibrierung zeigt oben, was das Gerät gerade liefert (Koordinate,
+  Genauigkeit, Alter). Ändert sich die Koordinate beim Laufen nicht, liegt es
+  am Gerät, nicht an der Karte.
 - Die Statuszeile zeigt das Alter, sobald ein Fix älter als 20 s ist.
 - Liegt ein neuer Punkt laut GPS weniger als 20 m vom vorherigen entfernt,
   obwohl er auf dem Plan weit weg getippt wurde, fragt die App nach statt es
