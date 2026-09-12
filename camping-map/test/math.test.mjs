@@ -15,7 +15,7 @@ const mathSrc = src.slice(0, src.indexOf('window.CampMath'));
 const M = new Function(mathSrc + `
   return { project, unproject, solveTransform, applyTransform, invertTransform,
            latLonToPlan, planToLatLon, geoDistance, bearingDeg, parseCoords,
-           compassName, calibSpread };
+           compassName, calibSpread, assessFrozen };
 `)();
 
 /* Ein künstlicher, exakt bekannter Plan: Maßstab und Nordrichtung vorgegeben. */
@@ -223,6 +223,39 @@ test('Koordinaten-Parser', () => {
   assert.equal(M.parseCoords('Rezeption'), null);
   assert.equal(M.parseCoords('95.0, 13.0'), null);
   assert.equal(M.parseCoords(''), null);
+});
+
+test('Koordinaten aus geteilten Kartenlinks', () => {
+  const near = (c, lat, lon) => c && Math.abs(c.lat - lat) < 1e-4 && Math.abs(c.lon - lon) < 1e-4;
+  assert.ok(near(M.parseCoords('https://www.google.com/maps/place/Camping+Solaris/@45.2938,13.5897,17z/data=!3m1'), 45.2938, 13.5897), 'Google @lat,lon');
+  assert.ok(near(M.parseCoords('https://maps.google.com/?q=45.2938,13.5897'), 45.2938, 13.5897), 'Google ?q=');
+  assert.ok(near(M.parseCoords('https://www.google.com/maps?q=45.2938%2C13.5897&z=17'), 45.2938, 13.5897), 'Google ?q= kodiert');
+  assert.ok(near(M.parseCoords('https://www.google.com/maps/place/x/data=!4m5!3m4!1s0x0:0x0!8m2!3d45.2938!4d13.5897'), 45.2938, 13.5897), 'Google !3d!4d');
+  assert.ok(near(M.parseCoords('https://maps.apple.com/?ll=45.2938,13.5897&q=Markierung'), 45.2938, 13.5897), 'Apple ?ll=');
+  assert.equal(M.parseCoords('https://maps.app.goo.gl/AbCdEf123'), null, 'Kurzlink trägt keine Koordinaten');
+});
+
+/* Eingefrorener Standort: gleiche Koordinate über längere Zeit. */
+test('Eingefrorenes GPS wird erkannt, echtes Rauschen nicht', () => {
+  const t0 = 1_000_000_000_000;
+  const same = n => Array.from({ length: n }, (_, i) => ({ t: t0 + i * 15000, lat: 45.2938, lon: 13.5897 }));
+  const noisy = n => Array.from({ length: n }, (_, i) => ({
+    t: t0 + i * 15000, lat: 45.2938 + (i % 2) * 0.00001, lon: 13.5897   // gut 1 m Wackler
+  }));
+
+  const frozen = M.assessFrozen(same(5), t0 + 60000);
+  assert.ok(frozen, 'fünf identische Meldungen über eine Minute');
+  assert.equal(frozen.count, 5);
+
+  assert.equal(M.assessFrozen(noisy(6), t0 + 75000), null, 'Rauschen ist kein Einfrieren');
+  assert.equal(M.assessFrozen(same(3), t0 + 30000), null, 'zu wenige Meldungen');
+  assert.equal(M.assessFrozen(same(4).map((e, i) => ({ ...e, t: t0 + i * 5000 })), t0 + 15000), null, 'zu kurze Spanne');
+
+  // erst Bewegung, dann steht der Wert: nur der stehende Teil zählt
+  const moved = [{ t: t0 - 30000, lat: 45.2950, lon: 13.5910 }, ...same(4)];
+  const f2 = M.assessFrozen(moved, t0 + 45000);
+  assert.ok(f2 && f2.count === 4, `stehender Abschnitt erkannt: ${JSON.stringify(f2)}`);
+  assert.equal(M.assessFrozen([], t0), null);
 });
 
 test('Himmelsrichtungen', () => {

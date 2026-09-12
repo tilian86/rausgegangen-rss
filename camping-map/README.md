@@ -68,6 +68,24 @@ Deshalb:
 - Menü → Kalibrierung zeigt oben, was das Gerät gerade liefert (Koordinate,
   Genauigkeit, Alter). Ändert sich die Koordinate beim Laufen nicht, liegt es
   am Gerät, nicht an der Karte.
+- Meldet das Gerät über mehr als 40 Sekunden hinweg viermal exakt dieselbe
+  Koordinate, gilt der Standort als **eingefroren** (echtes GPS rauscht immer
+  ein wenig). Statuszeile und Kalibrierdialog sagen das dann auch.
+- **In-App-Browser meiden.** Öffnet man den Link aus einer Chat- oder
+  Mail-App heraus, läuft die Seite im eingebetteten Browser dieser App. Der
+  reicht auf dem iPhone häufig nur einen einzigen Standort durch und liefert
+  danach immer denselben Wert – mit frischem Zeitstempel, also von außen nicht
+  zu unterscheiden. Die App erkennt das am User-Agent und bittet, in Safari zu
+  öffnen (Teilen-Symbol → „In Safari öffnen“), am besten dann zum
+  Home-Bildschirm hinzufügen.
+- Menü → **Diagnose** listet Browser, Kalibrierpunkte und die letzten
+  Standortmeldungen mit Quelle, Messalter und Abstand zur vorigen Meldung;
+  „Teilen / kopieren“ gibt das als Text weiter. Wer einen Fehler melden will,
+  schickt das statt einer Beschreibung.
+- Kalibrierpunkte lassen sich statt per GPS auch über Koordinaten setzen:
+  in Google Maps lange auf die Stelle drücken, Koordinaten kopieren – oder
+  gleich den geteilten Kartenlink einfügen, die App liest Google- und
+  Apple-Links aus.
 - Die Statuszeile zeigt das Alter, sobald ein Fix älter als 20 s ist.
 - Liegt ein neuer Punkt laut GPS weniger als 20 m vom vorherigen entfernt,
   obwohl er auf dem Plan weit weg getippt wurde, fragt die App nach statt es
