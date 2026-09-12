@@ -24,10 +24,23 @@ Lokal ausprobieren (GPS braucht HTTPS oder localhost):
     python3 -m http.server 8765 --directory camping-map
     # http://localhost:8765
 
+## Plan hinterlegen
+
+Liegt in [`plan/`](plan/) eine Datei namens `camping-solaris-map.webp` oder
+`camping-solaris-map.pdf`, lädt die App sie **beim ersten Start automatisch** –
+niemand muss etwas auswählen. Hochladen geht direkt über GitHub im Browser,
+Details in [`plan/README.md`](plan/README.md).
+
+Ohne hinterlegte Datei fragt die App beim ersten Start nach dem Plan:
+
+- **Lageplan auswählen** – PDF oder Bild vom Gerät. PDFs werden im Browser
+  gerendert (pdf.js liegt unter `vendor/`, kein CDN, kein Upload).
+- **Von einer Adresse laden** – direkter Link auf PDF oder Bild. Klappt nur,
+  wenn der fremde Server CORS erlaubt; sonst Datei herunterladen und auswählen.
+
 ## Benutzen
 
-1. **Plan laden** – Foto, Screenshot oder Bilddatei des Übersichtsplans.
-   PDFs bitte vorher als Bild exportieren oder abfotografieren.
+1. **Plan laden** – PDF, Foto oder Screenshot des Übersichtsplans (siehe oben).
 2. **Kalibrieren** – an einer auf dem Plan erkennbaren Stelle stehen,
    „Kalibrieren“ tippen, die Stelle auf dem Plan antippen. Das Ganze an einer
    zweiten, **möglichst weit entfernten** Stelle wiederholen. Fertig.
@@ -68,9 +81,10 @@ liegen in IndexedDB bzw. localStorage des Browsers. Die Position wird nur im
 Gerät verarbeitet. „Karte exportieren“ schreibt alles in eine JSON-Datei –
 als Backup oder zum Weitergeben an Mitreisende.
 
-Der Lageplan gehört dem Platzbetreiber. Er wird bewusst **nicht** mitgeliefert:
-jeder lädt sein eigenes Exemplar für den privaten Gebrauch. Die exportierte
-Datei enthält das Bild – also nicht öffentlich hochladen.
+Der Lageplan gehört dem Platzbetreiber. Wer ihn in `plan/` ablegt, stellt ihn
+über GitHub Pages öffentlich ins Netz – das ist eine bewusste Entscheidung.
+Wer das nicht will, lädt den Plan einfach in der App: er bleibt dann im Browser
+des Geräts. Auch die exportierte JSON-Datei enthält das Bild.
 
 ## Dateien
 
@@ -81,6 +95,8 @@ Datei enthält das Bild – also nicht öffentlich hochladen.
 | `app.js` | Kalibrier-Mathematik, Karte, GPS, Speicherung |
 | `sw.js` | Service Worker für den Offline-Betrieb |
 | `manifest.webmanifest` | Installierbarkeit als App |
+| `plan/` | Ablage für den Standardplan, der automatisch geladen wird |
+| `vendor/` | pdf.js (Apache-2.0), damit PDFs ohne CDN gelesen werden |
 | `test/math.test.mjs` | Tests für Projektion, Kalibrierung, Koordinaten-Parser |
 | `test/browser.test.mjs` | End-to-End-Test mit echtem Browser und gemocktem GPS |
 | `test/demo-plan.png` | erfundener Plan zum Ausprobieren |

@@ -5,10 +5,25 @@
    Alles lokal: kein Server, keine Konten, kein Tracking.
    ============================================================ */
 
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '1.1.0';
 const LS_KEY = 'campmap.state.v1';
 const IDB_NAME = 'campmap';
 const IDB_STORE = 'blobs';
+
+/* Standardplan: wird beim ersten Start ohne Zutun geladen.
+   Die Quellen werden der Reihe nach probiert. Dateien im eigenen Ordner
+   `plan/` sind zuverlässig (gleiche Herkunft, offline-fähig); eine fremde
+   Adresse klappt nur, wenn deren Server sie per CORS freigibt. */
+const DEFAULT_PLAN = {
+  name: 'Camping Solaris',
+  sources: [
+    'plan/camping-solaris-map.webp',
+    'plan/camping-solaris-map.pdf'
+  ],
+  // Nur als Vorschlag im Dialog „Von einer Adresse laden“ – von selbst
+  // fragt die App keinen fremden Server.
+  remote: 'https://media.valamarcamping.com/solaris/camping-solaris-map.pdf'
+};
 
 /* ---------- Geo-Mathematik ------------------------------------
    Kalibrierung = affine Abbildung zwischen einer lokalen
@@ -332,6 +347,9 @@ function loadState() {
   } catch (err) { console.warn('Laden fehlgeschlagen', err); }
 }
 
+/* Verbindungen werden nach jeder Transaktion geschlossen: eine offene
+   Verbindung blockiert sonst spätere Upgrades oder das Löschen der
+   Datenbank – und damit den nächsten Start. */
 function idb() {
   return new Promise((resolve, reject) => {
     const req = indexedDB.open(IDB_NAME, 1);
@@ -340,28 +358,47 @@ function idb() {
       if (!db.objectStoreNames.contains(IDB_STORE)) db.createObjectStore(IDB_STORE);
     };
     req.onsuccess = () => resolve(req.result);
-    req.onerror = () => reject(req.error);
+    req.onerror = () => reject(req.error || new Error('IndexedDB nicht verfügbar'));
+    req.onblocked = () => reject(new Error('IndexedDB blockiert'));
   });
 }
 
 async function idbPut(key, value) {
   const db = await idb();
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(IDB_STORE, 'readwrite');
-    tx.objectStore(IDB_STORE).put(value, key);
-    tx.oncomplete = () => resolve();
-    tx.onerror = () => reject(tx.error);
-  });
+  try {
+    await new Promise((resolve, reject) => {
+      const tx = db.transaction(IDB_STORE, 'readwrite');
+      tx.objectStore(IDB_STORE).put(value, key);
+      tx.oncomplete = resolve;
+      tx.onerror = () => reject(tx.error);
+      tx.onabort = () => reject(tx.error || new Error('Transaktion abgebrochen'));
+    });
+  } finally {
+    db.close();
+  }
 }
 
 async function idbGet(key) {
   const db = await idb();
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(IDB_STORE, 'readonly');
-    const req = tx.objectStore(IDB_STORE).get(key);
-    req.onsuccess = () => resolve(req.result || null);
-    req.onerror = () => reject(req.error);
-  });
+  try {
+    return await new Promise((resolve, reject) => {
+      const tx = db.transaction(IDB_STORE, 'readonly');
+      const req = tx.objectStore(IDB_STORE).get(key);
+      req.onsuccess = () => resolve(req.result || null);
+      req.onerror = () => reject(req.error);
+      tx.onabort = () => reject(tx.error || new Error('Transaktion abgebrochen'));
+    });
+  } finally {
+    db.close();
+  }
+}
+
+/* Kein Start soll an einer hängenden Datenbank scheitern. */
+function withTimeout(promise, ms, fallback) {
+  return Promise.race([
+    promise,
+    new Promise(resolve => setTimeout(() => resolve(fallback), ms))
+  ]);
 }
 
 /* ---------- Plan laden --------------------------------------- */
@@ -398,6 +435,138 @@ async function setPlanFromBlob(blob, name) {
   recompute();
   renderAll();
   return true;
+}
+
+/* ---------- PDF, URL, Standardplan --------------------------- */
+
+let pdfLibPromise = null;
+
+function loadPdfLib() {
+  if (!pdfLibPromise) {
+    pdfLibPromise = import('./vendor/pdf.min.mjs').then(lib => {
+      lib.GlobalWorkerOptions.workerSrc = new URL('vendor/pdf.worker.min.mjs', document.baseURI).href;
+      return lib;
+    });
+  }
+  return pdfLibPromise;
+}
+
+/* Rendert eine PDF-Seite in ein Bild. `chooser` wird nur bei mehrseitigen
+   PDFs gefragt und liefert die Seitenzahl (0 = abbrechen). */
+async function pdfToImage(blob, chooser) {
+  const lib = await loadPdfLib();
+  const doc = await lib.getDocument({ data: await blob.arrayBuffer() }).promise;
+  try {
+    const pages = doc.numPages;
+    let pageNo = 1;
+    if (pages > 1 && chooser) {
+      pageNo = await chooser(pages);
+      if (!pageNo) return null;
+    }
+    const page = await doc.getPage(Math.min(Math.max(1, pageNo), pages));
+    const base = page.getViewport({ scale: 1 });
+    // Groß genug zum Hineinzoomen, klein genug für Handy-Canvas-Grenzen
+    // (iOS bricht jenseits von rund 16 Mio. Pixeln ab).
+    let scale = Math.min(6, Math.max(1, 2600 / base.width));
+    const maxPixels = 12e6;
+    const pixels = base.width * base.height * scale * scale;
+    if (pixels > maxPixels) scale *= Math.sqrt(maxPixels / pixels);
+    const vp = page.getViewport({ scale });
+    const canvas = document.createElement('canvas');
+    canvas.width = Math.round(vp.width);
+    canvas.height = Math.round(vp.height);
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    await page.render({ canvasContext: ctx, viewport: vp }).promise;
+    const out = await new Promise(r => canvas.toBlob(r, 'image/webp', 0.92))
+             || await new Promise(r => canvas.toBlob(r, 'image/jpeg', 0.92));
+    if (!out) throw new Error('Bild konnte nicht erzeugt werden');
+    return { blob: out, pages, pageNo };
+  } finally {
+    doc.destroy();
+  }
+}
+
+function isPdf(blob, name) {
+  return (blob && blob.type === 'application/pdf') || /\.pdf(\?|$)/i.test(name || '');
+}
+
+async function askPdfPage(pages) {
+  const res = await openDialog({
+    title: 'Welche Seite?',
+    text: `Das PDF hat ${pages} Seiten. Die Seite mit dem Übersichtsplan wählen.`,
+    fields: [{ id: 'p', label: 'Seitenzahl', value: '1' }],
+    okLabel: 'Laden'
+  });
+  if (!res) return 0;
+  const n = parseInt(res.p, 10);
+  return isFinite(n) && n >= 1 && n <= pages ? n : 1;
+}
+
+/* Nimmt Bild oder PDF entgegen und macht daraus den Plan. */
+async function usePlanBlob(blob, name, opts = {}) {
+  if (!isPdf(blob, name)) return setPlanFromBlob(blob, name);
+  showBanner('PDF wird umgewandelt …', null, 30000);
+  try {
+    const r = await pdfToImage(blob, opts.silent ? null : askPdfPage);
+    if (!r) { el.banner.hidden = true; return false; }
+    const ok = await setPlanFromBlob(r.blob, (name || 'Lageplan').replace(/\.pdf$/i, ''));
+    el.banner.hidden = true;
+    if (ok && r.pages > 1) {
+      showBanner(`Seite ${r.pageNo} von ${r.pages} geladen. Andere Seite: Menü → Plan ersetzen.`, null, 8000);
+    }
+    return ok;
+  } catch (err) {
+    showBanner('PDF konnte nicht gelesen werden: ' + err.message, 'bad');
+    return false;
+  }
+}
+
+async function loadPlanFromUrl(url, name, opts = {}) {
+  const res = await fetch(url, { cache: 'no-store' });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const blob = await res.blob();
+  if (blob.size < 100) throw new Error('Datei ist leer');
+  return usePlanBlob(blob, name || decodeURIComponent(url.split('/').pop().split('?')[0]), opts);
+}
+
+/* Beim allerersten Start: Plan automatisch holen, wenn eine Quelle da ist. */
+async function tryDefaultPlan() {
+  showBanner('Lageplan wird geladen …', null, 40000);
+  for (const src of DEFAULT_PLAN.sources) {
+    try {
+      if (await loadPlanFromUrl(src, DEFAULT_PLAN.name, { silent: true })) {
+        el.banner.hidden = true;
+        return true;
+      }
+    } catch (err) {
+      // Quelle fehlt oder ist gesperrt – nächste probieren
+    }
+  }
+  el.banner.hidden = true;
+  return false;
+}
+
+async function promptPlanUrl() {
+  const res = await openDialog({
+    title: 'Plan von einer Adresse laden',
+    text: 'Direkter Link auf ein Bild oder ein PDF. Fremde Server müssen den Zugriff erlauben – klappt es nicht, die Datei herunterladen und über „Lageplan auswählen“ einbinden.',
+    fields: [{ id: 'url', label: 'Adresse', value: DEFAULT_PLAN.remote }],
+    okLabel: 'Laden'
+  });
+  if (!res || !res.url.trim()) return;
+  showBanner('Lade …', null, 30000);
+  try {
+    const ok = await loadPlanFromUrl(res.url.trim());
+    if (ok) {
+      closeOverlay(el.welcome);
+      closeOverlay(el.sheet);
+      el.banner.hidden = true;
+    }
+  } catch (err) {
+    showBanner(`Laden fehlgeschlagen (${err.message}). Bei fremden Servern liegt es meist an deren Freigabe: Datei herunterladen und über „Lageplan auswählen“ einbinden.`, 'bad', 12000);
+  }
 }
 
 /* ---------- Ansicht (Pan / Zoom) ----------------------------- */
@@ -596,11 +765,15 @@ document.addEventListener('dragover', ev => { ev.preventDefault(); });
 document.addEventListener('drop', ev => {
   ev.preventDefault();
   const file = ev.dataTransfer && ev.dataTransfer.files && ev.dataTransfer.files[0];
-  if (file && file.type.startsWith('image/')) setPlanFromBlob(file, file.name);
+  if (file && (file.type.startsWith('image/') || isPdf(file, file.name))) {
+    usePlanBlob(file, file.name).then(ok => { if (ok) closeOverlay(el.welcome); });
+  }
 });
 document.addEventListener('paste', ev => {
   const items = ev.clipboardData && ev.clipboardData.files;
-  if (items && items[0] && items[0].type.startsWith('image/')) setPlanFromBlob(items[0], 'Eingefügter Plan');
+  if (items && items[0] && items[0].type.startsWith('image/')) {
+    usePlanBlob(items[0], 'Eingefügter Plan').then(ok => { if (ok) closeOverlay(el.welcome); });
+  }
 });
 
 window.addEventListener('resize', () => {
@@ -1290,7 +1463,7 @@ async function importData(file) {
   state.markers = Array.isArray(data.markers) ? data.markers : [];
   state.targetId = null;
   if (data.plan && data.plan.image) {
-    await setPlanFromBlob(dataURLToBlob(data.plan.image), data.plan.name || 'Importierter Plan');
+    await usePlanBlob(dataURLToBlob(data.plan.image), data.plan.name || 'Importierter Plan', { silent: true });
   } else if (state.plan) {
     saveState(); recompute(); renderAll();
   }
@@ -1308,7 +1481,7 @@ el.filePlan.addEventListener('change', async ev => {
   el.filePlan.value = '';
   if (!f) return;
   const replacing = !!state.plan;
-  const ok = await setPlanFromBlob(f, f.name);
+  const ok = await usePlanBlob(f, f.name);
   if (!ok) return;
   closeOverlay(el.welcome);
   closeOverlay(el.sheet);
@@ -1326,7 +1499,9 @@ el.fileImport.addEventListener('change', ev => {
 });
 
 $('#welcome-load').onclick = openPlanPicker;
+$('#welcome-url').onclick = promptPlanUrl;
 $('#welcome-import').onclick = () => el.fileImport.click();
+$('#plan-url').onclick = promptPlanUrl;
 $('#btn-menu').onclick = () => { openOverlay(el.sheet); renderSheet(); };
 $('#sheet-close').onclick = () => closeOverlay(el.sheet);
 $('#plan-replace').onclick = openPlanPicker;
@@ -1390,12 +1565,16 @@ el.btnCalib.onclick = () => {
 async function boot() {
   loadState();
   let blob = null;
-  try { blob = await idbGet('plan'); } catch (err) { console.warn(err); }
+  try {
+    blob = await withTimeout(idbGet('plan'), 5000, null);
+  } catch (err) {
+    console.warn('Gespeicherter Plan nicht lesbar', err);
+  }
   if (blob) {
     await setPlanFromBlob(blob, state.plan ? state.plan.name : 'Lageplan');
   } else {
     state.plan = null;
-    openOverlay(el.welcome);
+    if (!await tryDefaultPlan()) openOverlay(el.welcome);
   }
   recompute();
   renderAll();

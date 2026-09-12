@@ -1,7 +1,7 @@
 /* Service Worker: macht die Karte offline nutzbar.
    Eigene Dateien werden gecacht, GPS funktioniert ohne Netz sowieso. */
 
-const CACHE = 'campmap-v1';
+const CACHE = 'campmap-v2';
 const ASSETS = [
   './',
   'index.html',

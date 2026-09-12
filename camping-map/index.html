@@ -76,11 +76,12 @@
     <h1>Platzkarte</h1>
     <p class="lead">Offizieller Lageplan deines Campingplatzes – mit deiner GPS-Position live darauf. Funktioniert offline, alles bleibt auf dem Gerät.</p>
     <ol class="steps">
-      <li><strong>Plan laden</strong> – Foto, Screenshot oder Bild des offiziellen Übersichtsplans.</li>
+      <li><strong>Plan laden</strong> – PDF, Foto oder Screenshot des offiziellen Übersichtsplans.</li>
       <li><strong>Zwei Punkte kalibrieren</strong> – an zwei möglichst weit entfernten, wiedererkennbaren Stellen: Position antippen, fertig.</li>
       <li><strong>Loslaufen</strong> – der blaue Punkt zeigt, wo du bist.</li>
     </ol>
-    <button id="welcome-load" class="btn primary block">Lageplan auswählen</button>
+    <button id="welcome-load" class="btn primary block">Lageplan auswählen (PDF oder Bild)</button>
+    <button id="welcome-url" class="btn ghost block">Von einer Adresse laden</button>
     <button id="welcome-import" class="btn ghost block">Gesicherte Karte importieren</button>
   </div>
 </div>
@@ -100,6 +101,7 @@
         <button id="plan-replace" class="btn">Plan ersetzen</button>
         <button id="plan-fit" class="btn ghost">Ganz anzeigen</button>
       </div>
+      <button id="plan-url" class="btn ghost small">Plan von einer Adresse laden</button>
     </section>
 
     <section>
@@ -161,7 +163,7 @@
   </div>
 </div>
 
-<input type="file" id="file-plan" accept="image/*" hidden>
+<input type="file" id="file-plan" accept="image/*,application/pdf,.pdf" hidden>
 <input type="file" id="file-import" accept="application/json,.json,.campmap" hidden>
 
 <script src="app.js"></script>

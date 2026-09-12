@@ -64,7 +64,11 @@ const ctx = await browser.newContext({
 });
 const page = await ctx.newPage();
 const errors = [];
-page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+// 404-Meldungen beim Durchprobieren der Standardplan-Quellen sind erwartet
+const expectedNoise = /404|Failed to load resource/i;
+page.on('console', m => {
+  if (m.type() === 'error' && !expectedNoise.test(m.text())) errors.push(m.text());
+});
 page.on('pageerror', e => errors.push('pageerror: ' + e.message));
 
 await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
@@ -206,6 +210,51 @@ await page.waitForTimeout(200);
 const after = await page.evaluate(() => window.__app.view.z);
 assert.ok(after > before, `Zoom ${before} -> ${after}`);
 await page.screenshot({ path: `${OUT}/06-zoom.png` });
+
+// 11) PDF als Plan: wird im Browser gerendert (pdf.js aus vendor/)
+const pdfPage = await ctx.newPage();
+const pdfErrors = [];
+pdfPage.on('pageerror', e => pdfErrors.push('pageerror: ' + e.message));
+await pdfPage.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+await pdfPage.evaluate(() => indexedDB.deleteDatabase('campmap') && localStorage.clear());
+await pdfPage.reload({ waitUntil: 'networkidle' });
+await pdfPage.locator('#file-plan').setInputFiles(path.join(here, 'demo-plan.pdf'));
+await pdfPage.waitForFunction(
+  () => window.__app && window.__app.state.plan && window.__app.state.plan.w > 1500,
+  null, { timeout: 40000 }
+);
+const pdfPlan = await pdfPage.evaluate(() => window.__app.state.plan);
+assert.ok(pdfPlan.w >= 2300, `PDF in hoher Auflösung gerendert: ${pdfPlan.w} px`);
+assert.ok(Math.abs(pdfPlan.w / pdfPlan.h - 1200 / 800) < 0.05, 'Seitenverhältnis bleibt erhalten');
+await pdfPage.screenshot({ path: `${OUT}/07-pdf.png` });
+assert.deepEqual(pdfErrors, [], 'keine Fehler beim PDF-Import:\n' + pdfErrors.join('\n'));
+await pdfPage.close();
+
+// 12) Standardplan wird beim ersten Start automatisch geladen
+const planDir = path.join(here, '..', 'plan');
+const planFile = path.join(planDir, 'camping-solaris-map.webp');
+const planExisted = fs.existsSync(planFile);
+if (!planExisted) {
+  fs.mkdirSync(planDir, { recursive: true });
+  fs.copyFileSync(path.join(here, 'demo-plan.png'), planFile);   // Inhalt egal, Bild reicht
+}
+try {
+  const autoPage = await ctx.newPage();
+  await autoPage.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+  await autoPage.evaluate(() => indexedDB.deleteDatabase('campmap') && localStorage.clear());
+  await autoPage.reload({ waitUntil: 'networkidle' });
+  await autoPage.waitForFunction(
+    () => window.__app && window.__app.state.plan !== null, null, { timeout: 20000 }
+  );
+  assert.equal(await autoPage.locator('#welcome').isVisible(), false,
+    'kein Onboarding nötig, wenn ein Standardplan hinterlegt ist');
+  await autoPage.close();
+} finally {
+  if (!planExisted) {
+    fs.rmSync(planFile, { force: true });
+    if (fs.readdirSync(planDir).length === 0) fs.rmdirSync(planDir);
+  }
+}
 
 assert.deepEqual(errors, [], 'keine Konsolenfehler:\n' + errors.join('\n'));
 
