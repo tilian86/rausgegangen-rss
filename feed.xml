@@ -5,16 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Sat, 12 Sep 2026 18:05:19 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 18:31:54 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Beatmaking Workshop</title>
-      <link>https://www.epplehaus.de/event/beatmaking-workshop/</link>
-      <guid>https://www.epplehaus.de/event/beatmaking-workshop/</guid>
-      <description>Sat, 12.09.2026 | 10:00 · Epplehaus
-A DAY FOR THE KNOWLEDGE OF HIP HOP PRODUCING – DJ – WORKSHOP findet im Epplehaus statt! Mit Jules (T4SA) und Run iniQ (NYADS) @iniqism Mindestalter: 14 Jahre Teilnahmegebühr: 10€ Anmeldung: Mail an eveninginthespiritofhiphop@gmail.com Taucht ein in die verschiedenen Wege, Hip Hop Musik zu kreieren, …</description>
-      <pubDate>Sat, 12 Sep 2026 10:00:00 +0200</pubDate>
-    </item>
     <item>
       <title>Epplehaus-Kneipe</title>
       <link>https://www.epplehaus.de/event/epplehaus-kneipe-3/</link>
@@ -277,6 +269,16 @@ Tagung am Donnerstag, 15. und Freitag, 16. Oktober 2026 im Landratsamt Tübingen
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2022/08/white.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2022/08/white.jpg" medium="image" type="image/jpeg" />
       <pubDate>Thu, 15 Oct 2026 09:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Offene Männergruppe Tübingen</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/offene-maennergruppe-tuebingen/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/offene-maennergruppe-tuebingen/</guid>
+      <description>Fri, 16.10.2026 | 19:15 · Ort: wird nach Anmeldung zum Newsletter bekannt gegeben · Kulturnetz Tübingen
+Offene Männerrunde am Freitagabend, 16.10.26. Männer-Talk</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/01/maenner-sonnenuntergang-farbe.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/01/maenner-sonnenuntergang-farbe.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 16 Oct 2026 19:15:00 +0200</pubDate>
     </item>
     <item>
       <title>Heimat to Hell</title>
@@ -591,6 +593,16 @@ Thanksgiving Dinner in American Tradition. Join us in celebrating this tradition
       <pubDate>Fri, 27 Nov 2026 19:00:00 +0200</pubDate>
     </item>
     <item>
+      <title>Offene Männergruppe Tübingen</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/offene-maennergruppe-tuebingen-2/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/offene-maennergruppe-tuebingen-2/</guid>
+      <description>Fri, 27.11.2026 | 19:15 · Ort: wird nach Anmeldung zum Newsletter bekannt gegeben · Kulturnetz Tübingen
+Offene Männerrunde am Freitagabend, 27.11.26. Männer-Talk</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/01/maenner-sonnenuntergang-farbe.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/01/maenner-sonnenuntergang-farbe.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 27 Nov 2026 19:15:00 +0200</pubDate>
+    </item>
+    <item>
       <title>Auswanderung – Einwanderung. Eine Matinee mit Berichten, Musik und Pot-Luck</title>
       <link>https://www.kulturnetz-tuebingen.de/event/auswanderung-einwanderung-eine-matinee-mit-berichten-musik-und-pot-luck/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/auswanderung-einwanderung-eine-matinee-mit-berichten-musik-und-pot-luck/</guid>
@@ -676,6 +688,23 @@ Vortrag von Josef Braml Amerika steht unter Druck – politisch, gesellschaftlic
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Josef-Braml-original-1024x683-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Josef-Braml-original-1024x683-1.jpg" medium="image" type="image/jpeg" />
       <pubDate>Wed, 09 Dec 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Quiz Night @ d.a.i.</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/quiz-night-d-a-i-3/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/quiz-night-d-a-i-3/</guid>
+      <description>Fri, 11.12.2026 | 20:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Trivia in English, music, and drinks in a casual atmosphere Every fourth Friday of the month Calling all quiz heads and English speakers: we want YOU to show off your big brain energy and take part in our monthly Quiz Night. Join us for a friendly trivia challenge – completely in English. Bring …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Quiz-1-1024x576-1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Quiz-1-1024x576-1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 11 Dec 2026 20:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Metalnight</title>
+      <link>https://www.epplehaus.de/event/metalnight-22/</link>
+      <guid>https://www.epplehaus.de/event/metalnight-22/</guid>
+      <description>Fri, 11.12.2026 | 20:30 · Epplehaus</description>
+      <pubDate>Fri, 11 Dec 2026 20:30:00 +0200</pubDate>
     </item>
   </channel>
 </rss>
