@@ -125,11 +125,57 @@ Deshalb:
 
 ## Wie genau ist das?
 
-Die Kalibrierung ist eine affine Abbildung zwischen GPS und Planbild:
+Entscheidend ist, was für ein Bild der Plan ist. Der Solaris-Plan ist ein
+**Schrägluftbild**: Gebäude zeigen Dach *und* Seitenwand, Bäume haben
+Volumen. Bei so einer Aufnahme ist der Maßstab vorne ein anderer als hinten –
+eine affine Abbildung (Drehung, Maßstab, Scherung) kann das prinzipiell nicht
+darstellen. Sie passt dort, wo kalibriert wurde, und driftet mit wachsendem
+Abstand davon weg. Genau dieser Fehler ließ die Position im Praxiseinsatz
+danebenliegen.
 
-- **2 Punkte** → Drehung, Maßstab, Verschiebung. Reicht für saubere,
-  maßstäbliche Pläne.
-- **ab 3 Punkten** → volle affine Anpassung, Ausgleich per kleinster Quadrate.
+Deshalb wählt die App das Modell nach der Zahl der Passpunkte:
+
+| Punkte | Modell | taugt für |
+| --- | --- | --- |
+| 2 | Drehung + Maßstab (Ähnlichkeit) | maßstäbliche, senkrechte Pläne |
+| 3 | affin (zusätzlich Scherung, ungleiche Maßstäbe) | leicht verzerrte Zeichnungen |
+| **4 und mehr** | **projektiv (Homographie)** | **Schrägluftbilder wie dieser Plan** |
+
+Für den Solaris-Plan also: **vier Punkte, über den Platz verteilt und nicht
+auf einer Linie.** Maßstab und Nordrichtung gelten bei einer Homographie nur
+örtlich; die App rechnet sie deshalb an der Stelle aus, an der man gerade
+steht.
+
+Entartete Fälle (alle Punkte auf einer Linie, widersprüchliche Punkte) fallen
+automatisch auf das nächst einfachere Modell zurück.
+
+### Kalibrierung mitliefern
+
+[`plan/calibration.json`](plan/) nimmt feste Passpunkte auf. Stehen dort
+mindestens vier gültige, startet die App **fertig kalibriert** – für ein
+Produkt, das Gäste einfach öffnen sollen, ist das der eigentliche Zustand.
+Eigene Punkte des Nutzers haben Vorrang und werden nie überschrieben.
+Passpunkte lassen sich vom Schreibtisch aus setzen: Stelle in einer
+Satellitenansicht heraussuchen, Koordinaten kopieren, in der App über
+„Kalibrieren → Punkt: Koordinaten“ der Stelle auf dem Plan zuordnen.
+
+### Satellitenkarte statt Lageplan?
+
+Naheliegend, aber rechtlich heikel und inhaltlich meist schlechter:
+
+- **Google und Apple verbieten es.** Kacheln dürfen nur über ihre eigenen
+  SDKs angezeigt werden; Herunterladen, Zwischenspeichern und das Ableiten
+  eigener Inhalte aus den Bildern sind ausgeschlossen.
+- Lizenzfrei bzw. lizenzierbar wären **MapTiler** oder **Mapbox**
+  (kostenpflichtig ab kleinen Kontingenten), **Esri World Imagery** unter
+  Bedingungen oder amtliche Orthofotos – in Kroatien die der staatlichen
+  Vermessungsverwaltung (DGU).
+- Für Gäste ist der offizielle Plan ohnehin nützlicher: Parzellennummern,
+  Zonen und Symbole stehen nur dort. Ein Satellitenbild ersetzt das nicht.
+
+Die brauchbare Kombination ist deshalb: offizieller Plan als Karte, sauber
+georeferenziert – und eine Satellitenansicht höchstens als zusätzliche Ebene
+mit passender Lizenz.
 
 Als Gütemaß zeigt die App ab drei Punkten einen **Kontrollfehler**: jeder Punkt
 wird einmal weggelassen, aus den übrigen berechnet und mit seiner echten Lage

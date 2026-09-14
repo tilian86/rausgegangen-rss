@@ -446,6 +446,40 @@ if (planExisted) {
   await poiPage.close();
 }
 
+/* 15c) Mitgelieferte Kalibrierung: Sind in plan/calibration.json vier gültige
+   Punkte hinterlegt, startet die App fertig kalibriert. */
+if (planExisted) {
+  const calFile = path.join(here, '..', 'plan', 'calibration.json');
+  const original = fs.readFileSync(calFile, 'utf8');
+  const cfg = JSON.parse(original);
+  // Passpunkte aus derselben künstlichen Wahrheit wie oben
+  cfg.points = [[200, 200], [1000, 700], [2800, 400], [1600, 1600]].map(([px, py], i) => {
+    const c = toLatLon(px, py);
+    return { u: px / 3200, v: py / 2231, lat: c.lat, lon: c.lon, label: 'Test ' + i };
+  });
+  fs.writeFileSync(calFile, JSON.stringify(cfg, null, 2));
+  try {
+    const calPage = await ctx.newPage();
+    await calPage.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+    await calPage.evaluate(() => { indexedDB.deleteDatabase('campmap'); localStorage.clear(); });
+    await calPage.reload({ waitUntil: 'networkidle' });
+    await calPage.waitForFunction(() => window.__app && window.__app.state.T !== null, null, { timeout: 20000 });
+    const cal = await calPage.evaluate(() => ({
+      n: window.__app.state.calib.length,
+      kind: window.__app.state.T.kind,
+      bundled: window.__app.state.calib.every(c => c.bundled === true)
+    }));
+    assert.equal(cal.n, 4, 'vier mitgelieferte Punkte übernommen');
+    assert.equal(cal.bundled, true, 'als mitgeliefert markiert');
+    assert.equal(cal.kind, 'homography', 'vier Punkte ergeben die perspektivische Abbildung');
+    const status = await calPage.locator('#status .txt').textContent();
+    assert.ok(!/nicht kalibriert/.test(status), `startet kalibriert: ${status}`);
+    await calPage.close();
+  } finally {
+    fs.writeFileSync(calFile, original);
+  }
+}
+
 /* 16) In-App-Browser erkennen: WKWebView einer fremden App (kein "Safari/"
    im User-Agent) bekommt den Hinweis, echtes Safari und die Home-Bildschirm-
    App nicht. */

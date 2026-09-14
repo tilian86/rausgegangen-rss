@@ -1,0 +1,25 @@
+{
+  "_hinweis": "Fest hinterlegte Passpunkte für camping-solaris-map.webp. Sind hier mindestens vier gültige Punkte eingetragen, startet die App fertig kalibriert – niemand muss mehr selbst kalibrieren. Solange die Liste leer ist, fragt die App wie gehabt beim ersten Start.",
+  "_so_fuellen": [
+    "1. In Google Maps (Satellitenansicht) die Stelle lange drücken, Koordinaten oder Link kopieren.",
+    "2. Dieselbe Stelle auf dem Lageplan suchen und ihre Pixelposition bestimmen: u = x / 3200, v = y / 2231 (Werte zwischen 0 und 1).",
+    "3. Eintrag unten ergänzen. Bequemer: in der App über 'Kalibrieren -> Punkt: Koordinaten' setzen, dann 'Karte exportieren' und die Punkte von dort übernehmen.",
+    "4. Mindestens vier Punkte, möglichst weit über den Platz verteilt und nicht auf einer Linie."
+  ],
+  "_gute_stellen": [
+    "Landspitze westlich von Kopalo Beach",
+    "Mole/Steg bei Sidro Beach",
+    "Rezeptionsgebäude",
+    "Pool beim Sport Center",
+    "Bootsrampe an der Nordküste",
+    "Ostende bei Crnika Beach",
+    "Tennisplätze im Süden",
+    "Parkplatzecke östlich der Rezeption"
+  ],
+  "plan": "camping-solaris-map.webp",
+  "planSize": [
+    3200,
+    2231
+  ],
+  "points": []
+}
