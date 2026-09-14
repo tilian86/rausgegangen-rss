@@ -15,7 +15,7 @@ const mathSrc = src.slice(0, src.indexOf('window.CampMath'));
 const M = new Function(mathSrc + `
   return { project, unproject, solveTransform, applyTransform, invertTransform,
            latLonToPlan, planToLatLon, geoDistance, bearingDeg, parseCoords,
-           compassName, calibSpread, assessFrozen };
+           compassName, calibSpread, assessFrozen, solveHomography, metricsAt };
 `)();
 
 /* Ein künstlicher, exakt bekannter Plan: Maßstab und Nordrichtung vorgegeben. */
@@ -256,6 +256,102 @@ test('Eingefrorenes GPS wird erkannt, echtes Rauschen nicht', () => {
   const f2 = M.assessFrozen(moved, t0 + 45000);
   assert.ok(f2 && f2.count === 4, `stehender Abschnitt erkannt: ${JSON.stringify(f2)}`);
   assert.equal(M.assessFrozen([], t0), null);
+});
+
+/* Der Solaris-Plan ist ein Schrägluftbild. Solche Aufnahmen bilden das
+   Gelände perspektivisch ab: Der Maßstab ist vorne ein anderer als hinten.
+   Eine affine Abbildung kann das nicht – eine Homographie schon. */
+function obliqueTruth({ lat0 = 45.2938, lon0 = 13.5897, tilt = 0.00045 } = {}) {
+  const ref = { lat: lat0, lon: lon0 };
+  return (lat, lon) => {
+    const m = M.project(lat, lon, ref);
+    const w = 1 + tilt * m.y;          // Perspektive: Tiefe staucht
+    return {
+      px: (2.4 * m.x + 0.35 * m.y + 1600) / w,
+      py: (-0.3 * m.x + 2.2 * m.y + 1100) / w
+    };
+  };
+}
+
+test('Schrägluftbild: Homographie trifft, affine Abbildung driftet', () => {
+  const truth = obliqueTruth();
+  const P2 = (lat, lon) => ({ lat, lon, ...truth(lat, lon) });
+  // vier Passpunkte über den Platz verteilt
+  const pts = [
+    P2(45.2938, 13.5897), P2(45.2985, 13.5951),
+    P2(45.2905, 13.5960), P2(45.2970, 13.5880)
+  ];
+  const T = M.solveTransform(pts);
+  assert.ok(T, 'Transformation gefunden');
+  assert.equal(T.kind, 'homography', 'nutzt die projektive Abbildung');
+  assert.ok(T.rms < 0.05, `Restfehler ${T.rms} m`);
+
+  // Kontrollpunkte, die nicht zur Kalibrierung gehörten
+  const checks = [P2(45.2950, 13.5920), P2(45.2995, 13.5910), P2(45.2920, 13.5935)];
+  for (const c of checks) {
+    const got = M.latLonToPlan(T, c.lat, c.lon);
+    const err = Math.hypot(got.px - c.px, got.py - c.py) / T.pxPerMeter;
+    assert.ok(err < 0.5, `Homographie sagt fremden Punkt auf ${err.toFixed(2)} m genau vorher`);
+  }
+
+  // Dieselben Daten ohne Perspektive gerechnet (drei Punkte) liegen daneben.
+  // Welches einfachere Modell dabei herauskommt, ist zweitrangig – es driftet.
+  const affine = M.solveTransform(pts.slice(0, 3));
+  assert.notEqual(affine.kind, 'homography');
+  const worst = Math.max(...checks.map(c => {
+    const got = M.latLonToPlan(affine, c.lat, c.lon);
+    return Math.hypot(got.px - c.px, got.py - c.py) / affine.pxPerMeter;
+  }));
+  assert.ok(worst > 3, `affine Abbildung driftet deutlich: ${worst.toFixed(1)} m`);
+});
+
+test('Homographie: Hin- und Rückrechnung bleibt exakt', () => {
+  const truth = obliqueTruth();
+  const P2 = (lat, lon) => ({ lat, lon, ...truth(lat, lon) });
+  const T = M.solveTransform([
+    P2(45.2938, 13.5897), P2(45.2985, 13.5951),
+    P2(45.2905, 13.5960), P2(45.2970, 13.5880), P2(45.2950, 13.5925)
+  ]);
+  for (const [px, py] of [[400, 300], [1600, 1100], [2800, 1900]]) {
+    const c = M.planToLatLon(T, px, py);
+    const back = M.latLonToPlan(T, c.lat, c.lon);
+    assert.ok(Math.hypot(back.px - px, back.py - py) < 1e-4, 'Rundgang schließt sich');
+  }
+});
+
+test('Maßstab ist örtlich: vorne anders als hinten', () => {
+  const truth = obliqueTruth();
+  const P2 = (lat, lon) => ({ lat, lon, ...truth(lat, lon) });
+  const T = M.solveTransform([
+    P2(45.2938, 13.5897), P2(45.2985, 13.5951),
+    P2(45.2905, 13.5960), P2(45.2970, 13.5880)
+  ]);
+  const nord = M.metricsAt(T, 0, -300);
+  const sued = M.metricsAt(T, 0, 300);
+  assert.ok(nord.pxPerMeter > sued.pxPerMeter * 1.05,
+    `Perspektive wird abgebildet: ${nord.pxPerMeter.toFixed(2)} vs ${sued.pxPerMeter.toFixed(2)} px/m`);
+});
+
+test('Drei Punkte bleiben affin, zwei bleiben Drehung und Maßstab', () => {
+  const truth = truthMaker();
+  const pts = [
+    P(45.2938, 13.5897, truth), P(45.2985, 13.5951, truth), P(45.2905, 13.5960, truth)
+  ];
+  assert.equal(M.solveTransform(pts).kind, 'affine');
+  assert.equal(M.solveTransform(pts.slice(0, 2)).kind, 'similarity');
+});
+
+test('Vier entartete Punkte fallen auf ein einfacheres Modell zurück', () => {
+  const truth = truthMaker();
+  // alle auf einer Linie – daraus lässt sich keine Perspektive ableiten
+  const pts = [
+    P(45.2938, 13.5897, truth), P(45.2950, 13.5910, truth),
+    P(45.2962, 13.5923, truth), P(45.2974, 13.5936, truth)
+  ];
+  const T = M.solveTransform(pts);
+  assert.ok(T, 'trotzdem eine Lösung');
+  assert.notEqual(T.kind, 'homography', 'keine Perspektive aus kollinearen Punkten');
+  assert.equal(T.fellBack, true);
 });
 
 test('Himmelsrichtungen', () => {

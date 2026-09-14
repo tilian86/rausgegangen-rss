@@ -5,7 +5,7 @@
    Alles lokal: kein Server, keine Konten, kein Tracking.
    ============================================================ */
 
-const APP_VERSION = '1.4.0';
+const APP_VERSION = '1.5.0';
 
 /* Ein Standortwert gilt nur kurz als aktuell: iOS lässt watchPosition
    einschlafen, sobald das Display aus ist. Wer dann am anderen Ende des
@@ -60,13 +60,53 @@ function unproject(x, y, ref) {
 }
 
 function applyTransform(T, mx, my) {
+  if (T.H) {
+    const w = T.H[2][0] * mx + T.H[2][1] * my + T.H[2][2];
+    return {
+      px: (T.H[0][0] * mx + T.H[0][1] * my + T.H[0][2]) / w,
+      py: (T.H[1][0] * mx + T.H[1][1] * my + T.H[1][2]) / w
+    };
+  }
   return { px: T.a * mx + T.b * my + T.c, py: T.d * mx + T.e * my + T.f };
 }
 
 function invertTransform(T, px, py) {
+  if (T.Hinv) {
+    const w = T.Hinv[2][0] * px + T.Hinv[2][1] * py + T.Hinv[2][2];
+    return {
+      mx: (T.Hinv[0][0] * px + T.Hinv[0][1] * py + T.Hinv[0][2]) / w,
+      my: (T.Hinv[1][0] * px + T.Hinv[1][1] * py + T.Hinv[1][2]) / w
+    };
+  }
   const det = T.a * T.e - T.b * T.d;
   const dx = px - T.c, dy = py - T.f;
   return { mx: (T.e * dx - T.b * dy) / det, my: (-T.d * dx + T.a * dy) / det };
+}
+
+/* Maßstab und Nordrichtung gelten bei einer Homographie nur örtlich –
+   vorne im Bild ist ein Meter mehr Pixel wert als hinten. Deshalb aus der
+   Ableitung an der jeweiligen Stelle bestimmen. */
+function metricsAt(T, mx, my) {
+  const p0 = applyTransform(T, mx, my);
+  const pe = applyTransform(T, mx + 1, my);   // ein Meter nach Osten
+  const ps = applyTransform(T, mx, my + 1);   // ein Meter nach Süden
+  const ex = pe.px - p0.px, ey = pe.py - p0.py;
+  const sx = ps.px - p0.px, sy = ps.py - p0.py;
+  const det = Math.abs(ex * sy - ey * sx);
+  const pxPerMeter = det > 0 ? Math.sqrt(det) : (T.pxPerMeter || 1);
+  const northDeg = (Math.atan2(-sx, sy) * 180 / Math.PI + 360) % 360;
+  return { pxPerMeter, northDeg };
+}
+
+/* Maßstab dort, wo der Nutzer gerade steht (sonst in der Bildmitte). */
+function currentMetrics() {
+  const T = state.T;
+  if (!T) return null;
+  if (state.pos) {
+    const m = project(state.pos.lat, state.pos.lon, T.ref);
+    return metricsAt(T, m.x, m.y);
+  }
+  return { pxPerMeter: T.pxPerMeter, northDeg: T.northDeg };
 }
 
 /* Ähnlichkeitstransformation (Drehung + gleichmäßige Skalierung +
@@ -172,6 +212,104 @@ function assessFrozen(log, now, { minCount = 4, minSpanMs = 40000, maxDriftM = 0
   return null;
 }
 
+/* --- Projektive Abbildung (Homographie) ------------------------
+   Der Solaris-Plan ist ein Schrägluftbild: Gebäude zeigen Dach und
+   Seitenwand. Bei so einer Aufnahme ist der Maßstab vorne ein anderer als
+   hinten – eine affine Abbildung (Drehung, Maßstab, Scherung) kann das
+   prinzipiell nicht, sie driftet mit wachsendem Abstand von den
+   Passpunkten. Eine Homographie bildet genau diese Perspektive ab und
+   braucht dafür mindestens vier Punkte. */
+function solveHomography(pts) {
+  if (pts.length < 4) return null;
+
+  // Hartley-Normierung: beide Seiten auf Schwerpunkt 0 und mittleren
+  // Abstand sqrt(2). Ohne das wird das Gleichungssystem schnell singulär.
+  const norm = (get) => {
+    let cx = 0, cy = 0;
+    for (const p of pts) { const v = get(p); cx += v[0]; cy += v[1]; }
+    cx /= pts.length; cy /= pts.length;
+    let d = 0;
+    for (const p of pts) { const v = get(p); d += Math.hypot(v[0] - cx, v[1] - cy); }
+    d /= pts.length;
+    const s = d > 1e-9 ? Math.SQRT2 / d : 1;
+    return { s, cx, cy, apply: v => [(v[0] - cx) * s, (v[1] - cy) * s] };
+  };
+  const nm = norm(p => [p.mx, p.my]);
+  const np = norm(p => [p.px, p.py]);
+
+  // Für jedes Paar zwei Zeilen, 8 Unbekannte (h33 = 1)
+  const N = Array.from({ length: 8 }, () => new Array(8).fill(0));
+  const r = new Array(8).fill(0);
+  for (const p of pts) {
+    const [mx, my] = nm.apply([p.mx, p.my]);
+    const [px, py] = np.apply([p.px, p.py]);
+    const rows = [
+      [mx, my, 1, 0, 0, 0, -px * mx, -px * my, px],
+      [0, 0, 0, mx, my, 1, -py * mx, -py * my, py]
+    ];
+    for (const row of rows) {
+      for (let i = 0; i < 8; i++) {
+        for (let j = 0; j < 8; j++) N[i][j] += row[i] * row[j];
+        r[i] += row[i] * row[8];
+      }
+    }
+  }
+  const h = solveN(N, r, 8);
+  if (!h) return null;
+
+  // Normierung zurückrechnen: H = Tp^-1 * Hn * Tm
+  const Hn = [[h[0], h[1], h[2]], [h[3], h[4], h[5]], [h[6], h[7], 1]];
+  const Tm = [[nm.s, 0, -nm.s * nm.cx], [0, nm.s, -nm.s * nm.cy], [0, 0, 1]];
+  const TpInv = [[1 / np.s, 0, np.cx], [0, 1 / np.s, np.cy], [0, 0, 1]];
+  const H = mul3(TpInv, mul3(Hn, Tm));
+  if (!H.every(row => row.every(Number.isFinite))) return null;
+  const k = H[2][2];
+  if (Math.abs(k) < 1e-12) return null;
+  for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) H[i][j] /= k;
+  return { kind: 'homography', H, Hinv: inv3(H) };
+}
+
+function mul3(A, B) {
+  const C = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+  for (let i = 0; i < 3; i++)
+    for (let j = 0; j < 3; j++)
+      for (let k = 0; k < 3; k++) C[i][j] += A[i][k] * B[k][j];
+  return C;
+}
+
+function inv3(M) {
+  const [a, b, c] = M[0], [d, e, f] = M[1], [g, h, i] = M[2];
+  const det = a * (e * i - f * h) - b * (d * i - f * g) + c * (d * h - e * g);
+  if (!isFinite(det) || Math.abs(det) < 1e-14) return null;
+  return [
+    [(e * i - f * h) / det, (c * h - b * i) / det, (b * f - c * e) / det],
+    [(f * g - d * i) / det, (a * i - c * g) / det, (c * d - a * f) / det],
+    [(d * h - e * g) / det, (b * g - a * h) / det, (a * e - b * d) / det]
+  ];
+}
+
+/* Gauß mit Spaltenpivotisierung für beliebige Größe. */
+function solveN(M, r, n) {
+  const A = M.map((row, i) => row.slice(0, n).concat([r[i]]));
+  for (let col = 0; col < n; col++) {
+    let piv = col;
+    for (let row = col + 1; row < n; row++) {
+      if (Math.abs(A[row][col]) > Math.abs(A[piv][col])) piv = row;
+    }
+    if (Math.abs(A[piv][col]) < 1e-12) return null;
+    if (piv !== col) { const t = A[piv]; A[piv] = A[col]; A[col] = t; }
+    for (let row = 0; row < n; row++) {
+      if (row === col) continue;
+      const k = A[row][col] / A[col][col];
+      if (!k) continue;
+      for (let j = col; j <= n; j++) A[row][j] -= k * A[col][j];
+    }
+  }
+  const out = [];
+  for (let i = 0; i < n; i++) out.push(A[i][n] / A[i][i]);
+  return out.every(Number.isFinite) ? out : null;
+}
+
 /* Größter Abstand zwischen zwei Kalibrierpunkten, in Metern. */
 function calibSpread(points) {
   let max = 0;
@@ -201,31 +339,40 @@ function solveTransform(points, withCheck = true) {
     return { px: p.px, py: p.py, mx: m.x, my: m.y };
   });
 
-  let T = points.length >= 3 ? solveAffine(pts) : null;
-  const fellBack = !T && points.length >= 3;
-  if (!T) T = solveSimilarity(pts);
+  // Bestes Modell, das die Punktzahl hergibt – mit Rückfall nach unten.
+  // Vier Punkte erlauben die Perspektive (Homographie), drei nur eine
+  // affine Abbildung, zwei nur Drehung und Maßstab.
+  let T = null, wanted = null;
+  if (points.length >= 4) { wanted = 'homography'; T = solveHomography(pts); }
+  if (!T && points.length >= 3) { if (!wanted) wanted = 'affine'; T = solveAffine(pts); }
+  if (!T) { if (!wanted) wanted = 'similarity'; T = solveSimilarity(pts); }
   if (!T) return null;
 
   T.ref = ref;
   T.n = points.length;
-  T.fellBack = fellBack;
-  const det = T.a * T.e - T.b * T.d;
-  T.pxPerMeter = Math.sqrt(Math.abs(det));
+  T.wanted = wanted;
+  T.fellBack = T.kind !== wanted;
+
+  // Globaler Richtwert am Schwerpunkt der Passpunkte
+  let cmx = 0, cmy = 0;
+  for (const p of pts) { cmx += p.mx; cmy += p.my; }
+  cmx /= pts.length; cmy /= pts.length;
+  const m0 = metricsAt(T, cmx, cmy);
+  T.pxPerMeter = m0.pxPerMeter;
+  T.northDeg = m0.northDeg;
   if (!isFinite(T.pxPerMeter) || T.pxPerMeter <= 0) return null;
 
   let sum = 0, max = 0;
   T.residuals = pts.map(p => {
     const q = applyTransform(T, p.mx, p.my);
-    const err = Math.hypot(q.px - p.px, q.py - p.py) / T.pxPerMeter;
+    const scale = metricsAt(T, p.mx, p.my).pxPerMeter || T.pxPerMeter;
+    const err = Math.hypot(q.px - p.px, q.py - p.py) / scale;
     sum += err * err;
     if (err > max) max = err;
     return err;
   });
   T.rms = Math.sqrt(sum / pts.length);
   T.maxErr = max;
-
-  // Richtung, in die Nord im Bild zeigt (0° = Bild oben, im Uhrzeigersinn)
-  T.northDeg = (Math.atan2(-T.b, T.e) * 180 / Math.PI + 360) % 360;
 
   if (withCheck && points.length >= 3) {
     const errs = points.map((p, i) => {
@@ -1001,6 +1148,9 @@ function addCalibPoint(px, py, lat, lon, acc) {
   focusOnMe();
   if (state.calib.length === 1) {
     showBanner('Punkt 1 gespeichert. Jetzt zu einer zweiten, möglichst weit entfernten Stelle GEHEN (Rezeption, Strand …) und dort Punkt 2 setzen – die App muss dich an beiden Orten messen.', null, 12000);
+  } else if (state.calib.length < 4) {
+    const q0 = calibQuality();
+    showBanner(`${state.calib.length} Punkte gesetzt. Der Plan ist ein Schrägluftbild – erst ab vier über den Platz verteilten Punkten wird die Perspektive ausgeglichen. ${q0.text}.`, null, 12000);
   } else {
     const q = calibQuality();
     showBanner(`Kalibriert mit ${state.calib.length} Punkten – ${q.text}.`, q.level === 'bad' ? 'bad' : null, 6000);
@@ -1125,7 +1275,10 @@ function calibQuality() {
   if (T.n === 2) {
     const d = geoDistance(state.calib[0].lat, state.calib[0].lon, state.calib[1].lat, state.calib[1].lon);
     if (d < 40) return { level: 'warn', text: `Punkte nur ${Math.round(d)} m auseinander – weiter entfernten Punkt ergänzen` };
-    return { level: 'good', text: `Basislinie ${fmtDist(d)} · ein dritter Punkt erlaubt eine Kontrolle` };
+    return { level: 'warn', text: `Basislinie ${fmtDist(d)} · für diesen Plan zu wenig, vier Punkte nötig` };
+  }
+  if (T.n === 3) {
+    return { level: 'warn', text: 'Drei Punkte gleichen die Perspektive des Luftbilds noch nicht aus – ein vierter hilft spürbar' };
   }
   const c = T.check;
   if (!c) return { level: 'warn', text: `${T.n} Punkte, keine Kontrolle möglich` };
@@ -1135,6 +1288,32 @@ function calibQuality() {
 }
 
 /* ---------- Orte aus dem offiziellen Plan --------------------- */
+
+/* Mitgelieferte Passpunkte: Liegen in plan/calibration.json mindestens vier
+   gültige Punkte, startet die App fertig kalibriert. Eigene Punkte des
+   Nutzers haben Vorrang und werden nie überschrieben. */
+async function loadBundledCalibration() {
+  if (!state.plan || !state.plan.isDefault) return false;
+  if (state.calib.length) return false;
+  try {
+    const res = await fetch('plan/calibration.json', { cache: 'no-cache' });
+    if (!res.ok) return false;
+    const data = await res.json();
+    const pts = (data.points || []).filter(p =>
+      validCoords(p.lat, p.lon) && p.u >= 0 && p.u <= 1 && p.v >= 0 && p.v <= 1);
+    if (pts.length < 4) return false;
+    state.calib = pts.map((p, i) => ({
+      id: 'b' + i, u: p.u, v: p.v, lat: p.lat, lon: p.lon,
+      acc: p.acc == null ? null : p.acc, ts: Date.now(), bundled: true, label: p.label || null
+    }));
+    saveState();
+    recompute();
+    return !!state.T;
+  } catch (err) {
+    console.warn('Mitgelieferte Kalibrierung nicht geladen', err);
+    return false;
+  }
+}
 
 async function loadPois() {
   state.pois = null;
@@ -1641,7 +1820,8 @@ function renderMe() {
   el.me.style.left = p.px + 'px';
   el.me.style.top = p.py + 'px';
 
-  const r = (state.pos.acc || 0) * state.T.pxPerMeter;
+  const local = currentMetrics();
+  const r = (state.pos.acc || 0) * local.pxPerMeter;
   if (r > 2) {
     el.acc.hidden = false;
     el.acc.style.left = p.px + 'px';
@@ -1654,7 +1834,7 @@ function renderMe() {
 
   if (state.heading != null) {
     el.meArrow.hidden = false;
-    el.meArrow.style.setProperty('--rot', ((state.heading + state.T.northDeg) % 360) + 'deg');
+    el.meArrow.style.setProperty('--rot', ((state.heading + local.northDeg) % 360) + 'deg');
   } else {
     el.meArrow.hidden = true;
   }
@@ -1724,7 +1904,10 @@ function renderStatus() {
   el.status.querySelector('.txt').textContent = txt;
 
   el.compass.hidden = !state.T;
-  if (state.T) el.compass.style.setProperty('--north', state.T.northDeg + 'deg');
+  if (state.T) {
+    const lm = currentMetrics();
+    el.compass.style.setProperty('--north', lm.northDeg + 'deg');
+  }
 
   el.btnCalib.classList.toggle('active', !!state.mode);
   el.btnFollow.classList.toggle('active', state.follow && !!state.T);
@@ -1732,7 +1915,7 @@ function renderStatus() {
 
 function renderScale() {
   if (!state.T) { el.scalebar.hidden = true; return; }
-  const mPerPx = 1 / (state.T.pxPerMeter * view.z);
+  const mPerPx = 1 / ((currentMetrics() || state.T).pxPerMeter * view.z);
   const nice = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000];
   let pick = nice[0];
   for (const n of nice) { if (n / mPerPx <= 130) pick = n; }
@@ -1782,7 +1965,7 @@ function renderTarget() {
     rot = (brg - state.heading + 360) % 360;
     hint = 'vor dir';
   } else {
-    rot = (brg + state.T.northDeg) % 360;
+    rot = (brg + currentMetrics().northDeg) % 360;
     hint = 'in Kartenrichtung';
   }
   el.targetArrow.style.setProperty('--rot', rot + 'deg');
@@ -1905,7 +2088,8 @@ function renderSheet() {
   if (state.T) {
     const extra = document.createElement('div');
     extra.className = 'muted small';
-    extra.textContent = `Maßstab: 1 px ≈ ${(1 / state.T.pxPerMeter).toFixed(2)} m · Nord zeigt ${Math.round(state.T.northDeg)}° im Plan`
+    const modelName = { homography: 'perspektivisch (4+ Punkte)', affine: 'affin (3 Punkte)', similarity: 'Drehung + Maßstab (2 Punkte)' }[state.T.kind] || state.T.kind;
+    extra.textContent = `Modell: ${modelName} · Maßstab: 1 px ≈ ${(1 / state.T.pxPerMeter).toFixed(2)} m · Nord zeigt ${Math.round(state.T.northDeg)}° im Plan`
       + (state.T.fellBack ? ' · Punkte widersprüchlich, nutze Drehung + Maßstab' : '');
     st.appendChild(extra);
   }
@@ -2228,13 +2412,14 @@ async function boot() {
     if (!await tryDefaultPlan()) openOverlay(el.welcome);
   }
   await loadPois();
+  await loadBundledCalibration();
   recompute();
   renderAll();
   if (state.opts.compass) enableCompass();
   if (state.opts.keepAwake) setKeepAwake(true);
   startWatch();
   if (state.plan && state.calib.length < 2) {
-    showBanner('Noch nicht kalibriert: „Kalibrieren“ antippen, wenn du an einer auf dem Plan erkennbaren Stelle stehst.', null, 12000);
+    showBanner('Noch nicht kalibriert: „Kalibrieren“ antippen, wenn du an einer auf dem Plan erkennbaren Stelle stehst. Für diesen Plan braucht es vier Punkte über den Platz verteilt.', null, 14000);
   }
   state.env = detectEnv();
   if (state.env.inAppWebView) {

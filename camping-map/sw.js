@@ -6,7 +6,7 @@
    Schwere und Unveränderliche – Lageplan, Symbole, pdf.js – kommt zuerst aus
    dem Cache. */
 
-const CACHE = 'campmap-v4';
+const CACHE = 'campmap-v5';
 const NET_TIMEOUT_MS = 3500;
 const ASSETS = [
   './',
@@ -35,8 +35,13 @@ self.addEventListener('activate', ev => {
   );
 });
 
+/* Programm- und Datendateien zuerst aus dem Netz: Korrekturen an der App,
+   an den Passpunkten (plan/calibration.json) und an den Ortsinfos
+   (plan/poi.json) müssen sofort ankommen. Der Lageplan selbst ist groß und
+   ändert sich selten – der kommt weiter zuerst aus dem Cache. */
 function isProgramFile(url) {
   return /(^|\/)(index\.html|app\.js|app\.css|manifest\.webmanifest)$/.test(url.pathname)
+      || /\/plan\/[^/]+\.json$/.test(url.pathname)
       || url.pathname.endsWith('/');
 }
 
