@@ -5,7 +5,7 @@
    Alles lokal: kein Server, keine Konten, kein Tracking.
    ============================================================ */
 
-const APP_VERSION = '1.6.2';
+const APP_VERSION = '1.7.0';
 
 /* Ein Standortwert gilt nur kurz als aktuell: iOS lässt watchPosition
    einschlafen, sobald das Display aus ist. Wer dann am anderen Ende des
@@ -15,6 +15,18 @@ const FIX_MAX_AGE_MS = 8000;
    ergeben keine brauchbare Abbildung. */
 const MIN_SPREAD_M = 10;
 const MIN_BASELINE_M = 20;
+/* Ein Passpunkt ist nur so gut wie der Standort im Stand: In der Fahrt
+   hinkt die GPS-Position hinterher, auf dem Roller um zweistellige Meter.
+   Ab dieser Geschwindigkeit (m/s, ca. 4 km/h) wird erst angehalten. */
+const MOVING_MPS = 1.2;
+const SETTLE_MS = 12000;
+/* Im Stand ein paar Sekunden mitteln: ein einzelner Wert streut, der
+   Mittelwert aus mehreren Messungen liegt näher an der Wahrheit. */
+const AVG_MS = 8000;
+/* Ein laufender Standortdienst meldet sich etwa im Sekundentakt. Kommt so
+   lange nichts Neues, steht er – dann bringt weiteres Warten nichts und
+   kostet nur die Frische der Messung, die wir schon haben. */
+const STALE_SAMPLE_MS = 3000;
 const LS_KEY = 'campmap.state.v1';
 const IDB_NAME = 'campmap';
 const IDB_STORE = 'blobs';
@@ -492,10 +504,32 @@ function compassName(deg) {
   return COMPASS_NAMES[Math.round(((deg % 360) + 360) % 360 / 22.5) % 16];
 }
 
+/* Meldet das Gerät keine Geschwindigkeit (kommt vor), wird nichts
+   erzwungen – dann gilt die Position wie bisher. */
+function isMoving(fix) {
+  return !!fix && typeof fix.speed === 'number' && isFinite(fix.speed) && fix.speed > MOVING_MPS;
+}
+
+/* Mehrere Messungen im Stand zusammenfassen. Gewichtet nach gemeldeter
+   Genauigkeit, grobe Ausreißer fliegen raus. Angegeben wird weiterhin der
+   beste Einzelwert – die Mittelung schönt die Zahl nicht. */
+function blendFixes(samples) {
+  const acc = s => (typeof s.acc === 'number' && isFinite(s.acc) ? s.acc : 30);
+  const best = Math.min(...samples.map(acc));
+  const use = samples.filter(s => acc(s) <= Math.max(best * 2, best + 5));
+  let w = 0, lat = 0, lon = 0;
+  for (const s of use) {
+    const k = 1 / Math.pow(Math.max(acc(s), 3), 2);
+    w += k; lat += s.lat * k; lon += s.lon * k;
+  }
+  return { lat: lat / w, lon: lon / w, acc: best, speed: 0, n: use.length };
+}
+
 window.CampMath = {
   project, unproject, applyTransform, invertTransform,
   solveTransform, solveAffine, solveSimilarity, calibSpread, assessFrozen,
-  latLonToPlan, planToLatLon, geoDistance, bearingDeg, parseCoords, compassName
+  latLonToPlan, planToLatLon, geoDistance, bearingDeg, parseCoords, compassName,
+  isMoving, blendFixes
 };
 
 /* ---------- Zustand ------------------------------------------ */
@@ -608,6 +642,43 @@ async function shareDiagnostics() {
     showBanner('Diagnose in die Zwischenablage kopiert.', null, 4000);
   } catch (err) {
     showBanner('Kopieren nicht möglich – Screenshot vom Menü hilft auch.', 'bad', 6000);
+  }
+}
+
+/* Die gesetzten Passpunkte im Format von plan/calibration.json. Wer sie
+   einmal draußen erlaufen hat, kann sie so weitergeben – eingetragen in
+   die Datei startet die App bei allen fertig kalibriert. */
+function calibrationJson() {
+  const round = (x, d) => Number(x.toFixed(d));
+  return JSON.stringify({
+    plan: state.plan && state.plan.isDefault ? 'camping-solaris-map.webp' : (state.plan ? state.plan.name : null),
+    planSize: state.plan ? [state.plan.w, state.plan.h] : null,
+    points: state.calib.map((c, i) => ({
+      label: c.label || `Punkt ${i + 1}`,
+      u: round(c.u, 5), v: round(c.v, 5),
+      lat: round(c.lat, 6), lon: round(c.lon, 6),
+      acc: c.acc == null ? null : c.acc
+    }))
+  }, null, 2);
+}
+
+async function shareCalibration() {
+  if (!state.calib.length) {
+    showBanner('Noch keine Passpunkte gesetzt – erst kalibrieren.', 'bad', 6000);
+    return;
+  }
+  const text = calibrationJson();
+  try {
+    if (navigator.share) {
+      await navigator.share({ title: 'Platzkarte – Passpunkte', text });
+      return;
+    }
+  } catch (err) { /* abgebrochen oder nicht möglich – Zwischenablage probieren */ }
+  try {
+    await navigator.clipboard.writeText(text);
+    showBanner(`${state.calib.length} Passpunkte kopiert – in eine Nachricht einfügen und abschicken.`, null, 7000);
+  } catch (err) {
+    showBanner('Kopieren nicht möglich. Die Punkte stehen auch in der Diagnose weiter unten.', 'bad', 8000);
   }
 }
 
@@ -1163,18 +1234,86 @@ function startCalibGps() {
   getFreshFix().then(() => renderMode());   // im Hintergrund schon anfordern
 }
 
+function kmh(fix) {
+  return Math.round(fix.speed * 3.6);
+}
+
+/* Beide Warteschleifen schauen dem laufenden Watch beim Liefern zu, statt
+   im Sekundentakt eigene Messungen anzufordern: Jede Anfrage setzt den
+   Watch neu auf, und nach ein paar Neustarts in Folge liefert das Gerät
+   eine Weile gar nichts mehr. Nur wenn der Watch wirklich steht, wird er
+   einmal angestoßen. */
+async function nextFix(fix) {
+  await new Promise(r => setTimeout(r, 700));
+  if (posAge() <= FIX_MAX_AGE_MS) return state.pos;
+  return (await getFreshFix(FIX_MAX_AGE_MS, 6000)) || fix;
+}
+
+/* Wartet, bis der Roller wirklich steht – oder gibt nach SETTLE_MS auf
+   und überlässt die Entscheidung dem Menschen. */
+async function awaitStandstill(fix) {
+  if (!isMoving(fix)) return fix;
+  showBanner(`Du bist noch mit ${kmh(fix)} km/h unterwegs. Halt kurz an – ich messe, sobald du stehst …`, null, SETTLE_MS + 2000);
+  const until = Date.now() + SETTLE_MS;
+  let latest = fix, lastNew = Date.now();
+  while (Date.now() < until && Date.now() - lastNew < STALE_SAMPLE_MS) {
+    const prev = latest;
+    latest = await nextFix(latest);
+    if (latest && prev && latest.ts !== prev.ts) lastNew = Date.now();
+    if (!isMoving(latest)) break;
+  }
+  el.banner.hidden = true;
+  return latest;
+}
+
+async function averageFix(first) {
+  const samples = [];
+  let lastNew = Date.now();
+  const add = f => {
+    if (!f) return;
+    const last = samples[samples.length - 1];
+    if (last && last.ts === f.ts) return;   // derselbe Wert nochmal
+    samples.push({ lat: f.lat, lon: f.lon, acc: f.acc, ts: f.ts });
+    lastNew = Date.now();
+  };
+  add(first);
+  const until = Date.now() + AVG_MS;
+  let latest = first;
+  while (Date.now() < until && Date.now() - lastNew < STALE_SAMPLE_MS) {
+    showBanner(`Messe deinen Standort – noch ${Math.ceil((until - Date.now()) / 1000)} s stehen bleiben …`, null, 4000);
+    latest = await nextFix(latest);
+    if (isMoving(latest)) break;   // fährt schon wieder: nehmen, was da ist
+    add(latest);
+  }
+  el.banner.hidden = true;
+  return samples.length ? blendFixes(samples) : first;
+}
+
 async function finishCalibGps(px, py) {
   setMode(null);
   if (posAge() > FIX_MAX_AGE_MS) {
     showBanner('Warte auf eine frische GPS-Position – bleib bitte kurz stehen …', null, 25000);
   }
-  const fix = await getFreshFix();
+  let fix = await getFreshFix();
   el.banner.hidden = true;
   if (!fix) {
     showBanner('Keine aktuelle Position bekommen. Unter freiem Himmel warten, bis oben eine Genauigkeit steht, dann nochmal.', 'bad', 10000);
     return;
   }
 
+  fix = await awaitStandstill(fix);
+  if (isMoving(fix)) {
+    openActions(`Du fährst noch (${kmh(fix)} km/h)`, [
+      { label: '⏸ Ich halte an – jetzt messen', run: () => finishCalibGps(px, py) },
+      { label: 'Trotzdem speichern', danger: true, run: () => commitCalibFix(px, py, fix) }
+    ], 'In der Fahrt hinkt die GPS-Position der Wirklichkeit hinterher – bei Rollertempo um zehn Meter und mehr. Genau dieser Versatz landet sonst in der Kalibrierung und verschiebt später die ganze Karte.');
+    return;
+  }
+
+  commitCalibFix(px, py, await averageFix(fix));
+}
+
+function commitCalibFix(px, py, fix) {
   const clash = calibConflict(px, py, fix.lat, fix.lon);
   if (clash) {
     const env = state.env || detectEnv();
@@ -2336,6 +2475,7 @@ $('#calib-clear').onclick = () => {
   }]);
 };
 $('#diag-share').onclick = shareDiagnostics;
+$('#calib-share').onclick = shareCalibration;
 $('#data-export').onclick = exportData;
 $('#data-import').onclick = () => el.fileImport.click();
 $('#opt-compass').onchange = ev => {
@@ -2442,7 +2582,7 @@ async function boot() {
 
 window.__app = {
   state, view, recompute, renderAll, setPlanFromBlob, addCalibPoint,
-  fitView, latLonToPlan, openPoi, loadPois
+  fitView, latLonToPlan, openPoi, loadPois, calibrationJson
 };
 
 boot();
