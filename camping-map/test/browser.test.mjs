@@ -317,6 +317,11 @@ assert.ok(dToB < dToA, 'gespeichert wird der frische Standort, nicht der eingefr
 assert.ok(Math.abs(saved.lat - POS_B.lat) < 1e-5, `Breite ${saved.lat} statt ${POS_B.lat}`);
 
 // 14) Zweiter Punkt mit unveränderter Position, aber weit weg getippt -> Nachfrage
+// Chromes gefälschter Standort trägt den Zeitstempel vom Setzen und altert
+// danach vor sich hin; ein echtes Gerät stempelt jede Sekunde neu. Also
+// denselben Ort noch einmal setzen – inhaltlich ändert sich nichts, der
+// Standort ist weiterhin POS_B.
+await ctx.setGeolocation({ latitude: POS_B.lat, longitude: POS_B.lon, accuracy: 6 });
 await stale.locator('#btn-calib').click();
 await stale.waitForTimeout(200);
 // Weit entfernte Stelle *auf dem Plan* treffen, nicht daneben
@@ -508,6 +513,93 @@ for (const [ua, expectHint] of [[UA_WEBVIEW, true], [UA_SAFARI, false]]) {
     await p2.screenshot({ path: `${OUT}/11-diagnose.png` });
   }
   await c2.close();
+}
+
+/* 17) Kalibrieren vom Roller aus: In der Fahrt hinkt die GPS-Position
+   hinterher, deshalb wartet die App auf den Stillstand und mittelt danach
+   mehrere Messungen. Dafür braucht es einen Standortdienst, der eine
+   Geschwindigkeit meldet – den stellt Playwright nicht, also ein eigener. */
+{
+  const scootErrors = [];
+  const c3 = await browser.newContext({
+    viewport: { width: 412, height: 892 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
+    permissions: ['geolocation'], geolocation: { latitude: POS_A.lat, longitude: POS_A.lon, accuracy: 6 }
+  });
+  const scoot = await c3.newPage();
+  scoot.on('pageerror', e => scootErrors.push(String(e)));
+  scoot.on('console', m => { if (m.type() === 'error') scootErrors.push(m.text()); });
+
+  // Ein Empfänger, der im halben Sekundentakt meldet, streut und – anders
+  // als Playwrights Attrappe – eine Geschwindigkeit mitliefert.
+  await scoot.addInitScript(({ lat, lon }) => {
+    window.__fake = { speed: 8, n: 0 };            // 8 m/s ≈ 29 km/h
+    const JITTER = [[5, -4], [-6, 3], [3, 6], [-4, -5], [2, 2]];   // Meter, Mittel ≈ 0
+    const make = () => {
+      const [dn, de] = JITTER[window.__fake.n++ % JITTER.length];
+      return {
+        coords: {
+          latitude: lat + dn / 111320,
+          longitude: lon + de / (111320 * Math.cos(lat * Math.PI / 180)),
+          accuracy: 6, altitude: null, altitudeAccuracy: null,
+          heading: null, speed: window.__fake.speed
+        },
+        timestamp: Date.now()
+      };
+    };
+    navigator.geolocation.getCurrentPosition = ok => setTimeout(() => ok(make()), 60);
+    navigator.geolocation.watchPosition = ok => {
+      setTimeout(() => ok(make()), 60);
+      return setInterval(() => ok(make()), 500);
+    };
+    navigator.geolocation.clearWatch = id => clearInterval(id);
+  }, { lat: POS_A.lat, lon: POS_A.lon });
+
+  await scoot.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+  await scoot.evaluate(() => { indexedDB.deleteDatabase('campmap'); localStorage.clear(); });
+  await scoot.reload({ waitUntil: 'networkidle' });
+  await scoot.locator('#file-plan').setInputFiles(path.join(here, 'demo-plan.png'));
+  await scoot.waitForFunction(
+    () => window.__app.state.plan && window.__app.state.plan.w === 1200, null, { timeout: 15000 });
+  await scoot.waitForFunction(() => window.__app.state.pos !== null, null, { timeout: 15000 });
+  assert.equal(await scoot.evaluate(() => window.__app.state.pos.speed), 8, 'Attrappe meldet Tempo');
+
+  // Punkt setzen, während er noch fährt
+  await scoot.locator('#btn-calib').click();
+  await scoot.waitForTimeout(200);
+  const b3 = await scoot.locator('#stage').boundingBox();
+  await scoot.mouse.click(b3.x + b3.width / 2, b3.y + b3.height / 2);
+  await scoot.waitForFunction(
+    () => /Halt kurz an/.test(document.querySelector('#banner').textContent), null, { timeout: 15000 });
+  assert.match(await scoot.locator('#banner').textContent(), /29 km\/h/, 'Tempo wird benannt');
+  assert.equal(await scoot.evaluate(() => window.__app.state.calib.length), 0,
+    'aus der Fahrt heraus wird nichts gespeichert');
+
+  // Er hält an – jetzt darf gemessen werden
+  await scoot.evaluate(() => { window.__fake.speed = 0; });
+  await scoot.waitForFunction(
+    () => window.__app.state.calib.length === 1, null, { timeout: 20000 });
+  const pt = await scoot.evaluate(() => window.__app.state.calib[0]);
+  const off = Math.hypot((pt.lat - POS_A.lat) * 111132.95,
+    (pt.lon - POS_A.lon) * 111319.49 * Math.cos(POS_A.lat * Math.PI / 180));
+  assert.ok(off < 3, `gemittelt liegt der Punkt bei ${off.toFixed(1)} m statt der Einzelstreuung von 6 m`);
+  assert.match(await scoot.locator('#banner').textContent(), /Punkt 1 gespeichert/,
+    'nach dem Speichern steht dort die nächste Anweisung, nicht mehr der Anhalte-Hinweis');
+  // Die erlaufenen Punkte müssen sich weitergeben lassen – und zwar genau in
+  // dem Format, das plan/calibration.json beim Start wieder einliest.
+  await scoot.locator('#btn-menu').click();
+  await scoot.waitForTimeout(300);
+  assert.equal(await scoot.locator('#calib-share').count(), 1, 'Knopf zum Weitergeben ist da');
+  const shared = JSON.parse(await scoot.evaluate(() => window.__app.calibrationJson()));
+  assert.equal(shared.points.length, 1);
+  assert.deepEqual(shared.planSize, [1200, 800]);
+  const sp = shared.points[0];
+  assert.ok(sp.u > 0 && sp.u < 1 && sp.v > 0 && sp.v < 1, `Plananteile ${sp.u}/${sp.v} zwischen 0 und 1`);
+  assert.ok(Math.abs(sp.lat - POS_A.lat) < 1e-4 && Math.abs(sp.lon - POS_A.lon) < 1e-4);
+  await scoot.locator('#sheet-close').click();
+  await scoot.waitForTimeout(200);
+  await scoot.screenshot({ path: `${OUT}/12-roller.png` });
+  assert.deepEqual(scootErrors, [], 'keine Fehler beim Kalibrieren aus der Fahrt:\n' + scootErrors.join('\n'));
+  await c3.close();
 }
 
 assert.deepEqual(errors, [], 'keine Konsolenfehler:\n' + errors.join('\n'));

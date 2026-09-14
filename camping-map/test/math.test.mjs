@@ -15,7 +15,8 @@ const mathSrc = src.slice(0, src.indexOf('window.CampMath'));
 const M = new Function(mathSrc + `
   return { project, unproject, solveTransform, applyTransform, invertTransform,
            latLonToPlan, planToLatLon, geoDistance, bearingDeg, parseCoords,
-           compassName, calibSpread, assessFrozen, solveHomography, metricsAt };
+           compassName, calibSpread, assessFrozen, solveHomography, metricsAt,
+           isMoving, blendFixes };
 `)();
 
 /* Ein künstlicher, exakt bekannter Plan: Maßstab und Nordrichtung vorgegeben. */
@@ -367,4 +368,55 @@ test('Peilung zeigt in die richtige Richtung', () => {
   assert.ok(Math.abs(b) < 0.5 || Math.abs(b - 360) < 0.5, `Nord erwartet, war ${b}`);
   const e = M.bearingDeg(45.29, 13.58, 45.29, 13.60);
   assert.ok(Math.abs(e - 90) < 0.5, `Ost erwartet, war ${e}`);
+});
+
+/* ---- Kalibrieren aus der Fahrt heraus ---- */
+
+test('Fahrt wird erkannt, Stillstand und fehlende Angabe nicht', () => {
+  assert.equal(M.isMoving({ speed: 4.2 }), true, '15 km/h ist Fahrt');
+  assert.equal(M.isMoving({ speed: 0.3 }), false, 'Zappeln im Stand');
+  assert.equal(M.isMoving({ speed: 0 }), false);
+  // Viele Geräte melden gar keine Geschwindigkeit – dann darf nichts blockieren
+  assert.equal(M.isMoving({ speed: null }), false);
+  assert.equal(M.isMoving({}), false);
+  assert.equal(M.isMoving({ speed: NaN }), false);
+  assert.equal(M.isMoving(null), false);
+});
+
+test('Gemittelte Messung liegt naeher an der Wahrheit als die Einzelwerte', () => {
+  const lat0 = 45.2938, lon0 = 13.5897;
+  // Streuung um den wahren Punkt, wie sie GPS im Stand liefert
+  const noise = [[8, -6], [-7, 5], [4, 9], [-5, -8], [6, 3]];
+  const samples = noise.map(([dn, de], i) => ({
+    lat: lat0 + dn / 111320,
+    lon: lon0 + de / (111320 * Math.cos(lat0 * Math.PI / 180)),
+    acc: 8, ts: 1000 + i
+  }));
+  const avg = M.blendFixes(samples);
+  const err = M.geoDistance(lat0, lon0, avg.lat, avg.lon);
+  const single = samples.map(s => M.geoDistance(lat0, lon0, s.lat, s.lon));
+  assert.ok(err < Math.min(...single), `Mittel ${err.toFixed(1)} m besser als bester Einzelwert`);
+  assert.equal(avg.n, 5);
+  assert.equal(avg.acc, 8, 'gemeldete Genauigkeit wird nicht schoengerechnet');
+  assert.equal(avg.speed, 0);
+});
+
+test('Grobe Ausreisser fliegen aus der Mittelung', () => {
+  const lat0 = 45.2938, lon0 = 13.5897;
+  const good = [0, 1, 2].map(i => ({ lat: lat0 + i * 1e-6, lon: lon0, acc: 6, ts: i }));
+  const bad = { lat: lat0 + 0.004, lon: lon0 + 0.004, acc: 80, ts: 9 };   // 500 m daneben
+  const avg = M.blendFixes(good.concat([bad]));
+  assert.equal(avg.n, 3, 'der 80-m-Wert zaehlt nicht mit');
+  assert.ok(M.geoDistance(lat0, lon0, avg.lat, avg.lon) < 1);
+});
+
+test('Genauere Messung zieht den Mittelwert staerker', () => {
+  const lat0 = 45.2938, lon0 = 13.5897;
+  const grob = { lat: lat0 + 20 / 111320, lon: lon0, acc: 10, ts: 1 };
+  const fein = { lat: lat0, lon: lon0, acc: 5, ts: 2 };
+  const avg = M.blendFixes([grob, fein]);
+  const zurFeinen = M.geoDistance(fein.lat, fein.lon, avg.lat, avg.lon);
+  const zurGroben = M.geoDistance(grob.lat, grob.lon, avg.lat, avg.lon);
+  assert.ok(zurFeinen < zurGroben, 'naeher am genaueren Wert');
+  assert.equal(avg.acc, 5);
 });
