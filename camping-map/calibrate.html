@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Passpunkte setzen – Platzkarte</title>
+<meta name="theme-color" content="#0e1116">
+<link rel="stylesheet" href="app.css">
+<style>
+  html, body { overflow: auto; height: auto; }
+  body { padding: 0 0 40px; }
+  header.top {
+    position: sticky; top: 0; z-index: 5;
+    background: rgba(14,17,22,.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+    padding: 12px 14px calc(12px + var(--safe-b, 0px));
+  }
+  header.top h1 { font-size: 17px; margin: 0 0 4px; }
+  .steps-bar { display: flex; gap: 6px; margin-top: 10px; }
+  .steps-bar span {
+    flex: 1; height: 5px; border-radius: 3px; background: var(--surface-2);
+  }
+  .steps-bar span.done { background: var(--good); }
+  .steps-bar span.now { background: var(--accent); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 14px; }
+  .pane {
+    position: relative;
+    margin: 14px 0;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #0f131a;
+    touch-action: none;
+    height: 44vh;
+    min-height: 260px;
+  }
+  .pane .label {
+    position: absolute; z-index: 3; left: 10px; top: 10px;
+    background: rgba(14,17,22,.85);
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    padding: 5px 9px; font-size: 12px; font-weight: 600;
+  }
+  .pane .attrib {
+    position: absolute; z-index: 3; right: 6px; bottom: 4px;
+    font-size: 10px; color: #9fb0c4;
+    background: rgba(14,17,22,.7); padding: 2px 6px; border-radius: 6px;
+  }
+  .pane .attrib a { color: inherit; }
+  .cross {
+    position: absolute; z-index: 4; left: 50%; top: 50%;
+    width: 54px; height: 54px; margin: -27px 0 0 -27px;
+    pointer-events: none;
+  }
+  .cross::before, .cross::after {
+    content: ''; position: absolute; background: #ff1a5a;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.5);
+  }
+  .cross::before { left: 50%; top: 0; width: 2px; height: 100%; margin-left: -1px; }
+  .cross::after { top: 50%; left: 0; height: 2px; width: 100%; margin-top: -1px; }
+  .cross i {
+    position: absolute; left: 50%; top: 50%;
+    width: 22px; height: 22px; margin: -11px 0 0 -11px;
+    border: 2px solid #ff1a5a; border-radius: 50%;
+  }
+  #planLayer { position: absolute; transform-origin: 0 0; }
+  #planLayer img { display: block; max-width: none; }
+  #tiles { position: absolute; inset: 0; overflow: hidden; }
+  #tiles img { position: absolute; width: 256px; height: 256px; }
+  .zoomer { position: absolute; z-index: 3; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; }
+  .zoomer button {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: rgba(14,17,22,.85); border: 1px solid var(--line);
+    color: var(--text); font-size: 20px; cursor: pointer;
+  }
+  .src { display: flex; gap: 6px; margin: 0 0 10px; }
+  .src button {
+    flex: 1; padding: 9px; border-radius: 10px; cursor: pointer;
+    background: var(--surface-2); border: 1px solid var(--line); color: var(--text);
+    font: inherit; font-size: 13px;
+  }
+  .src button.on { border-color: var(--accent); background: #11385e; }
+  pre.out {
+    background: #0f131a; border: 1px solid var(--line); border-radius: 10px;
+    padding: 10px; font-size: 11px; overflow: auto; max-height: 220px; white-space: pre;
+  }
+  .done-box { display: none; }
+  .done-box.show { display: block; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <h1 id="stepName">Passpunkt 1 von 5</h1>
+    <p class="muted small" id="stepHint">Bring beide Fadenkreuze auf dieselbe Stelle.</p>
+    <div class="steps-bar" id="stepsBar"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="pane" id="planPane">
+    <div class="label">① Lageplan – hierhin</div>
+    <div id="planLayer"><img id="planImg" alt="Lageplan"></div>
+    <div class="cross"><i></i></div>
+    <div class="zoomer">
+      <button type="button" id="planIn">+</button>
+      <button type="button" id="planOut">−</button>
+    </div>
+  </div>
+
+  <div class="src">
+    <button type="button" data-src="sat" class="on">Luftbild</button>
+    <button type="button" data-src="osm">Karte (OSM)</button>
+  </div>
+
+  <div class="pane" id="mapPane">
+    <div class="label">② Luftbild – dieselbe Stelle</div>
+    <div id="tiles"></div>
+    <div class="cross"><i></i></div>
+    <div class="zoomer">
+      <button type="button" id="mapIn">+</button>
+      <button type="button" id="mapOut">−</button>
+    </div>
+    <div class="attrib" id="attrib"></div>
+  </div>
+
+  <p class="muted small" id="coords"></p>
+
+  <div class="row">
+    <button type="button" id="take" class="btn primary">Punkt übernehmen</button>
+    <button type="button" id="skip" class="btn ghost">Überspringen</button>
+  </div>
+
+  <div class="done-box" id="doneBox">
+    <section>
+      <h3>Fertig</h3>
+      <p id="doneText" class="muted small"></p>
+      <div class="row">
+        <button type="button" id="apply" class="btn primary">In die Karte übernehmen</button>
+        <button type="button" id="copy" class="btn ghost">JSON kopieren</button>
+      </div>
+      <pre class="out" id="outJson"></pre>
+      <p class="muted small">Das JSON gehört in <code>plan/calibration.json</code> unter „points“ – dann startet die Karte bei jedem fertig kalibriert.</p>
+    </section>
+  </div>
+
+  <section>
+    <h3>Wie das gemeint ist</h3>
+    <p class="muted small">Oben steht der Lageplan, unten das Luftbild. Beide lassen sich schieben und zoomen. Schieb sie so, dass in beiden Fadenkreuzen dieselbe Stelle liegt – dann „Punkt übernehmen“. Vier Punkte reichen, fünf sind besser.</p>
+    <p class="muted small">Nimm ebenerdige Stellen: Küstenlinie, Wegkreuzungen, Parkplatzecken. Keine Dächer – auf dem schrägen Luftbild des Plans liegt ein Dach mehrere Meter neben seinem Grundriss.</p>
+    <p class="muted small"><a href="./">Zurück zur Karte</a></p>
+  </section>
+</div>
+
+<script>
+/* Vorgegebene Stellen: Pixel im Lageplan (3200 x 2231) */
+const PLAN_W = 3200, PLAN_H = 2231;
+const STEPS = [
+  { x: 250,  y: 772,  name: 'Westspitze bei Kopalo Beach', hint: 'Die Landspitze ganz im Westen – im Luftbild die äußerste Felskante.' },
+  { x: 1722, y: 648,  name: 'Mole / Steg bei Sidro Beach', hint: 'Die Steinmole, die an der Nordküste ins Wasser ragt.' },
+  { x: 1662, y: 762,  name: 'Pool beim Sport Center', hint: 'Das Schwimmbecken – im Luftbild als blaue Fläche erkennbar.' },
+  { x: 2688, y: 1510, name: 'Parkplatz, Nordost-Ecke', hint: 'Die obere rechte Ecke der großen Parkfläche östlich der Rezeption.' },
+  { x: 3090, y: 880,  name: 'Ostspitze bei Crnika Beach', hint: 'Die Küstenspitze ganz im Osten, Richtung Lanterna.' }
+];
+const START = { lat: 45.2962, lon: 13.5905, zoom: 16 };
+
+const SOURCES = {
+  sat: {
+    url: (z, x, y) => `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${z}/${y}/${x}`,
+    attrib: 'Luftbild: Esri, Maxar, Earthstar Geographics',
+    max: 19
+  },
+  osm: {
+    url: (z, x, y) => `https://tile.openstreetmap.org/${z}/${x}/${y}.png`,
+    attrib: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>-Mitwirkende',
+    max: 19
+  }
+};
+
+const $ = s => document.querySelector(s);
+let stepIdx = 0;
+let source = 'sat';
+const results = [];
+
+/* ---------- Lageplan-Ansicht ---------- */
+const planView = { x: 0, y: 0, z: 1 };
+const planImg = $('#planImg');
+const planLayer = $('#planLayer');
+
+planImg.src = 'plan/camping-solaris-map.webp';
+planImg.onload = () => { planImg.width = PLAN_W; planImg.height = PLAN_H; showStep(0); };
+
+function planApply() {
+  planLayer.style.transform =
+    `translate3d(${planView.x}px, ${planView.y}px, 0) scale(${planView.z})`;
+}
+function planCenterOn(px, py) {
+  const r = $('#planPane').getBoundingClientRect();
+  planView.x = r.width / 2 - px * planView.z;
+  planView.y = r.height / 2 - py * planView.z;
+  planApply();
+}
+function planCrossPixel() {
+  const r = $('#planPane').getBoundingClientRect();
+  return {
+    x: (r.width / 2 - planView.x) / planView.z,
+    y: (r.height / 2 - planView.y) / planView.z
+  };
+}
+
+/* ---------- Kachelkarte (Web-Mercator) ---------- */
+const map = { lat: START.lat, lon: START.lon, zoom: START.zoom };
+
+const lonToX = (lon, z) => (lon + 180) / 360 * Math.pow(2, z);
+const latToY = (lat, z) => {
+  const r = lat * Math.PI / 180;
+  return (1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2 * Math.pow(2, z);
+};
+const xToLon = (x, z) => x / Math.pow(2, z) * 360 - 180;
+const yToLat = (y, z) => {
+  const n = Math.PI - 2 * Math.PI * y / Math.pow(2, z);
+  return 180 / Math.PI * Math.atan(0.5 * (Math.exp(n) - Math.exp(-n)));
+};
+
+function drawTiles() {
+  const pane = $('#mapPane').getBoundingClientRect();
+  const box = $('#tiles');
+  const z = map.zoom;
+  const cx = lonToX(map.lon, z) * 256;
+  const cy = latToY(map.lat, z) * 256;
+  const left = cx - pane.width / 2;
+  const top = cy - pane.height / 2;
+  const t0x = Math.floor(left / 256), t0y = Math.floor(top / 256);
+  const t1x = Math.floor((left + pane.width) / 256), t1y = Math.floor((top + pane.height) / 256);
+  const n = Math.pow(2, z);
+  const want = new Map();
+  for (let tx = t0x; tx <= t1x; tx++) {
+    for (let ty = t0y; ty <= t1y; ty++) {
+      if (ty < 0 || ty >= n) continue;
+      const wx = ((tx % n) + n) % n;
+      want.set(`${z}/${wx}/${ty}/${source}`, { z, x: wx, y: ty, px: tx * 256 - left, py: ty * 256 - top });
+    }
+  }
+  box.innerHTML = '';
+  for (const [key, t] of want) {
+    const img = document.createElement('img');
+    img.src = SOURCES[source].url(t.z, t.x, t.y);
+    img.style.left = t.px + 'px';
+    img.style.top = t.py + 'px';
+    img.loading = 'eager';
+    img.alt = '';
+    box.appendChild(img);
+  }
+  $('#attrib').innerHTML = SOURCES[source].attrib;
+  $('#coords').textContent =
+    `Fadenkreuz Luftbild: ${map.lat.toFixed(6)}, ${map.lon.toFixed(6)} · Zoom ${z}`;
+}
+
+function mapPanByPixels(dx, dy) {
+  const z = map.zoom;
+  const cx = lonToX(map.lon, z) * 256 - dx;
+  const cy = latToY(map.lat, z) * 256 - dy;
+  map.lon = xToLon(cx / 256, z);
+  map.lat = yToLat(cy / 256, z);
+  drawTiles();
+}
+
+function mapZoom(delta) {
+  const z = Math.max(12, Math.min(SOURCES[source].max, map.zoom + delta));
+  if (z === map.zoom) return;
+  map.zoom = z;
+  drawTiles();
+}
+
+/* ---------- Gesten für beide Flächen ---------- */
+function draggable(el, onPan, onPinch) {
+  const pts = new Map();
+  let last = null;
+  el.addEventListener('pointerdown', ev => {
+    try { el.setPointerCapture(ev.pointerId); } catch (err) { /* z.B. synthetische Events */ }
+    pts.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
+    last = null;
+  });
+  el.addEventListener('pointermove', ev => {
+    const p = pts.get(ev.pointerId);
+    if (!p) return;
+    const dx = ev.clientX - p.x, dy = ev.clientY - p.y;
+    p.x = ev.clientX; p.y = ev.clientY;
+    if (pts.size === 1) onPan(dx, dy);
+    else if (pts.size === 2 && onPinch) {
+      const [a, b] = [...pts.values()];
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (last != null) onPinch(d / last);
+      last = d;
+    }
+  });
+  const end = ev => { pts.delete(ev.pointerId); last = null; };
+  el.addEventListener('pointerup', end);
+  el.addEventListener('pointercancel', end);
+  el.addEventListener('wheel', ev => {
+    ev.preventDefault();
+    onPinch ? onPinch(ev.deltaY < 0 ? 1.25 : 0.8) : null;
+  }, { passive: false });
+}
+
+draggable($('#planPane'),
+  (dx, dy) => { planView.x += dx; planView.y += dy; planApply(); },
+  f => { planView.z = Math.max(0.15, Math.min(4, planView.z * f)); planApply(); });
+
+draggable($('#mapPane'),
+  (dx, dy) => mapPanByPixels(dx, dy),
+  f => mapZoom(f > 1 ? 1 : -1));
+
+$('#planIn').onclick = () => { planView.z = Math.min(4, planView.z * 1.4); planApply(); };
+$('#planOut').onclick = () => { planView.z = Math.max(0.15, planView.z / 1.4); planApply(); };
+$('#mapIn').onclick = () => mapZoom(1);
+$('#mapOut').onclick = () => mapZoom(-1);
+
+document.querySelectorAll('.src button').forEach(b => {
+  b.onclick = () => {
+    source = b.dataset.src;
+    document.querySelectorAll('.src button').forEach(x => x.classList.toggle('on', x === b));
+    if (map.zoom > SOURCES[source].max) map.zoom = SOURCES[source].max;
+    drawTiles();
+  };
+});
+
+/* ---------- Ablauf ---------- */
+function renderBar() {
+  const bar = $('#stepsBar');
+  bar.innerHTML = '';
+  STEPS.forEach((_, i) => {
+    const s = document.createElement('span');
+    if (results.some(r => r.step === i)) s.className = 'done';
+    else if (i === stepIdx) s.className = 'now';
+    bar.appendChild(s);
+  });
+}
+
+function showStep(i) {
+  stepIdx = i;
+  if (i >= STEPS.length) return finish();
+  const st = STEPS[i];
+  $('#stepName').textContent = `Passpunkt ${i + 1} von ${STEPS.length}: ${st.name}`;
+  $('#stepHint').textContent = st.hint;
+  planView.z = 1;
+  planCenterOn(st.x, st.y);
+  drawTiles();
+  renderBar();
+}
+
+$('#take').onclick = () => {
+  const p = planCrossPixel();
+  if (p.x < 0 || p.y < 0 || p.x > PLAN_W || p.y > PLAN_H) {
+    alert('Das Fadenkreuz im Lageplan liegt außerhalb des Bildes.');
+    return;
+  }
+  results.push({
+    step: stepIdx,
+    label: STEPS[stepIdx].name,
+    u: +(p.x / PLAN_W).toFixed(6),
+    v: +(p.y / PLAN_H).toFixed(6),
+    lat: +map.lat.toFixed(7),
+    lon: +map.lon.toFixed(7)
+  });
+  showStep(stepIdx + 1);
+};
+
+$('#skip').onclick = () => showStep(stepIdx + 1);
+
+function finish() {
+  $('#stepName').textContent = `${results.length} von ${STEPS.length} Punkten gesetzt`;
+  $('#stepHint').textContent = results.length >= 4
+    ? 'Reicht für die perspektivische Berechnung.'
+    : 'Weniger als vier Punkte – die Perspektive lässt sich damit noch nicht ausgleichen.';
+  renderBar();
+  $('#doneBox').classList.add('show');
+  $('#doneText').textContent = results.length >= 4
+    ? 'Übernimm die Punkte in die Karte und prüfe dort unter Kalibrierung den Kontrollfehler.'
+    : 'Mindestens vier Punkte setzen – sonst bleibt es bei der ungenauen Darstellung.';
+  const json = results.map(({ label, u, v, lat, lon }) => ({ label, u, v, lat, lon }));
+  $('#outJson').textContent = JSON.stringify(json, null, 2);
+  $('#doneBox').scrollIntoView({ behavior: 'smooth' });
+}
+
+$('#apply').onclick = () => {
+  try {
+    const KEY = 'campmap.state.v1';
+    const raw = localStorage.getItem(KEY);
+    const state = raw ? JSON.parse(raw) : {};
+    state.calib = results.map((r, i) => ({
+      id: 'p' + i, u: r.u, v: r.v, lat: r.lat, lon: r.lon,
+      acc: null, ts: Date.now(), label: r.label
+    }));
+    localStorage.setItem(KEY, JSON.stringify(state));
+    location.href = './';
+  } catch (err) {
+    alert('Konnte die Punkte nicht übernehmen: ' + err.message);
+  }
+};
+
+$('#copy').onclick = async () => {
+  try {
+    await navigator.clipboard.writeText($('#outJson').textContent);
+    $('#copy').textContent = 'Kopiert';
+    setTimeout(() => { $('#copy').textContent = 'JSON kopieren'; }, 2000);
+  } catch (err) {
+    alert('Kopieren nicht möglich – Text von Hand markieren.');
+  }
+};
+
+window.addEventListener('resize', () => { drawTiles(); });
+window.__cal = { STEPS, results, planCrossPixel, map, showStep, finish };
+</script>
+</body>
+</html>
