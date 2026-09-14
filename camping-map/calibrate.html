@@ -65,7 +65,19 @@
     border: 2px solid #ff1a5a; border-radius: 50%;
   }
   #planLayer { position: absolute; transform-origin: 0 0; }
-  #planLayer img { display: block; max-width: none; }
+  /* Das Bild darf keine Zeigerereignisse bekommen: sonst startet der Browser
+     ein natives Bild-Ziehen bzw. iOS blendet „Bild sichern“ ein und die
+     Geste bricht ab. Die Ereignisse gehören dem Rahmen. */
+  #planLayer img {
+    display: block; max-width: none;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+  .pane {
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
   #tilesClip { position: absolute; inset: 0; overflow: hidden; }
   /* Kacheln fangen keine Zeigerereignisse ab – sonst bricht die Geste ab,
      sobald beim Nachladen das Element unter dem Finger ersetzt wird. */
@@ -86,10 +98,13 @@
   }
   .zoomer { position: absolute; z-index: 3; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; }
   .zoomer button {
-    width: 40px; height: 40px; border-radius: 10px;
+    width: 44px; height: 44px; border-radius: 10px;
     background: rgba(14,17,22,.85); border: 1px solid var(--line);
     color: var(--text); font-size: 20px; cursor: pointer;
+    touch-action: manipulation;   /* Tippen soll tippen bleiben */
   }
+  .rotbar { touch-action: manipulation; }
+  .rotbar input { touch-action: auto; height: 28px; }
   .src { display: flex; gap: 6px; margin: 0 0 10px; }
   .src button {
     flex: 1; padding: 9px; border-radius: 10px; cursor: pointer;
@@ -119,7 +134,7 @@
 <div class="wrap">
   <div class="pane" id="planPane">
     <div class="label">① Lageplan – hierhin</div>
-    <div id="planLayer"><img id="planImg" alt="Lageplan"></div>
+    <div id="planLayer"><img id="planImg" alt="Lageplan" draggable="false"></div>
     <div class="cross"><i></i></div>
     <div class="zoomer">
       <button type="button" id="planIn">+</button>
@@ -375,6 +390,9 @@ function draggable(el, onPan, onPinch, onEnd) {
   const pts = new Map();
   let last = null;
   el.addEventListener('pointerdown', ev => {
+    // Knöpfe und der Drehregler liegen im selben Rahmen – die bedienen sich
+    // selbst und dürfen nicht als Schiebegeste enden.
+    if (ev.target.closest('button, input, a, label, .rotbar')) return;
     try { el.setPointerCapture(ev.pointerId); } catch (err) { /* z.B. synthetische Events */ }
     pts.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
     last = null;
@@ -497,6 +515,8 @@ function showStep(i) {
   $('#stepHint').textContent = st.hint;
   planView.z = 1;
   planCenterOn(st.x, st.y);
+  // Nach dem ersten Aufbau steht die Höhe des Rahmens erst im nächsten Frame
+  requestAnimationFrame(() => planCenterOn(st.x, st.y));
 
   const guess = guessFromResults(st.x, st.y);
   if (guess) {
