@@ -5,7 +5,7 @@
    Alles lokal: kein Server, keine Konten, kein Tracking.
    ============================================================ */
 
-const APP_VERSION = '1.6.1';
+const APP_VERSION = '1.6.2';
 
 /* Ein Standortwert gilt nur kurz als aktuell: iOS lässt watchPosition
    einschlafen, sobald das Display aus ist. Wer dann am anderen Ende des
