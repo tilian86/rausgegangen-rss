@@ -66,8 +66,24 @@
   }
   #planLayer { position: absolute; transform-origin: 0 0; }
   #planLayer img { display: block; max-width: none; }
-  #tiles { position: absolute; inset: 0; overflow: hidden; }
-  #tiles img { position: absolute; width: 256px; height: 256px; }
+  #tilesClip { position: absolute; inset: 0; overflow: hidden; }
+  /* Kacheln fangen keine Zeigerereignisse ab – sonst bricht die Geste ab,
+     sobald beim Nachladen das Element unter dem Finger ersetzt wird. */
+  #tiles { position: absolute; left: 0; top: 0; transform-origin: 0 0; pointer-events: none; }
+  #tiles img { position: absolute; width: 256px; height: 256px; pointer-events: none; }
+  .rotbar {
+    position: absolute; z-index: 3; left: 10px; right: 10px; bottom: 8px;
+    display: flex; align-items: center; gap: 10px;
+    background: rgba(14,17,22,.85); border: 1px solid var(--line);
+    border-radius: 10px; padding: 7px 10px;
+  }
+  .rotbar input { flex: 1; accent-color: var(--accent); }
+  .rotbar span { font-size: 12px; color: var(--muted); min-width: 62px; }
+  .tilewarn {
+    position: absolute; z-index: 4; left: 10px; right: 10px; top: 56px;
+    background: rgba(242,104,92,.16); border: 1px solid rgba(242,104,92,.5);
+    color: #f9c0ba; border-radius: 10px; padding: 9px 11px; font-size: 12.5px;
+  }
   .zoomer { position: absolute; z-index: 3; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; }
   .zoomer button {
     width: 40px; height: 40px; border-radius: 10px;
@@ -95,6 +111,7 @@
   <div class="wrap">
     <h1 id="stepName">Passpunkt 1 von 5</h1>
     <p class="muted small" id="stepHint">Bring beide Fadenkreuze auf dieselbe Stelle.</p>
+    <p class="muted small">Der Plan ist gegen Norden verdreht – mit dem Regler unter der Karte gleichst du die Richtung an. Ab dem zweiten Punkt stellt sich die Karte von selbst ungefähr richtig.</p>
     <div class="steps-bar" id="stepsBar"></div>
   </div>
 </header>
@@ -117,11 +134,16 @@
 
   <div class="pane" id="mapPane">
     <div class="label">② Luftbild – dieselbe Stelle</div>
-    <div id="tiles"></div>
+    <div id="tilesClip"><div id="tiles"></div></div>
     <div class="cross"><i></i></div>
     <div class="zoomer">
       <button type="button" id="mapIn">+</button>
       <button type="button" id="mapOut">−</button>
+    </div>
+    <div class="tilewarn" id="tilewarn" hidden></div>
+    <div class="rotbar">
+      <span id="rotLabel">Drehen 0°</span>
+      <input type="range" id="rot" min="-180" max="180" step="1" value="0">
     </div>
     <div class="attrib" id="attrib"></div>
   </div>
@@ -164,7 +186,9 @@ const STEPS = [
   { x: 2688, y: 1510, name: 'Parkplatz, Nordost-Ecke', hint: 'Die obere rechte Ecke der großen Parkfläche östlich der Rezeption.' },
   { x: 3090, y: 880,  name: 'Ostspitze bei Crnika Beach', hint: 'Die Küstenspitze ganz im Osten, Richtung Lanterna.' }
 ];
-const START = { lat: 45.2962, lon: 13.5905, zoom: 16 };
+/* Startdrehung: Der Lageplan ist gegenüber Norden verdreht. Der Regler unter
+   der Karte gleicht das an – der Startwert ist nur eine erste Näherung. */
+const START = { lat: 45.2962, lon: 13.5905, zoom: 16, rot: 0 };
 
 const SOURCES = {
   sat: {
@@ -211,7 +235,7 @@ function planCrossPixel() {
 }
 
 /* ---------- Kachelkarte (Web-Mercator) ---------- */
-const map = { lat: START.lat, lon: START.lon, zoom: START.zoom };
+const map = { lat: START.lat, lon: START.lon, zoom: START.zoom, rot: START.rot };
 
 const lonToX = (lon, z) => (lon + 180) / 360 * Math.pow(2, z);
 const latToY = (lat, z) => {
@@ -224,58 +248,130 @@ const yToLat = (y, z) => {
   return 180 / Math.PI * Math.atan(0.5 * (Math.exp(n) - Math.exp(-n)));
 };
 
+/* Die Kacheln werden für einen Bereich gebaut, der deutlich größer ist als
+   das Fenster (Drehung braucht die Diagonale, Schieben etwas Vorrat).
+   Während des Schiebens wird nur der Container verschoben – kein Neuaufbau,
+   damit die Geste nicht abreißt. */
+const pan = { x: 0, y: 0 };     // Verschiebung seit dem letzten Neuaufbau
+let tilesLoaded = 0, tilesAsked = 0, warnTimer = null;
+
+function paneSize() {
+  const r = $('#mapPane').getBoundingClientRect();
+  return { w: r.width, h: r.height };
+}
+
+function applyTilesTransform() {
+  $('#tiles').style.transform =
+    `translate(${pan.x}px, ${pan.y}px) rotate(${map.rot}deg)`;
+  const s = paneSize();
+  $('#tiles').style.transformOrigin = `${s.w / 2 - pan.x}px ${s.h / 2 - pan.y}px`;
+}
+
 function drawTiles() {
-  const pane = $('#mapPane').getBoundingClientRect();
+  const s = paneSize();
   const box = $('#tiles');
   const z = map.zoom;
+  // Puffer: Diagonale abdecken, damit auch gedreht nichts fehlt
+  const pad = Math.ceil(Math.hypot(s.w, s.h) / 2 - Math.min(s.w, s.h) / 2) + 256;
   const cx = lonToX(map.lon, z) * 256;
   const cy = latToY(map.lat, z) * 256;
-  const left = cx - pane.width / 2;
-  const top = cy - pane.height / 2;
-  const t0x = Math.floor(left / 256), t0y = Math.floor(top / 256);
-  const t1x = Math.floor((left + pane.width) / 256), t1y = Math.floor((top + pane.height) / 256);
+  const left = cx - s.w / 2 - pad;
+  const top = cy - s.h / 2 - pad;
+  const wide = s.w + pad * 2, high = s.h + pad * 2;
   const n = Math.pow(2, z);
-  const want = new Map();
-  for (let tx = t0x; tx <= t1x; tx++) {
-    for (let ty = t0y; ty <= t1y; ty++) {
+
+  box.innerHTML = '';
+  tilesLoaded = 0; tilesAsked = 0;
+  for (let tx = Math.floor(left / 256); tx <= Math.floor((left + wide) / 256); tx++) {
+    for (let ty = Math.floor(top / 256); ty <= Math.floor((top + high) / 256); ty++) {
       if (ty < 0 || ty >= n) continue;
       const wx = ((tx % n) + n) % n;
-      want.set(`${z}/${wx}/${ty}/${source}`, { z, x: wx, y: ty, px: tx * 256 - left, py: ty * 256 - top });
+      const img = document.createElement('img');
+      img.src = SOURCES[source].url(z, wx, ty);
+      img.style.left = (tx * 256 - left - pad) + 'px';
+      img.style.top = (ty * 256 - top - pad) + 'px';
+      img.alt = '';
+      img.decoding = 'async';
+      tilesAsked++;
+      img.onload = () => { tilesLoaded++; $('#tilewarn').hidden = true; };
+      box.appendChild(img);
     }
   }
-  box.innerHTML = '';
-  for (const [key, t] of want) {
-    const img = document.createElement('img');
-    img.src = SOURCES[source].url(t.z, t.x, t.y);
-    img.style.left = t.px + 'px';
-    img.style.top = t.py + 'px';
-    img.loading = 'eager';
-    img.alt = '';
-    box.appendChild(img);
-  }
+  pan.x = 0; pan.y = 0;
+  applyTilesTransform();
   $('#attrib').innerHTML = SOURCES[source].attrib;
+  updateCoords();
+
+  // Lädt gar nichts, ist meist die Quelle blockiert – dann umschalten
+  clearTimeout(warnTimer);
+  warnTimer = setTimeout(() => {
+    if (tilesLoaded === 0 && tilesAsked > 0) {
+      $('#tilewarn').hidden = false;
+      $('#tilewarn').textContent = source === 'sat'
+        ? 'Das Luftbild lädt nicht (Netz oder Anbieter blockiert). Schalte oben auf „Karte (OSM)“ – dort siehst du Küstenlinie und Wege.'
+        : 'Die Karte lädt nicht. Internetverbindung prüfen.';
+    }
+  }, 4000);
+}
+
+function updateCoords() {
   $('#coords').textContent =
-    `Fadenkreuz Luftbild: ${map.lat.toFixed(6)}, ${map.lon.toFixed(6)} · Zoom ${z}`;
+    `Fadenkreuz Luftbild: ${map.lat.toFixed(6)}, ${map.lon.toFixed(6)} · Zoom ${map.zoom}`
+    + (map.rot ? ` · gedreht ${map.rot}°` : '');
+}
+
+/* Bildschirm-Verschiebung in Kartenkoordinaten: Drehung herausrechnen. */
+function commitPan() {
+  if (!pan.x && !pan.y) return;
+  const a = -map.rot * Math.PI / 180;
+  const dx = pan.x * Math.cos(a) - pan.y * Math.sin(a);
+  const dy = pan.x * Math.sin(a) + pan.y * Math.cos(a);
+  const z = map.zoom;
+  map.lon = xToLon((lonToX(map.lon, z) * 256 - dx) / 256, z);
+  map.lat = yToLat((latToY(map.lat, z) * 256 - dy) / 256, z);
+  pan.x = 0; pan.y = 0;
 }
 
 function mapPanByPixels(dx, dy) {
+  pan.x += dx; pan.y += dy;
+  applyTilesTransform();
+  // Mittelpunkt live mitführen, ohne die Kacheln neu zu bauen
+  const a = -map.rot * Math.PI / 180;
+  const mx = pan.x * Math.cos(a) - pan.y * Math.sin(a);
+  const my = pan.x * Math.sin(a) + pan.y * Math.cos(a);
   const z = map.zoom;
-  const cx = lonToX(map.lon, z) * 256 - dx;
-  const cy = latToY(map.lat, z) * 256 - dy;
-  map.lon = xToLon(cx / 256, z);
-  map.lat = yToLat(cy / 256, z);
+  const shown = {
+    lon: xToLon((lonToX(map.lon, z) * 256 - mx) / 256, z),
+    lat: yToLat((latToY(map.lat, z) * 256 - my) / 256, z)
+  };
+  $('#coords').textContent =
+    `Fadenkreuz Luftbild: ${shown.lat.toFixed(6)}, ${shown.lon.toFixed(6)} · Zoom ${z}`
+    + (map.rot ? ` · gedreht ${map.rot}°` : '');
+}
+
+function mapSettle() {          // nach dem Loslassen: Kacheln nachziehen
+  commitPan();
   drawTiles();
 }
 
 function mapZoom(delta) {
+  commitPan();
   const z = Math.max(12, Math.min(SOURCES[source].max, map.zoom + delta));
   if (z === map.zoom) return;
   map.zoom = z;
   drawTiles();
 }
 
+function setRotation(deg) {
+  commitPan();
+  map.rot = Math.round(deg);
+  $('#rotLabel').textContent = `Drehen ${map.rot}°`;
+  applyTilesTransform();
+  updateCoords();
+}
+
 /* ---------- Gesten für beide Flächen ---------- */
-function draggable(el, onPan, onPinch) {
+function draggable(el, onPan, onPinch, onEnd) {
   const pts = new Map();
   let last = null;
   el.addEventListener('pointerdown', ev => {
@@ -296,9 +392,14 @@ function draggable(el, onPan, onPinch) {
       last = d;
     }
   });
-  const end = ev => { pts.delete(ev.pointerId); last = null; };
+  const end = ev => {
+    pts.delete(ev.pointerId);
+    last = null;
+    if (pts.size === 0 && onEnd) onEnd();
+  };
   el.addEventListener('pointerup', end);
   el.addEventListener('pointercancel', end);
+  el.addEventListener('pointerleave', end);
   el.addEventListener('wheel', ev => {
     ev.preventDefault();
     onPinch ? onPinch(ev.deltaY < 0 ? 1.25 : 0.8) : null;
@@ -311,7 +412,10 @@ draggable($('#planPane'),
 
 draggable($('#mapPane'),
   (dx, dy) => mapPanByPixels(dx, dy),
-  f => mapZoom(f > 1 ? 1 : -1));
+  f => mapZoom(f > 1 ? 1 : -1),
+  () => mapSettle());
+
+$('#rot').addEventListener('input', ev => setRotation(+ev.target.value));
 
 $('#planIn').onclick = () => { planView.z = Math.min(4, planView.z * 1.4); planApply(); };
 $('#planOut').onclick = () => { planView.z = Math.max(0.15, planView.z / 1.4); planApply(); };
@@ -339,6 +443,52 @@ function renderBar() {
   });
 }
 
+/* Aus den bereits gesetzten Punkten lässt sich grob schätzen, wo die
+   nächste Stelle liegt und wie stark der Plan gegen Norden verdreht ist.
+   Ab dem zweiten Punkt springt die Karte deshalb fast richtig. */
+const M_LAT = 111132.95, M_LON = 111319.49;
+
+function guessFromResults(px, py) {
+  if (results.length < 2) return null;
+  const ref = { lat: results[0].lat, lon: results[0].lon };
+  const k = Math.cos(ref.lat * Math.PI / 180);
+  const pts = results.map(r => ({
+    px: r.u * PLAN_W, py: r.v * PLAN_H,
+    mx: (r.lon - ref.lon) * M_LON * k,
+    my: -(r.lat - ref.lat) * M_LAT
+  }));
+  // Ähnlichkeitstransformation Meter -> Planpixel, kleinste Quadrate
+  let mmx = 0, mmy = 0, mpx = 0, mpy = 0;
+  for (const p of pts) { mmx += p.mx; mmy += p.my; mpx += p.px; mpy += p.py; }
+  const n = pts.length;
+  mmx /= n; mmy /= n; mpx /= n; mpy /= n;
+  let sc = 0, ss = 0, norm = 0;
+  for (const p of pts) {
+    const ax = p.mx - mmx, ay = p.my - mmy, bx = p.px - mpx, by = p.py - mpy;
+    sc += bx * ax + by * ay;
+    ss += by * ax - bx * ay;
+    norm += ax * ax + ay * ay;
+  }
+  if (norm < 1e-6) return null;
+  const s = Math.hypot(sc, ss) / norm;
+  if (!(s > 0)) return null;
+  const ang = Math.atan2(ss, sc);
+  const a = s * Math.cos(ang), b = -s * Math.sin(ang);
+  const d = s * Math.sin(ang), e = s * Math.cos(ang);
+  const c = mpx - (a * mmx + b * mmy), f = mpy - (d * mmx + e * mmy);
+  // umkehren: Planpixel -> Meter -> Koordinate
+  const det = a * e - b * d;
+  if (Math.abs(det) < 1e-12) return null;
+  const dx = px - c, dy = py - f;
+  const mx = (e * dx - b * dy) / det, my = (-d * dx + a * dy) / det;
+  const northDeg = (Math.atan2(-b, e) * 180 / Math.PI + 360) % 360;
+  return {
+    lat: ref.lat - my / M_LAT,
+    lon: ref.lon + mx / (M_LON * k),
+    rot: Math.round(((northDeg + 180) % 360) - 180)
+  };
+}
+
 function showStep(i) {
   stepIdx = i;
   if (i >= STEPS.length) return finish();
@@ -347,11 +497,23 @@ function showStep(i) {
   $('#stepHint').textContent = st.hint;
   planView.z = 1;
   planCenterOn(st.x, st.y);
+
+  const guess = guessFromResults(st.x, st.y);
+  if (guess) {
+    map.lat = guess.lat;
+    map.lon = guess.lon;
+    map.zoom = Math.max(map.zoom, 18);
+    setRotation(guess.rot);
+    $('#rot').value = guess.rot;
+    $('#stepHint').textContent =
+      st.hint + ' — die Karte steht schon ungefähr richtig, nur noch feinjustieren.';
+  }
   drawTiles();
   renderBar();
 }
 
 $('#take').onclick = () => {
+  commitPan();                 // angefangene Verschiebung zuerst verrechnen
   const p = planCrossPixel();
   if (p.x < 0 || p.y < 0 || p.x > PLAN_W || p.y > PLAN_H) {
     alert('Das Fadenkreuz im Lageplan liegt außerhalb des Bildes.');
@@ -412,7 +574,7 @@ $('#copy').onclick = async () => {
 };
 
 window.addEventListener('resize', () => { drawTiles(); });
-window.__cal = { STEPS, results, planCrossPixel, map, showStep, finish };
+window.__cal = { STEPS, results, planCrossPixel, map, showStep, finish, setRotation, commitPan, drawTiles };
 </script>
 </body>
 </html>
