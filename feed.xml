@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Wed, 16 Sep 2026 09:04:01 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 19:22:08 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Epplehaus-Kneipe</title>
@@ -281,12 +281,12 @@ Offene Männerrunde am Freitagabend, 16.10.26. Männer-Talk</description>
       <pubDate>Fri, 16 Oct 2026 19:15:00 +0200</pubDate>
     </item>
     <item>
-      <title>Heimat to Hell</title>
+      <title>Heimat to Hell Festival</title>
       <link>https://www.epplehaus.de/event/heimat-to-hell-2/</link>
       <guid>https://www.epplehaus.de/event/heimat-to-hell-2/</guid>
-      <description>Sat, 17.10.2026 | 20:00 · Epplehaus
-DoomedDarkRock, Ulm × Oct. 17th #HeimatToHell Festival @epplehaus Tübingen s/w Ger × Antinational Doom/Hardcore/Dark/Metalpunk feast! Three people in overalls and one in armour are making slow music. A soundscape whose walls do not actually move, yet seem to be drawing ever closer. Claustrophobia, …</description>
-      <pubDate>Sat, 17 Oct 2026 20:00:00 +0200</pubDate>
+      <description>Sat, 17.10.2026 | 19:00 · Epplehaus
+SAVE THE DATE × Oct. 17th 2026 #HeimatToHell Festival Epplehaus #Tübingen s/w Ger × Antinational MetalPunk Feast! Stay tuned for more announcements: fb.com/HeimatToHell / epplehaus.de LINEUP: BANK MYNA – PostDoomGaze, Paris – https://bankmyna.bandcamp.com | https://youtu.be/LU-XKszWs-A DEÛLE – …</description>
+      <pubDate>Sat, 17 Oct 2026 19:00:00 +0200</pubDate>
     </item>
     <item>
       <title>Mitmachlesung: Laura Bush &amp; Jenna Bush Hager “Our Great Big Backyard”</title>
@@ -705,6 +705,16 @@ Trivia in English, music, and drinks in a casual atmosphere Every fourth Friday 
       <guid>https://www.epplehaus.de/event/metalnight-22/</guid>
       <description>Fri, 11.12.2026 | 20:30 · Epplehaus</description>
       <pubDate>Fri, 11 Dec 2026 20:30:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Book Club with Jessica</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/book-club-with-jessica-15/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/book-club-with-jessica-15/</guid>
+      <description>Tue, 15.12.2026 | 18:15 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Monthly hybrid book discussion with Jessica Strain Calling all book lovers! You like reading books and discussing them afterwards? Join our Book Club and discover the riches of international literature. Literature enthusiasts and language lover Jessica Strain will guide you through the best of …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/q3_22_jess_books-1-768x563-1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/q3_22_jess_books-1-768x563-1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 15 Dec 2026 18:15:00 +0200</pubDate>
     </item>
   </channel>
 </rss>
