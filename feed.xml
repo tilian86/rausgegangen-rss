@@ -5,16 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Thu, 17 Sep 2026 19:32:03 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 08:45:09 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Epplehaus-Kneipe</title>
-      <link>https://www.epplehaus.de/event/epplehaus-kneipe-3/</link>
-      <guid>https://www.epplehaus.de/event/epplehaus-kneipe-3/</guid>
-      <description>Thu, 17.09.2026 | 19:00 · Epplehaus
-Jeden Donnerstag ab 19:00 Uhr öffnet das Epplehaus seine Türen um zum gemeinsamen, offenen Kneipenbetrieb einzuladen. Zwischen aufgeladenen Tischkicker Runden, dem ein oder anderen Kaltgetränk und gesseliger Atmosphäre laden wir dazu ein mit uns den sonst so stressigen Alltag beiseite zu legen und …</description>
-      <pubDate>Thu, 17 Sep 2026 19:00:00 +0200</pubDate>
-    </item>
     <item>
       <title>Lokalpolitik Goes USA: Zwischen Rathaus, Landtag und Kapitol</title>
       <link>https://www.kulturnetz-tuebingen.de/event/lokalpolitik-goes-usa-zwischen-rathaus-landtag-und-kapitol/</link>
@@ -52,13 +44,6 @@ Jeden Donnerstag ab 19:00 Uhr öffnet das Epplehaus seine Türen um zum gemeinsa
       <pubDate>Thu, 24 Sep 2026 19:00:00 +0200</pubDate>
     </item>
     <item>
-      <title>We Dub</title>
-      <link>https://www.epplehaus.de/event/we-dub-7/</link>
-      <guid>https://www.epplehaus.de/event/we-dub-7/</guid>
-      <description>Fri, 25.09.2026 | 16:00 · Epplehaus</description>
-      <pubDate>Fri, 25 Sep 2026 16:00:00 +0200</pubDate>
-    </item>
-    <item>
       <title>Die Empörungsfalle</title>
       <link>https://www.kulturnetz-tuebingen.de/event/die-empoerungsfalle/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/die-empoerungsfalle/</guid>
@@ -66,6 +51,13 @@ Jeden Donnerstag ab 19:00 Uhr öffnet das Epplehaus seine Türen um zum gemeinsa
 © Marian Lenhard Lesung &amp; Gespräch mit Saba-Nur Cheema und Meron Mendel In einer Zeit, in der Debatten zunehmend von Lautstärke statt von Tiefgang geprägt sind und Gräben tiefer scheinen als je zuvor, blickt eine besondere Veranstaltung hinter die Kulissen unserer Streitkultur. Mit ihrem neuen Buch …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/2.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/2.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 25 Sep 2026 18:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>We Dub</title>
+      <link>https://www.epplehaus.de/event/we-dub-7/</link>
+      <guid>https://www.epplehaus.de/event/we-dub-7/</guid>
+      <description>Fri, 25.09.2026 | 18:00 · Epplehaus</description>
       <pubDate>Fri, 25 Sep 2026 18:00:00 +0200</pubDate>
     </item>
     <item>
@@ -87,6 +79,14 @@ Conversation group with d.a.i. teacher Scott Stelle Every fourth Friday of the m
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/books-3733892_1280-682x1024-2.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/books-3733892_1280-682x1024-2.jpg" medium="image" type="image/jpeg" />
       <pubDate>Fri, 25 Sep 2026 19:30:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Konzert: Amy Crimehouse + Irgendwas mit Sachbeschädigung</title>
+      <link>https://www.epplehaus.de/event/konzert-amy-crimehouse-irgendwas-mit-sachbeschaedigung/</link>
+      <guid>https://www.epplehaus.de/event/konzert-amy-crimehouse-irgendwas-mit-sachbeschaedigung/</guid>
+      <description>Sat, 26.09.2026 | 19:30 · Epplehaus
+Hauptsache gegen Deutschland Vol. 1 Mit @amycrimehouse aus Saarbrücken, Feministischer Boom-Bap mit direkten Texten. Auf ihrer ersten EP geht es unter anderem gegen Bullen und patriarchale Zustände. 2026 erschien „Männerhaus“. Außerdem spielen Irgendwas mit Sachbeschädigung – bestehend aus …</description>
+      <pubDate>Sat, 26 Sep 2026 19:30:00 +0200</pubDate>
     </item>
     <item>
       <title>Half an Hour with… Dr. Christoph Schemionek</title>
@@ -173,7 +173,7 @@ Conversation group with d.a.i. teacher Scott Stelle Every first Friday of the mo
       <link>https://www.epplehaus.de/event/konzert-astral-compact-tiefenrausch/</link>
       <guid>https://www.epplehaus.de/event/konzert-astral-compact-tiefenrausch/</guid>
       <description>Fri, 02.10.2026 | 20:00 · Epplehaus
-@astralkompakt</description>
+Haltet euch den 02.10.2026 frei, denn hier kommt Mal etwas außerhalb der Reihe unserer Veranstaltungen und wir freuen uns euch diesen Abend mit den Klangwelten von TFNRSH und Astral Komplex vorstellen zu dürfen. Wir freuen uns auf instrumentalen Stoner Rock und Psychedelic Progressive Rock. TFNRSH …</description>
       <pubDate>Fri, 02 Oct 2026 20:00:00 +0200</pubDate>
     </item>
     <item>
@@ -715,6 +715,16 @@ Monthly hybrid book discussion with Jessica Strain Calling all book lovers! You 
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/q3_22_jess_books-1-768x563-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/q3_22_jess_books-1-768x563-1.jpg" medium="image" type="image/jpeg" />
       <pubDate>Tue, 15 Dec 2026 18:15:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Latino Stammtisch</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-18/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-18/</guid>
+      <description>Wed, 16.12.2026 | 20:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
+Monatlicher Stammtisch um d.a.i.-Spanischlehrerin Mariana Marturet Every last Wednesday of the month ¿Hablas español? Dann besuche gerne unseren monatlichen Latino Stammtisch im HAUPTbahnhof! In gemütlicher Runde haben die Teilnehmenden die Möglichkeit, in entspannter Atmosphäre das eigene Spanisch …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 16 Dec 2026 20:00:00 +0200</pubDate>
     </item>
   </channel>
 </rss>
