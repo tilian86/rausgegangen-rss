@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Fri, 18 Sep 2026 08:45:09 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 18:51:46 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lokalpolitik Goes USA: Zwischen Rathaus, Landtag und Kapitol</title>
@@ -725,6 +725,16 @@ Monatlicher Stammtisch um d.a.i.-Spanischlehrerin Mariana Marturet Every last We
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" medium="image" type="image/jpeg" />
       <pubDate>Wed, 16 Dec 2026 20:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Needle Craft: Learning by Doing</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/needle-craft-learning-by-doing-30/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/needle-craft-learning-by-doing-30/</guid>
+      <description>Thu, 17.12.2026 | 17:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Playing with textiles nach dem “show and tell”-Prinzip Jeden zweiten Donnerstag Egal ob nähen, stricken, häkeln oder sticken: Jeden zweiten Donnerstag lädt das d.a.i. zu einer gemütlichen Handarbeitsrunde mit Kaffee und Tee ein. In ungezwungener Atmosphäre kann jede*r dem eigenen Hobby nachgehen …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 17 Dec 2026 17:30:00 +0200</pubDate>
     </item>
   </channel>
 </rss>
