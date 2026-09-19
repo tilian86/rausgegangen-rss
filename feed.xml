@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Sat, 19 Sep 2026 08:31:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 18:24:56 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Finissage Otmar Alt</title>
@@ -717,6 +717,16 @@ Playing with textiles nach dem “show and tell”-Prinzip Jeden zweiten Donners
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" medium="image" type="image/jpeg" />
       <pubDate>Thu, 17 Dec 2026 17:30:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Study Group: The Making of a Quagmire</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/study-group-the-making-of-a-quagmire-4/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/study-group-the-making-of-a-quagmire-4/</guid>
+      <description>Fri, 18.12.2026 | 17:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Conversation group with d.a.i. teacher Scott Stelle Every fourth Friday of the month No longer significantly constrained by institutional checks, such as the Judiciary and Congress, Trump ordered two major military actions in 2026: the operation that captured Venezuelan President Nicolás Maduro, …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/books-3733892_1280-682x1024-2.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/books-3733892_1280-682x1024-2.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 18 Dec 2026 17:30:00 +0200</pubDate>
     </item>
   </channel>
 </rss>
