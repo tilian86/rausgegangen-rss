@@ -5,16 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Sat, 26 Sep 2026 19:00:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2026 09:48:49 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Konzert: Amy Crimehouse + Irgendwas mit Sachbeschädigung</title>
-      <link>https://www.epplehaus.de/event/konzert-amy-crimehouse-irgendwas-mit-sachbeschaedigung/</link>
-      <guid>https://www.epplehaus.de/event/konzert-amy-crimehouse-irgendwas-mit-sachbeschaedigung/</guid>
-      <description>Sat, 26.09.2026 | 19:30 · Epplehaus
-Hauptsache gegen Deutschland Vol. 1 Mit @amycrimehouse aus Saarbrücken, Feministischer Boom-Bap mit direkten Texten. Auf ihrer ersten EP geht es unter anderem gegen Bullen und patriarchale Zustände. 2026 erschien „Männerhaus“. Außerdem spielen Irgendwas mit Sachbeschädigung – bestehend aus …</description>
-      <pubDate>Sat, 26 Sep 2026 19:30:00 +0200</pubDate>
-    </item>
     <item>
       <title>Half an Hour with… Dr. Christoph Schemionek</title>
       <link>https://www.kulturnetz-tuebingen.de/event/half-an-hour-with-dr-christoph-schemionek/</link>
@@ -202,6 +194,16 @@ Buchvorstellung &amp; Gespräch mit Hiram Kümper Noch heute spielt für das inn
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/8.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/8.jpg" medium="image" type="image/jpeg" />
       <pubDate>Fri, 09 Oct 2026 19:15:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Duokonzert Geige-Klavier</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/duokonzert-geige-klavier/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/duokonzert-geige-klavier/</guid>
+      <description>Sat, 10.10.2026 | 18:00 · Hochschule für Kirchenmusik Tübingen · Kulturnetz Tübingen
+Duokonzert in der Hochschule für Kirchenmusik am 10.10. um 18 Uhr: Die Geigerin Juliana Gappmayr aus Salzburg und der Tübinger Pianist Lukas Keck präsentieren ein spannendes Programm voller folkloristischer Einflüsse. Die Reise geht von Ludwig van Beethoven in Wien über Maurice Ravels ungarische …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Screenshot_20260923_184357_Instagram.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Screenshot_20260923_184357_Instagram.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 10 Oct 2026 18:00:00 +0200</pubDate>
     </item>
     <item>
       <title>Metalnight</title>
