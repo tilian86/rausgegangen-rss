@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Wed, 07 Oct 2026 10:50:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 20:59:31 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vernissage: Odd Creations</title>
@@ -90,6 +90,14 @@ Tagung am Donnerstag, 15. und Freitag, 16. Oktober 2026 im Landratsamt Tübingen
       <pubDate>Thu, 15 Oct 2026 09:00:00 +0200</pubDate>
     </item>
     <item>
+      <title>Epplehaus-Kneipe</title>
+      <link>https://www.epplehaus.de/event/epplehaus-kneipe-4/</link>
+      <guid>https://www.epplehaus.de/event/epplehaus-kneipe-4/</guid>
+      <description>Thu, 15.10.2026 | 19:00 · Epplehaus
+Google Kalender</description>
+      <pubDate>Thu, 15 Oct 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
       <title>Offene Männergruppe Tübingen</title>
       <link>https://www.kulturnetz-tuebingen.de/event/offene-maennergruppe-tuebingen/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/offene-maennergruppe-tuebingen/</guid>
@@ -166,6 +174,14 @@ Silent Reading Party – Bühne frei; Welt aus und Kopfkino an! Lesegenuss für 
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/11.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/11.jpg" medium="image" type="image/jpeg" />
       <pubDate>Thu, 22 Oct 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Goa Psy Party – Soli für Nepal</title>
+      <link>https://www.epplehaus.de/event/goa-psy-party-soli-fuer-nepal/</link>
+      <guid>https://www.epplehaus.de/event/goa-psy-party-soli-fuer-nepal/</guid>
+      <description>Fri, 23.10.2026 | 22:00 · Epplehaus
+Google Kalender</description>
+      <pubDate>Fri, 23 Oct 2026 22:00:00 +0200</pubDate>
     </item>
     <item>
       <title>Stummfilmnachmittag: Mickey Mouse &amp; Friends</title>
@@ -296,6 +312,14 @@ Conversation group with d.a.i. teacher Scott Stelle Every first Friday of the mo
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/2026_Q3_Book_Film_West-1024x683-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/2026_Q3_Book_Film_West-1024x683-1.jpg" medium="image" type="image/jpeg" />
       <pubDate>Fri, 06 Nov 2026 19:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Goa Psy Party – Soli für Nepal</title>
+      <link>https://www.epplehaus.de/event/goa-psy-party-soli-fuer-nepal-2/</link>
+      <guid>https://www.epplehaus.de/event/goa-psy-party-soli-fuer-nepal-2/</guid>
+      <description>Fri, 06.11.2026 | 22:00 · Epplehaus
+Google Kalender</description>
+      <pubDate>Fri, 06 Nov 2026 22:00:00 +0200</pubDate>
     </item>
     <item>
       <title>Dance of the Bats</title>
