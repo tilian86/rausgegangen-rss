@@ -5,26 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Wed, 07 Oct 2026 20:59:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 11:08:22 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Vernissage: Odd Creations</title>
-      <link>https://www.epplehaus.de/event/vernissage-odd-creations/</link>
-      <guid>https://www.epplehaus.de/event/vernissage-odd-creations/</guid>
-      <description>Wed, 07.10.2026 | 15:00 · Epplehaus
-Drei Tage, drei Künstler innen, null roter Faden – Odd Creations: eine Kunstausstellung im Epplehaus Tübingen. Mit Küfa, Tattoo Walk-in und Art market begleiten euch die drei Ausstellenden Künstler innen durch die Welt ihrer Odd Creations. Egal ob warmes Essen, gekocht von Soli Küfa Sternplatz …</description>
-      <pubDate>Wed, 07 Oct 2026 15:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>German-American Stammtisch</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/german-american-stammtisch-6/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/german-american-stammtisch-6/</guid>
-      <description>Wed, 07.10.2026 | 19:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
-A monthly get-together Every first Wednesday of the month All Germans and Americans looking for a night of good conversation are cordially invited to join our German-American Stammtisch! You can look forward to an exciting exchange with d.a.i. teacher Luke Ogden and the friendly group every first …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Stammtisch.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Stammtisch.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 07 Oct 2026 19:00:00 +0200</pubDate>
-    </item>
     <item>
       <title>Odd Creations &amp; Kneipe</title>
       <link>https://www.epplehaus.de/event/odd-creations/</link>
@@ -373,9 +355,17 @@ Buchvorstellung &amp; Gespräch mit Johanna Roth Im Rahmen der d.a.i.-Reihe „W
       <title>Ferryman Festival</title>
       <link>https://www.epplehaus.de/event/ferryman-festival-2/</link>
       <guid>https://www.epplehaus.de/event/ferryman-festival-2/</guid>
-      <description>Fri, 13.11.2026 | 20:30 · Epplehaus
-Google Kalender</description>
-      <pubDate>Fri, 13 Nov 2026 20:30:00 +0200</pubDate>
+      <description>Fri, 13.11.2026 | 20:00 · Epplehaus
+Am 13. &amp; 14. November geht das Ferryman im Epplehaus Tübingen in die nächste Runde. Zwei Tage Indoor-Metal, acht Bands und ein Line-up quer durch verschiedene Ecken zwischen Black, Death, Thrash, Speed, Metalcore und Deathcore. 💥 Mit dabei sind: 🔥 Blood Torrent 🔥 GOMORRHA 💀 🔥 𝗞𝗡𝗜𝗙𝗘🔪 🔥 MAVIS 🔥 …</description>
+      <pubDate>Fri, 13 Nov 2026 20:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Ferryman Festival</title>
+      <link>https://www.epplehaus.de/event/ferryman-festival-3/</link>
+      <guid>https://www.epplehaus.de/event/ferryman-festival-3/</guid>
+      <description>Sat, 14.11.2026 | 17:00 · Epplehaus
+Am 13. &amp; 14. November geht das Ferryman im Epplehaus Tübingen in die nächste Runde. Zwei Tage Indoor-Metal, acht Bands und ein Line-up quer durch verschiedene Ecken zwischen Black, Death, Thrash, Speed, Metalcore und Deathcore. 💥 Mit dabei sind: 🔥 Blood Torrent 🔥 GOMORRHA 💀 The OFFICIAL Profile 🔥 …</description>
+      <pubDate>Sat, 14 Nov 2026 17:00:00 +0200</pubDate>
     </item>
     <item>
       <title>Varian Fry: Im Wartesaal der Hoffnung</title>
