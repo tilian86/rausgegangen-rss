@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Mon, 26 Oct 2026 09:41:40 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 20:53:21 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book Club with Jessica</title>
@@ -77,8 +77,8 @@ Trick or Treat mit Live-Musik Trick or Treat mit Live-Musik &amp; Spuk für gro�
     </item>
     <item>
       <title>Midterm Elections @ d.a.i. Tübingen</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/midterm-elections-d-a-i-tuebingen/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/midterm-elections-d-a-i-tuebingen/</guid>
+      <link>https://www.kulturnetz-tuebingen.de/event/midterm-elections-d-a-i-tuebingen-2/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/midterm-elections-d-a-i-tuebingen-2/</guid>
       <description>Tue, 03.11.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
 Podiumsdiskussionen &amp; Live-Streams in die USA, Musik, und vieles mehr! Es ist so weit: Nach einem Jahr der Fragen, Debatten und Analysen kommt die Stunde der Wahrheit: Am 3. November 2026 – dem Abend der US-Midterm Elections – lädt das Deutsch-Amerikanische Institut (d.a.i.) zum großen Finale der …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/m.jpg" type="image/jpeg" length="0" />
@@ -369,9 +369,11 @@ Conversation group with d.a.i. teacher Scott Stelle Every first Friday of the mo
       <title>Hardcore Winterfest</title>
       <link>https://www.epplehaus.de/event/hardcore-winterfest/</link>
       <guid>https://www.epplehaus.de/event/hardcore-winterfest/</guid>
-      <description>Sat, 05.12.2026 | 20:00 · Epplehaus
-Google Kalender</description>
-      <pubDate>Sat, 05 Dec 2026 20:00:00 +0200</pubDate>
+      <description>Sat, 05.12.2026 | 16:00 · Epplehaus
+Dec 05th HARDCORE WINTERFEST XIX Jugendzentrum Epplehaus Tübingen s/w Germoney – One-day d.i.y. HC/Punk Festival Extravaganza! Loads of Bands – Lecture – Food – Art – Fun’o’Fun (*) D.I.Y. involves you – please spread the word… No place for nationalism &amp; discrimination. …</description>
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/08/Lineup-HCWF-26.png" type="image/jpeg" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/08/Lineup-HCWF-26.png" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 05 Dec 2026 16:00:00 +0200</pubDate>
     </item>
     <item>
       <title>Let’s Play! Die Bluegrass- und Oldtime Jam</title>
