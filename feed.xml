@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Mon, 26 Oct 2026 20:53:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 09:35:31 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book Club with Jessica</title>
@@ -43,6 +43,8 @@ Fast 1800 Jahre lang waren die leuchtenden Farben des Tempels von Esna in Oberä
       <guid>https://www.epplehaus.de/event/epplehaus-kneipe-7/</guid>
       <description>Thu, 29.10.2026 | 19:00 · Epplehaus
 Jeden Donnerstag ab 19:00 Uhr öffnet das Epplehaus seine Türen um zum gemeinsamen, offenen Kneipenbetrieb einzuladen. Zwischen aufgeladenen Tischkicker Runden, dem ein oder anderen Kaltgetränk und gesseliger Atmosphäre laden wir dazu ein mit uns den sonst so stressigen Alltag beiseite zu legen und …</description>
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/Epplekneipesmall.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/Epplekneipesmall.jpg" medium="image" type="image/jpeg" />
       <pubDate>Thu, 29 Oct 2026 19:00:00 +0200</pubDate>
     </item>
     <item>
@@ -64,6 +66,16 @@ Trivia in English, music, and drinks in a casual atmosphere Every fourth Friday 
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Quiz-1-1024x576-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Quiz-1-1024x576-1.jpg" medium="image" type="image/jpeg" />
       <pubDate>Fri, 30 Oct 2026 20:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>WeDub</title>
+      <link>https://www.epplehaus.de/event/wedub-11/</link>
+      <guid>https://www.epplehaus.de/event/wedub-11/</guid>
+      <description>Fri, 30.10.2026 | 21:00 · Epplehaus
+Google Kalender</description>
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/wedub-10-2026small.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/wedub-10-2026small.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 30 Oct 2026 21:00:00 +0200</pubDate>
     </item>
     <item>
       <title>BamBam-Band &amp; Halloween Fair for Kids</title>
@@ -136,11 +148,13 @@ Conversation group with d.a.i. teacher Scott Stelle Every first Friday of the mo
       <pubDate>Fri, 06 Nov 2026 19:00:00 +0200</pubDate>
     </item>
     <item>
-      <title>Goa Psy Party – Soli für Nepal</title>
+      <title>PsyGrooves 3.0  – Soli für Nepal</title>
       <link>https://www.epplehaus.de/event/goa-psy-party-soli-fuer-nepal-2/</link>
       <guid>https://www.epplehaus.de/event/goa-psy-party-soli-fuer-nepal-2/</guid>
       <description>Fri, 06.11.2026 | 22:00 · Epplehaus
 Google Kalender</description>
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/psygroovesdreinullsmall.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/psygroovesdreinullsmall.jpg" medium="image" type="image/jpeg" />
       <pubDate>Fri, 06 Nov 2026 22:00:00 +0200</pubDate>
     </item>
     <item>
@@ -149,6 +163,8 @@ Google Kalender</description>
       <guid>https://www.epplehaus.de/event/dance-of-the-bats-8/</guid>
       <description>Sat, 07.11.2026 | 22:00 · Epplehaus
 Es gibt wieder ein vertrauten Mix aus Post-Punk, Dark Wave, Batcave, Gothik, 80s Wave und den einschlägigen Klassikern der Szene von DJ The Rolling Stones und DJ Pink Void a.k.a. Svartur Nott. Als Special Guest ist diesmal DJ Mischling mit am Start. oder gerne auch mehr. Google Kalender</description>
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/08/DanceOfTheBatssmall.png" type="image/jpeg" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/08/DanceOfTheBatssmall.png" medium="image" type="image/jpeg" />
       <pubDate>Sat, 07 Nov 2026 22:00:00 +0200</pubDate>
     </item>
     <item>
@@ -157,6 +173,8 @@ Es gibt wieder ein vertrauten Mix aus Post-Punk, Dark Wave, Batcave, Gothik, 80s
       <guid>https://www.epplehaus.de/event/konzert-sotabosc-serac/</guid>
       <description>Mon, 09.11.2026 | 19:00 · Epplehaus
 Sotabosc is an Atmospheric Black Metal project from Barcelona. Singing in Catalan and rooted in an anti-fascist ethos, the band blends black metal intensity with post-rock textures, exploring themes of forests, memory and resistance. Sérac were formed in 2018 as a reaction to rising right wing …</description>
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/sotaboscsmall.png" type="image/jpeg" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/sotaboscsmall.png" medium="image" type="image/jpeg" />
       <pubDate>Mon, 09 Nov 2026 19:00:00 +0200</pubDate>
     </item>
     <item>
@@ -205,6 +223,8 @@ Buchvorstellung &amp; Gespräch mit Johanna Roth Im Rahmen der d.a.i.-Reihe „W
       <guid>https://www.epplehaus.de/event/ferryman-festival-2/</guid>
       <description>Fri, 13.11.2026 | 20:00 · Epplehaus
 Am 13. &amp; 14. November geht das Ferryman im Epplehaus Tübingen in die nächste Runde. Zwei Tage Indoor-Metal, acht Bands und ein Line-up quer durch verschiedene Ecken zwischen Black, Death, Thrash, Speed, Metalcore und Deathcore. 💥 Mit dabei sind: 🔥 Blood Torrent 🔥 GOMORRHA 💀 🔥 𝗞𝗡𝗜𝗙𝗘🔪 🔥 MAVIS 🔥 …</description>
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/ferryman_2026small.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/ferryman_2026small.jpg" medium="image" type="image/jpeg" />
       <pubDate>Fri, 13 Nov 2026 20:00:00 +0200</pubDate>
     </item>
     <item>
@@ -213,6 +233,8 @@ Am 13. &amp; 14. November geht das Ferryman im Epplehaus Tübingen in die nächs
       <guid>https://www.epplehaus.de/event/ferryman-festival-3/</guid>
       <description>Sat, 14.11.2026 | 17:00 · Epplehaus
 Am 13. &amp; 14. November geht das Ferryman im Epplehaus Tübingen in die nächste Runde. Zwei Tage Indoor-Metal, acht Bands und ein Line-up quer durch verschiedene Ecken zwischen Black, Death, Thrash, Speed, Metalcore und Deathcore. 💥 Mit dabei sind: 🔥 Blood Torrent 🔥 GOMORRHA 💀 The OFFICIAL Profile 🔥 …</description>
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/ferryman_2026small.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/ferryman_2026small.jpg" medium="image" type="image/jpeg" />
       <pubDate>Sat, 14 Nov 2026 17:00:00 +0200</pubDate>
     </item>
     <item>
@@ -371,8 +393,8 @@ Conversation group with d.a.i. teacher Scott Stelle Every first Friday of the mo
       <guid>https://www.epplehaus.de/event/hardcore-winterfest/</guid>
       <description>Sat, 05.12.2026 | 16:00 · Epplehaus
 Dec 05th HARDCORE WINTERFEST XIX Jugendzentrum Epplehaus Tübingen s/w Germoney – One-day d.i.y. HC/Punk Festival Extravaganza! Loads of Bands – Lecture – Food – Art – Fun’o’Fun (*) D.I.Y. involves you – please spread the word… No place for nationalism &amp; discrimination. …</description>
-      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/08/Lineup-HCWF-26.png" type="image/jpeg" length="0" />
-      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/08/Lineup-HCWF-26.png" medium="image" type="image/jpeg" />
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/08/HCWFsmall.png" type="image/jpeg" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/08/HCWFsmall.png" medium="image" type="image/jpeg" />
       <pubDate>Sat, 05 Dec 2026 16:00:00 +0200</pubDate>
     </item>
     <item>
