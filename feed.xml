@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
     <language>de</language>
-    <lastBuildDate>Thu, 29 Oct 2026 10:42:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 20:52:04 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Die Farben des Kosmos. Die wiedergewonnene Pracht des Tempels von Esna</title>
@@ -146,6 +146,16 @@ Es gibt wieder ein vertrauten Mix aus Post-Punk, Dark Wave, Batcave, Gothik, 80s
       <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/08/DanceOfTheBatssmall.png" type="image/jpeg" length="0" />
       <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/08/DanceOfTheBatssmall.png" medium="image" type="image/jpeg" />
       <pubDate>Sat, 07 Nov 2026 22:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Pogromgedenken mit Archivaren und Jugendguides</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/pogromgedenken-mit-archivaren-und-jugendguides/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/pogromgedenken-mit-archivaren-und-jugendguides/</guid>
+      <description>Sun, 08.11.2026 | 16:00 · Kulturnetz Tübingen
+Öffentlicher Stadtgang am Sonntag, 8. November 2026 in Tübingen Den Geruch und das raue Papier von Akten der Tübinger Polizeidirektion aus dem Jahr 1938 und alten Zeitungsbänden haben Jugendguides noch im Gespür, wenn sie bei einem Stadtgang „Die Reichspogromnacht in Tübingen“ am Sonntag, 8. …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/12/Logo-Jugendguides_R_k.png" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/12/Logo-Jugendguides_R_k.png" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 08 Nov 2026 16:00:00 +0200</pubDate>
     </item>
     <item>
       <title>Konzert Sotabosc / Sérac</title>
