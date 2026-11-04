@@ -306,6 +306,8 @@ def hole_sudhaus(name, basis="https://sudhaus-tuebingen.de"):
                     text = ", ".join(genres) + (": " + text if text else "")
             except (HTTPError, URLError, ValueError, TimeoutError):
                 pass
+        if re.search(r"(?i)\b(abgesagt|verschoben)\b", text[:90]):    # steht oft erst in der Beschreibung
+            continue
         start = datetime.combine(tag, datetime.strptime(zeit, "%H:%M").time()) if zeit else \
             datetime.combine(tag, datetime.min.time())
         out.append(event(name, titel, link, start, ort, text[:BESCHREIBUNG_MAX],

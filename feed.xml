@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Wed, 04 Nov 2026 12:29:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 12:46:32 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Französische Filmtage</title>
@@ -208,16 +208,6 @@ Moderatorin: Dr. Franziska Hammer – Entspannt brunchen, Jazz genießen und dab
       <pubDate>Sat, 07 Nov 2026 10:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>BLACK SABBITCH</title>
-      <link>https://sudhaus-tuebingen.de/programm/details/black-sabbitch.html</link>
-      <guid>https://sudhaus-tuebingen.de/programm/details/black-sabbitch.html</guid>
-      <description>Sa, 07.11.2026 | 19:00 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
-Musik/Konzert, Rock: VERSCHOBEN | Black-Sabbath-Tribute | Tour 2026 – Leider müssen wir euch mitteilen, dass Black Sabbitch den geplanten Auftritt aus gesundheitlichen Gründen absagen müssen. Wir konnten aber auf die Schnelle einen Ersatztermin finden. Eure bereits gekauften Tickets …</description>
-      <enclosure url="https://sudhaus-tuebingen.de/assets/images/8/2026_10_07_HF_BlackSabbitch-3f6f96d2.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://sudhaus-tuebingen.de/assets/images/8/2026_10_07_HF_BlackSabbitch-3f6f96d2.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 07 Nov 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>MUTTERS COURAGE</title>
       <link>https://www.zimmertheater-tuebingen.de/event/mutters-courage-st-ckeinf-hrung-19-30-uhr-2587891</link>
       <guid>https://www.zimmertheater-tuebingen.de/event/mutters-courage-st-ckeinf-hrung-19-30-uhr-2587891</guid>
@@ -348,6 +338,16 @@ Auch am Mi 09.12. – Unsere Session-Band mit Joachim Gröschel (dr), Steffen Ho
       <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/09/Jam-Session2-www.jpg" type="image/jpeg" length="0" />
       <media:content url="https://club-voltaire.net/wp-content/uploads/2026/09/Jam-Session2-www.jpg" medium="image" type="image/jpeg" />
       <pubDate>Wed, 11 Nov 2026 20:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Alice im Wunderland</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/alice-im-wunderland.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/alice-im-wunderland.html</guid>
+      <description>Fr, 13.11.2026 | 19:00 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
+Lesung, Konzertlesung: Konzertlesung mit ChrisTine Urspruch und Stefan Weinzierl – In einer bezaubernden Collage aus fantasievoller Sprache und humorvollem Soundtrack lassen Schauspielerin ChrisTine Urspruch (Tatort Münster, Einspruch Schatz! u.v.a.) und Klangkünstler Stefan Weinzierl Lewis Carrolls</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/2/2026_11_16_HF_AliceImWunderland-caac6b60.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/2/2026_11_16_HF_AliceImWunderland-caac6b60.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 13 Nov 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Ferryman Festival</title>
