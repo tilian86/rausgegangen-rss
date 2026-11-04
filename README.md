@@ -6,17 +6,32 @@ Feed-URL: `https://tilian86.github.io/rausgegangen-rss/feed.xml`
 
 ## Quellen
 
-Der Feed wird aus den **offiziellen Schnittstellen** der Veranstalter gebaut
-(WordPress-Plugin „The Events Calendar", Endpunkt `/wp-json/tribe/events/v1`):
+Nur Quellen ohne Anmeldung und Captcha; `robots.txt` wird je Abruf beachtet,
+zwischen zwei Abrufen am selben Host liegt eine Pause.
 
-| Quelle | Was |
+| Quelle | Weg |
 | --- | --- |
-| [Tübinger Kalender / Kulturnetz Tübingen](https://www.tuebinger-kalender.de) | Kultur, Vorträge, Kurse – der Kalender, auf den die Stadt Tübingen selbst verlinkt |
-| [Epplehaus](https://www.epplehaus.de) | Konzerte, Workshops, Kneipe |
+| [Kulturnetz Tübingen](https://www.tuebinger-kalender.de) | The-Events-Calendar-Schnittstelle (`/wp-json/tribe/events/v1`) |
+| [Epplehaus](https://www.epplehaus.de) | wie oben |
+| [Club Voltaire](https://club-voltaire.net) | wie oben (Jazzclub, Lesungen, Disco) |
+| [Sudhaus](https://sudhaus-tuebingen.de) | Programmseite + Detailseiten (leichtes HTML-Parsen) |
+| [Zimmertheater](https://www.zimmertheater-tuebingen.de) | Spielplan-Seite (leichtes HTML-Parsen) |
+| [Universität Tübingen](https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/) | RSS-Feed, nur „Studium Generale" und „Top Termine" |
+| [Stadt Tübingen](https://www.tuebingen.de/veranstaltungen) | Großveranstaltungen (Märkte, Festivals), 45 Tage voraus |
 
-Weitere Quellen lassen sich in `scraper.py` unter `SOURCES` eintragen –
-alles, was die gleiche Schnittstelle anbietet, läuft ohne weitere Anpassung
-mit.
+Nicht dabei: Landestheater (`robots.txt` sperrt alles), rausgegangen.de
+(Botschutz, siehe unten).
+
+## Abwechslung statt Dauerbrenner
+
+- **Dubletten** über mehrere Quellen (gleicher Titel + Tag + Uhrzeit) werden
+  zu einer Meldung; die Quelle mit Vorrang (Reihenfolge in `QUELLEN`) gewinnt,
+  die andere erscheint als „auch bei …".
+- **Reihen** (Stück an 10 Abenden, Stammtisch jeden Monat) werden zu EINER
+  Meldung mit „Auch am …"; die Adresse der Meldung bleibt stabil
+  (`serien.json` merkt sie sich), damit Feedfunk sie nicht erneut als neu zeigt.
+- **Deckel**: je Ort höchstens 4, je Quelle ein eigenes Maximum, je Quelle und
+  Tag höchstens 3, und nur die nächsten 14 Tage (Stadt: 45).
 
 ## Warum nicht mehr rausgegangen.de?
 
@@ -39,7 +54,7 @@ jetzt Quellen die Daten, die sie ausdrücklich zum Abruf anbieten.
   erscheint als Warnung im Lauf, ohne Fehlermail.
 - Fallen **alle** Quellen aus, schlägt der Lauf fehl.
 
-Läuft täglich um 6 und 18 Uhr. Manuell: Actions → „Veranstaltungen Tübingen"
+Läuft täglich um 4 und 16 Uhr UTC. Manuell: Actions → „Veranstaltungen Tübingen"
 → Run workflow.
 
 ## Nebenbei im Repo

@@ -25,6 +25,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add feed.xml
+          git add feed.xml serien.json
           git diff --cached --quiet || git commit -m "Feed aktualisiert $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
