@@ -3,427 +3,435 @@
   <channel>
     <title>Veranstaltungen Tübingen</title>
     <link>https://www.tuebinger-kalender.de/</link>
-    <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz) und Epplehaus</description>
+    <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Wed, 04 Nov 2026 12:28:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 12:29:43 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Französische Filmtage</title>
+      <link>https://www.tuebingen.de/108/487.html</link>
+      <guid>https://www.tuebingen.de/108/487.html</guid>
+      <description>Mi, 04.11.2026 · Tübingen · Stadt Tübingen
+Mehrtägig</description>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Cluj</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/cluj/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/cluj/</guid>
+      <description>Mi, 04.11.2026 | 18:15 · Hörsaal 25, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
+Alina Noveanu, Tübingen</description>
+      <pubDate>Wed, 04 Nov 2026 18:15:00 +0100</pubDate>
+    </item>
     <item>
       <title>German-American Stammtisch</title>
       <link>https://www.kulturnetz-tuebingen.de/event/german-american-stammtisch-13/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/german-american-stammtisch-13/</guid>
-      <description>Wed, 04.11.2026 | 19:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
-A monthly get-together Every first Wednesday of the month All Germans and Americans looking for a night of good conversation are cordially invited to join our German-American Stammtisch! You can look forward to an exciting exchange with d.a.i. teacher Luke Ogden and the friendly group every first …</description>
+      <description>Mi, 04.11.2026 | 19:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
+Auch am Mi 02.12. – A monthly get-together Every first Wednesday of the month All Germans and Americans looking for a night of good conversation are cordially invited to join our German-American Stammtisch! You can look forward to an exciting exchange with d.a.i. teacher Luke Ogden and the friendly group every first …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Stammtisch.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Stammtisch.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 04 Nov 2026 19:00:00 +0200</pubDate>
+      <pubDate>Wed, 04 Nov 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Black Sea Dahu</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/black-sea-dahu-2.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/black-sea-dahu-2.html</guid>
+      <description>Mi, 04.11.2026 | 19:00 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
+Musik/Konzert, Indie Folk: Everything Tour – Black Sea Dahu zu hören ist wie barfuß in einem Gewitter zu stehen, völlig ungeschützt, aber zutiefst lebendig. Die Band um die Schweizer Sängerin und Songwriterin Janine Cathrein hat sich eine eigene Welt erschaffen: …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/2/2026_11_04_HF_BlackSeaDahu_Solong-bbca375c.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/2/2026_11_04_HF_BlackSeaDahu_Solong-bbca375c.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 04 Nov 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Jochen Rückert New Quartet feat. Alexandra Ridout</title>
+      <link>https://club-voltaire.net/v/jochen-rueckert-new-quartet-feat-alexandra-ridout</link>
+      <guid>https://club-voltaire.net/v/jochen-rueckert-new-quartet-feat-alexandra-ridout</guid>
+      <description>Mi, 04.11.2026 | 20:30 · Jazzclub im Club Voltaire · Club Voltaire
+Aktueller angesagter Jazzclub Sound aus dem ‚Big Apple‘ im Club Voltaire in Tübingen: Schlagzeuger Jochen Rückert präsentiert sein neues Quartett aus New York City. Seine MitmusikerInnen sind alle Senkrechtstarter der New Yorker Jazzszene und rund zwei Jahrzehnte jünger als der Bandleader – eine …</description>
+      <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/09/Jochen-Rueckert-New-Quartet-2025.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://club-voltaire.net/wp-content/uploads/2026/09/Jochen-Rueckert-New-Quartet-2025.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 04 Nov 2026 20:30:00 +0100</pubDate>
     </item>
     <item>
       <title>Fantasy Adventure: D&amp;D Roleplay Nights</title>
       <link>https://www.kulturnetz-tuebingen.de/event/fantasy-adventure-dd-roleplay-nights-14/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/fantasy-adventure-dd-roleplay-nights-14/</guid>
-      <description>Thu, 05.11.2026 | 17:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Gaming in English and Tabletop Every first Thursday of the month Join us for a round of dice and good fun with our resident game master Kevin Witz. Whether you’re interested in trying out pen and paper games for the first time or you’re a master of all tabletop pastimes, you’re welcome to join in …</description>
+      <description>Do, 05.11.2026 | 17:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Auch am Do 03.12. – Gaming in English and Tabletop Every first Thursday of the month Join us for a round of dice and good fun with our resident game master Kevin Witz. Whether you’re interested in trying out pen and paper games for the first time or you’re a master of all tabletop pastimes, you’re welcome to join in …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/DD-1-768x960-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/DD-1-768x960-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Thu, 05 Nov 2026 17:30:00 +0200</pubDate>
+      <pubDate>Thu, 05 Nov 2026 17:30:00 +0100</pubDate>
     </item>
     <item>
       <title>Needle Craft: Learning by Doing</title>
       <link>https://www.kulturnetz-tuebingen.de/event/needle-craft-learning-by-doing-27/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/needle-craft-learning-by-doing-27/</guid>
-      <description>Thu, 05.11.2026 | 17:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Playing with textiles nach dem “show and tell”-Prinzip Jeden zweiten Donnerstag Egal ob nähen, stricken, häkeln oder sticken: Jeden zweiten Donnerstag lädt das d.a.i. zu einer gemütlichen Handarbeitsrunde mit Kaffee und Tee ein. In ungezwungener Atmosphäre kann jede*r dem eigenen Hobby nachgehen …</description>
+      <description>Do, 05.11.2026 | 17:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Auch am Do 19.11., Do 03.12., Do 17.12. – Playing with textiles nach dem “show and tell”-Prinzip Jeden zweiten Donnerstag Egal ob nähen, stricken, häkeln oder sticken: Jeden zweiten Donnerstag lädt das d.a.i. zu einer gemütlichen Handarbeitsrunde mit Kaffee und Tee ein. In ungezwungener Atmosphäre kann jede*r dem eigenen Hobby nachgehen …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Thu, 05 Nov 2026 17:30:00 +0200</pubDate>
+      <pubDate>Thu, 05 Nov 2026 17:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Erinnerung als Widerstand</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/erinnerung-als-widerstand/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/erinnerung-als-widerstand/</guid>
+      <description>Do, 05.11.2026 | 18:15 · Historischer Lesesaal der Universitätsbibliothek Tübingen, Bonatzbau, Wilhelmstr. 32 · Uni Tübingen
+Dr. Irina Scherbakowa, Berlin, Prof. Dr. Stefan Wolff, Birmingham, Prof. Dr. Oliver Jens Schmitt, Wien, Moderation: Kerstin Holm, FAZ – Die russische Germanistin Dr. Irina Scherbakowa, eine der wenigen verbliebenen Stimmen der russischen Opposition, verbindet in ihren Arbeiten ihre persönliche Gesch</description>
+      <pubDate>Thu, 05 Nov 2026 18:15:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Rechte der Natur – Eine Option für Deutschland und Tübingen?</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/rechte-der-natur-eine-option-fuer-deutschland-und-tuebingen/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/rechte-der-natur-eine-option-fuer-deutschland-und-tuebingen/</guid>
+      <description>Do, 05.11.2026 | 18:15 · Hörsaal 25, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
+Dr. Matthias Kramm, Mathematisch-Naturwissenschaftliche Fakultät, Fachbereich Biologie, Ethik, Theorie und Geschichte der Biowissenschaften, Universität Tübingen &amp; MSCA Postdoctoral Fellow, Kassel Institute for Sustainability, Universität Kassel</description>
+      <pubDate>Thu, 05 Nov 2026 18:15:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Fliegende Haie &amp; Mausi G</title>
+      <link>https://club-voltaire.net/v/fliegende-haie-mausi-g</link>
+      <guid>https://club-voltaire.net/v/fliegende-haie-mausi-g</guid>
+      <description>Do, 05.11.2026 | 20:00 · Club Voltaire · Club Voltaire
+Kuck dir die Welt doch an: Alle gehn dumm. Smartphone-Zombies, emotionaler Leerstand, machtbesessene Despoten. Zeit für einen Reset – Fliegende Haie finden: Wenn schon dumm gehen, dann richtig! Ausrasten, durchtanzen und schweißnass Hymnen hinausschreien für eine bessere Welt. Unterdrückung von …</description>
+      <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/09/fh-alle-gehn-dumm-4a-maxim-kaiser-scaled.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://club-voltaire.net/wp-content/uploads/2026/09/fh-alle-gehn-dumm-4a-maxim-kaiser-scaled.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 05 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Catarina oder Von der Schönheit, Faschisten zu töten</title>
+      <link>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</link>
+      <guid>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</guid>
+      <description>Do, 05.11.2026 | 20:00 · Zimmertheater im Löwen (Kornhausstraße 5) · Zimmertheater · Nachgespräch
+Auch am Fr 06.11., Fr 13.11., Do 19.11., Fr 20.11., Sa 21.11. … (7 Termine)</description>
+      <pubDate>Thu, 05 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Mentale Gesundheit von informell pflegenden Angehörigen: Austausch mit dem Ko-Kreationsteam</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/mentale-gesundheit-von-informell-pflegenden-angehoerigen-austausch-mit-dem-ko-kreationsteam/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/mentale-gesundheit-von-informell-pflegenden-angehoerigen-austausch-mit-dem-ko-kreationsteam/</guid>
+      <description>Fr, 06.11.2026 | 10:00 · Alte Aula, Münzgasse 30 · Uni Tübingen
+Dr. Lydia Kogler, Universitätsklinikum Tübingen, Oliver Häußler, Public Engagement Hub, Natalie Lenhof, Public Engagement Hub – In Deutschland leben rund 5,7 Millionen pflegebedürftige Menschen. Bei der Unterstützung und Versorgung im Alltag übernehmen Angehörige oft eine zentrale Rolle – die sogena</description>
+      <pubDate>Fri, 06 Nov 2026 10:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Lunchtalks. Kurzvorträge in der Mittagspause</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/lunchtalks-kurzvortraege-in-der-mittagspause/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/lunchtalks-kurzvortraege-in-der-mittagspause/</guid>
+      <description>Fr, 06.11.2026 | 12:00 · Neckawa, Wöhrdstraße 25 · Uni Tübingen
+Forschungsgruppen zeigen an insgesamt 13 Ständen im Großen Saal, an was sie arbeiten. Die Wissenschaftlerinnen und Wissenschaftler stehen für Gespräche bereit und haben interaktive Spiele und Präsentationen vorbereitet. Die Prorektorin Prof. Dr. Katja Schenke-Layland eröffnet die Science Fair um 12 </description>
+      <pubDate>Fri, 06 Nov 2026 12:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Science &amp; Innovation Days 2026 – „Vom Wert der Wissenschaft“</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/science-innovation-days-2026-vom-wert-der-wissenschaft/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/science-innovation-days-2026-vom-wert-der-wissenschaft/</guid>
+      <description>Fr, 06.11.2026 | 12:00 · diverse Locations in der Innenstadt · Uni Tübingen
+Mit dem Start des Jubiläumsjahres 2026/27 feiert die Universität Tübingen unter dem Motto „Vom Wert der Wissenschaft“ ihre 550-jährige Geschichte. Ein besonderes Highlight im Jubiläumsjahr sind die Science &amp; Innovation Days 2026 : An mehr als 30 Veranstaltungen an 12 Orten wird Wissenschaft …</description>
+      <pubDate>Fri, 06 Nov 2026 12:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Gaming Night [18+]</title>
       <link>https://www.kulturnetz-tuebingen.de/event/gaming-night-18/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/gaming-night-18/</guid>
-      <description>Fri, 06.11.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+      <description>Fr, 06.11.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
 Games, Snacks &amp; Conversations! The d.a.i. Gaming Club “Leveling Up at the Library” goes adults-only – age 18 and older. Looking for a fun and relaxed way to kick off your weekend? Join us for an easygoing evening filled with digital (PS5, Nintendo Switch) and analog games (board and card games), …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/g.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/g.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 06 Nov 2026 19:00:00 +0200</pubDate>
+      <pubDate>Fri, 06 Nov 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Book &amp; Film: When the West Started to Fall Apart</title>
       <link>https://www.kulturnetz-tuebingen.de/event/book-film-when-the-west-started-to-fall-apart-3/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/book-film-when-the-west-started-to-fall-apart-3/</guid>
-      <description>Fri, 06.11.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Conversation group with d.a.i. teacher Scott Stelle Every first Friday of the month Join us in a lively, spirited exploration of the historic transformation of the American Western, as the genre shifted from celebration to critique. Revisionist Westerns emerged in the shadow of Vietnam, the civil …</description>
+      <description>Fr, 06.11.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Auch am Fr 04.12. – Conversation group with d.a.i. teacher Scott Stelle Every first Friday of the month Join us in a lively, spirited exploration of the historic transformation of the American Western, as the genre shifted from celebration to critique. Revisionist Westerns emerged in the shadow of Vietnam, the civil …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/2026_Q3_Book_Film_West-1024x683-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/2026_Q3_Book_Film_West-1024x683-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 06 Nov 2026 19:00:00 +0200</pubDate>
+      <pubDate>Fri, 06 Nov 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Tasha</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/tasha.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/tasha.html</guid>
+      <description>Fr, 06.11.2026 | 19:00 (Einlass) · Sudhaus Tübingen · Sudhaus Theatersaal · Sudhaus
+Musik/Konzert, Indie Folk: You Are Spring! – Die in Chicago geborene und heute in New York lebende Schriftstellerin und Musikerin Tasha entführt auf ihrem vierten Album You Are Spring! aus einem tristen Winter in eine Welt voller Wärme, Farben und neuem Leben. …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/d/2026_11_06_HF_Tasha-a6497e43.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/d/2026_11_06_HF_Tasha-a6497e43.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 06 Nov 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Die Alten &amp; Herz Rhythmus Maschine</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/die-alten-herz-rhythmus-maschine.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/die-alten-herz-rhythmus-maschine.html</guid>
+      <description>Fr, 06.11.2026 | 19:30 (Einlass) · Sudhaus Tübingen · Sudhaus Peripherie Werkstatt · Sudhaus
+Musik/Konzert: Deutscher New Wave &amp; Postpunk im Doppelkonzert – Die „Familie Hesselbach“, legendäre Tübinger Punk- und Wave-Band der 80er Jahre, lässt grüßen: Aus genau diesem Umfeld stammen Die Alten und Herz Rhythmus Maschine . Markus von Die Alten und Lupe von Herz Rhythmus …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/d/2026_11_06_HF_HerzRhythmusMaschine_dieAlten-b6273c3c.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/d/2026_11_06_HF_HerzRhythmusMaschine_dieAlten-b6273c3c.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 06 Nov 2026 19:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Das große Songslam Jahresfinale</title>
+      <link>https://club-voltaire.net/v/das-grosse-songslam-jahresfinale-2</link>
+      <guid>https://club-voltaire.net/v/das-grosse-songslam-jahresfinale-2</guid>
+      <description>Fr, 06.11.2026 | 20:00 · Club Voltaire · Club Voltaire
+„Es geht nie um den Sieg. Es geht immer um die Songs.“ Im Jahresfinale treten die Gewinner*innen der ersten vier Tübinger Song Slams gegeneinander an. Das heißt, ihr habt es in der Hand, wer zum krönenden Abschluss die Club-Voltaire-Bühne &amp; die Tübinger Herzen erobert. Die vier wagemutigen …</description>
+      <enclosure url="https://club-voltaire.net/wp-content/uploads/2025/01/Songslam-FB-Titel.png" type="image/png" length="0" />
+      <media:content url="https://club-voltaire.net/wp-content/uploads/2025/01/Songslam-FB-Titel.png" medium="image" type="image/png" />
+      <pubDate>Fri, 06 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>PsyGrooves 3.0  – Soli für Nepal</title>
       <link>https://www.epplehaus.de/event/goa-psy-party-soli-fuer-nepal-2/</link>
       <guid>https://www.epplehaus.de/event/goa-psy-party-soli-fuer-nepal-2/</guid>
-      <description>Fri, 06.11.2026 | 22:00 · Epplehaus
+      <description>Fr, 06.11.2026 | 22:00 · Epplehaus · Epplehaus
 Google Kalender</description>
       <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/psygroovesdreinullsmall.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/psygroovesdreinullsmall.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 06 Nov 2026 22:00:00 +0200</pubDate>
+      <pubDate>Fri, 06 Nov 2026 22:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Wie frauenfeindlich ist die Literaturgeschichte? Von Lavinia zu Leia</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/wie-frauenfeindlich-ist-die-literaturgeschichte-von-lavinia-zu-leia/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/wie-frauenfeindlich-ist-die-literaturgeschichte-von-lavinia-zu-leia/</guid>
+      <description>Sa, 07.11.2026 | 10:00 · Seminarraum 605, Alte Aula, Münzgasse 30 · Uni Tübingen
+Angelika Frescher-Molitor, Deutsches Seminar – Ist die Literaturgeschichte reine Männersache? Lange spielten Frauen nur Nebenrollen – bis das Mittelalter die Liebe entdeckte und die Frau als Love Interest ins Zentrum rückte. Die Forschung sieht darin einen wichtigen Schritt zum modernen Erzählen von</description>
+      <pubDate>Sat, 07 Nov 2026 10:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Brunch. Jazz. Wissenschaft. Der Wissenschaftssalon der Science &amp; Innovation Days</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/brunch-jazz-wissenschaft-der-wissenschaftssalon-der-science-innovation-days/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/brunch-jazz-wissenschaft-der-wissenschaftssalon-der-science-innovation-days/</guid>
+      <description>Sa, 07.11.2026 | 10:00 · Taproom, Neckawa, Wöhrdstraße 25 · Uni Tübingen
+Moderatorin: Dr. Franziska Hammer – Entspannt brunchen, Jazz genießen und dabei den Einblicken hinter die Kulissen lauschen. Ein Samstagvormittag zum Hören, Mitreden, Weiterdenken – mit spannenden Überraschungsgästen. Moderatorin: Dr. Franziska Hammer Wir empfehlen eine rechtzeitige Anmeldung unter:</description>
+      <pubDate>Sat, 07 Nov 2026 10:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>BLACK SABBITCH</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/black-sabbitch.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/black-sabbitch.html</guid>
+      <description>Sa, 07.11.2026 | 19:00 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
+Musik/Konzert, Rock: VERSCHOBEN | Black-Sabbath-Tribute | Tour 2026 – Leider müssen wir euch mitteilen, dass Black Sabbitch den geplanten Auftritt aus gesundheitlichen Gründen absagen müssen. Wir konnten aber auf die Schnelle einen Ersatztermin finden. Eure bereits gekauften Tickets …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/8/2026_10_07_HF_BlackSabbitch-3f6f96d2.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/8/2026_10_07_HF_BlackSabbitch-3f6f96d2.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 07 Nov 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>MUTTERS COURAGE</title>
+      <link>https://www.zimmertheater-tuebingen.de/event/mutters-courage-st-ckeinf-hrung-19-30-uhr-2587891</link>
+      <guid>https://www.zimmertheater-tuebingen.de/event/mutters-courage-st-ckeinf-hrung-19-30-uhr-2587891</guid>
+      <description>Sa, 07.11.2026 | 20:00 · Zimmertheater Tübingen · Zimmertheater
+Auch am Do 12.11.</description>
+      <pubDate>Sat, 07 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Frauen*Disco</title>
+      <link>https://club-voltaire.net/v/frauendisco-19</link>
+      <guid>https://club-voltaire.net/v/frauendisco-19</guid>
+      <description>Sa, 07.11.2026 | 21:00 · Club Voltaire · Club Voltaire
+Für alle Frauen*/FLINTA* SOLidarity + routine (pop/soul/latin) BoomBASStic (disco-funk/cumbia) Eintritt: 6,- Euro</description>
+      <enclosure url="https://club-voltaire.net/wp-content/uploads/2023/03/FrauenDisco-scaled-e1754333748778.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://club-voltaire.net/wp-content/uploads/2023/03/FrauenDisco-scaled-e1754333748778.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 07 Nov 2026 21:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Dance of the Bats</title>
       <link>https://www.epplehaus.de/event/dance-of-the-bats-8/</link>
       <guid>https://www.epplehaus.de/event/dance-of-the-bats-8/</guid>
-      <description>Sat, 07.11.2026 | 22:00 · Epplehaus
+      <description>Sa, 07.11.2026 | 22:00 · Epplehaus · Epplehaus
 Es gibt wieder ein vertrauten Mix aus Post-Punk, Dark Wave, Batcave, Gothik, 80s Wave und den einschlägigen Klassikern der Szene von DJ The Rolling Stones und DJ Pink Void a.k.a. Svartur Nott. Als Special Guest ist diesmal DJ Mischling mit am Start. oder gerne auch mehr. Google Kalender</description>
-      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/08/DanceOfTheBatssmall.png" type="image/jpeg" length="0" />
-      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/08/DanceOfTheBatssmall.png" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 07 Nov 2026 22:00:00 +0200</pubDate>
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/08/DanceOfTheBatssmall.png" type="image/png" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/08/DanceOfTheBatssmall.png" medium="image" type="image/png" />
+      <pubDate>Sat, 07 Nov 2026 22:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Pogromgedenken mit Archivaren und Jugendguides</title>
       <link>https://www.kulturnetz-tuebingen.de/event/pogromgedenken-mit-archivaren-und-jugendguides/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/pogromgedenken-mit-archivaren-und-jugendguides/</guid>
-      <description>Sun, 08.11.2026 | 16:00 · Kulturnetz Tübingen
+      <description>So, 08.11.2026 | 16:00 · Kulturnetz Tübingen
 Öffentlicher Stadtgang am Sonntag, 8. November 2026 in Tübingen Den Geruch und das raue Papier von Akten der Tübinger Polizeidirektion aus dem Jahr 1938 und alten Zeitungsbänden haben Jugendguides noch im Gespür, wenn sie bei einem Stadtgang „Die Reichspogromnacht in Tübingen“ am Sonntag, 8. …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/12/Logo-Jugendguides_R_k.png" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/12/Logo-Jugendguides_R_k.png" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 08 Nov 2026 16:00:00 +0200</pubDate>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/12/Logo-Jugendguides_R_k.png" type="image/png" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/12/Logo-Jugendguides_R_k.png" medium="image" type="image/png" />
+      <pubDate>Sun, 08 Nov 2026 16:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Frl. Wommy Wonder</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/frl-wommy-wonder-5.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/frl-wommy-wonder-5.html</guid>
+      <description>So, 08.11.2026 | 17:00 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
+Kabarett/Comedy, Kabarett, Comedy, Travestie &amp; Chanson: Alles muss raus! – „Alles muss raus!“ – unter diesem Motto fegt Wommy mit einer energiegeladenen Mischung aus Kabarett Comedy, Chanson und Travestie über die Bühne. Hier wird emotionaler Kehraus betrieben und auf Humorbasis Inventur …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/a/2026_11_08_HF_Wommy-c7df998b.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/a/2026_11_08_HF_Wommy-c7df998b.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 08 Nov 2026 17:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Ein Korb voller Geschichten</title>
+      <link>https://club-voltaire.net/v/ein-korb-voller-geschichten-5</link>
+      <guid>https://club-voltaire.net/v/ein-korb-voller-geschichten-5</guid>
+      <description>So, 08.11.2026 | 18:00 · Club Voltaire · Club Voltaire
+Was verbirgt sich Besonderes in einem geflochtenen Korb – nicht nur nahrhaftes für den Leib, sondern auch für die Seele, nämlich Märchen. Wie die Märchen so ist auch die Kunst des Körbeflechtens ein altes Kulturgut. In Märchen steckt die Weisheit der Völker. An diesem Abend sind spannende, …</description>
+      <pubDate>Sun, 08 Nov 2026 18:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>„Mein Sorgenschreck“ Gedichte von Friederike Mayröcker und Ernst Jandl</title>
+      <link>https://www.zimmertheater-tuebingen.de/event/mein-sorgenschreck-gedichte-von-friederike-mayr-cker-und-ernst-jandl-2589771</link>
+      <guid>https://www.zimmertheater-tuebingen.de/event/mein-sorgenschreck-gedichte-von-friederike-mayr-cker-und-ernst-jandl-2589771</guid>
+      <description>So, 08.11.2026 | 18:00 · Zimmertheater Tübingen · Zimmertheater
+Auch am So 22.11., So 13.12.</description>
+      <pubDate>Sun, 08 Nov 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Konzert Sotabosc / Sérac</title>
       <link>https://www.epplehaus.de/event/konzert-sotabosc-serac/</link>
       <guid>https://www.epplehaus.de/event/konzert-sotabosc-serac/</guid>
-      <description>Mon, 09.11.2026 | 19:00 · Epplehaus
+      <description>Mo, 09.11.2026 | 19:00 · Epplehaus · Epplehaus
 Sotabosc is an Atmospheric Black Metal project from Barcelona. Singing in Catalan and rooted in an anti-fascist ethos, the band blends black metal intensity with post-rock textures, exploring themes of forests, memory and resistance. Sérac were formed in 2018 as a reaction to rising right wing …</description>
-      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/sotaboscsmall.png" type="image/jpeg" length="0" />
-      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/sotaboscsmall.png" medium="image" type="image/jpeg" />
-      <pubDate>Mon, 09 Nov 2026 19:00:00 +0200</pubDate>
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/sotaboscsmall.png" type="image/png" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/sotaboscsmall.png" medium="image" type="image/png" />
+      <pubDate>Mon, 09 Nov 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Tortoise (US)</title>
       <link>https://www.kulturnetz-tuebingen.de/event/tortoise-us/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/tortoise-us/</guid>
-      <description>Mon, 09.11.2026 | 20:00 · franz.K Reutlingen · Kulturnetz Tübingen
+      <description>Mo, 09.11.2026 | 20:00 · franz.K Reutlingen · Kulturnetz Tübingen
 © Heather Cantrell Konzert Tortoise gilt als eine der weltweit einflussreichsten Musikgruppen der letzten 40 Jahre mit weitreichendem Einfluss auf die zeitgenössische Musikszene. Tortoise ist eine Instrumentalband aus Chicago, die Mitte der 1990er Jahre den Begriff Postrock mitprägte. Tortoise war …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/t.jpeg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/t.jpeg" medium="image" type="image/jpeg" />
-      <pubDate>Mon, 09 Nov 2026 20:00:00 +0200</pubDate>
+      <pubDate>Mon, 09 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Martinimarkt</title>
+      <link>https://www.tuebingen.de/108/15303.html</link>
+      <guid>https://www.tuebingen.de/108/15303.html</guid>
+      <description>Di, 10.11.2026 bis Mi, 11.11. · Tübingen · Stadt Tübingen
+Mehrtägig</description>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Vince Ebert</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/vince-ebert.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/vince-ebert.html</guid>
+      <description>Di, 10.11.2026 | 19:00 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
+Kabarett/Comedy: „Vince of Change“ – Es gibt sie noch, die guten Nachrichten: Kürzlich hat ein Mitglied der Letzten Generation ein Kind bekommen. In Berlin gibt es einen Senatsbeschluss, nach dem neue Straßen nur nach weiblichen Personen benannt werden …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/7/2026_11_10_HF_VinceEbert-3d9e9833.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/7/2026_11_10_HF_VinceEbert-3d9e9833.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 10 Nov 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Verändertes Amerika – veränderte Welt?</title>
       <link>https://www.kulturnetz-tuebingen.de/event/veraendertes-amerika-veraenderte-welt/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/veraendertes-amerika-veraenderte-welt/</guid>
-      <description>Wed, 11.11.2026 | 19:00 · Haus der Volkshochschule (Saal), Spendhausstraße 6, 72764 Reutlingen · Kulturnetz Tübingen
+      <description>Mi, 11.11.2026 | 19:00 · Haus der Volkshochschule (Saal), Spendhausstraße 6, 72764 Reutlingen · Kulturnetz Tübingen
 Vortrag von Andreas Zumach Die USA haben gewählt – und die Welt schaut genau hin. Doch was bedeuten die politischen Veränderungen in Washington für internationale Konflikte, für Diplomatie und für die Chancen auf Frieden? Der Journalist und langjährige UNO-Korrespondent Andreas Zumach ordnet die …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/zumach-768x512-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/zumach-768x512-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 11 Nov 2026 19:00:00 +0200</pubDate>
+      <pubDate>Wed, 11 Nov 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Latino Stammtisch</title>
       <link>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-17/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-17/</guid>
-      <description>Wed, 11.11.2026 | 20:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
-Monatlicher Stammtisch um d.a.i.-Spanischlehrerin Mariana Marturet Every last Wednesday of the month ¿Hablas español? Dann besuche gerne unseren monatlichen Latino Stammtisch im HAUPTbahnhof! In gemütlicher Runde haben die Teilnehmenden die Möglichkeit, in entspannter Atmosphäre das eigene Spanisch …</description>
+      <description>Mi, 11.11.2026 | 20:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
+Auch am Mi 16.12. – Monatlicher Stammtisch um d.a.i.-Spanischlehrerin Mariana Marturet Every last Wednesday of the month ¿Hablas español? Dann besuche gerne unseren monatlichen Latino Stammtisch im HAUPTbahnhof! In gemütlicher Runde haben die Teilnehmenden die Möglichkeit, in entspannter Atmosphäre das eigene Spanisch …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 11 Nov 2026 20:00:00 +0200</pubDate>
+      <pubDate>Wed, 11 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>This Is America – Is This America? Mythen, Konflikte und das amerikanische Versprechen</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/this-is-america-is-this-america-mythen-konflikte-und-das-amerikanische-versprechen/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/this-is-america-is-this-america-mythen-konflikte-und-das-amerikanische-versprechen/</guid>
-      <description>Fri, 13.11.2026 | 19:15 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Buchvorstellung &amp; Gespräch mit Johanna Roth Im Rahmen der d.a.i.-Reihe „What Unites U.S.?“ Denkt man an die Vereinigten Staaten, dann denken viele Menschen an Hollywood, Silicon Valley und Country Music, aber auch an Unabhängigkeit und grenzenlose Freiheit. Die USA sind ein Sehnsuchtsort – oder …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/roth-768x432-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/roth-768x432-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 13 Nov 2026 19:15:00 +0200</pubDate>
+      <title>Jazzclub Jamsession</title>
+      <link>https://club-voltaire.net/v/jazzclub-jamsession-20</link>
+      <guid>https://club-voltaire.net/v/jazzclub-jamsession-20</guid>
+      <description>Mi, 11.11.2026 | 20:30 · Jazzclub im Club Voltaire · Club Voltaire
+Auch am Mi 09.12. – Unsere Session-Band mit Joachim Gröschel (dr), Steffen Hollenweger (b) und Bernd Huber (git) eröffnet den Abend und lädt anschließend zum gemeinsamen Jammen. Let’s Jam! Eintritt frei.</description>
+      <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/09/Jam-Session2-www.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://club-voltaire.net/wp-content/uploads/2026/09/Jam-Session2-www.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 11 Nov 2026 20:30:00 +0100</pubDate>
     </item>
     <item>
       <title>Ferryman Festival</title>
       <link>https://www.epplehaus.de/event/ferryman-festival-2/</link>
       <guid>https://www.epplehaus.de/event/ferryman-festival-2/</guid>
-      <description>Fri, 13.11.2026 | 20:00 · Epplehaus
-Am 13. &amp; 14. November geht das Ferryman im Epplehaus Tübingen in die nächste Runde. Zwei Tage Indoor-Metal, acht Bands und ein Line-up quer durch verschiedene Ecken zwischen Black, Death, Thrash, Speed, Metalcore und Deathcore. 💥 Mit dabei sind: 🔥 Blood Torrent 🔥 GOMORRHA 💀 🔥 𝗞𝗡𝗜𝗙𝗘🔪 🔥 MAVIS 🔥 …</description>
+      <description>Fr, 13.11.2026 | 20:00 · Epplehaus · Epplehaus
+Auch am Sa 14.11. – Am 13. &amp; 14. November geht das Ferryman im Epplehaus Tübingen in die nächste Runde. Zwei Tage Indoor-Metal, acht Bands und ein Line-up quer durch verschiedene Ecken zwischen Black, Death, Thrash, Speed, Metalcore und Deathcore. 💥 Mit dabei sind: 🔥 Blood Torrent 🔥 GOMORRHA 💀 🔥 𝗞𝗡𝗜𝗙𝗘🔪 🔥 MAVIS 🔥 …</description>
       <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/ferryman_2026small.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/ferryman_2026small.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 13 Nov 2026 20:00:00 +0200</pubDate>
+      <pubDate>Fri, 13 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Ferryman Festival</title>
-      <link>https://www.epplehaus.de/event/ferryman-festival-3/</link>
-      <guid>https://www.epplehaus.de/event/ferryman-festival-3/</guid>
-      <description>Sat, 14.11.2026 | 17:00 · Epplehaus
-Am 13. &amp; 14. November geht das Ferryman im Epplehaus Tübingen in die nächste Runde. Zwei Tage Indoor-Metal, acht Bands und ein Line-up quer durch verschiedene Ecken zwischen Black, Death, Thrash, Speed, Metalcore und Deathcore. 💥 Mit dabei sind: 🔥 Blood Torrent 🔥 GOMORRHA 💀 The OFFICIAL Profile 🔥 …</description>
-      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/ferryman_2026small.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/ferryman_2026small.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 14 Nov 2026 17:00:00 +0200</pubDate>
+      <title>Die Phasenprüfer</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/die-phasenprufer.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/die-phasenprufer.html</guid>
+      <description>Sa, 14.11.2026 | 18:30 (Einlass) · Sudhaus Tübingen · Sudhaus Peripherie Werkstatt · Sudhaus
+Auch am So 15.11. – Theater/Kleinkunst: schön-schaurig-schräg | Musik-Theater – Phasen treffen aufeinander, stiften Unruhe, ergänzen oder potenzieren sich, prallen aneinander ab. BodyVoice, ein Ableger des Generationentheaters Zeitsprung, lässt Lebensphasen auf Geschichtsphasen treffen, Menschen …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/6/2026_11_14-15_HF_Generationstheater_Phasenpr%C3%BCfer-efe06d36.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/6/2026_11_14-15_HF_Generationstheater_Phasenpr%C3%BCfer-efe06d36.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 14 Nov 2026 18:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>PRIMA FACIE</title>
+      <link>https://www.zimmertheater-tuebingen.de/event/prima-facie-st-ckeinf-hrung-19-30-uhr-2589473</link>
+      <guid>https://www.zimmertheater-tuebingen.de/event/prima-facie-st-ckeinf-hrung-19-30-uhr-2589473</guid>
+      <description>Sa, 14.11.2026 | 20:00 · Zimmertheater Tübingen · Zimmertheater
+Auch am Sa 28.11., Fr 04.12.</description>
+      <pubDate>Sat, 14 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Plainride</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/plainride.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/plainride.html</guid>
+      <description>Mo, 16.11.2026 | 19:30 (Einlass) · Sudhaus Tübingen · Sudhaus Peripherie Werkstatt · Sudhaus
+Musik/Konzert, Heavy-Rock: Seit 2013 jagen Plainride aus Köln dem Sweet Spot zwischen roher Kraft und wilder Fantasie hinterher. Ihre Songs schlagen mit der Wucht eines Güterzugs ein – große Riffs, gefühlvoller Gesang und plötzliche Wendungen, …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/7/2026-11-16_HF_Plainride-544903e9.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/7/2026-11-16_HF_Plainride-544903e9.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Mon, 16 Nov 2026 19:30:00 +0100</pubDate>
     </item>
     <item>
       <title>Varian Fry: Im Wartesaal der Hoffnung</title>
       <link>https://www.kulturnetz-tuebingen.de/event/varian-fry-im-wartesaal-der-hoffnung/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/varian-fry-im-wartesaal-der-hoffnung/</guid>
-      <description>Tue, 17.11.2026 | 19:00 · Kulturnetz Tübingen
+      <description>Di, 17.11.2026 | 19:00 · Kulturnetz Tübingen
 © Holocaust Memorial Museum Vortrag von Michael Giese Ein Amerikaner kommt im August 1940 nach Marseille. Sein Name ist Varian Fry und er ist im Auftrag eines New Yorker Hilfskomitees unterwegs, um Menschen in den Internierungslagern zur Flucht zu verhelfen, bevor sie ausgeliefert und in …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Foto_Varian_Fry_Strasse_©Michael_Giese_klein-1024x768-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Foto_Varian_Fry_Strasse_©Michael_Giese_klein-1024x768-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Tue, 17 Nov 2026 19:00:00 +0200</pubDate>
+      <pubDate>Tue, 17 Nov 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Next to Normal – Das Musical</title>
       <link>https://www.kulturnetz-tuebingen.de/event/next-to-normal-das-musical/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/next-to-normal-das-musical/</guid>
-      <description>Wed, 18.11.2026 | 00:00 · Kulturnetz Tübingen
+      <description>Mi, 18.11.2026 | 18:00 · Kulturnetz Tübingen · auch bei Sudhaus
 Familie Goodman ist eine ganz normale Familie – oder zumindest wirkt sie so. Doch hinter der Fassade kämpfen alle Familienmitglieder mit ihren eigenen Ängsten, Sehnsüchten und Verletzungen. Diana, die Mutter der Familie, lebt mit einer bipolaren Störung und versucht, ihr Leben und ihre Familie …</description>
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/08/Banner-n2n.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/08/Banner-n2n.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 18 Nov 2026 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 18 Nov 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Needle Craft: Learning by Doing</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/needle-craft-learning-by-doing-28/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/needle-craft-learning-by-doing-28/</guid>
-      <description>Thu, 19.11.2026 | 17:30 · Kulturnetz Tübingen
-Playing with textiles nach dem “show and tell”-Prinzip Jeden zweiten Donnerstag Egal ob nähen, stricken, häkeln oder sticken: Jeden zweiten Donnerstag lädt das d.a.i. zu einer gemütlichen Handarbeitsrunde mit Kaffee und Tee ein. In ungezwungener Atmosphäre kann jede*r dem eigenen Hobby nachgehen …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Thu, 19 Nov 2026 17:30:00 +0200</pubDate>
+      <title>Philipp Schiepek / Lorenz Widauer „Bangers and Ballads”</title>
+      <link>https://club-voltaire.net/v/philipp-schiepek-lorenz-widauer-bangers-and-ballads</link>
+      <guid>https://club-voltaire.net/v/philipp-schiepek-lorenz-widauer-bangers-and-ballads</guid>
+      <description>Mi, 18.11.2026 | 20:30 · Jazzclub im Club Voltaire · Club Voltaire
+Starke, unmittelbar wirkende Melodien verbunden mit feinfühligen, erzählerischen Kompositionen und garniert mit spontaner Improvisation. Was als musikalische Begegnung bei den Salzburger Festspielen 2021 begann, ist heute ein gemeinsames Projekt der Bandleader Lorenz Widauer und Philipp Schiepek, …</description>
+      <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/09/Schiepek-Widauer_1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://club-voltaire.net/wp-content/uploads/2026/09/Schiepek-Widauer_1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Wed, 18 Nov 2026 20:30:00 +0100</pubDate>
     </item>
     <item>
-      <title>Book Swap @ d.a.i.-Bibliothek</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/book-swap-d-a-i-bibliothek-2/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/book-swap-d-a-i-bibliothek-2/</guid>
-      <description>Fri, 20.11.2026 | 13:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Swap ’til you drop – it’s book swap time Mit mehr als 11.000 englischsprachigen Medien bietet das Herzstück des Deutsch-Amerikanischen Instituts (d.a.i.) ein vielfältiges Angebot für Groß und Klein. Mit der Zeit bildet sich ein Fundus von diversen Büchern, die leider nicht alle in den Regalen …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Book-Swap-1024x683-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Book-Swap-1024x683-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 20 Nov 2026 13:00:00 +0200</pubDate>
+      <title>Schokoladenfestival chocolART</title>
+      <link>https://www.tuebingen.de/108/488.html</link>
+      <guid>https://www.tuebingen.de/108/488.html</guid>
+      <description>Di, 01.12.2026 bis So, 06.12. · Tübingen · Stadt Tübingen
+Mehrtägig</description>
+      <pubDate>Tue, 01 Dec 2026 00:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Book Club with Jessica</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/book-club-with-jessica-14/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/book-club-with-jessica-14/</guid>
-      <description>Tue, 24.11.2026 | 18:15 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Monthly hybrid book discussion with Jessica Strain Calling all book lovers! You like reading books and discussing them afterwards? Join our Book Club and discover the riches of international literature. Literature enthusiasts and language lover Jessica Strain will guide you through the best of …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/q3_22_jess_books-1-768x563-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/q3_22_jess_books-1-768x563-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Tue, 24 Nov 2026 18:15:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>History and Video Games: The American Revolution</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/history-and-video-games-the-american-revolution/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/history-and-video-games-the-american-revolution/</guid>
-      <description>Tue, 24.11.2026 | 19:15 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Gaming-Conference with Prof. Dr. Michael Butter. What if video games could take us on a journey through time? Explore the American Revolution with us through an interactive experience that sheds new light on this major historical event. To guide us, we are delighted to welcome Michael Butter, …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Official_Picure_Assassins_Creed_3.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Official_Picure_Assassins_Creed_3.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Tue, 24 Nov 2026 19:15:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Study Group: The Making of a Quagmire</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/study-group-the-making-of-a-quagmire-3/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/study-group-the-making-of-a-quagmire-3/</guid>
-      <description>Fri, 27.11.2026 | 17:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Conversation group with d.a.i. teacher Scott Stelle Every fourth Friday of the month No longer significantly constrained by institutional checks, such as the Judiciary and Congress, Trump ordered two major military actions in 2026: the operation that captured Venezuelan President Nicolás Maduro, …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/books-3733892_1280-682x1024-2.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/books-3733892_1280-682x1024-2.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 27 Nov 2026 17:30:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Friendsgiving Dinner</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/friendsgiving-dinner-2/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/friendsgiving-dinner-2/</guid>
-      <description>Fri, 27.11.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Thanksgiving Dinner in American Tradition. Join us in celebrating this traditional and prestigious American family holiday. On this evening, we are looking forward to everyone who does not want to spend Thanksgiving alone: Germans who are interested in participating in a Friendsgiving dinner or …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/friendsgiving-1-1024x819-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/friendsgiving-1-1024x819-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 27 Nov 2026 19:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Offene Männergruppe Tübingen</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/offene-maennergruppe-tuebingen-2/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/offene-maennergruppe-tuebingen-2/</guid>
-      <description>Fri, 27.11.2026 | 19:15 · Ort: wird nach Anmeldung zum Newsletter bekannt gegeben · Kulturnetz Tübingen
-Offene Männerrunde am Freitagabend, 27.11.26. Männer-Talk</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/01/maenner-sonnenuntergang-farbe.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/01/maenner-sonnenuntergang-farbe.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 27 Nov 2026 19:15:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Auswanderung – Einwanderung. Eine Matinee mit Berichten, Musik und Pot-Luck</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/auswanderung-einwanderung-eine-matinee-mit-berichten-musik-und-pot-luck/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/auswanderung-einwanderung-eine-matinee-mit-berichten-musik-und-pot-luck/</guid>
-      <description>Sun, 29.11.2026 | 11:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Auswanderung – Einwanderung. Eine Matinee mit Berichten, Musik und Pot-Luck Zu einem besonderen Sonntagvormittag laden die Freunde der Städtepartnerschaft Tübingen–Ann Arbor e.V. ins d.a.i. ein. Zum Auftakt berichten Teilnehmende der fünftägigen Vereinsreise „Amerikaner in Berlin“ über ihre …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/11_29_A2_Matinee_Horse-Mountain_Auswanderer-1024x479-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/11_29_A2_Matinee_Horse-Mountain_Auswanderer-1024x479-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 29 Nov 2026 11:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>German-American Stammtisch</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/german-american-stammtisch-15/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/german-american-stammtisch-15/</guid>
-      <description>Wed, 02.12.2026 | 19:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
-A monthly get-together Every first Wednesday of the month All Germans and Americans looking for a night of good conversation are cordially invited to join our German-American Stammtisch! You can look forward to an exciting exchange with d.a.i. teacher Luke Ogden and the friendly group every first …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Stammtisch.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Stammtisch.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 02 Dec 2026 19:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Fantasy Adventure: D&amp;D Roleplay Nights</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/fantasy-adventure-dd-roleplay-nights-15/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/fantasy-adventure-dd-roleplay-nights-15/</guid>
-      <description>Thu, 03.12.2026 | 17:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Gaming in English and Tabletop Every first Thursday of the month Join us for a round of dice and good fun with our resident game master Kevin Witz. Whether you’re interested in trying out pen and paper games for the first time or you’re a master of all tabletop pastimes, you’re welcome to join in …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/DD-1-768x960-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/DD-1-768x960-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Thu, 03 Dec 2026 17:30:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Needle Craft: Learning by Doing</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/needle-craft-learning-by-doing-29/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/needle-craft-learning-by-doing-29/</guid>
-      <description>Thu, 03.12.2026 | 17:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Playing with textiles nach dem “show and tell”-Prinzip Jeden zweiten Donnerstag Egal ob nähen, stricken, häkeln oder sticken: Jeden zweiten Donnerstag lädt das d.a.i. zu einer gemütlichen Handarbeitsrunde mit Kaffee und Tee ein. In ungezwungener Atmosphäre kann jede*r dem eigenen Hobby nachgehen …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Thu, 03 Dec 2026 17:30:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Silent Reading Party – Pajama-Style!</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/silent-reading-party-pajama-style/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/silent-reading-party-pajama-style/</guid>
-      <description>Fri, 04.12.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Get cozy with a good book for some quiet reading with fellow book lovers! Schaltet eure Handys stumm, lasst die Bildschirme links liegen und kommt zu unserer Silent Reading Party im Deutsch-Amerikanischen Institut. Bringt eure eigenen Bücher mit oder leiht euch welche aus unserer englischsprachigen …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/11.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/11.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 04 Dec 2026 19:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Book &amp; Film: When the West Started to Fall Apart</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/book-film-when-the-west-started-to-fall-apart/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/book-film-when-the-west-started-to-fall-apart/</guid>
-      <description>Fri, 04.12.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Conversation group with d.a.i. teacher Scott Stelle Every first Friday of the month Join us in a lively, spirited exploration of the historic transformation of the American Western, as the genre shifted from celebration to critique. Revisionist Westerns emerged in the shadow of Vietnam, the civil …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/2026_Q3_Book_Film_West-1024x683-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/2026_Q3_Book_Film_West-1024x683-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 04 Dec 2026 19:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Hardcore Winterfest</title>
-      <link>https://www.epplehaus.de/event/hardcore-winterfest/</link>
-      <guid>https://www.epplehaus.de/event/hardcore-winterfest/</guid>
-      <description>Sat, 05.12.2026 | 16:00 · Epplehaus
-Dec 05th HARDCORE WINTERFEST XIX Jugendzentrum Epplehaus Tübingen s/w Germoney – One-day d.i.y. HC/Punk Festival Extravaganza! Loads of Bands – Lecture – Food – Art – Fun’o’Fun (*) D.I.Y. involves you – please spread the word… No place for nationalism &amp; discrimination. …</description>
-      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/08/HCWFsmall.png" type="image/jpeg" length="0" />
-      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/08/HCWFsmall.png" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 05 Dec 2026 16:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Let’s Play! Die Bluegrass- und Oldtime Jam</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/lets-play-die-bluegrass-und-oldtime-jam-6/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/lets-play-die-bluegrass-und-oldtime-jam-6/</guid>
-      <description>Mon, 07.12.2026 | 19:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Musikalisches Improvisieren Eine Bluegrass Jam Session ist weit mehr als das bloße Spielen von Liedern – es ist das Zusammenkommen von Musiker*innen mit Banjo, Mandoline, Geige, Gitarre, Resonator-Gitarre und Kontrabass. Spontan erschaffen die Musiker*innen durch Erfahrung, Zuhören und die …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/7.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/7.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Mon, 07 Dec 2026 19:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>USA im Umbruch</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/__trashed/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/__trashed/</guid>
-      <description>Wed, 09.12.2026 | 19:00 · Haus der Volkshochschule (Saal), Spendhausstraße 6, 72764 Reutlingen · Kulturnetz Tübingen
-Vortrag von Josef Braml Amerika steht unter Druck – politisch, gesellschaftlich und institutionell. Die innere Zerreißprobe der USA bleibt nicht ohne Folgen für den Rest der Welt. In seinem Vortrag analysiert Dr. Josef Braml, was derzeit in den Vereinigten Staaten geschieht, warum sich politische …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Josef-Braml-original-1024x683-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Josef-Braml-original-1024x683-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 09 Dec 2026 19:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Input-Vortrag „Jahresrückblick: rechte Aktivitäten 2026 im Kreis Tübingen“</title>
-      <link>https://www.epplehaus.de/event/input-vortrag-jahresrueckblick-rechte-aktivitaeten-2026-im-kreis-tuebingen/</link>
-      <guid>https://www.epplehaus.de/event/input-vortrag-jahresrueckblick-rechte-aktivitaeten-2026-im-kreis-tuebingen/</guid>
-      <description>Thu, 10.12.2026 | 19:00 · Epplehaus
-Am Jahresende soll es wie in den vergangenen Jahren einen antifaschistischen Jahresrückblick auf die rechten und reaktionären Aktivitäten im Kreis Tübingen 2026 geben. Es sollen die wichtigen Gruppen und Einzelpersonen im Landkreis betrachtet werden. Dabei geht es z.B. um die Kreis-AfD, die …</description>
-      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/Input_small.png" type="image/jpeg" length="0" />
-      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/Input_small.png" medium="image" type="image/jpeg" />
-      <pubDate>Thu, 10 Dec 2026 19:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Quiz Night @ d.a.i.</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/quiz-night-d-a-i-3/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/quiz-night-d-a-i-3/</guid>
-      <description>Fri, 11.12.2026 | 20:00 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Trivia in English, music, and drinks in a casual atmosphere Every fourth Friday of the month Calling all quiz heads and English speakers: we want YOU to show off your big brain energy and take part in our monthly Quiz Night. Join us for a friendly trivia challenge – completely in English. Bring …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Quiz-1-1024x576-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Quiz-1-1024x576-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 11 Dec 2026 20:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Metalnight</title>
-      <link>https://www.epplehaus.de/event/metalnight-22/</link>
-      <guid>https://www.epplehaus.de/event/metalnight-22/</guid>
-      <description>Fri, 11.12.2026 | 20:30 · Epplehaus
-Google Kalender</description>
-      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/08/metalnight_small.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/08/metalnight_small.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 11 Dec 2026 20:30:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Book Club with Jessica</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/book-club-with-jessica-15/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/book-club-with-jessica-15/</guid>
-      <description>Tue, 15.12.2026 | 18:15 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Monthly hybrid book discussion with Jessica Strain Calling all book lovers! You like reading books and discussing them afterwards? Join our Book Club and discover the riches of international literature. Literature enthusiasts and language lover Jessica Strain will guide you through the best of …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/q3_22_jess_books-1-768x563-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/q3_22_jess_books-1-768x563-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Tue, 15 Dec 2026 18:15:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Latino Stammtisch</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-18/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-18/</guid>
-      <description>Wed, 16.12.2026 | 20:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
-Monatlicher Stammtisch um d.a.i.-Spanischlehrerin Mariana Marturet Every last Wednesday of the month ¿Hablas español? Dann besuche gerne unseren monatlichen Latino Stammtisch im HAUPTbahnhof! In gemütlicher Runde haben die Teilnehmenden die Möglichkeit, in entspannter Atmosphäre das eigene Spanisch …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 16 Dec 2026 20:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Needle Craft: Learning by Doing</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/needle-craft-learning-by-doing-30/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/needle-craft-learning-by-doing-30/</guid>
-      <description>Thu, 17.12.2026 | 17:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Playing with textiles nach dem “show and tell”-Prinzip Jeden zweiten Donnerstag Egal ob nähen, stricken, häkeln oder sticken: Jeden zweiten Donnerstag lädt das d.a.i. zu einer gemütlichen Handarbeitsrunde mit Kaffee und Tee ein. In ungezwungener Atmosphäre kann jede*r dem eigenen Hobby nachgehen …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/needlecraft-1-1080x1536-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Thu, 17 Dec 2026 17:30:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Study Group: The Making of a Quagmire</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/study-group-the-making-of-a-quagmire-4/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/study-group-the-making-of-a-quagmire-4/</guid>
-      <description>Fri, 18.12.2026 | 17:30 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
-Conversation group with d.a.i. teacher Scott Stelle Every fourth Friday of the month No longer significantly constrained by institutional checks, such as the Judiciary and Congress, Trump ordered two major military actions in 2026: the operation that captured Venezuelan President Nicolás Maduro, …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/books-3733892_1280-682x1024-2.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/books-3733892_1280-682x1024-2.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 18 Dec 2026 17:30:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Goa Psy Party – Soli für Nepal</title>
-      <link>https://www.epplehaus.de/event/goa-psy-party-soli-fuer-nepal-3/</link>
-      <guid>https://www.epplehaus.de/event/goa-psy-party-soli-fuer-nepal-3/</guid>
-      <description>Fri, 15.01.2027 | 22:00 · Epplehaus
-Google Kalender</description>
-      <pubDate>Fri, 15 Jan 2027 22:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>🎶 Winterkonzert 2027 der Freien Sinfonie Tübingen 🎶</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/%f0%9f%8e%b6-winterkonzert-2027-der-freien-sinfonie-tuebingen-%f0%9f%8e%b6/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/%f0%9f%8e%b6-winterkonzert-2027-der-freien-sinfonie-tuebingen-%f0%9f%8e%b6/</guid>
-      <description>Sun, 31.01.2027 | 17:00 · Stiftskirche St. Georg · Kulturnetz Tübingen
-🎶 Winterkonzert 2027 der Freien Sinfonie Tübingen 🎶</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2022/08/white.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2022/08/white.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 31 Jan 2027 17:00:00 +0200</pubDate>
+      <title>Weihnachtsmarkt</title>
+      <link>https://www.tuebingen.de/108/489.html</link>
+      <guid>https://www.tuebingen.de/108/489.html</guid>
+      <description>Fr, 11.12.2026 bis So, 13.12. · Tübingen · Stadt Tübingen
+Mehrtägig</description>
+      <pubDate>Fri, 11 Dec 2026 00:00:00 +0100</pubDate>
     </item>
   </channel>
 </rss>
