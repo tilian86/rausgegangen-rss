@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Thu, 05 Nov 2026 11:51:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 21:46:41 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fantasy Adventure: D&amp;D Roleplay Nights</title>
@@ -51,14 +51,6 @@ Dr. Matthias Kramm, Mathematisch-Naturwissenschaftliche Fakultät, Fachbereich B
 Kuck dir die Welt doch an: Alle gehn dumm. Smartphone-Zombies, emotionaler Leerstand, machtbesessene Despoten. Zeit für einen Reset – Fliegende Haie finden: Wenn schon dumm gehen, dann richtig! Ausrasten, durchtanzen und schweißnass Hymnen hinausschreien für eine bessere Welt. Unterdrückung von …</description>
       <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/09/fh-alle-gehn-dumm-4a-maxim-kaiser-scaled.jpg" type="image/jpeg" length="0" />
       <media:content url="https://club-voltaire.net/wp-content/uploads/2026/09/fh-alle-gehn-dumm-4a-maxim-kaiser-scaled.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Thu, 05 Nov 2026 20:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Catarina oder Von der Schönheit, Faschisten zu töten</title>
-      <link>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</link>
-      <guid>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</guid>
-      <description>Do, 05.11.2026 | 20:00 · Zimmertheater im Löwen (Kornhausstraße 5) · Zimmertheater · Nachgespräch
-Auch am Fr 06.11., Fr 13.11., Do 19.11., Fr 20.11., Sa 21.11. … (7 Termine)</description>
       <pubDate>Thu, 05 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
@@ -133,6 +125,14 @@ Musik/Konzert: Deutscher New Wave &amp; Postpunk im Doppelkonzert – Die „Fam
 „Es geht nie um den Sieg. Es geht immer um die Songs.“ Im Jahresfinale treten die Gewinner*innen der ersten vier Tübinger Song Slams gegeneinander an. Das heißt, ihr habt es in der Hand, wer zum krönenden Abschluss die Club-Voltaire-Bühne &amp; die Tübinger Herzen erobert. Die vier wagemutigen …</description>
       <enclosure url="https://club-voltaire.net/wp-content/uploads/2025/01/Songslam-FB-Titel.png" type="image/png" length="0" />
       <media:content url="https://club-voltaire.net/wp-content/uploads/2025/01/Songslam-FB-Titel.png" medium="image" type="image/png" />
+      <pubDate>Fri, 06 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Catarina oder Von der Schönheit, Faschisten zu töten</title>
+      <link>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</link>
+      <guid>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</guid>
+      <description>Fr, 06.11.2026 | 20:00 · Zimmertheater im Löwen (Kornhausstraße 5) · Zimmertheater · Nachgespräch
+Auch am Fr 13.11., Do 19.11., Fr 20.11., Sa 21.11., Do 17.12.</description>
       <pubDate>Fri, 06 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
