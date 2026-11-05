@@ -5,54 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Wed, 04 Nov 2026 21:43:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 11:51:43 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Französische Filmtage</title>
-      <link>https://www.tuebingen.de/108/487.html</link>
-      <guid>https://www.tuebingen.de/108/487.html</guid>
-      <description>Mi, 04.11.2026 · Tübingen · Stadt Tübingen
-Mehrtägig</description>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Cluj</title>
-      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/cluj/</link>
-      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/cluj/</guid>
-      <description>Mi, 04.11.2026 | 18:15 · Hörsaal 25, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
-Alina Noveanu, Tübingen</description>
-      <pubDate>Wed, 04 Nov 2026 18:15:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>German-American Stammtisch</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/german-american-stammtisch-13/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/german-american-stammtisch-13/</guid>
-      <description>Mi, 04.11.2026 | 19:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
-Auch am Mi 02.12. – A monthly get-together Every first Wednesday of the month All Germans and Americans looking for a night of good conversation are cordially invited to join our German-American Stammtisch! You can look forward to an exciting exchange with d.a.i. teacher Luke Ogden and the friendly group every first …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Stammtisch.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Stammtisch.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 04 Nov 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Black Sea Dahu</title>
-      <link>https://sudhaus-tuebingen.de/programm/details/black-sea-dahu-2.html</link>
-      <guid>https://sudhaus-tuebingen.de/programm/details/black-sea-dahu-2.html</guid>
-      <description>Mi, 04.11.2026 | 19:00 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
-Musik/Konzert, Indie Folk: Everything Tour – Black Sea Dahu zu hören ist wie barfuß in einem Gewitter zu stehen, völlig ungeschützt, aber zutiefst lebendig. Die Band um die Schweizer Sängerin und Songwriterin Janine Cathrein hat sich eine eigene Welt erschaffen: …</description>
-      <enclosure url="https://sudhaus-tuebingen.de/assets/images/2/2026_11_04_HF_BlackSeaDahu_Solong-bbca375c.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://sudhaus-tuebingen.de/assets/images/2/2026_11_04_HF_BlackSeaDahu_Solong-bbca375c.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 04 Nov 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Jochen Rückert New Quartet feat. Alexandra Ridout</title>
-      <link>https://club-voltaire.net/v/jochen-rueckert-new-quartet-feat-alexandra-ridout</link>
-      <guid>https://club-voltaire.net/v/jochen-rueckert-new-quartet-feat-alexandra-ridout</guid>
-      <description>Mi, 04.11.2026 | 20:30 · Jazzclub im Club Voltaire · Club Voltaire
-Aktueller angesagter Jazzclub Sound aus dem ‚Big Apple‘ im Club Voltaire in Tübingen: Schlagzeuger Jochen Rückert präsentiert sein neues Quartett aus New York City. Seine MitmusikerInnen sind alle Senkrechtstarter der New Yorker Jazzszene und rund zwei Jahrzehnte jünger als der Bandleader – eine …</description>
-      <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/09/Jochen-Rueckert-New-Quartet-2025.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://club-voltaire.net/wp-content/uploads/2026/09/Jochen-Rueckert-New-Quartet-2025.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 04 Nov 2026 20:30:00 +0100</pubDate>
-    </item>
     <item>
       <title>Fantasy Adventure: D&amp;D Roleplay Nights</title>
       <link>https://www.kulturnetz-tuebingen.de/event/fantasy-adventure-dd-roleplay-nights-14/</link>
@@ -206,6 +160,14 @@ Angelika Frescher-Molitor, Deutsches Seminar – Ist die Literaturgeschichte rei
       <description>Sa, 07.11.2026 | 10:00 · Taproom, Neckawa, Wöhrdstraße 25 · Uni Tübingen
 Moderatorin: Dr. Franziska Hammer – Entspannt brunchen, Jazz genießen und dabei den Einblicken hinter die Kulissen lauschen. Ein Samstagvormittag zum Hören, Mitreden, Weiterdenken – mit spannenden Überraschungsgästen. Moderatorin: Dr. Franziska Hammer Wir empfehlen eine rechtzeitige Anmeldung unter:</description>
       <pubDate>Sat, 07 Nov 2026 10:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>RICHTIG BEEF zu „Gerecht Sparen – aber wie?“- Kommunale Haushalte zwischen Konsolidierung und Zukunftsgestaltung</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/richtig-beef-zu-gerecht-sparen-aber-wie-kommunale-haushalte-zwischen-konsolidierung-und-zukunftsgestaltung/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/richtig-beef-zu-gerecht-sparen-aber-wie-kommunale-haushalte-zwischen-konsolidierung-und-zukunftsgestaltung/</guid>
+      <description>Sa, 07.11.2026 | 13:00 · Hauptbühne, Neckawa, Wöhrdstraße 25 · Uni Tübingen
+Prof. Uwe Schneidewind, Stefanie Bürkle,  Dr. Yannick Bury, Moderation: Geli Hensolt, SWR – Kommunen und Landkreise in Deutschland stehen unter finanziellem Druck: steigende Ausgaben, sinkende Einnahmen und jahrelang aufgeschobene Investitionen in Schulen, Straßen und Daseinsvorsorge bei engen Spiel</description>
+      <pubDate>Sat, 07 Nov 2026 13:00:00 +0100</pubDate>
     </item>
     <item>
       <title>MUTTERS COURAGE</title>
@@ -368,6 +330,16 @@ Auch am So 15.11. – Theater/Kleinkunst: schön-schaurig-schräg | Musik-Theate
       <enclosure url="https://sudhaus-tuebingen.de/assets/images/6/2026_11_14-15_HF_Generationstheater_Phasenpr%C3%BCfer-efe06d36.jpg" type="image/jpeg" length="0" />
       <media:content url="https://sudhaus-tuebingen.de/assets/images/6/2026_11_14-15_HF_Generationstheater_Phasenpr%C3%BCfer-efe06d36.jpg" medium="image" type="image/jpeg" />
       <pubDate>Sat, 14 Nov 2026 18:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Tingvall Trio</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/tingvall-trio-3.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/tingvall-trio-3.html</guid>
+      <description>Sa, 14.11.2026 | 19:30 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
+Musik/Konzert, NordicJazz: "Pax" – Piano Trios gibt es weltweit viele, die klassische Basisformation des Jazz hat in den letzten Jahres ein fulminantes Revival erlebt. Doch wenn man nach der Essenz aller derzeit tourenden Trios dieser Bewegung sucht, …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/b/2026_11_14_HF_TingvallTrio-97924e95.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/b/2026_11_14_HF_TingvallTrio-97924e95.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 14 Nov 2026 19:30:00 +0100</pubDate>
     </item>
     <item>
       <title>PRIMA FACIE</title>
