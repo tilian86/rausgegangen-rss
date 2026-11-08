@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Sun, 08 Nov 2026 11:02:11 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 20:11:38 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pogromgedenken mit Archivaren und Jugendguides</title>
@@ -33,14 +33,6 @@ Kabarett/Comedy, Kabarett, Comedy, Travestie &amp; Chanson: Alles muss raus! –
       <guid>https://club-voltaire.net/v/ein-korb-voller-geschichten-5</guid>
       <description>So, 08.11.2026 | 18:00 · Club Voltaire · Club Voltaire
 Was verbirgt sich Besonderes in einem geflochtenen Korb – nicht nur nahrhaftes für den Leib, sondern auch für die Seele, nämlich Märchen. Wie die Märchen so ist auch die Kunst des Körbeflechtens ein altes Kulturgut. In Märchen steckt die Weisheit der Völker. An diesem Abend sind spannende, …</description>
-      <pubDate>Sun, 08 Nov 2026 18:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>„Mein Sorgenschreck“ Gedichte von Friederike Mayröcker und Ernst Jandl</title>
-      <link>https://www.zimmertheater-tuebingen.de/event/mein-sorgenschreck-gedichte-von-friederike-mayr-cker-und-ernst-jandl-2589771</link>
-      <guid>https://www.zimmertheater-tuebingen.de/event/mein-sorgenschreck-gedichte-von-friederike-mayr-cker-und-ernst-jandl-2589771</guid>
-      <description>So, 08.11.2026 | 18:00 · Zimmertheater im Gewölbe (Bursagasse 16) · Zimmertheater
-Auch am So 22.11., So 13.12.</description>
       <pubDate>Sun, 08 Nov 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
@@ -347,6 +339,14 @@ Swap ’til you drop – it’s book swap time Mit mehr als 11.000 englischsprac
       <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Book-Swap-1024x683-1.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Book-Swap-1024x683-1.jpg" medium="image" type="image/jpeg" />
       <pubDate>Fri, 20 Nov 2026 13:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>„Mein Sorgenschreck“ Gedichte von Friederike Mayröcker und Ernst Jandl</title>
+      <link>https://www.zimmertheater-tuebingen.de/event/mein-sorgenschreck-gedichte-von-friederike-mayr-cker-und-ernst-jandl-2589771</link>
+      <guid>https://www.zimmertheater-tuebingen.de/event/mein-sorgenschreck-gedichte-von-friederike-mayr-cker-und-ernst-jandl-2589771</guid>
+      <description>So, 22.11.2026 | 18:00 · Zimmertheater Tübingen · Zimmertheater
+Auch am So 13.12.</description>
+      <pubDate>Sun, 22 Nov 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Ensemble Phorminx</title>
