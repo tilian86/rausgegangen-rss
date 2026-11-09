@@ -5,36 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Mon, 09 Nov 2026 12:31:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 23:58:12 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Alles öffentlich? Koloniale Sammlungsdaten zwischen Transparenz, Schutz und Teilhabe</title>
-      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/alles-oeffentlich-koloniale-sammlungsdaten-zwischen-transparenz-schutz-und-teilhabe/</link>
-      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/alles-oeffentlich-koloniale-sammlungsdaten-zwischen-transparenz-schutz-und-teilhabe/</guid>
-      <description>Mo, 09.11.2026 | 18:15 · Hörsaal 21, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
-Annika Vosseler, Tübingen – Zoom-Link: https://zoom.us/j/95977375594?pwd=EU3V0mmBCvMBHxaHo7vLzxTkxxuaYJ.1</description>
-      <pubDate>Mon, 09 Nov 2026 18:15:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Konzert Sotabosc / Sérac</title>
-      <link>https://www.epplehaus.de/event/konzert-sotabosc-serac/</link>
-      <guid>https://www.epplehaus.de/event/konzert-sotabosc-serac/</guid>
-      <description>Mo, 09.11.2026 | 19:00 · Epplehaus · Epplehaus
-Sotabosc is an Atmospheric Black Metal project from Barcelona. Singing in Catalan and rooted in an anti-fascist ethos, the band blends black metal intensity with post-rock textures, exploring themes of forests, memory and resistance. Sérac were formed in 2018 as a reaction to rising right wing …</description>
-      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/sotaboscsmall.png" type="image/png" length="0" />
-      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/sotaboscsmall.png" medium="image" type="image/png" />
-      <pubDate>Mon, 09 Nov 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Tortoise (US)</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/tortoise-us/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/tortoise-us/</guid>
-      <description>Mo, 09.11.2026 | 20:00 · franz.K Reutlingen · Kulturnetz Tübingen
-© Heather Cantrell Konzert Tortoise gilt als eine der weltweit einflussreichsten Musikgruppen der letzten 40 Jahre mit weitreichendem Einfluss auf die zeitgenössische Musikszene. Tortoise ist eine Instrumentalband aus Chicago, die Mitte der 1990er Jahre den Begriff Postrock mitprägte. Tortoise war …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/t.jpeg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/t.jpeg" medium="image" type="image/jpeg" />
-      <pubDate>Mon, 09 Nov 2026 20:00:00 +0100</pubDate>
-    </item>
     <item>
       <title>Martinimarkt</title>
       <link>https://www.tuebingen.de/108/15303.html</link>
@@ -124,6 +96,14 @@ Liebe Erstis aufgepasst! Am 12.11. ist Ersti-Kneipe im Epplehaus! Diesmal mit de
       <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/11/erstikneipe_small.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/11/erstikneipe_small.jpg" medium="image" type="image/jpeg" />
       <pubDate>Thu, 12 Nov 2026 18:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Nachhaltige Nutzung begrenzter Ressourcen in Zeiten des globalen Wandels: Ungenutzte Potentiale im Stadt-Land-Kontext</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/nachhaltige-nutzung-begrenzter-ressourcen-in-zeiten-des-globalen-wandels-ungenutzte-potentiale-im-stadt-land-kontext/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/nachhaltige-nutzung-begrenzter-ressourcen-in-zeiten-des-globalen-wandels-ungenutzte-potentiale-im-stadt-land-kontext/</guid>
+      <description>Do, 12.11.2026 | 18:15 · Hörsaal 25, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
+Prof. Dr. Michaela Dippold, Geosphären-Biosphären-Wechselwirkungen, Geo- und Umweltwissenschaften / Sprecherin TERRA Exzellenzcluster, Universität Tübingen</description>
+      <pubDate>Thu, 12 Nov 2026 18:15:00 +0100</pubDate>
     </item>
     <item>
       <title>Jungsein in Demokratie und Diktatur</title>
@@ -239,7 +219,7 @@ Nora Gomringer, Herbert Grönemeyer, Michael Lentz – Die Veranstaltung beginne
       <link>https://sudhaus-tuebingen.de/programm/details/plainride.html</link>
       <guid>https://sudhaus-tuebingen.de/programm/details/plainride.html</guid>
       <description>Mo, 16.11.2026 | 19:30 (Einlass) · Sudhaus Tübingen · Sudhaus Peripherie Werkstatt · Sudhaus
-Musik/Konzert, Heavy-Rock: Seit 2013 jagen Plainride aus Köln dem Sweet Spot zwischen roher Kraft und wilder Fantasie hinterher. Ihre Songs schlagen mit der Wucht eines Güterzugs ein – große Riffs, gefühlvoller Gesang und plötzliche Wendungen, …</description>
+Musik/Konzert, Heavy-Rock: Seit 2013 jagen PLAINRIDE aus Köln dem Sweet Spot zwischen roher Kraft und wilder Fantasie hinterher. Ihre Songs schlagen mit der Wucht eines Güterzugs ein – große Riffs, gefühlvoller Gesang und plötzliche Wendungen, …</description>
       <enclosure url="https://sudhaus-tuebingen.de/assets/images/7/2026-11-16_HF_Plainride-544903e9.jpg" type="image/jpeg" length="0" />
       <media:content url="https://sudhaus-tuebingen.de/assets/images/7/2026-11-16_HF_Plainride-544903e9.jpg" medium="image" type="image/jpeg" />
       <pubDate>Mon, 16 Nov 2026 19:30:00 +0100</pubDate>
@@ -313,6 +293,14 @@ Auch am Fr 20.11., So 29.11., Mi 02.12. – Theater/Kleinkunst, Musical: Ein Mus
       <pubDate>Thu, 19 Nov 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Kneipe</title>
+      <link>https://www.epplehaus.de/event/kneipe-2/</link>
+      <guid>https://www.epplehaus.de/event/kneipe-2/</guid>
+      <description>Do, 19.11.2026 | 19:00 · Epplehaus · Epplehaus
+Google Kalender</description>
+      <pubDate>Thu, 19 Nov 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>fluppe &amp; Küste</title>
       <link>https://club-voltaire.net/v/fluppe</link>
       <guid>https://club-voltaire.net/v/fluppe</guid>
@@ -333,6 +321,14 @@ Swap ’til you drop – it’s book swap time Mit mehr als 11.000 englischsprac
       <pubDate>Fri, 20 Nov 2026 13:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Konzert: High Demand, Findus, One Frame + tba</title>
+      <link>https://www.epplehaus.de/event/konzert-high-demand-findus-one-frame-tba/</link>
+      <guid>https://www.epplehaus.de/event/konzert-high-demand-findus-one-frame-tba/</guid>
+      <description>Fr, 20.11.2026 | 19:30 · Epplehaus · Epplehaus
+Musikwerkstatt presents: High Demand * Findus * One Frame * tba Google Kalender</description>
+      <pubDate>Fri, 20 Nov 2026 19:30:00 +0100</pubDate>
+    </item>
+    <item>
       <title>„Mein Sorgenschreck“ Gedichte von Friederike Mayröcker und Ernst Jandl</title>
       <link>https://www.zimmertheater-tuebingen.de/event/mein-sorgenschreck-gedichte-von-friederike-mayr-cker-und-ernst-jandl-2589771</link>
       <guid>https://www.zimmertheater-tuebingen.de/event/mein-sorgenschreck-gedichte-von-friederike-mayr-cker-und-ernst-jandl-2589771</guid>
@@ -349,6 +345,26 @@ Musik/Konzert, Neue Musik: 30 Jahre Neue Musik im Sudhaus – Seit 30 Jahren ist
       <enclosure url="https://sudhaus-tuebingen.de/assets/images/4/2026_11_22_HF_Phorminx-369ba23f.jpg" type="image/jpeg" length="0" />
       <media:content url="https://sudhaus-tuebingen.de/assets/images/4/2026_11_22_HF_Phorminx-369ba23f.jpg" medium="image" type="image/jpeg" />
       <pubDate>Sun, 22 Nov 2026 18:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Aus voller Kehle...für die Seele</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/aus-voller-kehle-fur-die-seele-44.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/aus-voller-kehle-fur-die-seele-44.html</guid>
+      <description>Di, 24.11.2026 · Sudhaus Tübingen · Sudhaus
+Auch am Di 22.12., Mo 25.01. – Singen für alle mit Patrick Bopp alias Memphis (Füenf)!</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/6/HF_VolleKehle-71b06a84.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/6/HF_VolleKehle-71b06a84.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 24 Nov 2026 00:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Book Club with Jessica</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/book-club-with-jessica-14/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/book-club-with-jessica-14/</guid>
+      <description>Di, 24.11.2026 | 18:15 · Deutsch-Amerikanisches Institut (d.a.i.) · Kulturnetz Tübingen
+Auch am Di 15.12. – Monthly hybrid book discussion with Jessica Strain Calling all book lovers! You like reading books and discussing them afterwards? Join our Book Club and discover the riches of international literature. Literature enthusiasts and language lover Jessica Strain will guide you through the best of …</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/q3_22_jess_books-1-768x563-1.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/q3_22_jess_books-1-768x563-1.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Tue, 24 Nov 2026 18:15:00 +0100</pubDate>
     </item>
     <item>
       <title>Schokoladenfestival chocolART</title>
