@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Tue, 10 Nov 2026 12:06:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 21:38:55 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Martinimarkt</title>
@@ -14,14 +14,6 @@
       <description>Di, 10.11.2026 bis Mi, 11.11. · Tübingen · Stadt Tübingen
 Mehrtägig</description>
       <pubDate>Tue, 10 Nov 2026 00:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Workshop: Kant und KI</title>
-      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/workshop-kant-und-ki/</link>
-      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/workshop-kant-und-ki/</guid>
-      <description>Di, 10.11.2026 | 09:00 · Hörsaal, Carl Friedrich von Weizsäcker-Zentrum, Doblerstr. 33 · Uni Tübingen
-Dr. Carolin Antos, Konstanz, Dr. Reinhard Kahle, Tübingen, Dr. Thomas Sattig, Tübingen – Workshop (auf deutsch) im Vorfeld einer Veranstaltung zum 20-jährigen Jubiläum des Studienhauses der Udo Keller-Stiftung in der Doblerstraße Sprecher: Prof. Dr. Carolin Antos, Konstanz - Kann KI a priori Wissen </description>
-      <pubDate>Tue, 10 Nov 2026 09:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Keynote Talks</title>
@@ -37,6 +29,14 @@ Prof. Dr. Markus Gabriel, Bonn, Prof. Dr. Yasuo Deguchi, Kyoto – Two Keynote T
       <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/die-natur-im-recht-neu-denken-ethik-und-recht-im-spannungsfeld-der-dekolonialisierung/</guid>
       <description>Di, 10.11.2026 | 18:15 · Hörsaal 21, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
 Dr. Matthias Kramm, Lehrstuhl für Ethik, Theorie und Geschichte der Biowissenschaften, Universität Tübingen / Marie Curie Postdoctoral Fellow, Universität Kassel</description>
+      <pubDate>Tue, 10 Nov 2026 18:15:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Die Rolle der Religion im türkischen Rechtsextremismus: Das Beispiel der Grauen Wölfe</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/die-rolle-der-religion-im-tuerkischen-rechtsextremismus-das-beispiel-der-grauen-woelfe/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/die-rolle-der-religion-im-tuerkischen-rechtsextremismus-das-beispiel-der-grauen-woelfe/</guid>
+      <description>Di, 10.11.2026 | 18:15 · Hörsaal 25, Kupferbau, Hölderlinstr. 5, und Aufzeichnung · Uni Tübingen · Studium Generale
+Monzer Haider, Islamische Theologie, Universität Tübingen</description>
       <pubDate>Tue, 10 Nov 2026 18:15:00 +0100</pubDate>
     </item>
     <item>
