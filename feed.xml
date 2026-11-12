@@ -5,54 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Wed, 11 Nov 2026 22:28:29 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 12:10:47 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Martinimarkt</title>
-      <link>https://www.tuebingen.de/108/15303.html</link>
-      <guid>https://www.tuebingen.de/108/15303.html</guid>
-      <description>Mi, 11.11.2026 · Tübingen · Stadt Tübingen
-Mehrtägig</description>
-      <pubDate>Wed, 11 Nov 2026 00:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Novi Sad</title>
-      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/novi-sad/</link>
-      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/novi-sad/</guid>
-      <description>Mi, 11.11.2026 | 18:15 · Hörsaal 25, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
-Daniela Simon, Tübingen</description>
-      <pubDate>Wed, 11 Nov 2026 18:15:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Verändertes Amerika – veränderte Welt?</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/veraendertes-amerika-veraenderte-welt/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/veraendertes-amerika-veraenderte-welt/</guid>
-      <description>Mi, 11.11.2026 | 19:00 · Haus der Volkshochschule (Saal), Spendhausstraße 6, 72764 Reutlingen · Kulturnetz Tübingen
-Vortrag von Andreas Zumach Die USA haben gewählt – und die Welt schaut genau hin. Doch was bedeuten die politischen Veränderungen in Washington für internationale Konflikte, für Diplomatie und für die Chancen auf Frieden? Der Journalist und langjährige UNO-Korrespondent Andreas Zumach ordnet die …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/zumach-768x512-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/zumach-768x512-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 11 Nov 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Latino Stammtisch</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-17/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/latino-stammtisch-17/</guid>
-      <description>Mi, 11.11.2026 | 20:00 · HAUPTbahnhof Restaurant · Kulturnetz Tübingen
-Auch am Mi 16.12. – Monatlicher Stammtisch um d.a.i.-Spanischlehrerin Mariana Marturet Every last Wednesday of the month ¿Hablas español? Dann besuche gerne unseren monatlichen Latino Stammtisch im HAUPTbahnhof! In gemütlicher Runde haben die Teilnehmenden die Möglichkeit, in entspannter Atmosphäre das eigene Spanisch …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/09/Latino-Stammtisch-1-768x432-1.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 11 Nov 2026 20:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Jazzclub Jamsession</title>
-      <link>https://club-voltaire.net/v/jazzclub-jamsession-20</link>
-      <guid>https://club-voltaire.net/v/jazzclub-jamsession-20</guid>
-      <description>Mi, 11.11.2026 | 20:30 · Jazzclub im Club Voltaire · Club Voltaire
-Auch am Mi 09.12. – Unsere Session-Band mit Joachim Gröschel (dr), Steffen Hollenweger (b) und Bernd Huber (git) eröffnet den Abend und lädt anschließend zum gemeinsamen Jammen. Let’s Jam! Eintritt frei.</description>
-      <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/09/Jam-Session2-www.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://club-voltaire.net/wp-content/uploads/2026/09/Jam-Session2-www.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Wed, 11 Nov 2026 20:30:00 +0100</pubDate>
-    </item>
     <item>
       <title>Ersti Kneipe</title>
       <link>https://www.epplehaus.de/event/ersti-kneipe/</link>
@@ -85,7 +39,7 @@ Ein Gesprächs- und Diskussionsabend mit Menschen aus dem Ostteil der Republik. 
       <title>MUTTERS COURAGE</title>
       <link>https://www.zimmertheater-tuebingen.de/event/mutters-courage-st-ckeinf-hrung-19-30-uhr-2587891</link>
       <guid>https://www.zimmertheater-tuebingen.de/event/mutters-courage-st-ckeinf-hrung-19-30-uhr-2587891</guid>
-      <description>Do, 12.11.2026 | 20:00 · Zimmertheater im Gewölbe (Bursagasse 16) · Zimmertheater · Zum letzten Mal</description>
+      <description>Do, 12.11.2026 | 20:00 · Zimmertheater im Gewölbe (Bursagasse 16) · Zimmertheater</description>
       <pubDate>Thu, 12 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
@@ -214,6 +168,14 @@ Auch am Mo 14.12. – Im Zeitalter von Playlisten, Shuffle-Funktion und Spotify 
       <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/imagining-the-inner-lives-of-animals-how-science-and-the-arts-can-collaborate-to-cultivate-empathy-across-species-vortrag-auf-englisch/</guid>
       <description>Di, 17.11.2026 | 18:15 · Hörsaal 21, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
 Dr. Andrzej Stuart-Thompson, Global Encounters Fellow, College of Fellows, Universität Tübingen</description>
+      <pubDate>Tue, 17 Nov 2026 18:15:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Is the Bible the Origin of Nationalism?</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/is-the-bible-the-origin-of-nationalism/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/is-the-bible-the-origin-of-nationalism/</guid>
+      <description>Di, 17.11.2026 | 18:15 · Hörsaal 25, Kupferbau, Hölderlinstr. 5, und Aufzeichnung · Uni Tübingen · Studium Generale
+Dr. Sophia R.C. Johnson, College of Fellows – Der bisher für den 17.11.2026 geplante Vortrag “Japanische Spiritualität‘ und Ethnonationalismus” von Prof. Dr. Monika Schrimpf (Japanologie, Universität Tübingen) entfällt und wird durch diesen Vortrag ersetzt. Der Vortrag findet auf Englisch statt.</description>
       <pubDate>Tue, 17 Nov 2026 18:15:00 +0100</pubDate>
     </item>
     <item>
