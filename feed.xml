@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Fri, 13 Nov 2026 11:51:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 21:48:19 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alice im Wunderland</title>
@@ -35,14 +35,6 @@ Buchvorstellung &amp; Gespräch mit Johanna Roth Im Rahmen der d.a.i.-Reihe „W
 Auch am Sa 14.11. – Am 13. &amp; 14. November geht das Ferryman im Epplehaus Tübingen in die nächste Runde. Zwei Tage Indoor-Metal, acht Bands und ein Line-up quer durch verschiedene Ecken zwischen Black, Death, Thrash, Speed, Metalcore und Deathcore. 💥 Mit dabei sind: 🔥 Blood Torrent 🔥 GOMORRHA 💀 🔥 𝗞𝗡𝗜𝗙𝗘🔪 🔥 MAVIS 🔥 …</description>
       <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/ferryman_2026small.jpg" type="image/jpeg" length="0" />
       <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/ferryman_2026small.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Fri, 13 Nov 2026 20:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Catarina oder Von der Schönheit, Faschisten zu töten</title>
-      <link>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</link>
-      <guid>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</guid>
-      <description>Fr, 13.11.2026 | 20:00 · Zimmertheater im Löwen Tübingen · Zimmertheater · Nachgespräch
-Auch am Do 19.11., Fr 20.11., Sa 21.11., Do 17.12., Do 14.01. … (10 Termine)</description>
       <pubDate>Fri, 13 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
@@ -79,7 +71,7 @@ Mit Paris Hot Five tauchen wir ein in das glitzernde Nachtleben der Pariser Bars
       <title>PRIMA FACIE</title>
       <link>https://www.zimmertheater-tuebingen.de/event/prima-facie-st-ckeinf-hrung-19-30-uhr-2589473</link>
       <guid>https://www.zimmertheater-tuebingen.de/event/prima-facie-st-ckeinf-hrung-19-30-uhr-2589473</guid>
-      <description>Sa, 14.11.2026 | 20:00 · Zimmertheater Tübingen · Zimmertheater
+      <description>Sa, 14.11.2026 | 20:00 · Zimmertheater im Zimmer (Bursagasse 16) · Zimmertheater
 Auch am Sa 28.11., Fr 04.12., So 10.01.</description>
       <pubDate>Sat, 14 Nov 2026 20:00:00 +0100</pubDate>
     </item>
@@ -108,7 +100,7 @@ Robert Gramsch-Stehfest – Die gemeinsame Vortragsreihe der Johannes Gutenberg-
       <pubDate>Mon, 16 Nov 2026 18:15:00 +0100</pubDate>
     </item>
     <item>
-      <title>Plainride</title>
+      <title>Plainride | ABGESAGT</title>
       <link>https://sudhaus-tuebingen.de/programm/details/plainride.html</link>
       <guid>https://sudhaus-tuebingen.de/programm/details/plainride.html</guid>
       <description>Mo, 16.11.2026 | 19:30 (Einlass) · Sudhaus Tübingen · Sudhaus Peripherie Werkstatt · Sudhaus
@@ -236,6 +228,14 @@ Flup·pe /Flúppe/ Substantiv, feminin [die] steht umgangssprachlich für Zigare
       <pubDate>Thu, 19 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Catarina oder Von der Schönheit, Faschisten zu töten</title>
+      <link>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</link>
+      <guid>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</guid>
+      <description>Do, 19.11.2026 | 20:00 · Zimmertheater im Löwen (Kornhausstraße 5) · Zimmertheater · Nachgespräch
+Auch am Fr 20.11., Sa 21.11., Do 17.12., Do 14.01., Fr 15.01. … (9 Termine)</description>
+      <pubDate>Thu, 19 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Book Swap @ d.a.i.-Bibliothek</title>
       <link>https://www.kulturnetz-tuebingen.de/event/book-swap-d-a-i-bibliothek-2/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/book-swap-d-a-i-bibliothek-2/</guid>
@@ -287,7 +287,7 @@ Musik/Konzert, Jazz, Rock, Dancefloor und Chill-Out: Paris – Dakar – Die Nig
       <title>„Mein Sorgenschreck“ Gedichte von Friederike Mayröcker und Ernst Jandl</title>
       <link>https://www.zimmertheater-tuebingen.de/event/mein-sorgenschreck-gedichte-von-friederike-mayr-cker-und-ernst-jandl-2589771</link>
       <guid>https://www.zimmertheater-tuebingen.de/event/mein-sorgenschreck-gedichte-von-friederike-mayr-cker-und-ernst-jandl-2589771</guid>
-      <description>So, 22.11.2026 | 18:00 · Zimmertheater Tübingen · Zimmertheater
+      <description>So, 22.11.2026 | 18:00 · Zimmertheater im Gewölbe (Bursagasse 16) · Zimmertheater
 Auch am So 13.12.</description>
       <pubDate>Sun, 22 Nov 2026 18:00:00 +0100</pubDate>
     </item>
