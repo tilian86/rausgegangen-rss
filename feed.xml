@@ -5,36 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Thu, 12 Nov 2026 22:02:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 11:51:49 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ersti Kneipe</title>
-      <link>https://www.epplehaus.de/event/ersti-kneipe/</link>
-      <guid>https://www.epplehaus.de/event/ersti-kneipe/</guid>
-      <description>Do, 12.11.2026 | 18:00 · Epplehaus · Epplehaus
-Liebe Erstis aufgepasst! Am 12.11. ist Ersti-Kneipe im Epplehaus! Diesmal mit dem unschlagbaren Angebot: Bier für 1€! 🍺 Die Epple-Kneipe findet jeden Donnerstag ab 19 Uhr statt – für die Ersti Kneipe jedoch bereits ab 18 Uhr! Es ist also genügend Zeit zum Vorglühen vor dem Clubhausfest! 🪩 Es gibt …</description>
-      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/11/erstikneipe_small.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/11/erstikneipe_small.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Thu, 12 Nov 2026 18:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Nachhaltige Nutzung begrenzter Ressourcen in Zeiten des globalen Wandels: Ungenutzte Potentiale im Stadt-Land-Kontext</title>
-      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/nachhaltige-nutzung-begrenzter-ressourcen-in-zeiten-des-globalen-wandels-ungenutzte-potentiale-im-stadt-land-kontext/</link>
-      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/nachhaltige-nutzung-begrenzter-ressourcen-in-zeiten-des-globalen-wandels-ungenutzte-potentiale-im-stadt-land-kontext/</guid>
-      <description>Do, 12.11.2026 | 18:15 · Hörsaal 25, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
-Prof. Dr. Michaela Dippold, Geosphären-Biosphären-Wechselwirkungen, Geo- und Umweltwissenschaften / Sprecherin TERRA Exzellenzcluster, Universität Tübingen</description>
-      <pubDate>Thu, 12 Nov 2026 18:15:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Jungsein in Demokratie und Diktatur</title>
-      <link>https://club-voltaire.net/v/jungsein-in-demokratie-und-diktatur</link>
-      <guid>https://club-voltaire.net/v/jungsein-in-demokratie-und-diktatur</guid>
-      <description>Do, 12.11.2026 | 20:00 · Club Voltaire · Club Voltaire
-Ein Gesprächs- und Diskussionsabend mit Menschen aus dem Ostteil der Republik. Lisa Trebs ist Mitgründerin der Initiative k_einheit und Teil der ostdeutschen Generation Z. Sie setzt sich dafür ein, dass junge Menschen aus Ostdeutschland und ihre Perspektiven in gesellschaftlichen Debatten gehört …</description>
-      <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/10/Screen-Shot-2026-10-14-at-11.42.55.png" type="image/png" length="0" />
-      <media:content url="https://club-voltaire.net/wp-content/uploads/2026/10/Screen-Shot-2026-10-14-at-11.42.55.png" medium="image" type="image/png" />
-      <pubDate>Thu, 12 Nov 2026 20:00:00 +0100</pubDate>
-    </item>
     <item>
       <title>Alice im Wunderland</title>
       <link>https://sudhaus-tuebingen.de/programm/details/alice-im-wunderland.html</link>
@@ -69,8 +41,8 @@ Auch am Sa 14.11. – Am 13. &amp; 14. November geht das Ferryman im Epplehaus T
       <title>Catarina oder Von der Schönheit, Faschisten zu töten</title>
       <link>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</link>
       <guid>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</guid>
-      <description>Fr, 13.11.2026 | 20:00 · Zimmertheater im Löwen (Kornhausstraße 5) · Zimmertheater · Nachgespräch
-Auch am Do 19.11., Fr 20.11., Sa 21.11., Do 17.12.</description>
+      <description>Fr, 13.11.2026 | 20:00 · Zimmertheater im Löwen Tübingen · Zimmertheater · Nachgespräch
+Auch am Do 19.11., Fr 20.11., Sa 21.11., Do 17.12., Do 14.01. … (10 Termine)</description>
       <pubDate>Fri, 13 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
@@ -108,7 +80,7 @@ Mit Paris Hot Five tauchen wir ein in das glitzernde Nachtleben der Pariser Bars
       <link>https://www.zimmertheater-tuebingen.de/event/prima-facie-st-ckeinf-hrung-19-30-uhr-2589473</link>
       <guid>https://www.zimmertheater-tuebingen.de/event/prima-facie-st-ckeinf-hrung-19-30-uhr-2589473</guid>
       <description>Sa, 14.11.2026 | 20:00 · Zimmertheater Tübingen · Zimmertheater
-Auch am Sa 28.11., Fr 04.12.</description>
+Auch am Sa 28.11., Fr 04.12., So 10.01.</description>
       <pubDate>Sat, 14 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
@@ -208,6 +180,14 @@ Familie Goodman ist eine ganz normale Familie – oder zumindest wirkt sie so. D
       <pubDate>Wed, 18 Nov 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Krementschuk</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/krementschuk/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/krementschuk/</guid>
+      <description>Mi, 18.11.2026 | 18:15 · Hörsaal 25, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
+Klaus Gestwa, Stephan Klingebiel, Tübingen</description>
+      <pubDate>Wed, 18 Nov 2026 18:15:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Philipp Schiepek / Lorenz Widauer „Bangers and Ballads”</title>
       <link>https://club-voltaire.net/v/philipp-schiepek-lorenz-widauer-bangers-and-ballads</link>
       <guid>https://club-voltaire.net/v/philipp-schiepek-lorenz-widauer-bangers-and-ballads</guid>
@@ -274,6 +254,16 @@ Musikwerkstatt presents: High Demand * Findus * One Frame * tba Google Kalender<
       <pubDate>Fri, 20 Nov 2026 19:30:00 +0100</pubDate>
     </item>
     <item>
+      <title>Fräulein Luise – Vielleicht nicht für immer Tour DE</title>
+      <link>https://club-voltaire.net/v/fraeulein-luise</link>
+      <guid>https://club-voltaire.net/v/fraeulein-luise</guid>
+      <description>Fr, 20.11.2026 | 20:00 · Club Voltaire · Club Voltaire
+Die Songs der jungen Zürcher Band Fräulein Luise leben sehr stark vom Erzählen verschiedener Geschichten, in denen sie sowohl relevante gesellschaftliche Themen als auch ihre eigenen Erfahrungen verarbeiten. Deshalb schreiben sie ihre Texte auch hauptsächlich auf Deutsch und in Mundart. Während die …</description>
+      <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/03/250818_Fr_uleinLuise_Eisb_r_OliviaKurz-2-scaled.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://club-voltaire.net/wp-content/uploads/2026/03/250818_Fr_uleinLuise_Eisb_r_OliviaKurz-2-scaled.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 20 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Der kleine Hase Moritz</title>
       <link>https://www.kulturnetz-tuebingen.de/event/der-kleine-hase-moritz/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/der-kleine-hase-moritz/</guid>
@@ -330,6 +320,24 @@ Nach dem erfolgreichen Neustart im Frühjahr geht die Vocal Session „Sing, Sin
       <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/09/VocalSession_V04-02_VorbachGrabein.jpg" type="image/jpeg" length="0" />
       <media:content url="https://club-voltaire.net/wp-content/uploads/2026/09/VocalSession_V04-02_VorbachGrabein.jpg" medium="image" type="image/jpeg" />
       <pubDate>Wed, 25 Nov 2026 20:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Kneipe feat. Rhythms of Resistance</title>
+      <link>https://www.epplehaus.de/event/trommel-kneipe/</link>
+      <guid>https://www.epplehaus.de/event/trommel-kneipe/</guid>
+      <description>Do, 26.11.2026 | 19:00 · Epplehaus · Epplehaus
+Rhythms of Resistance Reutlingen/ Tübingen present: Special Trommel Kneipe Google Kalender</description>
+      <pubDate>Thu, 26 Nov 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Offene Männergruppe Tübingen</title>
+      <link>https://www.kulturnetz-tuebingen.de/event/offene-maennergruppe-tuebingen-2/</link>
+      <guid>https://www.kulturnetz-tuebingen.de/event/offene-maennergruppe-tuebingen-2/</guid>
+      <description>Fr, 27.11.2026 | 19:15 · Ort: wird nach Anmeldung zum Newsletter bekannt gegeben · Kulturnetz Tübingen
+Offene Männerrunde am Freitagabend, 27.11.26. Männer-Talk</description>
+      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/01/maenner-sonnenuntergang-farbe.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2025/01/maenner-sonnenuntergang-farbe.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 27 Nov 2026 19:15:00 +0100</pubDate>
     </item>
     <item>
       <title>Schokoladenfestival chocolART</title>
