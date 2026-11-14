@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Sat, 14 Nov 2026 11:13:15 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 20:25:19 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ferryman Festival</title>
@@ -45,14 +45,6 @@ Musik/Konzert, NordicJazz: "Pax" – Piano Trios gibt es weltweit viele, die kla
 Mit Paris Hot Five tauchen wir ein in das glitzernde Nachtleben der Pariser Bars und Cabarets der 1930er und 40er Jahre. In einer Zeit, in der Charles Trenet, Duke Ellington, Slim Gaillard und der legendäre Django Reinhardt das Publikum verzauberten. Wenn der Rhythmus zu pulsieren beginnt und sich …</description>
       <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/10/ParisHot-klein-scaled-e1792941117223.jpg" type="image/jpeg" length="0" />
       <media:content url="https://club-voltaire.net/wp-content/uploads/2026/10/ParisHot-klein-scaled-e1792941117223.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 14 Nov 2026 20:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>PRIMA FACIE</title>
-      <link>https://www.zimmertheater-tuebingen.de/event/prima-facie-st-ckeinf-hrung-19-30-uhr-2589473</link>
-      <guid>https://www.zimmertheater-tuebingen.de/event/prima-facie-st-ckeinf-hrung-19-30-uhr-2589473</guid>
-      <description>Sa, 14.11.2026 | 20:00 · Zimmertheater im Zimmer (Bursagasse 16) · Zimmertheater
-Auch am Sa 28.11., Fr 04.12., So 10.01.</description>
       <pubDate>Sat, 14 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
@@ -358,6 +350,14 @@ Musik/Konzert: listen to your locals | Dark Edition mit CREST, Splittersicht &am
       <enclosure url="https://sudhaus-tuebingen.de/assets/images/7/2026-11-28_Katakombenfest_mitBands-f171a66d.jpg" type="image/jpeg" length="0" />
       <media:content url="https://sudhaus-tuebingen.de/assets/images/7/2026-11-28_Katakombenfest_mitBands-f171a66d.jpg" medium="image" type="image/jpeg" />
       <pubDate>Sat, 28 Nov 2026 19:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>PRIMA FACIE</title>
+      <link>https://www.zimmertheater-tuebingen.de/event/prima-facie-st-ckeinf-hrung-19-30-uhr-2589473</link>
+      <guid>https://www.zimmertheater-tuebingen.de/event/prima-facie-st-ckeinf-hrung-19-30-uhr-2589473</guid>
+      <description>Sa, 28.11.2026 | 20:00 · Zimmertheater im Gewölbe (Bursagasse 16) · Zimmertheater
+Auch am Fr 04.12., So 10.01.</description>
+      <pubDate>Sat, 28 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Schokoladenfestival chocolART</title>
