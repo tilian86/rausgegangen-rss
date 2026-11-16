@@ -5,18 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Sun, 15 Nov 2026 20:49:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 12:25:49 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Die Phasenprüfer</title>
-      <link>https://sudhaus-tuebingen.de/programm/details/die-phasenprufer.html</link>
-      <guid>https://sudhaus-tuebingen.de/programm/details/die-phasenprufer.html</guid>
-      <description>So, 15.11.2026 | 10:30 (Einlass) · Sudhaus Tübingen · Sudhaus Peripherie Werkstatt · Sudhaus
-Theater/Kleinkunst: schön-schaurig-schräg | Musik-Theater – Phasen treffen aufeinander, stiften Unruhe, ergänzen oder potenzieren sich, prallen aneinander ab. BodyVoice, ein Ableger des Generationentheaters Zeitsprung, lässt Lebensphasen auf Geschichtsphasen treffen, Menschen …</description>
-      <enclosure url="https://sudhaus-tuebingen.de/assets/images/6/2026_11_14-15_HF_Generationstheater_Phasenpr%C3%BCfer-efe06d36.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://sudhaus-tuebingen.de/assets/images/6/2026_11_14-15_HF_Generationstheater_Phasenpr%C3%BCfer-efe06d36.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 15 Nov 2026 10:30:00 +0100</pubDate>
-    </item>
     <item>
       <title>Umgang mit Antisemitismus an Hochschulen – Handlungskonzepte und Zukunftsvisionen</title>
       <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/umgang-mit-antisemitismus-an-hochschulen-handlungskonzepte-und-zukunftsvisionen/</link>
@@ -356,6 +346,16 @@ Musik/Konzert: listen to your locals | Dark Edition mit CREST, Splittersicht &am
       <description>Sa, 28.11.2026 | 20:00 · Zimmertheater im Gewölbe (Bursagasse 16) · Zimmertheater
 Auch am Fr 04.12., So 10.01.</description>
       <pubDate>Sat, 28 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Zeitgeist</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/zeitgeist-54.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/zeitgeist-54.html</guid>
+      <description>Sa, 28.11.2026 | 21:00 (Einlass) · Sudhaus Tübingen · Sudhaus Foyer · Sudhaus
+Auch am Fr 25.12., Fr 22.01., Sa 06.02. – Party: Musik der 70er, 80er, 90er sowie 20XX – Alles begann vor vielen Jahren im Club Zoo (wer sich noch daran erinnert) und nach dessen Schließung hat diese legendäre Veranstaltung schließlich vor knapp 10 Jahren im Sudhaus ein neues Zuhause gefunden. Gemäß dem …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/0/HF_Zeitgeist-f682961b.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/0/HF_Zeitgeist-f682961b.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sat, 28 Nov 2026 21:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Schokoladenfestival chocolART</title>
