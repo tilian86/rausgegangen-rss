@@ -5,7 +5,7 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Thu, 19 Nov 2026 12:29:51 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 22:54:16 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tübinger Poetik-Dozentur</title>
@@ -62,14 +62,6 @@ Flup·pe /Flúppe/ Substantiv, feminin [die] steht umgangssprachlich für Zigare
       <pubDate>Thu, 19 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
-      <title>Catarina oder Von der Schönheit, Faschisten zu töten</title>
-      <link>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</link>
-      <guid>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</guid>
-      <description>Do, 19.11.2026 | 20:00 · Zimmertheater im Löwen (Kornhausstraße 5) · Zimmertheater · Nachgespräch
-Auch am Fr 20.11., Sa 21.11., Do 17.12., Do 14.01., Fr 15.01. … (10 Termine)</description>
-      <pubDate>Thu, 19 Nov 2026 20:00:00 +0100</pubDate>
-    </item>
-    <item>
       <title>Book Swap @ d.a.i.-Bibliothek</title>
       <link>https://www.kulturnetz-tuebingen.de/event/book-swap-d-a-i-bibliothek-2/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/book-swap-d-a-i-bibliothek-2/</guid>
@@ -97,6 +89,14 @@ Musikwerkstatt presents: Unter dem Titel „Musikwerkstatt presents“ stehen vi
 Die Songs der jungen Zürcher Band Fräulein Luise leben sehr stark vom Erzählen verschiedener Geschichten, in denen sie sowohl relevante gesellschaftliche Themen als auch ihre eigenen Erfahrungen verarbeiten. Deshalb schreiben sie ihre Texte auch hauptsächlich auf Deutsch und in Mundart. Während die …</description>
       <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/03/250818_Fr_uleinLuise_Eisb_r_OliviaKurz-2-scaled.jpg" type="image/jpeg" length="0" />
       <media:content url="https://club-voltaire.net/wp-content/uploads/2026/03/250818_Fr_uleinLuise_Eisb_r_OliviaKurz-2-scaled.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Fri, 20 Nov 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Catarina oder Von der Schönheit, Faschisten zu töten</title>
+      <link>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</link>
+      <guid>https://www.zimmertheater-tuebingen.de/event/catarina-oder-von-der-sch-nheit-faschisten-zu-t-ten-nachgespr-ch-mit-beatrix-von-pilgrim-in-anwesenheit-des-regisseurs-2589507</guid>
+      <description>Fr, 20.11.2026 | 20:00 · Zimmertheater im Löwen (Kornhausstraße 5) · Zimmertheater · Nachgespräch
+Auch am Sa 21.11., Do 17.12., Do 14.01., Fr 15.01., So 17.01. … (9 Termine)</description>
       <pubDate>Fri, 20 Nov 2026 20:00:00 +0100</pubDate>
     </item>
     <item>
@@ -212,6 +212,14 @@ Auch am Di 15.12. – Monthly hybrid book discussion with Jessica Strain Calling
       <pubDate>Tue, 24 Nov 2026 18:15:00 +0100</pubDate>
     </item>
     <item>
+      <title>Artist Talk and Poetry Reading: Adam Dickinson - Science, Language, and Metabolic Poetics</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/artist-talk-and-poetry-reading-adam-dickinson-science-language-and-metabolic-poetics/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/artist-talk-and-poetry-reading-adam-dickinson-science-language-and-metabolic-poetics/</guid>
+      <description>Di, 24.11.2026 | 18:15 · Alte Anatomie, Großer Hörsaal, Österbergstraße 3 · Uni Tübingen
+Adam Dickinson, Brock University – Anthropogenic pollution is rewriting not only our climate but also the metabolism of our bodies. How might poetry respond? Canadian poet, artist, and professor Adam Dickinson reads from his work and talks about the experiments with his own microbes and chemical exp</description>
+      <pubDate>Tue, 24 Nov 2026 18:15:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Rechtsextremismus und Antisemitismus im Kontext Schule</title>
       <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/rechtsextremismus-und-antisemitismus-im-kontext-schule/</link>
       <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/rechtsextremismus-und-antisemitismus-im-kontext-schule/</guid>
@@ -274,14 +282,6 @@ Rhythms of Resistance Reutlingen/ Tübingen present: Special Trommel Kneipe Goog
       <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/11/2026-RoR-Workshop_small.png" type="image/png" length="0" />
       <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/11/2026-RoR-Workshop_small.png" medium="image" type="image/png" />
       <pubDate>Thu, 26 Nov 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Kaiserschnitt-„Boom“ im Dialog</title>
-      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/kaiserschnitt-boom-im-dialog/</link>
-      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/kaiserschnitt-boom-im-dialog/</guid>
-      <description>Fr, 27.11.2026 | 18:30 · Weltethos-Institut Tübingen, Hintere Grabenstraße 26 · Uni Tübingen
-Dr. Glaucia Peres da Silva – Warum steigt die Zahl der Kaiserschnittgeburten weltweit? Welche gesellschaftlichen und medizinischen Faktoren spielen dabei eine Rolle, und wie steht Tübingen im Vergleich da? Nach einem kurzen studentischen Impuls sind alle Teilnehmenden eingeladen, am runden Tisch Fra</description>
-      <pubDate>Fri, 27 Nov 2026 18:30:00 +0100</pubDate>
     </item>
     <item>
       <title>Offene Männergruppe Tübingen</title>
