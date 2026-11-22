@@ -5,38 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Sat, 21 Nov 2026 21:27:01 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 12:16:27 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Der kleine Hase Moritz</title>
-      <link>https://www.kulturnetz-tuebingen.de/event/der-kleine-hase-moritz/</link>
-      <guid>https://www.kulturnetz-tuebingen.de/event/der-kleine-hase-moritz/</guid>
-      <description>Sa, 21.11.2026 | 15:00 · Theater DERenDINGEn · Kulturnetz Tübingen
-Der kleine Hase Moritz (Für Kinder ab 5 Jahren) Es war einmal ein kleiner Hase, der hieß Moritz und der hörte immer: Pass auf, es könnte Dir etwas zustoßen! Hunde können beißen. Es gibt Räuber und Gespenster. Im Wasser kann man ertrinken. Die Großen werden Dir weh tun! Also spielte er lieber mit …</description>
-      <enclosure url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/07/DKHM-qu.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://www.kulturnetz-tuebingen.de/wp-content/uploads/2026/07/DKHM-qu.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 21 Nov 2026 15:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Nighthawks</title>
-      <link>https://sudhaus-tuebingen.de/programm/details/nighthawks.html</link>
-      <guid>https://sudhaus-tuebingen.de/programm/details/nighthawks.html</guid>
-      <description>Sa, 21.11.2026 | 19:00 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
-Musik/Konzert, Jazz, Rock, Dancefloor und Chill-Out: Paris – Dakar – Die Nighthawks haben sich in den vergangenen 25 Jahren von einem nur im Studio arbeitenden Duo, zu einem Kollektiv entwickelt, einer fünfköpfigen Band mit einem einzigartigen Stil aus Jazz, Rock, Dancefloor und …</description>
-      <enclosure url="https://sudhaus-tuebingen.de/assets/images/c/2026_11_21_HF_Nighthawks-938afe31.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://sudhaus-tuebingen.de/assets/images/c/2026_11_21_HF_Nighthawks-938afe31.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 21 Nov 2026 19:00:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Zuckerbecker (CH) &amp; salatschnecke</title>
-      <link>https://club-voltaire.net/v/zuckerbecker</link>
-      <guid>https://club-voltaire.net/v/zuckerbecker</guid>
-      <description>Sa, 21.11.2026 | 20:00 · Club Voltaire · Club Voltaire
-Zuckerbecker aus Zürich und Bern linst aus dem Keller hinauf auf die taumelnde Welt und spielt dazu laute Gitarrenmusik. Das Quartett verschreibt sich dem Punk mit Einflüssen aus Wave und Post-Punk. 2025 ist das zweite Album RETORTENSTADT auf Mörtel Sounds / The Supermarket (Vinyl/Tape) erschienen. …</description>
-      <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/08/ZuckerBecker_2.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://club-voltaire.net/wp-content/uploads/2026/08/ZuckerBecker_2.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sat, 21 Nov 2026 20:00:00 +0100</pubDate>
-    </item>
     <item>
       <title>„Mein Sorgenschreck“ Gedichte von Friederike Mayröcker und Ernst Jandl</title>
       <link>https://www.zimmertheater-tuebingen.de/event/mein-sorgenschreck-gedichte-von-friederike-mayr-cker-und-ernst-jandl-2589771</link>
@@ -302,6 +272,16 @@ ft. Dubrooted Soundsystem (Freiburg) Roots Reggae, UK Dub, Steppers WE DUB Sound
       <pubDate>Sat, 28 Nov 2026 21:00:00 +0100</pubDate>
     </item>
     <item>
+      <title>Tanznacht – Der Club Tanzt!</title>
+      <link>https://club-voltaire.net/v/tanznacht-der-club-tanzt-32</link>
+      <guid>https://club-voltaire.net/v/tanznacht-der-club-tanzt-32</guid>
+      <description>Sa, 28.11.2026 | 21:00 · Club Voltaire · Club Voltaire
+Wie immer am letzten Samstag des Monats tanzt der Club. Es legt auf: Klaus in the Haus (mixed music) Eintritt: 6,- Euro</description>
+      <enclosure url="https://club-voltaire.net/wp-content/uploads/2025/01/Tanznacht-FB-Titel-e1793006748701.png" type="image/png" length="0" />
+      <media:content url="https://club-voltaire.net/wp-content/uploads/2025/01/Tanznacht-FB-Titel-e1793006748701.png" medium="image" type="image/png" />
+      <pubDate>Sat, 28 Nov 2026 21:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Zeitgeist</title>
       <link>https://sudhaus-tuebingen.de/programm/details/zeitgeist-54.html</link>
       <guid>https://sudhaus-tuebingen.de/programm/details/zeitgeist-54.html</guid>
@@ -310,6 +290,16 @@ Auch am Fr 25.12., Fr 22.01., Sa 06.02. – Party: Musik der 70er, 80er, 90er so
       <enclosure url="https://sudhaus-tuebingen.de/assets/images/0/HF_Zeitgeist-f682961b.jpg" type="image/jpeg" length="0" />
       <media:content url="https://sudhaus-tuebingen.de/assets/images/0/HF_Zeitgeist-f682961b.jpg" medium="image" type="image/jpeg" />
       <pubDate>Sat, 28 Nov 2026 21:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>NEXT TO NORMAL</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/next-to-normal-2.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/next-to-normal-2.html</guid>
+      <description>So, 29.11.2026 | 18:00 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
+Auch am Mi 02.12. – Theater/Kleinkunst, Musical: Ein Musical über Verlust &amp; mentale Gesundheit | präsentiert von der Musical Academy Tübingen – Familie Goodman ist eine ganz normale Familie. Oder zumindest wirkt sie so . Hinter der Fassade kämpfen alle mit ihren eigenen Ängsten, Sehnsüchten und Verletzungen. Diana, die</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/b/2026_11_18.11.-02.12._HF_MusicalAcademy-4b27d9a4.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/b/2026_11_18.11.-02.12._HF_MusicalAcademy-4b27d9a4.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 29 Nov 2026 18:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Louisa Kilgus &amp; Andi Kraus</title>
