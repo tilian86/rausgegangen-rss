@@ -5,28 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Sun, 22 Nov 2026 21:31:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 14:00:53 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ensemble Phorminx</title>
-      <link>https://sudhaus-tuebingen.de/programm/details/ensemble-phorminx-15.html</link>
-      <guid>https://sudhaus-tuebingen.de/programm/details/ensemble-phorminx-15.html</guid>
-      <description>So, 22.11.2026 | 18:30 (Einlass) · Sudhaus Tübingen · Sudhaus Peripherie Werkstatt · Sudhaus
-Musik/Konzert, Neue Musik: 30 Jahre Neue Musik im Sudhaus – Seit 30 Jahren ist die zeitgenössische Musik der Phorminx im Sudhaus zu Hause. Was als Konzertreihe begann, ist längst ein fester Bestandteil des Sudhaus-Programms und der regionalen Szene für Neue Musik. Zum Jubiläum …</description>
-      <enclosure url="https://sudhaus-tuebingen.de/assets/images/4/2026_11_22_HF_Phorminx-369ba23f.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://sudhaus-tuebingen.de/assets/images/4/2026_11_22_HF_Phorminx-369ba23f.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 22 Nov 2026 18:30:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Kay Ray</title>
-      <link>https://sudhaus-tuebingen.de/programm/details/kay-ray-2.html</link>
-      <guid>https://sudhaus-tuebingen.de/programm/details/kay-ray-2.html</guid>
-      <description>So, 22.11.2026 | 19:30 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
-Kabarett/Comedy: "Die Show" – Seit über 30 Jahren ist Kay Ray auf allen Bühnen zu Hause, mit über 100 Shows im Jahr tourt er durch Deutschland, die Schweiz und Italien. Gewinner des Lorscher Abts (2019) und des Bremer Comedy-Preises (Jurypreis, …</description>
-      <enclosure url="https://sudhaus-tuebingen.de/assets/images/a/2026_04_23_HF_KayRay-9934623e.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://sudhaus-tuebingen.de/assets/images/a/2026_04_23_HF_KayRay-9934623e.jpg" medium="image" type="image/jpeg" />
-      <pubDate>Sun, 22 Nov 2026 19:30:00 +0100</pubDate>
-    </item>
     <item>
       <title>Durch Scheitern zum Erfolg: Ein Abend über Rückschläge, neue Perspektiven und den Mut weiterzumachen</title>
       <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/durch-scheitern-zum-erfolg-ein-abend-ueber-rueckschlaege-neue-perspektiven-und-den-mut-weiterzumachen/</link>
@@ -342,6 +322,16 @@ Die Jahresausstellung der arTÜthek ist vom 24. November 2026 bis 21. Januar 202
       <pubDate>Thu, 03 Dec 2026 18:30:00 +0100</pubDate>
     </item>
     <item>
+      <title>Yasi Hofer Trio</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/yasi-hofer-trio.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/yasi-hofer-trio.html</guid>
+      <description>Do, 03.12.2026 | 19:30 (Einlass) · Sudhaus Tübingen · Sudhaus Peripherie Werkstatt · Sudhaus
+Musik/Konzert, Rock • Blues • Fusion: Best Of Tour 2026 – Nach über einem Jahrzehnt gemeinsamer Bühnenpräsenz und vier erfolgreichen Studioalben ist es Zeit, die musikalische Reise von Yasi Hofer und ihrem Trio zu feiern. Die „Best Of Tour 2026“ vereint Highlights, …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/7/2026_12_03_HF_YasiHofer-9108f3ea.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/7/2026_12_03_HF_YasiHofer-9108f3ea.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Thu, 03 Dec 2026 19:30:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Heisenberg</title>
       <link>https://www.zimmertheater-tuebingen.de/vorstellungen-2/heisenberg-kostprobe-st-ckeinf-hrung-19-30-uhr-2589525</link>
       <guid>https://www.zimmertheater-tuebingen.de/vorstellungen-2/heisenberg-kostprobe-st-ckeinf-hrung-19-30-uhr-2589525</guid>
@@ -365,6 +355,16 @@ Dec 05th HARDCORE WINTERFEST XIX Jugendzentrum Epplehaus Tübingen s/w Germoney 
       <guid>https://www.zimmertheater-tuebingen.de/vorstellungen-2/heisenberg-premiere-st-ckeinf-hrung-19-30-uhr-2589524</guid>
       <description>Sa, 05.12.2026 | 20:00 · Zimmertheater im Löwen (Kornhausstraße 5) · Zimmertheater · Premiere</description>
       <pubDate>Sat, 05 Dec 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Zirkus Zambaioni &amp; Friends</title>
+      <link>https://sudhaus-tuebingen.de/programm/details/zirkus-zambaioni-friends-2.html</link>
+      <guid>https://sudhaus-tuebingen.de/programm/details/zirkus-zambaioni-friends-2.html</guid>
+      <description>So, 06.12.2026 | 17:00 (Einlass) · Sudhaus Tübingen · Sudhaus Saal · Sudhaus
+Theater/Kleinkunst, Zirkus: Weihnachtsgala 2026 – Zirkus Zambaioni &amp; Friends laden zur Benefizgala ein und verzaubern ihr Publikum mit dynamischer Artistik, feinem Humor und kreativen Ideen. In diesem Jahr finden erstmals zwei Vorstellungen an einem Tag statt. Junge …</description>
+      <enclosure url="https://sudhaus-tuebingen.de/assets/images/d/2026_12_06_HF_ZambaioniGala-6277ee27.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://sudhaus-tuebingen.de/assets/images/d/2026_12_06_HF_ZambaioniGala-6277ee27.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 06 Dec 2026 17:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Weihnachtsmarkt</title>
