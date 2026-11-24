@@ -5,34 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Mon, 23 Nov 2026 14:00:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 02:44:35 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Durch Scheitern zum Erfolg: Ein Abend über Rückschläge, neue Perspektiven und den Mut weiterzumachen</title>
-      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/durch-scheitern-zum-erfolg-ein-abend-ueber-rueckschlaege-neue-perspektiven-und-den-mut-weiterzumachen/</link>
-      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/durch-scheitern-zum-erfolg-ein-abend-ueber-rueckschlaege-neue-perspektiven-und-den-mut-weiterzumachen/</guid>
-      <description>Mo, 23.11.2026 | 17:30 · Obere Säle, Museumsgesellschaft, Wilhelmstraße 3 · Uni Tübingen
-Die Auftaktveranstaltung der Mental Health Days beschäftigt sich mit dem Thema Scheitern und dem Umgang mit Rückschlägen. In seiner Keynote zeigt Fehlerkulturexperte Stefan Lapenat, warum Scheitern Teil des Erfolgs ist und wie sich daraus neue Perspektiven für Studium und Beruf gewinnen lassen.</description>
-      <pubDate>Mon, 23 Nov 2026 17:30:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Provenienzforschung und Aufarbeitung von Geschichte(n) – mit Partner:innen aus Papua-Neuguinea am Beispiel der Hamburger Südsee-Expedition</title>
-      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/provenienzforschung-und-aufarbeitung-von-geschichten-mit-partnerinnen-aus-papua-neuguinea-am-beispiel-der-hamburger-suedsee-expedition/</link>
-      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/provenienzforschung-und-aufarbeitung-von-geschichten-mit-partnerinnen-aus-papua-neuguinea-am-beispiel-der-hamburger-suedsee-expedition/</guid>
-      <description>Mo, 23.11.2026 | 18:15 · Hörsaal 21, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
-Jasmin Günther, Ozeanische Bestände aus kolonialen Kontexten, Museum am Rothenbaum Kulturen und Künste der Welt (MARKK) – Zoom-Link: https://zoom.us/j/95977375594?pwd=EU3V0mmBCvMBHxaHo7vLzxTkxxuaYJ.1</description>
-      <pubDate>Mon, 23 Nov 2026 18:15:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Der pandemische Brandbeschleuniger</title>
-      <link>https://club-voltaire.net/v/der-pandemische-brandbeschleuniger</link>
-      <guid>https://club-voltaire.net/v/der-pandemische-brandbeschleuniger</guid>
-      <description>Mo, 23.11.2026 | 19:00 · Club Voltaire · Club Voltaire
-Corona und die Krise des Journalismus aus der Sicht eines Zeitungsredakteurs Buchlesung und Diskussion mit Volker Rekittke Warum hat die Mehrheit der Journalistinnen und Journalisten in den Corona-Jahren ihre Kontrollfunktion gegenüber Staat und Konzernen kaum noch wahrgenommen? Corona wäre die …</description>
-      <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/10/Buchcover_Der-pandemische-Brandbeschleuniger-e1791795433231.jpeg" type="image/jpeg" length="0" />
-      <media:content url="https://club-voltaire.net/wp-content/uploads/2026/10/Buchcover_Der-pandemische-Brandbeschleuniger-e1791795433231.jpeg" medium="image" type="image/jpeg" />
-      <pubDate>Mon, 23 Nov 2026 19:00:00 +0100</pubDate>
-    </item>
     <item>
       <title>Jahresausstellung der arTÜthek</title>
       <link>https://www.kulturnetz-tuebingen.de/event/jahresausstellung-der-artuethek/</link>
@@ -160,6 +134,14 @@ Auch am Fr 18.12. – Conversation group with d.a.i. teacher Scott Stelle Every 
       <pubDate>Fri, 27 Nov 2026 17:30:00 +0100</pubDate>
     </item>
     <item>
+      <title>Kaiserschnitt-„Boom“ im Dialog</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/kaiserschnitt-boom-im-dialog/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/kaiserschnitt-boom-im-dialog/</guid>
+      <description>Fr, 27.11.2026 | 18:30 · Weltethos-Institut Tübingen, Hintere Grabenstraße 26 · Uni Tübingen
+Dr. Glaucia Peres da Silva – Warum steigt die Zahl der Kaiserschnittgeburten weltweit? Welche gesellschaftlichen und medizinischen Faktoren spielen dabei eine Rolle, und wie steht Tübingen im Vergleich da? Nach einem kurzen studentischen Impuls sind alle Teilnehmenden eingeladen, am runden Tisch Fra</description>
+      <pubDate>Fri, 27 Nov 2026 18:30:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Friendsgiving Dinner</title>
       <link>https://www.kulturnetz-tuebingen.de/event/friendsgiving-dinner-2/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/friendsgiving-dinner-2/</guid>
@@ -282,6 +264,24 @@ Theater/Kleinkunst, Musikalisches Infotainment: „Schluss mit Lustig“ | Ein m
       <enclosure url="https://sudhaus-tuebingen.de/assets/images/1/2026_11_29_HF_KrausKilgus-341f3aea.jpg" type="image/jpeg" length="0" />
       <media:content url="https://sudhaus-tuebingen.de/assets/images/1/2026_11_29_HF_KrausKilgus-341f3aea.jpg" medium="image" type="image/jpeg" />
       <pubDate>Sun, 29 Nov 2026 18:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>just3left und Werner Schärdel</title>
+      <link>https://club-voltaire.net/v/jazzmusik-und-hochkomische-texte</link>
+      <guid>https://club-voltaire.net/v/jazzmusik-und-hochkomische-texte</guid>
+      <description>So, 29.11.2026 | 19:00 · Club Voltaire · Club Voltaire
+„Sinnlichkeit, Sinnlichkeit – die Menschen kaufen wie net`gscheit.“ (F.W.Bernstein) Jazzmusik und hochkomische Texte Die Texte u.a. von Karl Valentin, Gerhard Polt, Robert Gernhardt und F.W. Bernstein werden eingerahmt von wunderbarer Jazzmusik mit klassischen Anklängen. Die Vorstellung soll …</description>
+      <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/10/just3left-e1792611567172.jpg" type="image/jpeg" length="0" />
+      <media:content url="https://club-voltaire.net/wp-content/uploads/2026/10/just3left-e1792611567172.jpg" medium="image" type="image/jpeg" />
+      <pubDate>Sun, 29 Nov 2026 19:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Provenienzforschung als "Selbstzweck" für westliche Museen? Zur Notwendigkeit eines gegenseitigen Nutzens</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/provenienzforschung-als-selbstzweck-fuer-westliche-museen-zur-notwendigkeit-eines-gegenseitigen-nutzens/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/provenienzforschung-als-selbstzweck-fuer-westliche-museen-zur-notwendigkeit-eines-gegenseitigen-nutzens/</guid>
+      <description>Mo, 30.11.2026 | 18:15 · Hörsaal 21, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
+Richard Tsogang Fossi, Technische Universität Berlin – Zoom-Link: https://zoom.us/j/95977375594?pwd=EU3V0mmBCvMBHxaHo7vLzxTkxxuaYJ.1</description>
+      <pubDate>Mon, 30 Nov 2026 18:15:00 +0100</pubDate>
     </item>
     <item>
       <title>Schokoladenfestival chocolART</title>
