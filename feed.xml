@@ -5,16 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Wed, 25 Nov 2026 00:19:49 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 13:53:22 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Vom Wert der Vergangenheit: Geschichtsschreibung vor Herodot</title>
-      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/vom-wert-der-vergangenheit-geschichtsschreibung-vor-herodot/</link>
-      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/vom-wert-der-vergangenheit-geschichtsschreibung-vor-herodot/</guid>
-      <description>Mi, 25.11.2026 | 10:15 · Schloss Hohentübingen, Burgsteige 11, Aufgang Uhrenturm, Raum 136 · Uni Tübingen
-Prof. Dr. Wiebke Meinhold, Universität Tübingen – Wissenschaft fragt danach, wie Dinge wirklich sind. Diese Frage beschäftigt Menschen nicht erst seit der Neuzeit, sondern nachweislich so lang wie menschliches Denken überliefert ist, d.h. seit Erfindung der Schrift um 3200 v. Chr. Im Zentrum steht d</description>
-      <pubDate>Wed, 25 Nov 2026 10:15:00 +0100</pubDate>
-    </item>
     <item>
       <title>Nikosia</title>
       <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/nikosia/</link>
@@ -318,6 +310,14 @@ Musik/Konzert, Rock • Blues • Fusion: Best Of Tour 2026 – Nach über einem
       <description>Do, 03.12.2026 | 20:00 · Zimmertheater im Löwen Tübingen · Zimmertheater
 Auch am Fr 11.12., Fr 18.12., Do 31.12., Sa 09.01., Do 21.01. … (7 Termine)</description>
       <pubDate>Thu, 03 Dec 2026 20:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Hans-Machleidt Symposium 2026</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/hans-machleidt-symposium-2026/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/hans-machleidt-symposium-2026/</guid>
+      <description>Fr, 04.12.2026 | 13:00 · Interfakultäres Institut für Biochemie · Uni Tübingen
+The Prof. Dr. Hans Machleidt and Dr. Sieglinde Göhring-Machleidt Foundation was established in 2020 with the aim of supporting universities and educational institutions in the field of natural sciences, musical projects and institutions, as well as hospice facilities. The primary target group of …</description>
+      <pubDate>Fri, 04 Dec 2026 13:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Hardcore Winterfest</title>
