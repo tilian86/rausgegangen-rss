@@ -5,26 +5,8 @@
     <link>https://www.tuebinger-kalender.de/</link>
     <description>Veranstaltungen in Tübingen – Tübinger Kalender (Kulturnetz), Epplehaus, Club Voltaire, Sudhaus, Zimmertheater, Universität und Stadt</description>
     <language>de</language>
-    <lastBuildDate>Thu, 26 Nov 2026 13:32:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 00:18:03 +0000</lastBuildDate>
     <atom:link href="https://tilian86.github.io/rausgegangen-rss/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>„What do we want? Climate justice!“ Transformative Bildung an Schule und Hochschule</title>
-      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/what-do-we-want-climate-justice-transformative-bildung-an-schule-und-hochschule/</link>
-      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/what-do-we-want-climate-justice-transformative-bildung-an-schule-und-hochschule/</guid>
-      <description>Do, 26.11.2026 | 18:15 · Hörsaal 25, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
-Prof. Dr. Michael Opielka, Institut für Sozialökologie (ISÖ), Ernst-Abbe-Hochschule Jena, 2000-2025, Nora Oehmichen, 1. Bundesvorsitzende der Teachers for Future</description>
-      <pubDate>Thu, 26 Nov 2026 18:15:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Kneipe feat. Rhythms of Resistance</title>
-      <link>https://www.epplehaus.de/event/trommel-kneipe/</link>
-      <guid>https://www.epplehaus.de/event/trommel-kneipe/</guid>
-      <description>Do, 26.11.2026 | 19:00 · Epplehaus · Epplehaus
-Rhythms of Resistance Reutlingen/ Tübingen present: Special Trommel Kneipe Google Kalender</description>
-      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/11/2026-RoR-Workshop_small.png" type="image/png" length="0" />
-      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/11/2026-RoR-Workshop_small.png" medium="image" type="image/png" />
-      <pubDate>Thu, 26 Nov 2026 19:00:00 +0100</pubDate>
-    </item>
     <item>
       <title>Study Group: The Making of a Quagmire</title>
       <link>https://www.kulturnetz-tuebingen.de/event/study-group-the-making-of-a-quagmire-3/</link>
@@ -244,6 +226,14 @@ Prof. Dr. Wiebke Meinhold, Universität Tübingen – Wissenschaft fragt danach,
       <pubDate>Wed, 02 Dec 2026 10:15:00 +0100</pubDate>
     </item>
     <item>
+      <title>Narva</title>
+      <link>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/narva/</link>
+      <guid>https://uni-tuebingen.de/universitaet/campusleben/veranstaltungen/veranstaltungskalender/termindetails/article/narva/</guid>
+      <description>Mi, 02.12.2026 | 18:15 · Hörsaal 25, Kupferbau, Hölderlinstr. 5 · Uni Tübingen · Studium Generale
+Andrey Makarychev, Tartu – Vortrag auf Englisch</description>
+      <pubDate>Wed, 02 Dec 2026 18:15:00 +0100</pubDate>
+    </item>
+    <item>
       <title>German-American Stammtisch</title>
       <link>https://www.kulturnetz-tuebingen.de/event/german-american-stammtisch-13/</link>
       <guid>https://www.kulturnetz-tuebingen.de/event/german-american-stammtisch-13/</guid>
@@ -355,6 +345,16 @@ Unsere Session-Band mit Conny Schwarz(b), Joachim Scheu(p), Markus Fiederer(dr) 
       <enclosure url="https://club-voltaire.net/wp-content/uploads/2026/10/Jam-Session2-www.jpg" type="image/jpeg" length="0" />
       <media:content url="https://club-voltaire.net/wp-content/uploads/2026/10/Jam-Session2-www.jpg" medium="image" type="image/jpeg" />
       <pubDate>Wed, 09 Dec 2026 20:30:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Input-Vortrag „Jahresrückblick: rechte Aktivitäten 2026 im Kreis Tübingen“</title>
+      <link>https://www.epplehaus.de/event/input-vortrag-jahresrueckblick-rechte-aktivitaeten-2026-im-kreis-tuebingen/</link>
+      <guid>https://www.epplehaus.de/event/input-vortrag-jahresrueckblick-rechte-aktivitaeten-2026-im-kreis-tuebingen/</guid>
+      <description>Do, 10.12.2026 | 19:00 · Epplehaus · Epplehaus
+Am Jahresende soll es wie in den vergangenen Jahren einen antifaschistischen Jahresrückblick auf die rechten und reaktionären Aktivitäten im Kreis Tübingen 2026 geben. Es sollen die wichtigen Gruppen und Einzelpersonen im Landkreis betrachtet werden. Dabei geht es z.B. um die Kreis-AfD, die …</description>
+      <enclosure url="https://www.epplehaus.de/wp-content/uploads/2026/10/Input_small.png" type="image/png" length="0" />
+      <media:content url="https://www.epplehaus.de/wp-content/uploads/2026/10/Input_small.png" medium="image" type="image/png" />
+      <pubDate>Thu, 10 Dec 2026 19:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Cobario</title>
